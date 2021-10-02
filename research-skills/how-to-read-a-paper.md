@@ -4,11 +4,9 @@ description: research-skills
 
 # How to Read a Paper
 
-Presented in ACM SIGCOMM Computer Communication Review '07: [https://dl.acm.org/doi/abs/10.1145/1273445.1273458](https://dl.acm.org/doi/abs/10.1145/1273445.1273458)
+Presented in [ACM SIGCOMM Computer Communication Review '07](https://dl.acm.org/doi/abs/10.1145/1273445.1273458) \[ [Paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf) \]
 
 Author: Srinivasan Keshav, _University of Waterloo_
-
-Paper: [http://ccr.sigcomm.org/online/files/p83-keshavA.pdf](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf)
 
 ## The three-pass approach \(to read a paper\)
 
