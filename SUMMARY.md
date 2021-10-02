@@ -3,13 +3,13 @@
 * [awesome-papers](README.md)
 * [Paper Reading Template](template.md)
 
-## Research Skills <a id="research-skills-1"></a>
+## Research Skills
 
-* [How to Read a Paper](research-skills-1/how-to-read-a-paper.md)
+* [How to Read a Paper](research-skills/how-to-read-a-paper.md)
 
 ## MLSys
 
-* [Untitled](mlsys/untitled.md)
+* [HiveD: Sharing a GPU Cluster for Deep Learning with Guarantees](mlsys/hived.md)
 
 ---
 
