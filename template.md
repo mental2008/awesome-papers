@@ -10,8 +10,6 @@ Authors: TBD
 
 Other related link: TBD
 
----
-
 ## Understanding the paper
 
 Answer the following questions:
@@ -22,7 +20,7 @@ TBD
 
 ### Context
 
-(Which other papers is it related to? Which theoretical bases were used to analyze the problem?)
+\(Which other papers is it related to? Which theoretical bases were used to analyze the problem?\)
 
 TBD
 
@@ -38,10 +36,6 @@ TBD
 
 TBD
 
-
-
----
-
 ### Key motivation
 
 TBD
@@ -50,11 +44,7 @@ TBD
 
 TBD
 
-
-
----
-
-### Strong points 
+### Strong points
 
 TBD
 
@@ -62,14 +52,11 @@ TBD
 
 TBD
 
-
-
 ## Questions
 
 TBD
 
-
-
-## Related reference (for further reading)
+## Related reference \(for further reading\)
 
 TBD
+
