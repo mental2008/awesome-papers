@@ -1,7 +1,7 @@
 # Table of contents
 
-* [awesome-papers](README.md)
-* [Paper Reading Template](template.md)
+* [Introduction](README.md)
+* [Paper Reading Template](paper-reading-template.md)
 
 ## Research Skills
 
