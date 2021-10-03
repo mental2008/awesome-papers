@@ -16,7 +16,7 @@ Authors: Hanyu Zhao, _Peking University and Microsoft_; Zhenhua Han, _The Univer
 
 TBD
 
-![](../.gitbook/assets/image%20%281%29.png)
+![System architecture: a two-layer design](../.gitbook/assets/image%20%281%29.png)
 
 ### Limitation of existing solutions
 
