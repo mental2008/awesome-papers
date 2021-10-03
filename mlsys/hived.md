@@ -16,6 +16,8 @@ Authors: Hanyu Zhao, _Peking University and Microsoft_; Zhenhua Han, _The Univer
 
 TBD
 
+![](../.gitbook/assets/image%20%281%29.png)
+
 ### Limitation of existing solutions
 
 TBD
@@ -30,9 +32,11 @@ TBD
 
 ## Questions
 
+
+
 TBD
 
 ## Related reference \(for further reading\)
 
-* OpenPAI. https://github.com/Microsoft/pai, 2020.
-* 
+TBD
+
