@@ -43,7 +43,7 @@ Currently, there is no framework to consider sharing anomaly in multi-tenant GPU
 
 **VC assignment**
 
-* As for me, it's hard to determine the VC assignment to each tenant, specially the cell structures of GPUs. In the paper, Sec. 6 mentions this as a business process. Systems have to consider many factors, including overall capacity, tenant demands, composition of tenant workload, workload variation over time, business priority, budget constraints. But HiveD leaves the difficult problem to users.
+As for me, it's hard to determine the VC assignment to each tenant, specially the cell structures of GPUs. In the paper, Sec. 6 mentions this as a business process. Systems have to consider many factors, including overall capacity, tenant demands, composition of tenant workload, workload variation over time, business priority, budget constraints. But HiveD leaves the difficult problem to users.
 
 ### Implementation
 
