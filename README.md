@@ -9,8 +9,8 @@ Hi all, thank you for visiting here ;-) These are my personal paper reading note
 The typical workflow of reading a paper is as follows:
 
 1. If I find something interesting, I'm going to create a new issue and add a few metadata from the paper.
-2. After a quick glance, I will attempt to answer 5c questions and comment directly in the issue. The paper will be marked as `further-reading` if necessary.
-3. After further reading, the reading notes will be reorganized and uploaded to GitHub repo, which can be visible on the website.
+2. After a quick glance, I will attempt to answer [5c questions](https://paper.yanglingyun.me/research-skills/how-to-read-a-paper#the-first-pass) and comment directly in the issue. The paper will be marked as `further-reading` if necessary.
+3. After further reading, the reading notes will be reorganized and uploaded to [GitHub repo](https://github.com/mental2008/awesome-papers), which can be visible on the [website](https://paper.yanglingyun.me/).
 
 ## Finally
 
