@@ -9,6 +9,8 @@
 
 ## MLSys
 
+* [AntMan: Dynamic Scaling on GPU Clusters for Deep Learning](mlsys/antman.md)
+
 * [HiveD: Sharing a GPU Cluster for Deep Learning with Guarantees](mlsys/hived.md)
 
 ---
