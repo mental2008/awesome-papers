@@ -39,7 +39,7 @@
 ## Misc
 
 * [Research Collaboration](misc/research-collaboration/README.md)
-  * [Data-driven Networking Research: models for academic collaboration with industry (a Google point of](misc/research-collaboration/data-driven-networking-research-models-for-academic-collaboration-with-industry-a-google-point-of.md)
+  * [Data-driven Networking Research: models for academic collaboration with industry](misc/research-collaboration/data-driven-networking-research-models-for-academic-collaboration-with-industry.md)
 
 ***
 

@@ -1,6 +1,8 @@
-# Data-driven Networking Research: models for academic collaboration with industry (a Google point of
+# Data-driven Networking Research: models for academic collaboration with industry
 
 ## ​Metadata
+
+Full name: Data-driven Networking Research: models for academic collaboration with industry (a Google point of view)
 
 Presented in ACM SIGCOMM Computer Communication Review '07: https://dl.acm.org/doi/10.1145/3503954.3503960
 
