@@ -24,6 +24,12 @@
 [predicting-cpu-usage-for-proactive-autoscaling.md](reading-notes/predicting-cpu-usage-for-proactive-autoscaling.md)
 {% endcontent-ref %}
 
+### Scheduler Evaluation
+
+{% content-ref url="reading-notes/evaluating-job-packing-in-warehouse-scale-computing.md" %}
+[evaluating-job-packing-in-warehouse-scale-computing.md](reading-notes/evaluating-job-packing-in-warehouse-scale-computing.md)
+{% endcontent-ref %}
+
 ## Hardware
 
 ### GPU

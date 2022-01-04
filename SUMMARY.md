@@ -4,6 +4,7 @@
 * [Paper Reading Template](paper-reading-template.md)
 * [Navigation](navigation.md)
 * [Reading Notes](reading-notes/README.md)
+  * [Evaluating job packing in warehouse-scale computing](reading-notes/evaluating-job-packing-in-warehouse-scale-computing.md)
   * [HiveD: Sharing a GPU Cluster for Deep Learning with Guarantees](reading-notes/hived.md)
   * [Elastic Parameter Server Load Distribution in Deep Learning Clusters](reading-notes/elastic-parameter-server-load-distribution-in-deep-learning-clusters.md)
   * [Predicting CPU usage for proactive autoscaling](reading-notes/predicting-cpu-usage-for-proactive-autoscaling.md)
