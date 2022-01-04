@@ -1,3 +1,0 @@
-# Proactive Autoscaling
-
-​
