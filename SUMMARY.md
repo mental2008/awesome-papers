@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Paper Reading Template](paper-reading-template.md)
-* Conference
+* [Conference](Conference/README.md)
     * [CLUSTER 2014](Conference/CLUSTER-2014/cluster-2014.md)
         * [Evaluating job packing in warehouse-scale computing](Conference/CLUSTER-2014/evaluating-job-packing-in-warehouse-scale-computing.md)
     * [OSDI 2020](Conference/OSDI-2020/osdi-2020.md)
@@ -15,7 +15,7 @@
         * [Elastic Parameter Server Load Distribution in Deep Learning Clusters](Conference/SoCC-2020/elastic-parameter-server-load-distribution-in-deep-learning-clusters.md)
     * [SOSP 2021](Conference/SOSP-2021/sosp-2021.md)
         * [HeMem: Scalable Tiered Memory Management for Big Data Applications and Real NVM](Conference/SOSP-2021/hemem.md)
-* Miscellaneous
+* [Miscellaneous](Miscellaneous/README.md)
     * [arXiv 2016](Miscellaneous/arXiv-2016/arxiv-2016.md)
         * [Training Deep Nets with Sublinear Memory Cost](Miscellaneous/arXiv-2016/training-deep-nets-with-sublinear-memory-cost.md)
 * [Academic Profile](https://www.cse.ust.hk/\~lyangbk/)

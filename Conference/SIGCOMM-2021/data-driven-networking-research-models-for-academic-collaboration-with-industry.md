@@ -1,8 +1,10 @@
-# Data-driven Networking Research: models for academic collaboration with industry (a Google point of view)
+# Data-driven Networking Research: models for academic collaboration with industry
 
 ## Metadata
 
-Presented in ACM SIGCOMM Computer Communication Review 2021: https://dl.acm.org/doi/10.1145/3503954.3503960
+Paper: Data-driven Networking Research: models for academic collaboration with industry (a Google point of view)
+
+Presented in [SIGCOMM Computer Communication Review 2021](https://dl.acm.org/doi/10.1145/3503954.3503960).
 
 Authors: Jeffrey C. Mogul, Priya Mahadevan, Christophe Diot, John Wilkes, Phillipa Gill, Amin Vahdat _Google_
 

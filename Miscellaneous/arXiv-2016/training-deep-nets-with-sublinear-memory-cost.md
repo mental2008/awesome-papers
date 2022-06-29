@@ -1,16 +1,16 @@
 # Training Deep Nets with Sublinear Memory Cost
 
-## ​Metadata
+## Metadata
 
-URL: https://arxiv.org/abs/1604.06174
+URL: [https://arxiv.org/abs/1604.06174](https://arxiv.org/abs/1604.06174)
 
 Authors: Tianqi Chen, Bing Xu, Chiyuan Zhang, Carlos Guestrin _Unveristy of Washington, Dato. Inc, Massachusetts Institute of Technology_
 
 Code (memonger - memory monger)
 
-* Original MXNet Implementation: https://github.com/dmlc/mxnet-memonger
-* OpenAI's TensorFlow Implementation: https://github.com/cybertronai/gradient-checkpointing
-* PyTorch Implementation: https://github.com/Lyken17/pytorch-memonger
+* Original MXNet Implementation: [https://github.com/dmlc/mxnet-memonger](https://github.com/dmlc/mxnet-memonger)
+* OpenAI's TensorFlow Implementation: [https://github.com/cybertronai/gradient-checkpointing](https://github.com/cybertronai/gradient-checkpointing)
+* PyTorch Implementation: [https://github.com/Lyken17/pytorch-memonger](https://github.com/Lyken17/pytorch-memonger)
 
 ## Understanding the paper
 
