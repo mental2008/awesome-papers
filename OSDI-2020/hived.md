@@ -1,12 +1,8 @@
----
-description: deep-learning-training, resource-reservation
----
-
 # HiveD: Sharing a GPU Cluster for Deep Learning with Guarantees
 
 ## Metadata
 
-Presented in [OSDI '20](https://www.usenix.org/conference/osdi20/presentation/zhao-hanyu). \[ [Paper](https://www.usenix.org/system/files/osdi20-zhao\_hanyu.pdf) | [Slides](https://www.usenix.org/sites/default/files/conference/protected-files/osdi20\_slides\_zhao.pdf) | [Video](https://www.youtube.com/watch?v=WYGxAZHccts) | [Code](https://github.com/microsoft/hivedscheduler) ]
+Presented in [OSDI 2020](https://www.usenix.org/conference/osdi20/presentation/zhao-hanyu). \[ [Paper](https://www.usenix.org/system/files/osdi20-zhao\_hanyu.pdf) | [Slides](https://www.usenix.org/sites/default/files/conference/protected-files/osdi20\_slides\_zhao.pdf) | [Video](https://www.youtube.com/watch?v=WYGxAZHccts) | [Code](https://github.com/microsoft/hivedscheduler) ]
 
 Authors: Hanyu Zhao, _Peking University and Microsoft_; Zhenhua Han, _The University of Hong Kong and Microsoft_; Zhi Yang, _Peking University_; Quanlu Zhang, Fan Yang, Lidong Zhou, and Mao Yang, _Microsoft_; Francis C.M. Lau, _The University of Hong Kong_; Yuqi Wang, Yifan Xiong, and Bin Wang, _Microsoft_
 
@@ -33,10 +29,10 @@ Currently, there is no framework to consider sharing anomaly in multi-tenant GPU
   * Level-4 cell: Node (8 GPUs)
   * Level-5 cell: Rack (multi-node)
 
-![System architecture: a two-layer design](../../.gitbook/assets/hived/system-arch.png)
+![System architecture: a two-layer design](hived-system-arch.png)
 
 * HiveD separates **resource reservation** and **resource allocation** (which is determined by schedulers). Therefore, it can easily incorporate any state-of-the-art deep learning scheduler (e.g., YARN-CS, Gandiva, Tiresias), which means that each VC can apply a diverse scheduler to achieve different objectives (e.g., cluster utilization, job completion time, fairness).
-* HiveD have been open-sourced and integrated in [OpenPAI](https://github.com/microsoft/pai).
+* HiveD has been open-sourced and integrated in [OpenPAI](https://github.com/microsoft/pai).
 * HiveD can be extended to **other affinity-aware resources** (e.g., NUMA-aware resources like affinitized GPUs and CPU cores under the same socket).
 
 ### Weak points
@@ -53,15 +49,18 @@ As for me, it's hard to determine the VC assignment to each tenant, specially th
 
 ### Evaluation
 
-96-GPU cluster on Azure and trace-driven simulations (i.e., Philly trace).
+1. Experiments on a 96-GPU cluster on a public cloud
+	- Deployed on Azure.
+	- The cluster consists of 24 VMs, each with 4 NVIDIA K80 GPUs.
+2. Trace-driven simulations on a production workload (i.e., Philly trace).
 
-Choose three types of deep learning models: NLP, Speech (WaveNet, DeepSpeech), CV.
+Choose three types of deep learning models: CV, NLP, and Speech (WaveNet, DeepSpeech).
 
 ## Questions
 
-> How to define if a tenant suffer from sharing anomaly in the multi-tenant cluster?
+> How to define if a tenant suffers from sharing anomaly in the multi-tenant cluster?
 
-In the trace, the GPU _affinity_ requirements of most jobs are hard. Therefore, the authors use queueing delay to evaulate the cluster sharing anomaly. They also evaluate the JCT when job's affinity requirement is soft.
+In the trace, the GPU _affinity_ requirements of most jobs are hard. Therefore, the authors use queueing delay to evaluate the cluster sharing anomaly. They also evaluate the JCT when job's affinity requirement is soft.
 
 ## Related reference (for further reading)
 
