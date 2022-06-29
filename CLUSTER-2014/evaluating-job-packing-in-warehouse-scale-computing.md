@@ -1,8 +1,8 @@
 # Evaluating job packing in warehouse-scale computing
 
-## ​Metadata
+## Metadata
 
-Presented in [CLUSTER '14](https://static.googleusercontent.com/media/research.google.com/en/pubs/archive/43103.pdf).
+Presented in [CLUSTER 2014](https://static.googleusercontent.com/media/research.google.com/en/pubs/archive/43103.pdf).
 
 Authors: Abhishek Verma, Madhukar Korupolu, John Wilkes
 

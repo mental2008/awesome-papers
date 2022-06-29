@@ -16,6 +16,10 @@ Other related link: TBD
 
 ## Understanding the paper
 
+### TL;DR
+
+TBD
+
 ### Key motivation
 
 TBD
