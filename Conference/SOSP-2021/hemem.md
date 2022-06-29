@@ -12,7 +12,7 @@ Authors: Amanda Raybuck, Tim Stamler, Wei Zhang, Mattan Erez, Simon Peter _The U
 
 * Tiered Memory Management (i.e., hybrid DRAM-NVM architecture)
 
-![DRAM + NVM tiered memory](https://user-images.githubusercontent.com/22493630/144881779-60eaf835-253e-43e4-b79e-7dbbd20b1903.png)
+![DRAM + NVM tiered memory](hemem-dram-nvm-tired-memory.png)
 
 ### Existing problems
 
