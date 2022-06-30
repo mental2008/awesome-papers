@@ -12,7 +12,7 @@
     * [SIGCOMM 2007](Conference/SIGCOMM-2007/README.md)
         * [How to Read a Paper](Conference/SIGCOMM-2007/how-to-read-a-paper.md)
     * [SIGCOMM 2021](Conference/SIGCOMM-2021/README.md)
-        * [Data-driven Networking Research: models for academic collaboration with industry (a Google point of view)](Conference/SIGCOMM-2021/data-driven-networking-research-models-for-academic-collaboration-with-industry.md)
+        * [Data-driven Networking Research: models for academic collaboration with industry](Conference/SIGCOMM-2021/data-driven-networking-research-models-for-academic-collaboration-with-industry.md)
     * [SoCC 2020](Conference/SoCC-2020/README.md)
         * [Elastic Parameter Server Load Distribution in Deep Learning Clusters](Conference/SoCC-2020/elastic-parameter-server-load-distribution-in-deep-learning-clusters.md)
     * [SOSP 2021](Conference/SOSP-2021/README.md)

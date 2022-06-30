@@ -2,7 +2,7 @@
 
 ## Metadata
 
-Paper: Data-driven Networking Research: models for academic collaboration with industry (a Google point of view)
+Full name of the paper: Data-driven Networking Research: models for academic collaboration with industry (a Google point of view)
 
 Presented in [SIGCOMM Computer Communication Review 2021](https://dl.acm.org/doi/10.1145/3503954.3503960).
 
