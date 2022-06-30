@@ -49,7 +49,7 @@ Question: How to maximize the performance of big data applications on **real NVM
 
 This paper presents HeMem, an OS tiered memory management system that dynamically manages tiered memory **without the CPU overhead** of page access bit tracking, associated TLB shootdowns, and memory copies, but **with advanced policy support** for various memory access and allocation patterns, as well as performance isolation.
 
-![The design of HeMem](https://user-images.githubusercontent.com/22493630/144960480-0a275b2e-212a-4474-b95a-c7172ce2b575.png)
+![The design of HeMem](hemem-design.png)
 
 ### Implementation
 

@@ -5,6 +5,8 @@
 * [Conference](Conference/README.md)
     * [CLUSTER 2014](Conference/CLUSTER-2014/README.md)
         * [Evaluating job packing in warehouse-scale computing](Conference/CLUSTER-2014/evaluating-job-packing-in-warehouse-scale-computing.md)
+    * [HotOS 2021](Conference/HotOS-2021/README.md)
+        * [From cloud computing to sky computing](Conference/HotOS-2021/sky-computing.md)
     * [OSDI 2020](Conference/OSDI-2020/README.md)
         * [HiveD: Sharing a GPU Cluster for Deep Learning with Guarantees](Conference/OSDI-2020/hived.md)
     * [SIGCOMM 2007](Conference/SIGCOMM-2007/README.md)
