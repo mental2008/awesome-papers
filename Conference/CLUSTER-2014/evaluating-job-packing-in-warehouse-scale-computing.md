@@ -8,9 +8,9 @@ Authors: Abhishek Verma, Madhukar Korupolu, John Wilkes
 
 ## Understanding the paper
 
-The paper compares four metrics for evaluating the packing efficiency of schedulers.
+The paper compares **four metrics** for evaluating the packing efficiency of schedulers.
 
-1. Aggregate utilization
+1. **Aggregate utilization**
    * Metric: the allocation rate of each type (e.g., CPU, RAM).
    * Adv.
      * Simple, most commonly used.
@@ -18,14 +18,14 @@ The paper compares four metrics for evaluating the packing efficiency of schedul
      * Cannot distinguish between schedulers that place all tasks.
      * Hide fragmentation effects.
      * Hide stranding resources.
-2. Hole filling
+2. **Hole filling**
    * Method: count how many appropriately-sized units of size U can fit into the holes.
    * Adv.
      * Fast and simple.
    * Disadv.
      * Ignore constraints.
      * Ignore heterogeneity of workloads.
-3. Workload inflation
+3. **Workload inflation**
    * Method: scale up the original workload until it no longer fits.
    * An improved version of hole filling (consider the heterogeneity).
    * **Perspective of workloads.**
@@ -37,7 +37,7 @@ The paper compares four metrics for evaluating the packing efficiency of schedul
      * Answer "what if?" questions about future workload growth.
    * Disadv.
      * Multiple policy choices.
-4. Cluster compaction
+4. **Cluster compaction**
    * Method: shrink the cluster until the workload no longer fits.
    * **Perspective of machines.**
    * Evaluation methodology in Borg.
@@ -58,3 +58,4 @@ The paper compares four metrics for evaluating the packing efficiency of schedul
 |  Attributes/constraints |           no          |           no           |         yes        |         yes        |
 |    Time for computation |        < 1 min        |       \~ 30 mins       |     \~ 2 hours     |     \~ 5 hours     |
 |    Context where useful |  quick approximation  | fixed-size slot counts |  cluster operators |  capacity planners |
+

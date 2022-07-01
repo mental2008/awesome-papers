@@ -1,10 +1,10 @@
-# HiveD: Sharing a GPU Cluster for Deep Learning with Guarantees
+# HiveD: Sharing a GPU cluster for deep learning with guarantees
 
 ## Metadata
 
 Presented in [OSDI 2020](https://www.usenix.org/conference/osdi20/presentation/zhao-hanyu). \[ [Paper](https://www.usenix.org/system/files/osdi20-zhao\_hanyu.pdf) | [Slides](https://www.usenix.org/sites/default/files/conference/protected-files/osdi20\_slides\_zhao.pdf) | [Video](https://www.youtube.com/watch?v=WYGxAZHccts) | [Code](https://github.com/microsoft/hivedscheduler) ]
 
-Authors: Hanyu Zhao, _Peking University and Microsoft_; Zhenhua Han, _The University of Hong Kong and Microsoft_; Zhi Yang, _Peking University_; Quanlu Zhang, Fan Yang, Lidong Zhou, and Mao Yang, _Microsoft_; Francis C.M. Lau, _The University of Hong Kong_; Yuqi Wang, Yifan Xiong, and Bin Wang, _Microsoft_
+Authors: Hanyu Zhao, Zhenhua Han, Zhi Yang, Quanlu Zhang, Fan Yang, Lidong Zhou, Mao Yang, Francis C.M. Lau, Yuqi Wang, Yifan Xiong, Bin Wang
 
 ## Understanding the paper
 
@@ -43,24 +43,23 @@ As for me, it's hard to determine the VC assignment to each tenant, specially th
 
 ### Implementation
 
-> HiveD is implemented in 7,700+ lines of **Go** codes. It is implemented as a _scheduler extender_, a standalone process that works in tandem with the Kubernetes default scheduler.
->
-> HiveD is deployed as a Kubernetes StatefulSet to ensure a single running instance. And it partitions and stores the cell binding decision for each pod in its "pod annotation".
+HiveD is implemented in 7,700+ lines of **Go** codes. It is implemented as a _scheduler extender_, a standalone process that works in tandem with the Kubernetes default scheduler.
+
+HiveD is deployed as a Kubernetes StatefulSet to ensure a single running instance. And it partitions and stores the cell binding decision for each pod in its "pod annotation".
 
 ### Evaluation
 
 1. Experiments on a 96-GPU cluster on a public cloud
-	- Deployed on Azure.
-	- The cluster consists of 24 VMs, each with 4 NVIDIA K80 GPUs.
+    - Deployed on Azure.
+    - The cluster consists of 24 VMs, each with 4 NVIDIA K80 GPUs.
 2. Trace-driven simulations on a production workload (i.e., Philly trace).
 
 Choose three types of deep learning models: CV, NLP, and Speech (WaveNet, DeepSpeech).
 
 ## Questions
 
-> How to define if a tenant suffers from sharing anomaly in the multi-tenant cluster?
-
-In the trace, the GPU _affinity_ requirements of most jobs are hard. Therefore, the authors use queueing delay to evaluate the cluster sharing anomaly. They also evaluate the JCT when job's affinity requirement is soft.
+- How to define if a tenant suffers from sharing anomaly in the multi-tenant cluster?
+    - In the trace, the GPU _affinity_ requirements of most jobs are hard. Therefore, the authors use queueing delay to evaluate the cluster sharing anomaly. They also evaluate the JCT when job's affinity requirement is soft.
 
 ## Related reference (for further reading)
 
@@ -86,3 +85,4 @@ In the trace, the GPU _affinity_ requirements of most jobs are hard. Therefore, 
 > Fan Yang thanks the late Pearl, his beloved cat, for her faithful companion during writing this paper.
 
 Funny to see this ;-)
+

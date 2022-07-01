@@ -7,6 +7,7 @@ Presented in [NSDI 2017](https://www.usenix.org/conference/nsdi17/technical-sess
 Authors: Daniel Crankshaw, Xin Wang, Guilio Zhou, Michael J. Franklin, Joseph E. Gonzalez, Ion Stoica
 
 Homepage: [http://www.clipper.ai/](http://www.clipper.ai/)
+
 Code: [https://github.com/ucbrise/clipper](https://github.com/ucbrise/clipper)
 
 ## Understanding the paper
@@ -23,8 +24,9 @@ This paper presents a general-purpose model serving system named **Clipper**, wh
 
 ### Technical details
 
+![The architecture of Clipper](clipper-architecture.png)
+
 - Clipper is divided into two layers.
-    - ![The architecture of Clipper](clipper-architecture.png)
     - **Model abstraction layer**: provide a common interface across machine learning frameworks.
         - **Caching**: maintain a prediction cache, LRU eviction policy.
         - **Adaptive query-batching**: batching amortizes the cost and enables data-parallel optimizations in ML frameworks.

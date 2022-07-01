@@ -4,7 +4,7 @@
 
 Presented in [HotOS 2021](https://doi.org/10.1145/3458336.3465301).
 
-Authors: Ion Stoica, Scott Shenker.
+Authors: Ion Stoica, Scott Shenker
 
 ## Understanding the paper
 

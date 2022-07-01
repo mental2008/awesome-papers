@@ -16,7 +16,7 @@
     * [NSDI 2017](Conference/NSDI-2017/README.md)
         * [Clipper: A low-latency online prediction serving system](Conference/NSDI-2017/clipper.md)
     * [OSDI 2020](Conference/OSDI-2020/README.md)
-        * [HiveD: Sharing a GPU Cluster for Deep Learning with Guarantees](Conference/OSDI-2020/hived.md)
+        * [HiveD: Sharing a GPU cluster for deep learning with guarantees](Conference/OSDI-2020/hived.md)
     * [OSDI 2021](Conference/OSDI-2021/README.md)
         * [Pollux: Co-adaptive cluster scheduling for goodput-optimized deep learning](Conference/OSDI-2021/pollux.md)
     * [SIGCOMM 2007](Conference/SIGCOMM-2007/README.md)

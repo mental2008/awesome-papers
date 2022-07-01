@@ -17,8 +17,8 @@ This paper presents a deep learning cluster scheduler named **Pollux**, which co
 ### Background
 
 - The running time of each training iteration can be divided into two main components.
-    - $\text{T}_{\text{grad}}$: the time spent computing the gradient.
-    - $\text{T}_{\text{sync}}$: the time spent synchronizing across all GPUs.
+    - The time spent computing the gradient.
+    - The time spent synchronizing across all GPUs.
         - Collective all-reduce => average gradient
         - Parameter servers => synchronize weight
 - GNS (noise-to-signal ratio of the stochastic gradient)
