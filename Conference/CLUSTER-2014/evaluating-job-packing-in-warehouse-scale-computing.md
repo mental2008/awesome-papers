@@ -24,10 +24,10 @@ The paper compares four metrics for evaluating the packing efficiency of schedul
      * Fast and simple.
    * Disadv.
      * Ignore constraints.
-     * Ignore heterogenity of workloads.
+     * Ignore heterogeneity of workloads.
 3. Workload inflation
    * Method: scale up the original workload until it no longer fits.
-   * An improved version of hole filling (consider the heterogenity).
+   * An improved version of hole filling (consider the heterogeneity).
    * **Perspective of workloads.**
    * Details
      * Horizontal scaling.
