@@ -4,7 +4,7 @@
 
 Presented in [SoCC '20](https://dl.acm.org/doi/10.1145/3419111.3421307). \[ [Paper](https://dl.acm.org/doi/pdf/10.1145/3419111.3421307) ]
 
-Authors: Yangrui Chen, Yanghua Peng, Yixin Bao, Chuan Wu, Yibo Zhu, Chuanxiong Guo _The University of Hong Kong, ByteDance Inc._
+Authors: Yangrui Chen, Yanghua Peng, Yixin Bao, Chuan Wu, Yibo Zhu, Chuanxiong Guo
 
 ## Understanding the paper
 

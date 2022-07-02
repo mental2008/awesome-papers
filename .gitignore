@@ -1,1 +1,5 @@
+# macOS related files
 **/.DS_Store
+
+# generated book files
+_book/

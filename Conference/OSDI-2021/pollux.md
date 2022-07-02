@@ -6,7 +6,9 @@ Presented in [OSDI 2021](https://www.usenix.org/conference/osdi21/presentation/q
 
 Authors: Aurick Qiao, Sang Keun Choe, Suhas Jayaram Subramanya, Willie Neiswanger, Qirong Ho, Hao Zhang, Gregory R. Ganger, Eric P. Xing
 
-Code: [https://github.com/petuum/adaptdl](https://github.com/petuum/adaptdl)
+### Code
+
+- AdaptDL: [https://github.com/petuum/adaptdl](https://github.com/petuum/adaptdl)
 
 ## Understanding the paper
 

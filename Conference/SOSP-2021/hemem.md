@@ -4,7 +4,7 @@
 
 Presented in [SOSP '21](https://dl.acm.org/doi/10.1145/3477132.3483550). \[ [Paper](https://dl.acm.org/doi/pdf/10.1145/3477132.3483550) | [Video](https://www.youtube.com/watch?v=JL2Takrgu78) | [Code](https://bitbucket.org/ajaustin/hemem/src/sosp-submission) ]
 
-Authors: Amanda Raybuck, Tim Stamler, Wei Zhang, Mattan Erez, Simon Peter _The University of Texas at Austin, Microsoft_
+Authors: Amanda Raybuck, Tim Stamler, Wei Zhang, Mattan Erez, Simon Peter
 
 ## Understanding the paper
 
