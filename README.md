@@ -25,9 +25,9 @@ After a few months of practice, I'm currently using [Zotero](https://www.zotero.
 After some consideration, I'm going to manage this paper repository in the following way:
 
 1. Every once in a while (tentatively a week), I will organize some interesting papers that I have read carefully during that time and upload their notes to the [GitHub repository](https://github.com/mental2008/awesome-papers), which can be read easily on the [website](https://paper.yanglingyun.me/).
-2. If you find a paper that interests you in my reading notes, free free to create an issue and have a conversation with me.
-3. Even if the paper you are interested in is not in my notes, you can also create an issue to let me know, and I will read it and give you my thoughts if I have time.
-4. Welcome to submit a pull request if you find any typos.
+2. If you find a paper that interests you in my reading notes, free free to [create an issue](https://github.com/mental2008/awesome-papers/issues/new) and have a conversation with me.
+3. Even if the paper you are interested in is not in my notes, you can also [create an issue](https://github.com/mental2008/awesome-papers/issues/new) to let me know, and I will read it and give you my thoughts if I have time.
+4. Welcome to [submit a pull request](https://github.com/mental2008/awesome-papers/pulls) if you find any typos.
 
 ## Finally
 
