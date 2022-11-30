@@ -12,7 +12,7 @@ Authors: Amanda Raybuck, Tim Stamler, Wei Zhang, Mattan Erez, Simon Peter
 
 * Tiered Memory Management (i.e., hybrid DRAM-NVM architecture)
 
-![DRAM + NVM tiered memory](hemem-dram-nvm-tired-memory.png)
+![DRAM + NVM tiered memory](../../../Conference/SOSP-2021/hemem-dram-nvm-tired-memory.png)
 
 ### Existing problems
 
@@ -49,7 +49,7 @@ Question: How to maximize the performance of big data applications on **real NVM
 
 This paper presents HeMem, an OS tiered memory management system that dynamically manages tiered memory **without the CPU overhead** of page access bit tracking, associated TLB shootdowns, and memory copies, but **with advanced policy support** for various memory access and allocation patterns, as well as performance isolation.
 
-![The design of HeMem](hemem-design.png)
+![The design of HeMem](../../../Conference/SOSP-2021/hemem-design.png)
 
 ### Implementation
 

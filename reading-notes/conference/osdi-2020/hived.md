@@ -29,7 +29,7 @@ Currently, there is no framework to consider sharing anomaly in multi-tenant GPU
   * Level-4 cell: Node (8 GPUs)
   * Level-5 cell: Rack (multi-node)
 
-![System architecture: a two-layer design](hived-system-arch.png)
+![System architecture: a two-layer design](../../../Conference/OSDI-2020/hived-system-arch.png)
 
 * HiveD separates **resource reservation** and **resource allocation** (which is determined by schedulers). Therefore, it can easily incorporate any state-of-the-art deep learning scheduler (e.g., YARN-CS, Gandiva, Tiresias), which means that each VC can apply a diverse scheduler to achieve different objectives (e.g., cluster utilization, job completion time, fairness).
 * HiveD has been open-sourced and integrated in [OpenPAI](https://github.com/microsoft/pai).
@@ -50,16 +50,16 @@ HiveD is deployed as a Kubernetes StatefulSet to ensure a single running instanc
 ### Evaluation
 
 1. Experiments on a 96-GPU cluster on a public cloud
-    - Deployed on Azure.
-    - The cluster consists of 24 VMs, each with 4 NVIDIA K80 GPUs.
+   * Deployed on Azure.
+   * The cluster consists of 24 VMs, each with 4 NVIDIA K80 GPUs.
 2. Trace-driven simulations on a production workload (i.e., Philly trace).
 
 Choose three types of deep learning models: CV, NLP, and Speech (WaveNet, DeepSpeech).
 
 ## Questions
 
-- How to define if a tenant suffers from sharing anomaly in the multi-tenant cluster?
-    - In the trace, the GPU _affinity_ requirements of most jobs are hard. Therefore, the authors use queueing delay to evaluate the cluster sharing anomaly. They also evaluate the JCT when job's affinity requirement is soft.
+* How to define if a tenant suffers from sharing anomaly in the multi-tenant cluster?
+  * In the trace, the GPU _affinity_ requirements of most jobs are hard. Therefore, the authors use queueing delay to evaluate the cluster sharing anomaly. They also evaluate the JCT when job's affinity requirement is soft.
 
 ## Related reference (for further reading)
 
@@ -85,4 +85,3 @@ Choose three types of deep learning models: CV, NLP, and Speech (WaveNet, DeepSp
 > Fan Yang thanks the late Pearl, his beloved cat, for her faithful companion during writing this paper.
 
 Funny to see this ;-)
-

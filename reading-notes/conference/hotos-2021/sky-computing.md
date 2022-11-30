@@ -27,11 +27,12 @@ Previous designs of sky computing focus on particular technical solutions and ta
 #### Analogy between the Internet and Sky Computing
 
 What we need in sky computing:
+
 1. **A compatibility layer**: mask low-level technical differences.
 2. **An intercloud layer**: route jobs to the right cloud.
 3. **A peering laye**r: allow cloud to have agreements with each other about how to exchange services.
 
-![The analogy between the Internet and Sky Computing](analogy-between-the-internet-and-sky-computing.png)
+![The analogy between the Internet and Sky Computing](../../../Conference/HotOS-2021/analogy-between-the-internet-and-sky-computing.png)
 
 #### Compatibility layer
 
@@ -49,7 +50,7 @@ The intercloud layer must **allow users to specify policies about where their jo
 
 #### Peering layer
 
-Today, most clouds have pricing policies where **moving data into a cloud** is much *cheaper* than **moving it out**. It creates a strong incentive for users to **process data in the same cloud** in which it currently resides. But in some cases moving jobs is still worthwhile.
+Today, most clouds have pricing policies where **moving data into a cloud** is much _cheaper_ than **moving it out**. It creates a strong incentive for users to **process data in the same cloud** in which it currently resides. But in some cases moving jobs is still worthwhile.
 
 Why not clouds enter into reciprocal data peering arrangements, where they agree to **allow free exporting of data to each other** and to **connect with high-speed links**?
 
@@ -58,16 +59,15 @@ Why not clouds enter into reciprocal data peering arrangements, where they agree
 Once a compatibility layer and an intercloud layer are in place, cloud providers will fall into two categories:
 
 1. **Stand-alone** cloud providers
-    - Lock customers in with proprietary interfaces and data export fees.
-    - Large enough to offer a variety of proprietary services.
+   * Lock customers in with proprietary interfaces and data export fees.
+   * Large enough to offer a variety of proprietary services.
 2. **Sky** cloud providers
-    - Directly support the compatibility layer.
-    - Agree to reciprocal data peering with other commodity cloud providers.
-    - Specialize in supporting one or more services.
+   * Directly support the compatibility layer.
+   * Agree to reciprocal data peering with other commodity cloud providers.
+   * Specialize in supporting one or more services.
 
 Some thoughts from the authors:
 
-- In the long term, we will continue to have both kinds of providers.
-- Smaller cloud providers are more expected to embrace the compatibility layer.
-- The collective sky can counterbalance the large proprietary clouds and allow them to focus their innovation efforts more narrowly.
-
+* In the long term, we will continue to have both kinds of providers.
+* Smaller cloud providers are more expected to embrace the compatibility layer.
+* The collective sky can counterbalance the large proprietary clouds and allow them to focus their innovation efforts more narrowly.
