@@ -5,6 +5,7 @@
 ## Paper List
 
 * [Scheduling for DL Workloads](paper-list/scheduling-for-dl-workloads.md)
+* [Systems for ML](paper-list/systems-for-ml.md)
 * [GPU Sharing](paper-list/gpu-sharing.md)
 * [GPU Disaggregation](paper-list/gpu-disaggregation.md)
 * [Resource Fragmentation](paper-list/resource-fragmentation.md)
