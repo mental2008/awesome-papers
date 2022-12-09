@@ -61,27 +61,4 @@ Choose three types of deep learning models: CV, NLP, and Speech (WaveNet, DeepSp
 * How to define if a tenant suffers from sharing anomaly in the multi-tenant cluster?
   * In the trace, the GPU _affinity_ requirements of most jobs are hard. Therefore, the authors use queueing delay to evaluate the cluster sharing anomaly. They also evaluate the JCT when job's affinity requirement is soft.
 
-## Related reference (for further reading)
-
-**Doc**
-
-* Scheduler extender. [https://github.com/kubernetes/community/blob/master/contributors/design-proposals/scheduling/scheduler\_extender.md](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/scheduling/scheduler\_extender.md), Jan. 2019.
-* Kubernetes topology manager. [https://kubernetes.io/blog/2020/04/01/kubernetes-1-18-feature-topoloy-manager-beta](https://kubernetes.io/blog/2020/04/01/kubernetes-1-18-feature-topoloy-manager-beta), 2020.
-
-**Resource fragmentation**
-
-* Dror G Feitelson. Packing schemes for gang scheduling. In _Workshop on Job Scheduling Strategies for Parallel Processing_, pages 89–110. Springer, 1996.
-* Robert Grandl, Ganesh Ananthanarayanan, Srikanth Kandula, Sriram Rao, and Aditya Akella. Multi- resource packing for cluster schedulers. _ACM SIG- COMM Computer Communication Review_, 44(4):455– 466, 2015.
-* Mark S Johnstone and Paul R Wilson. The memory fragmentation problem: Solved? _ACM Sigplan Notices_, 34(3):26–36, 1998.
-
-**DL schedulers**
-
-* Juncheng Gu, Mosharaf Chowdhury, Kang G. Shin, Yibo Zhu, Myeongjae Jeon, Junjie Qian, Hongqiang Liu, and Chuanxiong Guo. Tiresias: A GPU cluster manager for distributed deep learning. In _16th USENIX Sympo- sium on Networked Systems Design and Implementation (NSDI 19)_, Boston, MA, 2019.
-* Myeongjae Jeon, Shivaram Venkataraman, Amar Phan- ishayee, Junjie Qian, Wencong Xiao, and Fan Yang. Analysis of large-scale multi-tenant GPU clusters for DNN training workloads. In _2019 USENIX Annual Technical Conference (USENIX ATC 19)_, pages 947– 960, Renton, WA, July 2019. USENIX Association.
-* Wencong Xiao, Romil Bhardwaj, Ramachandran Ram- jee, Muthian Sivathanu, Nipun Kwatra, Zhenhua Han, Pratyush Patel, Xuan Peng, Hanyu Zhao, Quanlu Zhang, et al. Gandiva: Introspective cluster scheduling for deep learning. In _13th USENIX Symposium on Operating Systems Design and Implementation (OSDI 18)_, pages 595–610, 2018.
-
-## Others
-
-> Fan Yang thanks the late Pearl, his beloved cat, for her faithful companion during writing this paper.
-
-Funny to see this ;-)
+****

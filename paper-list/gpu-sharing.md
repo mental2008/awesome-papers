@@ -2,13 +2,13 @@
 
 ## GPU Time Sharing
 
-* \[KubeShare | National Tsing Hua University | HPDC 2020] [KubeShare: A framework to manage GPUs as first-class and shared resources in container cloud](https://doi.org/10.1145/3369583.3392679)
+* \[**KubeShare** | National Tsing Hua University | HPDC 2020] [KubeShare: A framework to manage GPUs as first-class and shared resources in container cloud](https://doi.org/10.1145/3369583.3392679)
 
 {% content-ref url="../Conference/HPDC-2020/kubeshare.md" %}
 [kubeshare.md](../Conference/HPDC-2020/kubeshare.md)
 {% endcontent-ref %}
 
-* \[GaiaGPU | Tencent & PKU | ISPA/IUCC/BDCloud/SocialCom/SustainCom 2018] [GaiaGPU: Sharing GPUs in container clouds](https://ieeexplore.ieee.org/document/8672318/)
+* \[**GaiaGPU** | Tencent & PKU | ISPA/IUCC/BDCloud/SocialCom/SustainCom 2018] [GaiaGPU: Sharing GPUs in container clouds](https://ieeexplore.ieee.org/document/8672318/)
 
 {% content-ref url="../Conference/ISPA-IUCC-BDCloud-SocialCom-SustainCom-2018/gaiagpu.md" %}
 [gaiagpu.md](../Conference/ISPA-IUCC-BDCloud-SocialCom-SustainCom-2018/gaiagpu.md)
