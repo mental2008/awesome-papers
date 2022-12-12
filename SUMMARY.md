@@ -31,6 +31,8 @@
     * [Elastic Parameter Server Load Distribution in Deep Learning Clusters](Conference/SoCC-2020/elastic-parameter-server-load-distribution-in-deep-learning-clusters.md)
   * [HPDC 2020](Conference/HPDC-2020/README.md)
     * [KubeShare: A framework to manage GPUs as first-class and shared resources in container cloud](Conference/HPDC-2020/kubeshare.md)
+  * [OSDI 2018](reading-notes/conference/osdi-2018/README.md)
+    * [Ray: A distributed framework for emerging AI applications](reading-notes/conference/osdi-2018/ray-a-distributed-framework-for-emerging-ai-applications.md)
   * [ISPA/IUCC/BDCloud/SocialCom/SustainCom 2018](Conference/ISPA-IUCC-BDCloud-SocialCom-SustainCom-2018/README.md)
     * [GaiaGPU: Sharing GPUs in container clouds](Conference/ISPA-IUCC-BDCloud-SocialCom-SustainCom-2018/gaiagpu.md)
   * [NSDI 2017](Conference/NSDI-2017/README.md)
