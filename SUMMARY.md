@@ -52,6 +52,7 @@
     * [How to Read a Paper](Conference/SIGCOMM-2007/how-to-read-a-paper.md)
 * [Miscellaneous](Miscellaneous/README.md)
   * [arXiv](reading-notes/miscellaneous/arxiv/README.md)
+    * [A case for disaggregation of ML data processing](reading-notes/miscellaneous/arxiv/a-case-for-disaggregation-of-ml-data-processing.md)
     * [Singularity: Planet-scale, preemptive and elastic scheduling of AI workloads](reading-notes/miscellaneous/arxiv/singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md)
     * [Training Deep Nets with Sublinear Memory Cost](Miscellaneous/arXiv-2016/training-deep-nets-with-sublinear-memory-cost.md)
 
