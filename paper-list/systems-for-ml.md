@@ -2,8 +2,8 @@
 
 ## Data Pre-processing
 
-* \[Meta's end-to-end data storage and ingestion (**DSI**) pipeline | ISCA 2022 | Industry Track] [Understanding data storage and ingestion for large-scale deep recommendation model training](https://doi.org/10.1145/3470496.3533044)
 * \[**tf.data service** | arXiv 2210.14826 | ETH & Google] [A case for disaggregation of ML data processing](https://arxiv.org/abs/2210.14826)
+* \[Meta's end-to-end data storage and ingestion (**DSI**) pipeline | ISCA 2022 | Industry Track] [Understanding data storage and ingestion for large-scale deep recommendation model training](https://doi.org/10.1145/3470496.3533044)
 
 ## Scheduling for DL Workloads
 
@@ -12,6 +12,8 @@
 * \[**Muri** | PKU & ByteDance | SIGCOMM 2022] [Multi-resource interleaving for deep learning training](https://doi.org/10.1145/3544216.3544224)
   * Pack jobs along multiple resource types in the time dimension.
   * Integrate with PyTorch.
+* \[**Singularity** | Microsoft | arXiv 2202.07848] [Singularity: Planet-scale, preemptive and elastic scheduling of AI workloads](https://arxiv.org/abs/2202.07848)
+  * Enable live GPU job migration.
 * \[**MAPA** | Topology-aware scheduling | SC 2021] [MAPA: Multi-accelerator pattern allocation policy for multi-tenant GPU servers](https://doi.org/10.1145/3458817.3480853)
   * Emerging multi-GPU accelerator topologies.
 * \[**AntMan** | Alibaba | OSDI 2020] [AntMan: Dynamic scaling on GPU clusters for deep learning](https://www.usenix.org/conference/osdi20/presentation/xiao)
@@ -34,6 +36,7 @@
   * Hyper-parameter tuning jobs.
   * Job packing; migration; grow-shrink; time-slicing.
 * \[**Topology-aware scheduling** | SC 2017] [Topology-aware GPU scheduling for learning workloads in cloud environments](https://doi.org/10.1145/3126908.3126933)
+  * Multiple link technologies such as PCI-e and NVLink.
 
 ### Trace Analysis
 
@@ -46,7 +49,14 @@
 
 \[NTU & PKU & SenseTime | arXiv 2205.11913] [Deep Learning Workload Scheduling in GPU Datacenters: Taxonomy, Challenges and Vision](https://arxiv.org/abs/2205.11913)
 
-## Auto configuration for Model Serving
+## Model Serving
+
+### Auto Configuration
 
 * \[**Falcon** | CAS | SoCC 2022] [Serving unseen deep learning models with near-optimal configurations: A fast adaptive search approach](https://doi.org/10.1145/3542929.3563485)
 * \[**Morphling** | HKUST & Alibaba | SoCC 2021] [Morphling: Fast, near-optimal auto-configuration for cloud-native model serving](https://doi.org/10.1145/3472883.3486987)
+
+### Survey
+
+* \[George Mason University & Microsoft & University of Maryland | arXiv 2203.09040] [A survey of multi-tenant deep learning inference on GPU](https://arxiv.org/abs/2203.09040)
+* \[George Mason University & Microsoft & University of Pittsburgh & University of Maryland | arXiv 2111.14247] [A survey of large-scale deep learning serving system optimization: Challenges and opportunities](https://arxiv.org/abs/2111.14247)
