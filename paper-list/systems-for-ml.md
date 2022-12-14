@@ -15,7 +15,10 @@
 * \[**Singularity** | Microsoft | arXiv 2202.07848] [Singularity: Planet-scale, preemptive and elastic scheduling of AI workloads](https://arxiv.org/abs/2202.07848)
   * Enable live GPU job migration.
 * \[**MAPA** | Topology-aware scheduling | SC 2021] [MAPA: Multi-accelerator pattern allocation policy for multi-tenant GPU servers](https://doi.org/10.1145/3458817.3480853)
-  * Emerging multi-GPU accelerator topologies.
+  * Consider emerging multi-GPU accelerator topologies such as single/double NVLink.
+* \[**Astraea** | PKU & NTU & SenseTime | TPDS 2021] [Astraea: A fair deep learning scheduler for multi-tenant GPU clusters](https://ieeexplore.ieee.org/abstract/document/9655467)
+  * Long-term GPU-time fairness.
+  * Consider both the temporal and spatial impacts; both at the tenant and job levels.
 * \[**AntMan** | Alibaba | OSDI 2020] [AntMan: Dynamic scaling on GPU clusters for deep learning](https://www.usenix.org/conference/osdi20/presentation/xiao)
   * Co-locate resource-guarantee and opportunistic jobs.
 * \[**HiveD** | MSRA | OSDI 2020] [HiveD: Sharing a GPU cluster for deep learning with guarantees](https://www.usenix.org/conference/osdi20/presentation/zhao-hanyu)
@@ -25,6 +28,8 @@
 [hived.md](../Conference/OSDI-2020/hived.md)
 {% endcontent-ref %}
 
+* \[**Gavel** | MSR & Stanford | OSDI 2020] [Heterogeneity-aware cluster scheduling policies for deep learning workloads](https://www.usenix.org/conference/osdi20/presentation/narayanan-deepak)
+  * Consider performance heterogeneity across multiple accelerator types.
 * \[**Themis** | UW-Madison & MSR | NSDI 2020] [Themis: Fair and efficient GPU cluster scheduling](https://www.usenix.org/conference/nsdi20/presentation/mahajan)
   * A long-term fairness metric, _finish-time_ fairness, which is the ratio of the running time in a shared cluster with N jobs to running alone in a 1/N cluster.
   * Minimize the maximum finish time fairness across all ML jobs.
@@ -36,13 +41,13 @@
   * Hyper-parameter tuning jobs.
   * Job packing; migration; grow-shrink; time-slicing.
 * \[**Topology-aware scheduling** | SC 2017] [Topology-aware GPU scheduling for learning workloads in cloud environments](https://doi.org/10.1145/3126908.3126933)
-  * Multiple link technologies such as PCI-e and NVLink.
+  * Consider multiple link technologies such as PCI-e and NVLink.
 
 ### Trace Analysis
 
-* \[HKUST & Alibaba PAI | NSDI 2022 | GPU sharing] [MLaaS in the Wild: Workload analysis and scheduling in large-scale heterogeneous GPU clusters](https://www.usenix.org/conference/nsdi22/presentation/weng) <mark style="background-color:orange;">\[Trace Released]</mark>
-* \[SenseTime **Helios** | NTU & SenseTime | SC 2021] [Characterization and prediction of deep learning workloads in large-scale GPU datacenters](https://doi.org/10.1145/3458817.3476223) <mark style="background-color:orange;">\[Trace Released]</mark>
-* \[Microsoft **Philly** | ATC 2019 | DL training] [Analysis of large-scale multi-tenant GPU clusters for DNN training workloads](https://www.usenix.org/conference/atc19/presentation/jeon) <mark style="background-color:orange;">\[Trace Released]</mark>
+* \[HKUST & Alibaba PAI | NSDI 2022 | GPU sharing] [MLaaS in the Wild: Workload analysis and scheduling in large-scale heterogeneous GPU clusters](https://www.usenix.org/conference/nsdi22/presentation/weng) <mark style="background-color:orange;">\[</mark>[<mark style="background-color:orange;">Trace Released</mark>](https://github.com/alibaba/clusterdata/tree/master/cluster-trace-gpu-v2020)<mark style="background-color:orange;">]</mark>
+* \[SenseTime **Helios** | NTU & SenseTime | SC 2021] [Characterization and prediction of deep learning workloads in large-scale GPU datacenters](https://doi.org/10.1145/3458817.3476223) <mark style="background-color:orange;">\[</mark>[<mark style="background-color:orange;">Trace Released</mark>](https://github.com/S-Lab-System-Group/HeliosData)<mark style="background-color:orange;">]</mark>
+* \[Microsoft **Philly** | ATC 2019 | DL training] [Analysis of large-scale multi-tenant GPU clusters for DNN training workloads](https://www.usenix.org/conference/atc19/presentation/jeon) <mark style="background-color:orange;">\[</mark>[<mark style="background-color:orange;">Trace Released</mark>](https://github.com/msr-fiddle/philly-traces)<mark style="background-color:orange;">]</mark>
 * \[Alibaba PAI | IISWC 2019 | DL training] [Characterizing Deep Learning Training Workloads on Alibaba-PAI](https://ieeexplore.ieee.org/document/9042047)
 
 ### Survey
@@ -50,6 +55,15 @@
 \[NTU & PKU & SenseTime | arXiv 2205.11913] [Deep Learning Workload Scheduling in GPU Datacenters: Taxonomy, Challenges and Vision](https://arxiv.org/abs/2205.11913)
 
 ## Model Serving
+
+### Inference Serving System
+
+* \[**INFaaS** | Stanford | ATC 2021] [INFaaS: Automated model-less inference serving](https://www.usenix.org/conference/atc21/presentation/romero)
+  * Consider diverse model-variants.
+  * VM-level horizontal autoscaling; model-level autoscaling.
+* \[**Clipper** | UC Berkeley | NSDI 2017] [Clipper: A low-latency online prediction serving system](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw)
+  * Communicate frameworks and applications through REST/RPC APIs, respectively.
+  * Caching; batching; adaptive model selection.
 
 ### Auto Configuration
 

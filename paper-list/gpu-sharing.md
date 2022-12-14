@@ -1,6 +1,6 @@
 # GPU Sharing
 
-## GPU Time Sharing
+## GPU Temporal Sharing
 
 * \[**KubeShare** | National Tsing Hua University | HPDC 2020] [KubeShare: A framework to manage GPUs as first-class and shared resources in container cloud](https://doi.org/10.1145/3369583.3392679)
 
