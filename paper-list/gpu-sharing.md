@@ -27,6 +27,6 @@
 
 * \[Queen’s University Belfast | ACM Computing Surveys 2017] [GPU virtualization and scheduling methods: A comprehensive survey](https://doi.org/10.1145/3068281)
 
-{% content-ref url="../Journal/ACM-Computing-Surveys-2017/gpu-virtualization-survey.md" %}
-[gpu-virtualization-survey.md](../Journal/ACM-Computing-Surveys-2017/gpu-virtualization-survey.md)
+{% content-ref url="../reading-notes/journal/acm-computing-surveys/gpu-virtualization-survey.md" %}
+[gpu-virtualization-survey.md](../reading-notes/journal/acm-computing-surveys/gpu-virtualization-survey.md)
 {% endcontent-ref %}
