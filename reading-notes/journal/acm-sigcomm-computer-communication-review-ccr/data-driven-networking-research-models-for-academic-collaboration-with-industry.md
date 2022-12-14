@@ -6,7 +6,7 @@ Title: Data-driven Networking Research: models for academic collaboration with i
 
 Presented in [SIGCOMM Computer Communication Review 2021](https://dl.acm.org/doi/10.1145/3503954.3503960).
 
-Authors: Jeffrey C. Mogul, Priya Mahadevan, Christophe Diot, John Wilkes, Phillipa Gill, Amin Vahdat
+Authors: Jeffrey C. Mogul, Priya Mahadevan, Christophe Diot, John Wilkes, Phillipa Gill, Amin Vahdat (_Google_)
 
 ## Understanding the paper
 
