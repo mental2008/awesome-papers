@@ -14,6 +14,11 @@
   * Integrate with PyTorch.
 * \[**Singularity** | Microsoft | arXiv 2202.07848] [Singularity: Planet-scale, preemptive and elastic scheduling of AI workloads](https://arxiv.org/abs/2202.07848)
   * Enable live GPU job migration.
+
+{% content-ref url="../reading-notes/miscellaneous/arxiv/singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md" %}
+[singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md](../reading-notes/miscellaneous/arxiv/singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md)
+{% endcontent-ref %}
+
 * \[**MAPA** | Topology-aware scheduling | SC 2021] [MAPA: Multi-accelerator pattern allocation policy for multi-tenant GPU servers](https://doi.org/10.1145/3458817.3480853)
   * Consider emerging multi-GPU accelerator topologies such as single/double NVLink.
 * \[**Astraea** | PKU & NTU & SenseTime | TPDS 2021] [Astraea: A fair deep learning scheduler for multi-tenant GPU clusters](https://ieeexplore.ieee.org/abstract/document/9655467)

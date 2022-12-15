@@ -28,42 +28,13 @@ Generally, two types of methods can be used to solve this problem. One is based 
 
 #### FFD-based heuristics
 
-* **FFDProd**
-
-$$
-w(I) = \prod_{i \le d} I_i
-$$
-
-* **FFDSum**
-
-$$
-w(I) = \sum_{i \le d} a_i I_i
-$$
-
-* **FFDAvgSum**
-
-$$
-a_i = \frac{1}{n} \sum_{l=1}^{n} I_i^l
-$$
-
-* **FFDExpSum**
-
-$$
-a_i = exp(\epsilon \cdot \frac{1}{n} \sum_{l=1}^{n} I_i^l)
-$$
+* **FFDProd**: **** $$w(I) = \prod_{i \le d} I_i$$****
+* **FFDSum**: $$w(I) = \sum_{i \le d} a_i I_i$$
+  * **FFDAvgSum**: $$a_i = \frac{1}{n} \sum_{l=1}^{n} I_i^l$$
+  * **FFDExpSum**: $$a_i = exp(\epsilon \cdot \frac{1}{n} \sum_{l=1}^{n} I_i^l)$$
 
 #### Heuristics that consider the item's demand `I` and the bin's remaining capacity `r(t)`
 
-* **Dot Product**: maximize
-
-$$
-\sum_i a_i I_i^l r(t)_i
-$$
-
-* **Norm-based Greedy (L\_n)**: minimize
-
-$$
-\sum_i a_i (I_i^l - r(t)_i)^n
-$$
-
-* **Grasp and Bubblesearch**: choose the _k_-th "largest" item, where _k_ is chosen with probability proportional to (1-p)^k. Random multiple times and pick the best allocation.
+* **Dot Product**: maximize $$\sum_i a_i I_i^l r(t)_i$$
+* **Norm-based Greedy (**$$L_n$$**)**: minimize $$\sum_i a_i (I_i^l - r(t)_i)^n$$
+* **Grasp and Bubblesearch**: choose the $$k$$-th "largest" item, where $$k$$ is chosen with probability proportional to $$(1-p)^k$$. Random multiple times and pick the best allocation.

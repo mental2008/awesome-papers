@@ -53,26 +53,26 @@ _The user focuses only on the ML task and does not need to think about checkpoin
 
 #### Device Proxy
 
-Intercept the CUDA API via the LD\_PRELOAD mechanism.
+Intercept the CUDA API via the `LD_PRELOAD` mechanism.
 
 Server component: one per device. Client component: embedded in each process interacting with the device.
 
 Two types of interceptors:
 
-* Dispatch Interceptors
+* Dispatch Interceptors ($$\text{D}_{\text{Int}}$$)
   * Ship the API cross-address-space to the device proxy server.
   * Handle serialization/deserialization of parameters/response.
-* Semantics-Aware Interceptors
+* Semantics-Aware Interceptors ($$\text{SA}_{\text{Int}}$$)
   * Memory allocation.
   * Communication. (Barrier)
   * Device Synchronization.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Overview of Device Proxy.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Overview of Device Proxy</p></figcaption></figure>
 
 #### Checkpoint device state
 
 * Model state (e.g., parameters) is checkpointed by the device-proxy process via device-to-host memcpy.
-* All stateful API calls (e.g., creation of context, stream, event, etc.) are annotated, and the $\text{D}\_{\text{Int\}}$ for those calls automatically log them for replay upon restore.
+* All stateful API calls (e.g., creation of context, stream, event, etc.) are annotated, and the $$\text{D}_{\text{Int}}$$ for those calls automatically log them for replay upon restore.
 
 #### Checkpoint communication state
 
@@ -81,7 +81,7 @@ Two types of interceptors:
 
 #### Checkpoint file system state
 
-* The libc I/O libraries (e.g., open, read, write, etc.) are intercepted by a $\text{SA}\_{\text{Int\}}$ to track/log updates made by the job to the local file system.
+* The libc I/O libraries (e.g., open, read, write, etc.) are intercepted by a $$\text{SA}_{\text{Int}}$$ to track/log updates made by the job to the local file system.
 * Mutated files can be migrated along with the process checkpoint.
 
 #### Checkpoint/Restore flow
