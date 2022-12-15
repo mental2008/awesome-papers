@@ -19,6 +19,13 @@
 [singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md](../reading-notes/miscellaneous/arxiv/singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md)
 {% endcontent-ref %}
 
+* \[**Pollux** | Petuum & CMU | OSDI 2021] [Pollux: Co-adaptive cluster scheduling for goodput-optimized deep learning](https://www.usenix.org/conference/osdi21/presentation/qiao)
+  * Co-adaptively allocates resources (number of GPUs) and tunes the hyperparameters (batch size and learning rate) for all DL training jobs.
+
+{% content-ref url="../Conference/OSDI-2021/pollux.md" %}
+[pollux.md](../Conference/OSDI-2021/pollux.md)
+{% endcontent-ref %}
+
 * \[**MAPA** | Topology-aware scheduling | SC 2021] [MAPA: Multi-accelerator pattern allocation policy for multi-tenant GPU servers](https://doi.org/10.1145/3458817.3480853)
   * Consider emerging multi-GPU accelerator topologies such as single/double NVLink.
 * \[**Astraea** | PKU & NTU & SenseTime | TPDS 2021] [Astraea: A fair deep learning scheduler for multi-tenant GPU clusters](https://ieeexplore.ieee.org/abstract/document/9655467)
@@ -45,6 +52,8 @@
 * \[**Gandiva** | MSRA | OSDI 2018] [Gandiva: Introspective cluster scheduling for deep learning](https://www.usenix.org/conference/osdi18/presentation/xiao)
   * Hyper-parameter tuning jobs.
   * Job packing; migration; grow-shrink; time-slicing.
+* \[**Optimus** | HKU & ByteDance | EuroSys 2018] [Optimus: An efficient dynamic resource scheduler for deep learning clusters](https://doi.org/10.1145/3190508.3190517)
+  * Minimize JCT based on online resource-performance models.
 * \[**Topology-aware scheduling** | SC 2017] [Topology-aware GPU scheduling for learning workloads in cloud environments](https://doi.org/10.1145/3126908.3126933)
   * Consider multiple link technologies such as PCI-e and NVLink.
 
@@ -69,13 +78,31 @@
 * \[**Clipper** | UC Berkeley | NSDI 2017] [Clipper: A low-latency online prediction serving system](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw)
   * Communicate frameworks and applications through REST/RPC APIs, respectively.
   * Caching; batching; adaptive model selection.
+* \[**TensorFlow Serving** | Google | arXiv 1712.06139] [TensorFlow-Serving: Flexible, high-performance ML serving](http://arxiv.org/abs/1712.06139)
 
 ### Auto Configuration
 
 * \[**Falcon** | CAS | SoCC 2022] [Serving unseen deep learning models with near-optimal configurations: A fast adaptive search approach](https://doi.org/10.1145/3542929.3563485)
 * \[**Morphling** | HKUST & Alibaba | SoCC 2021] [Morphling: Fast, near-optimal auto-configuration for cloud-native model serving](https://doi.org/10.1145/3472883.3486987)
+  * Meta-learning; stress-test; Kubernetes.
 
 ### Survey
 
 * \[George Mason University & Microsoft & University of Maryland | arXiv 2203.09040] [A survey of multi-tenant deep learning inference on GPU](https://arxiv.org/abs/2203.09040)
 * \[George Mason University & Microsoft & University of Pittsburgh & University of Maryland | arXiv 2111.14247] [A survey of large-scale deep learning serving system optimization: Challenges and opportunities](https://arxiv.org/abs/2111.14247)
+
+## DL Framework
+
+* \[**OneFlow** | arXiv 2110.15032] [OneFlow: Redesign the distributed deep learning framework from scratch](https://arxiv.org/abs/2110.15032) <mark style="background-color:orange;">\[</mark>[<mark style="background-color:orange;">Code</mark>](https://github.com/Oneflow-Inc/oneflow)<mark style="background-color:orange;">]</mark>
+* \[**Jittor** | Tsinghua | Science China Information Sciences 2020] [Jittor: A novel deep learning framework with meta-operators and unified graph execution](http://scis.scichina.com/en/2020/222103.pdf) \[[Code](https://github.com/Jittor/Jittor) | [Homepage](https://cg.cs.tsinghua.edu.cn/jittor/)]
+* \[**PyTorch** | FAIR | NeurIPS 2019] [PyTorch: An imperative style, high-performance deep learning library](https://proceedings.neurips.cc/paper/2019/file/bdbca288fee7f92f2bfa9f7012727740-Paper.pdf) <mark style="background-color:orange;">\[</mark>[<mark style="background-color:orange;">Code</mark>](https://github.com/pytorch/pytorch) <mark style="background-color:orange;">|</mark> [<mark style="background-color:orange;">Homepage</mark>](https://pytorch.org/)<mark style="background-color:orange;">]</mark>
+* \[**XDL** | Alibaba | DLP-KDD 2019] [XDL: An industrial deep learning framework for high-dimensional sparse data](https://doi.org/10.1145/3326937.3341255) <mark style="background-color:orange;">\[</mark>[<mark style="background-color:orange;">Code</mark>](https://github.com/alibaba/x-deeplearning)<mark style="background-color:orange;">]</mark>
+* \[**TensorFlow** | Google Brain | OSDI 2016] [TensorFlow: A system for large-scale machine learning](https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf) <mark style="background-color:orange;">\[</mark>[<mark style="background-color:orange;">Code</mark>](https://github.com/tensorflow/tensorflow) <mark style="background-color:orange;">|</mark> [<mark style="background-color:orange;">Homepage</mark>](https://www.tensorflow.org/)<mark style="background-color:orange;">]</mark>
+* \[**MXNet** | arXiv 1512.01274] [MXNet: A flexible and efficient machine learning library for heterogeneous distributed systems](https://arxiv.org/abs/1512.01274) <mark style="background-color:orange;">\[</mark>[<mark style="background-color:orange;">Code</mark>](https://github.com/apache/mxnet) <mark style="background-color:orange;">|</mark> [<mark style="background-color:orange;">Homepage</mark>](https://mxnet.apache.org/)<mark style="background-color:orange;">]</mark>
+* \[**Caffe** | UC Berkeley | arXiv 1408.5093] [Caffe: Convolutional architecture for fast feature embedding](https://arxiv.org/abs/1408.5093) <mark style="background-color:orange;">\[</mark>[<mark style="background-color:orange;">Code</mark>](https://github.com/BVLC/Caffe/) <mark style="background-color:orange;">|</mark> [<mark style="background-color:orange;">Homepage</mark>](http://caffe.berkeleyvision.org/)<mark style="background-color:orange;">]</mark>
+* \[**CNTK** | Microsoft |  MSR TR 2014] [An introduction to computational networks and the computational network toolkit](https://www.microsoft.com/en-us/research/publication/an-introduction-to-computational-networks-and-the-computational-network-toolkit/) <mark style="background-color:orange;">\[</mark>[<mark style="background-color:orange;">Code</mark>](https://github.com/microsoft/CNTK) <mark style="background-color:orange;">|</mark> [<mark style="background-color:orange;">Homepage</mark>](https://learn.microsoft.com/en-us/cognitive-toolkit/)<mark style="background-color:orange;">]</mark>
+
+## DL Compiler
+
+* \[**MLIR** | Google | CGO 2021] [MLIR: Scaling compiler infrastructure for domain specific computation](https://research.google/pubs/pub49988/)
+* \[**TVM** | UW | OSDI 2018] [TVM: An automated end-to-end optimizing compiler for deep learning](https://www.usenix.org/conference/osdi18/presentation/chen)

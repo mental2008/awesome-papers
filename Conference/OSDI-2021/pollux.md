@@ -6,9 +6,7 @@ Presented in [OSDI 2021](https://www.usenix.org/conference/osdi21/presentation/q
 
 Authors: Aurick Qiao, Sang Keun Choe, Suhas Jayaram Subramanya, Willie Neiswanger, Qirong Ho, Hao Zhang, Gregory R. Ganger, Eric P. Xing
 
-### Code
-
-* AdaptDL: [https://github.com/petuum/adaptdl](https://github.com/petuum/adaptdl)
+Code (AdaptDL): [https://github.com/petuum/adaptdl](https://github.com/petuum/adaptdl)
 
 ## Understanding the paper
 
@@ -19,8 +17,8 @@ This paper presents a deep learning cluster scheduler named **Pollux**, which co
 ### Background
 
 * The running time of each training iteration can be divided into two main components.
-  * The time spent computing the gradient.
-  * The time spent synchronizing across all GPUs.
+  * $$\text{T}_{\text{grad}}$$: the time spent computing the gradient.
+  * $$\text{T}_{\text{sync}}$$: the time spent synchronizing across all GPUs.
     * Collective all-reduce => average gradient
     * Parameter servers => synchronize weight
 * GNS (noise-to-signal ratio of the stochastic gradient)
