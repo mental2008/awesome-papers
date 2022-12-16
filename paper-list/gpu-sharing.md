@@ -22,6 +22,9 @@
 * [NVIDIA Multi-Process Service (MPS)](https://docs.nvidia.com/deploy/mps/index.html)
   * Transparently enable co-operative multi-process CUDA applications.
   * Terminating an MPS client without synchronizing with all outstanding GPU work (via Ctrl-C / program exception such as segfault / signals, etc.) can leave the MPS server and other MPS clients in an undefined state, which may result in hangs, unexpected failures, or corruptions.
+* [NVIDIA CUDA Multi-Stream](https://docs.nvidia.com/cuda/cuda-runtime-api/group\_\_CUDART\_\_STREAM.html)
+  * Stream: a sequence of operations that execute in issue-order on the GPU.
+  * Perform multiple CUDA operations simultaneously.
 
 ## Survey
 

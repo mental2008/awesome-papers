@@ -6,8 +6,9 @@
 
 * [Systems for ML](paper-list/systems-for-ml.md)
 * [GPU Sharing](paper-list/gpu-sharing.md)
-* [GPU Disaggregation](paper-list/gpu-disaggregation.md)
 * [Resource Fragmentation](paper-list/resource-fragmentation.md)
+* [GPU Disaggregation](paper-list/gpu-disaggregation.md)
+* [Memory Disaggregation / Remote Memory](paper-list/memory-disaggregation-remote-memory.md)
 * [Remote Direct Memory Access (RDMA)](paper-list/remote-direct-memory-access-rdma.md)
 
 ## Reading Notes
