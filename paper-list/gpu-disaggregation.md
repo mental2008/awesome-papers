@@ -8,7 +8,7 @@
 
 ## Remote CUDA (rCUDA)
 
-* \[DGSF | UT-Austin & Katana Graph | IPDPS 2022] [DGSF: Disaggregated GPUs for serverless functions](https://ieeexplore.ieee.org/document/9820659)
+* \[**DGSF** | UT-Austin & Katana Graph | IPDPS 2022] [DGSF: Disaggregated GPUs for serverless functions](https://ieeexplore.ieee.org/document/9820659)
   * Transparently enable serverless functions to use GPUs through intercepting CUDA APIs.
   * Support API transparency; hide the communication latency with remote GPUs; load-balance access to heavily shared GPUs.
 * \[**rCUDA** | HPCS 2010] [rCUDA: Reducing the number of GPU-based accelerators in high performance clusters](https://ieeexplore.ieee.org/document/5547126)
