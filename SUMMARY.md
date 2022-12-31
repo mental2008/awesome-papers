@@ -8,8 +8,8 @@
 * [GPU Sharing](paper-list/gpu-sharing.md)
 * [Resource Fragmentation](paper-list/resource-fragmentation.md)
 * [GPU Disaggregation](paper-list/gpu-disaggregation.md)
-* [Memory Disaggregation / Remote Memory](paper-list/memory-disaggregation-remote-memory.md)
-* [Remote Direct Memory Access (RDMA)](paper-list/remote-direct-memory-access-rdma.md)
+* [Memory Disaggregation](paper-list/memory-disaggregation.md)
+* [RDMA](paper-list/rdma.md)
 
 ## Reading Notes
 
