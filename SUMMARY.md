@@ -14,7 +14,8 @@
 ## Reading Notes
 
 * [Conference](Conference/README.md)
-  * [ATC 2022](Conference/ATC-2022/README.md)
+  * [ATC 2022](reading-notes/conference/atc-2022/README.md)
+    * [Direct access, high-performance memory disaggregation with DirectCXL](reading-notes/conference/atc-2022/direct-access-high-performance-memory-disaggregation-with-directcxl.md)
   * [OSDI 2022](Conference/OSDI-2022/README.md)
   * [ATC 2021](Conference/ATC-2021/README.md)
     * [Zico: Efficient GPU memory sharing for concurrent DNN training](Conference/ATC-2021/zico.md)

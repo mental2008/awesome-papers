@@ -7,6 +7,10 @@
   * The first work that brings CXL 2.0 into a real system and analyzes the performance characteristics.
   * For real-world applications, DirectCXL exhibits **3x** better performance than RDMA-based memory disaggregation.
 
+{% content-ref url="../reading-notes/conference/atc-2022/direct-access-high-performance-memory-disaggregation-with-directcxl.md" %}
+[direct-access-high-performance-memory-disaggregation-with-directcxl.md](../reading-notes/conference/atc-2022/direct-access-high-performance-memory-disaggregation-with-directcxl.md)
+{% endcontent-ref %}
+
 ## RDMA-based Disaggregation
 
 * \[**Hydra** | UMich SymbioticLab | FAST 2022] [Hydra: Resilient and highly available remote memory](https://www.usenix.org/conference/fast22/presentation/lee) \[[Code](https://github.com/SymbioticLab/Hydra)]
