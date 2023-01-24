@@ -4,11 +4,19 @@
 
 ## Paper List
 
-* [Systems for ML](paper-list/systems-for-ml.md)
-* [GPU Sharing](paper-list/gpu-sharing.md)
+* [Systems for ML](paper-list/systems-for-ml/README.md)
+  * [Data Preprocessing](paper-list/systems-for-ml/data-preprocessing.md)
+  * [Resource Scheduler](paper-list/systems-for-ml/resource-scheduler.md)
+  * [Model Serving](paper-list/systems-for-ml/model-serving.md)
+  * [Networking](paper-list/systems-for-ml/networking.md)
+  * [ML Framework](paper-list/systems-for-ml/ml-framework.md)
+  * [ML Compiler](paper-list/systems-for-ml/ml-compiler.md)
+* [Hardware Virtualization](paper-list/hardware-virtualization/README.md)
+  * [GPU Sharing](paper-list/hardware-virtualization/gpu-sharing.md)
+* [Resource Disaggregation](paper-list/resource-disaggregation/README.md)
+  * [GPU Disaggregation](paper-list/resource-disaggregation/gpu-disaggregation.md)
+  * [Memory Disaggregation](paper-list/resource-disaggregation/memory-disaggregation.md)
 * [Resource Fragmentation](paper-list/resource-fragmentation.md)
-* [GPU Disaggregation](paper-list/gpu-disaggregation.md)
-* [Memory Disaggregation](paper-list/memory-disaggregation.md)
 * [RDMA](paper-list/rdma.md)
 
 ## Reading Notes
