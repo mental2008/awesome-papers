@@ -6,9 +6,9 @@ Presented in [NSDI 2023](https://www.usenix.org/conference/nsdi23/presentation/j
 
 Authors: Paras Jain, Sam Kumar, Sarah Wooders, Shishir G Patil, Joseph E Gonzalez, Ion Stoica, _University of California, Berkeley_
 
-Homepage:: [https://skyplane.org/](https://skyplane.org/)
+Homepage: [https://skyplane.org/](https://skyplane.org/)
 
-Code:: [https://github.com/skyplane-project/skyplane](https://github.com/skyplane-project/skyplane)
+Code: [https://github.com/skyplane-project/skyplane](https://github.com/skyplane-project/skyplane)
 
 ## Understanding the paper
 
@@ -20,7 +20,7 @@ Its planner uses _mixed-integer linear programming_ to _determine the optimal ov
 
 ### Comparison to Existing Work
 
-* Consider price and elasticity (opposed to _Resilient overlay networks (RON)_).
+* Consider price and elasticity (opposed to _Resilient overlay networks (RON), SOSP 2001_).
 * Richer problem and solution space.
 
 ### Implementation
