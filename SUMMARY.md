@@ -17,11 +17,14 @@
   * [GPU Disaggregation](paper-list/resource-disaggregation/gpu-disaggregation.md)
   * [Memory Disaggregation](paper-list/resource-disaggregation/memory-disaggregation.md)
 * [Resource Fragmentation](paper-list/resource-fragmentation.md)
+* [Sky Computing](paper-list/sky-computing.md)
 * [RDMA](paper-list/rdma.md)
 
 ## Reading Notes
 
 * [Conference](Conference/README.md)
+  * [NSDI 2023](reading-notes/conference/nsdi-2023/README.md)
+    * [Skyplane: Optimizing transfer cost and throughput using cloud-aware overlays](reading-notes/conference/nsdi-2023/skyplane-optimizing-transfer-cost-and-throughput-using-cloud-aware-overlays.md)
   * [ATC 2022](reading-notes/conference/atc-2022/README.md)
     * [Direct access, high-performance memory disaggregation with DirectCXL](reading-notes/conference/atc-2022/direct-access-high-performance-memory-disaggregation-with-directcxl.md)
   * [OSDI 2022](Conference/OSDI-2022/README.md)
