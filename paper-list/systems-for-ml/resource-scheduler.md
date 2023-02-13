@@ -18,11 +18,13 @@
 
 * \[**Muri** | PKU & ByteDance | SIGCOMM 2022] [Multi-resource interleaving for deep learning training](https://doi.org/10.1145/3544216.3544224) \[[Code](https://github.com/Rivendile/Muri)]
   * Pack jobs along multiple resource types in the time dimension; integrate with PyTorch.
+* \[**Aryl** | ByteDance & CityU & CUHK | arXiv 2202.07896] [Aryl: An elastic cluster scheduler for deep learning](https://arxiv.org/abs/2202.07896)
+  * Introduce capacity loaning to loan idle inference GPU servers for elastic training jobs.
 * \[**Singularity** | Microsoft | arXiv 2202.07848] [Singularity: Planet-scale, preemptive and elastic scheduling of AI workloads](https://arxiv.org/abs/2202.07848)
   * Enable live GPU job migration.
 
-{% content-ref url="../../reading-notes/miscellaneous/arxiv/singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md" %}
-[singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md](../../reading-notes/miscellaneous/arxiv/singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md)
+{% content-ref url="../../reading-notes/miscellaneous/arxiv/2022/singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md" %}
+[singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md](../../reading-notes/miscellaneous/arxiv/2022/singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md)
 {% endcontent-ref %}
 
 * \[**Pollux** | Petuum & CMU | OSDI 2021] [Pollux: Co-adaptive cluster scheduling for goodput-optimized deep learning](https://www.usenix.org/conference/osdi21/presentation/qiao) \[[Code](https://github.com/petuum/adaptdl)]
