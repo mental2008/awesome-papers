@@ -1,4 +1,4 @@
-# Training Deep Nets with Sublinear Memory Cost
+# Training deep nets with sublinear memory cost
 
 ## Metadata
 
