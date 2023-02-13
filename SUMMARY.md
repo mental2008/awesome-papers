@@ -31,6 +31,8 @@
   * [ATC 2022](reading-notes/conference/atc-2022/README.md)
     * [Direct access, high-performance memory disaggregation with DirectCXL](reading-notes/conference/atc-2022/direct-access-high-performance-memory-disaggregation-with-directcxl.md)
   * [OSDI 2022](Conference/OSDI-2022/README.md)
+  * [SoCC 2022](reading-notes/conference/socc-2022/README.md)
+    * [Serving unseen deep learning model with near-optimal configurations: A fast adaptive search approach](reading-notes/conference/socc-2022/serving-unseen-deep-learning-model-with-near-optimal-configurations-a-fast-adaptive-search-approach.md)
   * [ATC 2021](Conference/ATC-2021/README.md)
     * [Zico: Efficient GPU memory sharing for concurrent DNN training](Conference/ATC-2021/zico.md)
   * [OSDI 2021](Conference/OSDI-2021/README.md)

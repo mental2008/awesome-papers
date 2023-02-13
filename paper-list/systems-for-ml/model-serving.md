@@ -13,7 +13,12 @@
 ## Configuration Recommender System
 
 * \[**Falcon** | CAS | SoCC 2022] [Serving unseen deep learning models with near-optimal configurations: A fast adaptive search approach](https://doi.org/10.1145/3542929.3563485) \[[Code](https://github.com/dos-lab/Falcon)]
-  * Characterize a DL model by its&#x20;
+  * Characterize a DL model by its key operators (KOPs).
+
+{% content-ref url="../../reading-notes/conference/socc-2022/serving-unseen-deep-learning-model-with-near-optimal-configurations-a-fast-adaptive-search-approach.md" %}
+[serving-unseen-deep-learning-model-with-near-optimal-configurations-a-fast-adaptive-search-approach.md](../../reading-notes/conference/socc-2022/serving-unseen-deep-learning-model-with-near-optimal-configurations-a-fast-adaptive-search-approach.md)
+{% endcontent-ref %}
+
 * \[**Morphling** | HKUST & Alibaba | SoCC 2021] [Morphling: Fast, near-optimal auto-configuration for cloud-native model serving](https://doi.org/10.1145/3472883.3486987) \[[Code](https://github.com/kubedl-io/morphling)]
   * Using a combination of Meta-learning and Bayesian Optimization to search an optimal configuration; stress-test; Kubernetes.
 
