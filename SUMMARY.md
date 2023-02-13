@@ -23,8 +23,11 @@
 ## Reading Notes
 
 * [Conference](Conference/README.md)
+  * [ASPLOS 2023](reading-notes/conference/asplos-2023/README.md)
+    * [Lucid: A non-intrusive, scalable and interpretable scheduler for deep learning training jobs](reading-notes/conference/asplos-2023/lucid-a-non-intrusive-scalable-and-interpretable-scheduler-for-deep-learning-training-jobs.md)
   * [NSDI 2023](reading-notes/conference/nsdi-2023/README.md)
     * [Skyplane: Optimizing transfer cost and throughput using cloud-aware overlays](reading-notes/conference/nsdi-2023/skyplane-optimizing-transfer-cost-and-throughput-using-cloud-aware-overlays.md)
+    * [Shockwave: Fair and efficient cluster scheduling for dynamic adaptation in machine learning](reading-notes/conference/nsdi-2023/shockwave-fair-and-efficient-cluster-scheduling-for-dynamic-adaptation-in-machine-learning.md)
   * [ATC 2022](reading-notes/conference/atc-2022/README.md)
     * [Direct access, high-performance memory disaggregation with DirectCXL](reading-notes/conference/atc-2022/direct-access-high-performance-memory-disaggregation-with-directcxl.md)
   * [OSDI 2022](Conference/OSDI-2022/README.md)
@@ -54,6 +57,8 @@
     * [GaiaGPU: Sharing GPUs in container clouds](Conference/ISPA-IUCC-BDCloud-SocialCom-SustainCom-2018/gaiagpu.md)
   * [NSDI 2017](Conference/NSDI-2017/README.md)
     * [Clipper: A low-latency online prediction serving system](Conference/NSDI-2017/clipper.md)
+  * [SoCC 2017](reading-notes/conference/socc-2017/README.md)
+    * [SLAQ: Quality-driven scheduling for distributed machine learning](reading-notes/conference/socc-2017/slaq-quality-driven-scheduling-for-distributed-machine-learning.md)
   * [CLUSTER 2014](Conference/CLUSTER-2014/README.md)
     * [Evaluating job packing in warehouse-scale computing](Conference/CLUSTER-2014/evaluating-job-packing-in-warehouse-scale-computing.md)
 * [Journal](Journal/README.md)

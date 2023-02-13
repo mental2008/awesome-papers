@@ -2,6 +2,20 @@
 
 ## DL Training Schedulers
 
+* \[**Lucid** | NTU & Shanghai AI Lab & SenseTime | ASPLOS 2023] [Lucid: A non-intrusive, scalable and interpretable scheduler for deep learning training jobs](https://doi.org/10.1145/3575693.3575705) \[[Code](https://github.com/S-Lab-System-Group/Lucid)]
+  * Apply interpretable models.
+
+{% content-ref url="../../reading-notes/conference/asplos-2023/lucid-a-non-intrusive-scalable-and-interpretable-scheduler-for-deep-learning-training-jobs.md" %}
+[lucid-a-non-intrusive-scalable-and-interpretable-scheduler-for-deep-learning-training-jobs.md](../../reading-notes/conference/asplos-2023/lucid-a-non-intrusive-scalable-and-interpretable-scheduler-for-deep-learning-training-jobs.md)
+{% endcontent-ref %}
+
+* \[**Shockwave** | UW-Madison & UT-Austin | NSDI 2023] [Shockwave: Fair and efficient cluster scheduling for dynamic adaptation in machine learning](https://www.usenix.org/conference/nsdi23/presentation/zheng-0) \[[Code](https://github.com/uw-mad-dash/shockwave)]
+  * Consider elastic resource requirements; extend market theory.
+
+{% content-ref url="../../reading-notes/conference/nsdi-2023/shockwave-fair-and-efficient-cluster-scheduling-for-dynamic-adaptation-in-machine-learning.md" %}
+[shockwave-fair-and-efficient-cluster-scheduling-for-dynamic-adaptation-in-machine-learning.md](../../reading-notes/conference/nsdi-2023/shockwave-fair-and-efficient-cluster-scheduling-for-dynamic-adaptation-in-machine-learning.md)
+{% endcontent-ref %}
+
 * \[**Muri** | PKU & ByteDance | SIGCOMM 2022] [Multi-resource interleaving for deep learning training](https://doi.org/10.1145/3544216.3544224) \[[Code](https://github.com/Rivendile/Muri)]
   * Pack jobs along multiple resource types in the time dimension; integrate with PyTorch.
 * \[**Singularity** | Microsoft | arXiv 2202.07848] [Singularity: Planet-scale, preemptive and elastic scheduling of AI workloads](https://arxiv.org/abs/2202.07848)
@@ -53,6 +67,10 @@
 
 * \[**SLAQ** | Princeton | SoCC 2017] [SLAQ: Quality-driven scheduling for distributed machine learning](https://doi.org/10.1145/3127479.3127490)
   * Fine-grained job-level scheduler; leverage the iterative __ nature of general ML training algorithms.
+
+{% content-ref url="../../reading-notes/conference/socc-2017/slaq-quality-driven-scheduling-for-distributed-machine-learning.md" %}
+[slaq-quality-driven-scheduling-for-distributed-machine-learning.md](../../reading-notes/conference/socc-2017/slaq-quality-driven-scheduling-for-distributed-machine-learning.md)
+{% endcontent-ref %}
 
 ## Trace Analysis
 
