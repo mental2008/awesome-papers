@@ -24,6 +24,7 @@
 ## Reading Notes
 
 * [Conference](Conference/README.md)
+  * [EuroSys 2023](reading-notes/conference/eurosys-2023.md)
   * [NSDI 2023](reading-notes/conference/nsdi-2023/README.md)
     * [Skyplane: Optimizing transfer cost and throughput using cloud-aware overlays](reading-notes/conference/nsdi-2023/skyplane-optimizing-transfer-cost-and-throughput-using-cloud-aware-overlays.md)
     * [Shockwave: Fair and efficient cluster scheduling for dynamic adaptation in machine learning](reading-notes/conference/nsdi-2023/shockwave-fair-and-efficient-cluster-scheduling-for-dynamic-adaptation-in-machine-learning.md)
@@ -33,6 +34,8 @@
   * [ATC 2022](reading-notes/conference/atc-2022/README.md)
     * [Direct access, high-performance memory disaggregation with DirectCXL](reading-notes/conference/atc-2022/direct-access-high-performance-memory-disaggregation-with-directcxl.md)
   * [OSDI 2022](Conference/OSDI-2022/README.md)
+  * [SIGCOMM 2022](reading-notes/conference/sigcomm-2022/README.md)
+    * [Multi-resource interleaving for deep learning training](reading-notes/conference/sigcomm-2022/multi-resource-interleaving-for-deep-learning-training.md)
   * [SoCC 2022](reading-notes/conference/socc-2022/README.md)
     * [Serving unseen deep learning model with near-optimal configurations: A fast adaptive search approach](reading-notes/conference/socc-2022/serving-unseen-deep-learning-model-with-near-optimal-configurations-a-fast-adaptive-search-approach.md)
   * [ATC 2021](Conference/ATC-2021/README.md)
