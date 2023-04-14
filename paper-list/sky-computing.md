@@ -1,9 +1,13 @@
 # Sky Computing
 
-### Data Transfer
+## Sky Computing
 
-* \[**Skyplane** | UC Berkeley | NSDI 2023] [Skyplane: Optimizing transfer cost and throughput using cloud-aware overlays](https://www.usenix.org/conference/nsdi23/presentation/jain)
+|     Name     | Conference                                          | Institution                   | Links                                                                                                      |
+| :----------: | --------------------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **SkyPilot** | [NSDI 2023](../reading-notes/conference/nsdi-2023/) | <ul><li>UC Berkeley</li></ul> | <ul><li><a href="https://www.usenix.org/conference/nsdi23/presentation/yang-zongheng">Paper</a> </li></ul> |
 
-{% content-ref url="../reading-notes/conference/nsdi-2023/skyplane-optimizing-transfer-cost-and-throughput-using-cloud-aware-overlays.md" %}
-[skyplane-optimizing-transfer-cost-and-throughput-using-cloud-aware-overlays.md](../reading-notes/conference/nsdi-2023/skyplane-optimizing-transfer-cost-and-throughput-using-cloud-aware-overlays.md)
-{% endcontent-ref %}
+## Data Transfer
+
+|     Name     | Conference                                          | Institution                   | Links                                                                                                                                                                                                                                                                                                                                                                                   |
+| :----------: | --------------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Skyplane** | [NSDI 2023](../reading-notes/conference/nsdi-2023/) | <ul><li>UC Berkeley</li></ul> | <ul><li><a href="../reading-notes/conference/nsdi-2023/skyplane-optimizing-transfer-cost-and-throughput-using-cloud-aware-overlays.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/nsdi23/presentation/jain">Paper</a></li><li><a href="https://github.com/skyplane-project/skyplane">Code</a></li><li><a href="https://skyplane.org/">Homepage</a></li></ul> |

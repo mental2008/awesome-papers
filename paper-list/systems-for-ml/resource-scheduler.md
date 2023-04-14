@@ -73,7 +73,7 @@
 ## ML Training Schedulers
 
 * \[**SLAQ** | Princeton | SoCC 2017] [SLAQ: Quality-driven scheduling for distributed machine learning](https://doi.org/10.1145/3127479.3127490)
-  * Fine-grained job-level scheduler; leverage the iterative __ nature of general ML training algorithms.
+  * Fine-grained job-level scheduler; leverage the iterative nature of general ML training algorithms.
 
 {% content-ref url="../../reading-notes/conference/socc-2017/slaq-quality-driven-scheduling-for-distributed-machine-learning.md" %}
 [slaq-quality-driven-scheduling-for-distributed-machine-learning.md](../../reading-notes/conference/socc-2017/slaq-quality-driven-scheduling-for-distributed-machine-learning.md)

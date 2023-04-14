@@ -16,7 +16,9 @@
 * \[**rCUDA** | HPCS 2010] [rCUDA: Reducing the number of GPU-based accelerators in high performance clusters](https://ieeexplore.ieee.org/document/5547126)
   * Enable remote GPU acceleration in HPC clusters.
 
-## Industry
+## Industrial Products
 
-* VMware vSphere Bitfusion \[[Docs](https://docs.vmware.com/en/VMware-vSphere-Bitfusion/index.html)]
-* VirtAI Tech Orion \[[GitHub](https://github.com/virtaitech/orion)]
+| Name                     | Links                                                                                               |
+| ------------------------ | --------------------------------------------------------------------------------------------------- |
+| VMware vSphere Bitfusion | <ul><li><a href="https://docs.vmware.com/en/VMware-vSphere-Bitfusion/index.html">Docs</a></li></ul> |
+| VirtAI Tech Orion        | <ul><li><a href="https://github.com/virtaitech/orion">GitHub</a> (in Chinese)</li></ul>             |

@@ -28,7 +28,7 @@ Generally, two types of methods can be used to solve this problem. One is based 
 
 #### FFD-based heuristics
 
-* **FFDProd**: **** $$w(I) = \prod_{i \le d} I_i$$****
+* **FFDProd**: $$w(I) = \prod_{i \le d} I_i$$
 * **FFDSum**: $$w(I) = \sum_{i \le d} a_i I_i$$
   * **FFDAvgSum**: $$a_i = \frac{1}{n} \sum_{l=1}^{n} I_i^l$$
   * **FFDExpSum**: $$a_i = exp(\epsilon \cdot \frac{1}{n} \sum_{l=1}^{n} I_i^l)$$

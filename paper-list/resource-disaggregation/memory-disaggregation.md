@@ -2,21 +2,16 @@
 
 ## CXL-based Disaggregation
 
-* \[**Pond** | Microsoft Azure | ASPLOS 2023] [Pond: CXL-based memory pooling systems for cloud platforms](https://www.microsoft.com/en-us/research/publication/pond-cxl-based-memory-pooling-systems-for-cloud-platforms/)
-* \[**DirectCXL** | KAIST | ATC 2022] [Direct access, high-performance memory disaggregation with DirectCXL](https://www.usenix.org/conference/atc22/presentation/gouk)
-  * The first work that brings CXL 2.0 into a real system and analyzes the performance characteristics.
-  * For real-world applications, DirectCXL exhibits **3x** better performance than RDMA-based memory disaggregation.
-
-{% content-ref url="../../reading-notes/conference/atc-2022/direct-access-high-performance-memory-disaggregation-with-directcxl.md" %}
-[direct-access-high-performance-memory-disaggregation-with-directcxl.md](../../reading-notes/conference/atc-2022/direct-access-high-performance-memory-disaggregation-with-directcxl.md)
-{% endcontent-ref %}
+|      Name     |                         Conference                         | Institution                      | Links                                                                                                                                                                                                                                              |
+| :-----------: | :--------------------------------------------------------: | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    **TPP**    | [ASPLOS 2023](../../reading-notes/conference/asplos-2023/) | UMich SymbioticLab, NVIDIA, Meta | <ul><li><a href="https://dl.acm.org/doi/10.1145/3582016.3582063">Paper</a></li><li><a href="https://lwn.net/Articles/876993/">Code</a></li></ul>                                                                                                   |
+|    **Pond**   | [ASPLOS 2023](../../reading-notes/conference/asplos-2023/) | Microsoft Azure                  | <ul><li><a href="https://dl.acm.org/doi/abs/10.1145/3575693.3578835">Paper</a></li></ul>                                                                                                                                                           |
+| **DirectCXL** |    [ATC 2022](../../reading-notes/conference/atc-2022/)    | KAIST                            | <ul><li><a href="../../reading-notes/conference/atc-2022/direct-access-high-performance-memory-disaggregation-with-directcxl.md">Personal Note</a></li><li><a href="https://www.usenix.org/conference/atc22/presentation/gouk">Paper</a></li></ul> |
 
 ## RDMA-based Disaggregation
 
-* \[**Hydra** | UMich SymbioticLab | FAST 2022] [Hydra: Resilient and highly available remote memory](https://www.usenix.org/conference/fast22/presentation/lee) \[[Code](https://github.com/SymbioticLab/Hydra)]
-  * Leverage online _erasure coding_ to achieve single-digit μs latency under failures.
-* \[**Kona** | ASPLOS 2021] [Rethinking software runtimes for disaggregated memory](https://doi.org/10.1145/3445814.3446713) \[[Code](https://github.com/project-kona/asplos21-ae)]
-  * Remote memory caching and cache-line dirty data tracking based on cache coherence.
-* \[**Infiniswap** | UMich SymbioticLab | NSDI 2017] [Efficient memory disaggregation with Infiniswap](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/gu) \[[Code](https://github.com/SymbioticLab/Infiniswap)]
-  * Divide the swap space of each machine into many slabs and distribute them across many machines' remote memory.
-  * Decentralized slab placements and evictions.
+|      Name      | Conference  | Institution                                                                                       | Links                                                                                                                                                                                   |
+| :------------: | ----------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    **Hydra**   | FAST 2022   | UMich SymbioticLab                                                                                | <ul><li><a href="https://www.usenix.org/conference/fast22/presentation/lee">Paper</a></li><li><a href="https://github.com/SymbioticLab/Hydra">Code</a></li></ul>                        |
+|    **Kona**    | ASPLOS 2021 | <ul><li>VMWare</li><li>Penn State</li><li>ETH</li><li>EPFL</li><li>UMich</li><li>Google</li></ul> | <ul><li><a href="https://dl.acm.org/doi/10.1145/3445814.3446713">Paper</a></li><li><a href="https://github.com/project-kona/asplos21-ae">Code</a></li></ul>                             |
+| **Infiniswap** | NSDI 2017   | <ul><li>UMich SymbioticLab</li></ul>                                                              | <ul><li><a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/gu">Paper</a></li><li><a href="https://github.com/SymbioticLab/Infiniswap">Code</a></li></ul> |

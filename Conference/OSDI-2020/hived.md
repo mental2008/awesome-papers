@@ -61,4 +61,3 @@ Choose three types of deep learning models: CV, NLP, and Speech (WaveNet, DeepSp
 * How to define if a tenant suffers from sharing anomaly in the multi-tenant cluster?
   * In the trace, the GPU _affinity_ requirements of most jobs are hard. Therefore, the authors use queueing delay to evaluate the cluster sharing anomaly. They also evaluate the JCT when job's affinity requirement is soft.
 
-****
