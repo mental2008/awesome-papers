@@ -1,11 +1,12 @@
 # ATC 2022
 
-## Metadata
+## Meta Info
 
 2022 USENIX Annual Technical Conference
 
-* Homepage: [https://www.usenix.org/conference/atc22](https://www.usenix.org/conference/atc22)
-* Paper lists: [https://www.usenix.org/conference/atc22/technical-sessions](https://www.usenix.org/conference/atc22/technical-sessions)
+Homepage: [https://www.usenix.org/conference/atc22](https://www.usenix.org/conference/atc22)
+
+Paper list: [https://www.usenix.org/conference/atc22/technical-sessions](https://www.usenix.org/conference/atc22/technical-sessions)
 
 ## Papers that appeal to me
 

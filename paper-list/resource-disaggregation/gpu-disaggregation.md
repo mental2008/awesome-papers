@@ -1,20 +1,17 @@
 # GPU Disaggregation
 
-## Academia
+## Remote Procedure Call
 
-### Remote Procedure Call (RPC)
+| Title       |                          Conference                          | Institute                                                                                                              | Links                                                                                                                                                                                                                                               | Remarks                                                                                                                                |
+| ----------- | :----------------------------------------------------------: | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **FractOS** | [EuroSys 2022](../../reading-notes/conference/eurosys-2022/) | <ul><li>ICL</li><li>Technion - Israel Institute of Technology</li><li>Barkhausen Institut</li><li>TU Dresden</li></ul> | <ul><li><a href="../../reading-notes/conference/eurosys-2022/slashing-the-disaggregation-tax-in-heterogeneous-data-centers-with-fractos.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3492321.3519569">Paper</a></li></ul> | A _GPU adaptor_ offers several RPCs: GPU context initialization, memory de/allocation, kernel loading, kernel invocation, and cleanup. |
 
-* \[**FractOS** | EuroSys 2022] [Slashing the disaggregation tax in heterogeneous data centers with FractOS](https://doi.org/10.1145/3492321.3519569)
-  * A distributed OS to minimize the network overheads of disaggregation.
-  * Build a GPU adaptor that offers several RPCs: GPU context initialization, memory de/allocation, kernel loading, kernel invocation, and cleanup.
+## Remote CUDA
 
-### Remote CUDA (rCUDA)
-
-* \[**DGSF** | UT-Austin & Katana Graph | IPDPS 2022] [DGSF: Disaggregated GPUs for serverless functions](https://ieeexplore.ieee.org/document/9820659)
-  * Transparently enable serverless functions to use GPUs through intercepting CUDA APIs.
-  * Support API transparency; hide the communication latency with remote GPUs; load-balance access to heavily shared GPUs.
-* \[**rCUDA** | HPCS 2010] [rCUDA: Reducing the number of GPU-based accelerators in high performance clusters](https://ieeexplore.ieee.org/document/5547126)
-  * Enable remote GPU acceleration in HPC clusters.
+| Title     |                        Conference                        | Institute                                                                         | Links                                                                                                                                                                                                                 | Remarks                                    |
+| --------- | :------------------------------------------------------: | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| **DGSF**  | [IPDPS 2022](../../reading-notes/conference/ipdps-2022/) | <ul><li>UT-Austin</li><li>Katana Graph</li></ul>                                  | <ul><li><a href="../../reading-notes/conference/ipdps-2022/dgsf-disaggregated-gpus-for-serverless-functions.md">Personal Notes</a></li><li><a href="https://ieeexplore.ieee.org/document/9820659">Paper</a></li></ul> | Serverless functions; intercept CUDA APIs. |
+| **rCUDA** |                         HPCS 2010                        | <ul><li>Universidad Politécnica de Valencia</li><li>Universidad Jaume I</li></ul> | <ul><li><a href="https://ieeexplore.ieee.org/document/5547126">Paper</a></li><li><a href="http://www.rcuda.net/">Homepage</a></li></ul>                                                                               | Remote GPU acceleration; HPC clusters.     |
 
 ## Industrial Products
 
