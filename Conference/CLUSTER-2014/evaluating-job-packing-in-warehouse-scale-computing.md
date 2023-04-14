@@ -4,7 +4,7 @@
 
 Presented in [CLUSTER 2014](https://static.googleusercontent.com/media/research.google.com/en/pubs/archive/43103.pdf).
 
-Authors: Abhishek Verma, Madhukar Korupolu, John Wilkes
+Authors: Abhishek Verma, Madhukar Korupolu, John Wilkes (_Google_).
 
 ## Understanding the paper
 
