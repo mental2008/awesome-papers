@@ -12,7 +12,7 @@ Serverless in the wild: Characterizing and optimizing the serverless workload at
 
 Presented in [ATC 2020](https://www.usenix.org/conference/atc20/presentation/shahrad).
 
-Trace:: [https://github.com/Azure/AzurePublicDataset](https://github.com/Azure/AzurePublicDataset)
+Trace: [https://github.com/Azure/AzurePublicDataset](https://github.com/Azure/AzurePublicDataset)
 
 ## Understanding the paper
 
