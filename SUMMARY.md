@@ -19,6 +19,7 @@
 * [Resource Fragmentation](paper-list/resource-fragmentation.md)
 * [Sky Computing](paper-list/sky-computing.md)
 * [RDMA](paper-list/rdma.md)
+* [Serverless Computing](paper-list/serverless-computing.md)
 
 ## Reading Notes
 
@@ -50,6 +51,8 @@
     * [Take it to the limit: Peak prediction-driven resource overcommitment in datacenters](reading-notes/conference/eurosys-2021/take-it-to-the-limit-peak-prediction-driven-resource-overcommitment-in-datacenters.md)
   * [HotOS 2021](Conference/HotOS-2021/README.md)
     * [From cloud computing to sky computing](Conference/HotOS-2021/sky-computing.md)
+  * [ATC 2020](reading-notes/conference/atc-2020/README.md)
+    * [Serverless in the wild: Characterizing and optimizing the serverless workload](reading-notes/conference/atc-2020/serverless-in-the-wild-characterizing-and-optimizing-the-serverless-workload.md)
   * [OSDI 2020](Conference/OSDI-2020/README.md)
     * [HiveD: Sharing a GPU cluster for deep learning with guarantees](Conference/OSDI-2020/hived.md)
   * [SoCC 2020](Conference/SoCC-2020/README.md)
