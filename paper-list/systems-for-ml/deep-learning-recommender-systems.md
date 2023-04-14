@@ -1,5 +1,7 @@
 # Deep Learning Recommender Systems
 
+## Scaling embedding tables
+
 |     Name    | Conference                                                 | Institution                                     | Links                                                                                                                                                                                                                                                                                                                                                  |
 | :---------: | ---------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **EVStore** | [ASPLOS 2023](../../reading-notes/conference/asplos-2023/) | <ul><li>UChicago</li><li>Any other...</li></ul> | <ul><li><a href="../../reading-notes/conference/asplos-2023/evstore-storage-and-caching-capabilities-for-scaling-embedding-tables-in-deep-recommendation-system.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3575693.3575718">Paper</a></li><li><a href="https://github.com/ucare-uchicago/ev-store-dlrm">Code</a></li></ul> |
