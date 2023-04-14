@@ -24,8 +24,6 @@
 
 ## Survey
 
-* \[Queen’s University Belfast | ACM Computing Surveys 2017] [GPU virtualization and scheduling methods: A comprehensive survey](https://doi.org/10.1145/3068281)
-
-{% content-ref url="../../reading-notes/journal/acm-computing-surveys/gpu-virtualization-survey.md" %}
-[gpu-virtualization-survey.md](../../reading-notes/journal/acm-computing-surveys/gpu-virtualization-survey.md)
-{% endcontent-ref %}
+| Survey                                                            | Journal                                                                   | Institute                                    | Links                                                                                                                                                                                                      |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GPU virtualization and scheduling methods: A comprehensive survey | [CSUR 2017](../../reading-notes/journal/acm-computing-surveys/csur-2017/) | <ul><li>Queen’s University Belfast</li></ul> | <ul><li><a href="../../reading-notes/journal/acm-computing-surveys/csur-2017/gpu-virtualization-survey.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3068281">Paper</a></li></ul> |
