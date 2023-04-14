@@ -5,7 +5,7 @@
 ## Paper List
 
 * [Systems for ML](paper-list/systems-for-ml/README.md)
-  * [Data Preprocessing](paper-list/systems-for-ml/data-preprocessing.md)
+  * [Data Processing](paper-list/systems-for-ml/data-processing.md)
   * [Resource Scheduler](paper-list/systems-for-ml/resource-scheduler.md)
   * [Model Serving](paper-list/systems-for-ml/model-serving.md)
   * [Networking](paper-list/systems-for-ml/networking.md)
