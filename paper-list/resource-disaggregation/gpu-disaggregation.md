@@ -18,7 +18,7 @@
 
 ## Industrial Products
 
-| Name                     | Links                                                                                               |
-| ------------------------ | --------------------------------------------------------------------------------------------------- |
-| VMware vSphere Bitfusion | <ul><li><a href="https://docs.vmware.com/en/VMware-vSphere-Bitfusion/index.html">Docs</a></li></ul> |
-| VirtAI Tech Orion        | <ul><li><a href="https://github.com/virtaitech/orion">GitHub</a> (in Chinese)</li></ul>             |
+| Name                         | Links                                                                                               |
+| ---------------------------- | --------------------------------------------------------------------------------------------------- |
+| **VMware vSphere Bitfusion** | <ul><li><a href="https://docs.vmware.com/en/VMware-vSphere-Bitfusion/index.html">Docs</a></li></ul> |
+| **VirtAI Tech Orion**        | <ul><li><a href="https://github.com/virtaitech/orion">GitHub</a> (in Chinese)</li></ul>             |

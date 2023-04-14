@@ -10,6 +10,8 @@ description: >-
 
 Presented in [ASPLOS 2023](https://doi.org/10.1145/3575693.3575718).
 
+Authors: Daniar H. Kurniawan, Ruipu Wang, Kahfi S. Zulkifli, Fandi A. Wiranata, John Bent, Ymir Vigfusson, Haryadi S. Gunawi.
+
 Code: [https://github.com/ucare-uchicago/ev-store-dlrm](https://github.com/ucare-uchicago/ev-store-dlrm)
 
 ## Understanding the paper

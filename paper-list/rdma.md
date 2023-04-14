@@ -1,13 +1,16 @@
-# Remote Direct Memory Access (RDMA)
+# RDMA
 
-## Generic RDMA
+## General RDMA
 
-* \[**X-RDMA** | Alibaba | CLUSTER 2019] [X-RDMA: Effective RDMA middleware in large-scale production environments](https://ieeexplore.ieee.org/document/8891004)
-  * Focus on robustness, scalability, and maintainability.
-* \[**IRN** | SIGCOMM 2018] [Revisiting network support for RDMA](https://doi.org/10.1145/3230543.3230557)
-  * Improved RoCE NIC (IRN); better handling of packet losses; eliminate the need for priority flow control (PFC).
+| Name       |                      Conference                     | Institute                                                                          | Links                                                                                                                                                                                                                                                                                                                             | Remarks                                                                               |
+| ---------- | :-------------------------------------------------: | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Husky**  | [NSDI 2023](../reading-notes/conference/nsdi-2023/) | <ul><li>Duke University</li><li>Microsoft</li><li>SJTU</li></ul>                   | <ul><li><a href="../reading-notes/conference/nsdi-2023/understanding-rdma-microarchitecture-resources-for-performance-isolation.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/nsdi23/presentation/kong">Paper</a></li><li><a href="https://github.com/host-bench/husky">Benchmark Suite</a></li></ul> | Develop a test suite to evaluate RDMA performance isolation solutions.                |
+| **X-RDMA** |                     CLUSTER 2019                    | <ul><li>Alibaba</li></ul>                                                          | <ul><li><a href="https://ieeexplore.ieee.org/document/8891004">Paper</a></li></ul>                                                                                                                                                                                                                                                | Focus on robustness, scalability, and maintainability.                                |
+| **IRN**    |                     SIGCOMM 2018                    | <ul><li>UC Berkeley</li><li>ICSI</li><li>Mellanox</li><li>NYU</li><li>UW</li></ul> | <ul><li><a href="../reading-notes/conference/sigcomm-2018/revisiting-network-support-for-rdma.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3230543.3230557">Paper</a></li></ul>                                                                                                                         | Better handling of packet losses; eliminate the need for priority flow control (PFC). |
 
-## RDMA for DL
+## RDMA for Deep Learning
 
-* \[MSRA | EuroSys 2019] [Fast distributed deep learning over RDMA](https://doi.org/10.1145/3302424.3303975)
-* \[**ZeroCopy RDMA** in TensorFlow | HKUST | SIGCOMM Posters and Demos 2017] [Towards zero copy dataflows using RDMA](https://doi.org/10.1145/3123878.3131975)
+| Name              |           Conference           | Institute               | Links                                                                                                                                                                                          | Remarks                    |
+| ----------------- | :----------------------------: | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| **DL over RDMA**  |          EuroSys 2019          | <ul><li>MSRA</li></ul>  | <ul><li><a href="https://dl.acm.org/doi/10.1145/3302424.3303975">Paper</a></li></ul>                                                                                                           | Distributed deep learning. |
+| **ZeroCopy RDMA** | SIGCOMM 2017 Posters and Demos | <ul><li>HKUST</li></ul> | <ul><li><a href="https://dl.acm.org/doi/10.1145/3123878.3131975">Paper</a></li><li><a href="https://github.com/tensorflow/networking/tree/master/tensorflow_networking/gdr">Code</a></li></ul> | Merged into TensorFlow.    |

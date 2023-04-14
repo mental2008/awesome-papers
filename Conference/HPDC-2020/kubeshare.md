@@ -6,10 +6,7 @@ Presented in [HPDC 2020](https://doi.org/10.1145/3369583.3392679).
 
 Authors: Ting-An Yeh, Hung-Hsin Chen, Jerry Chou
 
-### Code
-
-* Share GPU between Pods in Kubernetes (KuberShare): [https://github.com/NTHU-LSALAB/KubeShare](https://github.com/NTHU-LSALAB/KubeShare)
-* GPU resource sharing system (Gemini): [https://github.com/NTHU-LSALAB/Gemini](https://github.com/NTHU-LSALAB/Gemini)
+Code: [https://github.com/NTHU-LSALAB/KubeShare](https://github.com/NTHU-LSALAB/KubeShare)
 
 ## Understanding the paper
 

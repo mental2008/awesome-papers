@@ -1,10 +1,16 @@
+---
+description: >-
+  #deep_learning_training_workloads #cluster_scheduler #system_interpretability
+  #ML_for_System #decision_tree #generalized_additive_model
+---
+
 # Lucid: A non-intrusive, scalable and interpretable scheduler for deep learning training jobs
 
 ## Meta Info
 
 Presented in [ASPLOS 2023](https://doi.org/10.1145/3575693.3575705).
 
-Authors: Qinghao Hu, Meng Zhang, Peng Sun, Yonggang Wen, Tianwei Zhang, _Nanyang Technological University, Shanghai AI Laboratory, SenseTime_
+Authors: Qinghao Hu (_NTU & Shanghai AI Lab_), Meng Zhang (_NTU_), Peng Sun (_SenseTime_), Yonggang Wen, Tianwei Zhang (_NTU_).
 
 Code: [https://github.com/S-Lab-System-Group/Lucid](https://github.com/S-Lab-System-Group/Lucid)
 
