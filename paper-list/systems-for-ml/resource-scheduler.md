@@ -26,7 +26,7 @@
 
 ## ML Training Schedulers
 
-|   Name   | Conference                                             | Institution                 | Links                                                                                                                                                                                                                                 |                                                                                                      |
+|   Name   | Conference                                             | Institution                 | Links                                                                                                                                                                                                                                 | Remarks                                                                                              |
 | :------: | ------------------------------------------------------ | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | **SLAQ** | [SoCC 2017](../../reading-notes/conference/socc-2017/) | <ul><li>Princeton</li></ul> | <ul><li><a href="../../reading-notes/conference/socc-2017/slaq-quality-driven-scheduling-for-distributed-machine-learning.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3127479.3127490">Paper</a></li></ul> | Fine-grained job-level scheduler; leverage the _iterative nature_ of general ML training algorithms. |
 
