@@ -99,4 +99,4 @@ Two types of interceptors:
 
 ### Transparent elasticity
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Elasticity in Singularity vs. today</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Elasticity in Singularity vs. today</p></figcaption></figure>

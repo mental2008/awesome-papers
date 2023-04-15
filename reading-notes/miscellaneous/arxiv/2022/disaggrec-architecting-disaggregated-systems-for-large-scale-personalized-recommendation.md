@@ -14,7 +14,7 @@ Authors: Liu Ke (_Meta AI & UWash_), Xuan Zhang (_UWash_), Benjamin Lee (_Meta A
 
 ## Understanding the paper
 
-## TL;DRs
+### TL;DRs
 
 This paper presents **DisaggRec**, _a disaggregated system_ for _large-scale recommendation serving_, that decouples the compute and memory resources.
 
@@ -36,3 +36,7 @@ This paper presents **DisaggRec**, _a disaggregated system_ for _large-scale rec
 * _Co-optimize the partitioning strategies_ for recommendation models and design strategies for disaggregated CNs and MNs.
 * Minimize the cost subject to latency targets and availability requirements.
 * Focus on _two industry-grade models_ — a memory-intensive RM1 and a compute-intensive RM2.
+
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Disaggregated System Architecture.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>RPC-based Model Serving.</p></figcaption></figure>

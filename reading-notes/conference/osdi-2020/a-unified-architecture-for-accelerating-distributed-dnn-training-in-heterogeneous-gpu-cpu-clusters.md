@@ -54,7 +54,7 @@ It outperforms the state-of-the-art open-source _all-reduce_ and _PS_.
       * Broadcast back the global sum.
     *
 
-        <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>PCIe-only machine topology and BytePS data flow.</p></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>PCIe-only machine topology and BytePS data flow.</p></figcaption></figure>
   * NVLink-based topology
     * _Reduce_ tensors from all GPUs to _GPU2_.
     * Copy the results to CPU memory from _GPU2_.
