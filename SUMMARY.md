@@ -57,6 +57,7 @@
     * [From cloud computing to sky computing](Conference/HotOS-2021/sky-computing.md)
   * [ATC 2020](reading-notes/conference/atc-2020/README.md)
     * [Serverless in the wild: Characterizing and optimizing the serverless workload](reading-notes/conference/atc-2020/serverless-in-the-wild-characterizing-and-optimizing-the-serverless-workload.md)
+  * [EuroSys 2020](reading-notes/conference/eurosys-2020.md)
   * [OSDI 2020](Conference/OSDI-2020/README.md)
     * [HiveD: Sharing a GPU cluster for deep learning with guarantees](Conference/OSDI-2020/hived.md)
   * [SoCC 2020](Conference/SoCC-2020/README.md)

@@ -11,3 +11,4 @@
 | [EuroSys 2022](../reading-notes/conference/eurosys-2022/)   | Apr 5-8, 2022      | Rennes, France         |         |
 | [NSDI 2022](../reading-notes/conference/nsdi-2022.md)       | Apr 4-6, 2022      | Renton, WA, USA        |         |
 | [ATC 2020](../reading-notes/conference/atc-2020/)           | Jul 15-17, 2020    | Virtual                |         |
+| [EuroSys 2020](../reading-notes/conference/eurosys-2020.md) | Apr 27-30, 2020    | Virtual                |         |
