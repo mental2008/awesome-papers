@@ -4,7 +4,7 @@
 
 Presented in [ATC 2021](https://www.usenix.org/conference/atc21/presentation/lim).
 
-Authors: Gangmuk Lim, Jeongseob Ahn, Wencong Xiao, Youngjin Kwon, Myeongjae Jeon
+Authors: Gangmuk Lim (_UNIST_), Jeongseob Ahn (_Ajou University_), Wencong Xiao (_Alibaba_), Youngjin Kwon (_KAIST_), Myeongjae Jeon (_UNIST_).
 
 ## Understanding the paper
 
