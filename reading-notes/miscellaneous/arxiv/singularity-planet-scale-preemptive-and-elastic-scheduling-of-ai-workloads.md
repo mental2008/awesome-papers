@@ -67,7 +67,7 @@ Two types of interceptors:
   * Communication. (Barrier)
   * Device Synchronization.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Overview of Device Proxy</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Overview of Device Proxy</p></figcaption></figure>
 
 #### Checkpoint device state
 
