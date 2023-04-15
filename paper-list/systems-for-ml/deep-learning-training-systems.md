@@ -1,7 +1,14 @@
 # Deep Learning Training Systems
 
-## Distributed Training
+## Parallelism
 
-|         Name        | Conference     | Institution              | Links                                                                 | Remarks                                                                                          |
-| :-----------------: | -------------- | ------------------------ | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| **CNN Parallelism** | arXiv 1404.599 | <ul><li>Google</li></ul> | <ul><li><a href="https://arxiv.org/abs/1404.5997">Paper</a></li></ul> | _Data parallelism_ for _convolutional layers_; _model parallelism_ for _fully-connected layers_. |
+|         Name        | Conference                                                     | Institution              | Links                                                                         | Remarks                                                                                          |
+| :-----------------: | -------------------------------------------------------------- | ------------------------ | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+|       **Tofu**      | [EuroSys 2019](../../reading-notes/conference/eurosys-2019.md) | <ul><li>NYU</li></ul>    | <ul><li><a href="https://doi.org/10.1145/3302424.3303953">Paper</a></li></ul> | _Automatic partition_ a dataflow graph of fine-grained tensor operations.                        |
+| **CNN Parallelism** | arXiv 1404.599                                                 | <ul><li>Google</li></ul> | <ul><li><a href="https://arxiv.org/abs/1404.5997">Paper</a></li></ul>         | _Data parallelism_ for _convolutional layers_; _model parallelism_ for _fully-connected layers_. |
+
+## Network Communication
+
+|    Name    | Conference                               | Institution                                             | Links                                                                                                                                                                                                                                                                                                                                                | Remarks                                                                                               |
+| :--------: | ---------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **BytePS** | [OSDI 2020](../../Conference/OSDI-2020/) | <ul><li>Tsinghua University</li><li>ByteDance</li></ul> | <ul><li><a href="../../reading-notes/conference/osdi-2020/a-unified-architecture-for-accelerating-distributed-dnn-training-in-heterogeneous-gpu-cpu-clusters.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/osdi20/presentation/jiang">Paper</a></li><li><a href="https://github.com/bytedance/byteps">Code</a></li></ul> | _Communication framework; leverage_ spare CPU and bandwidth resources_;_ consider _network topology._ |
