@@ -94,6 +94,7 @@
 * [Miscellaneous](Miscellaneous/README.md)
   * [arXiv](reading-notes/miscellaneous/arxiv/README.md)
     * [2022](reading-notes/miscellaneous/arxiv/2022/README.md)
+      * [DisaggRec: Architecting disaggregated systems for large-scale personalized recommendation](reading-notes/miscellaneous/arxiv/2022/disaggrec-architecting-disaggregated-systems-for-large-scale-personalized-recommendation.md)
       * [A case for disaggregation of ML data processing](reading-notes/miscellaneous/arxiv/a-case-for-disaggregation-of-ml-data-processing.md)
       * [Singularity: Planet-scale, preemptive and elastic scheduling of AI workloads](reading-notes/miscellaneous/arxiv/singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md)
       * [Aryl: An elastic cluster scheduler for deep learning](reading-notes/miscellaneous/arxiv/2022/aryl-an-elastic-cluster-scheduler-for-deep-learning.md)
