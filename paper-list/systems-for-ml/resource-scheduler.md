@@ -41,6 +41,6 @@
 
 ## Survey
 
-| Title                                                                                 | Conf             | Institute                                           |                                                                                    Links                                                                                   |
+| Survey                                                                                | Conf             | Institute                                           |                                                                                    Links                                                                                   |
 | ------------------------------------------------------------------------------------- | ---------------- | --------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Deep learning workload scheduling in GPU datacenters: Taxonomy, challenges and vision | arXiv 2205.11913 | <ul><li>NTU</li><li>PKU</li><li>SenseTime</li></ul> | <ul><li><a href="https://arxiv.org/abs/2205.11913">arXiv</a></li><li><a href="https://github.com/S-Lab-System-Group/Awesome-DL-Scheduling-Papers">Paper List</a></li></ul> |
