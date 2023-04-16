@@ -37,6 +37,7 @@
     * [Lucid: A non-intrusive, scalable and interpretable scheduler for deep learning training jobs](reading-notes/conference/asplos-2023/lucid-a-non-intrusive-scalable-and-interpretable-scheduler-for-deep-learning-training-jobs.md)
   * [SC 2022](reading-notes/conference/sc-2022.md)
   * [SoCC 2022](reading-notes/conference/socc-2022/README.md)
+    * [ESCHER: Expressive scheduling with ephemeral resources](reading-notes/conference/socc-2022/escher-expressive-scheduling-with-ephemeral-resources.md)
     * [Serving unseen deep learning model with near-optimal configurations: A fast adaptive search approach](reading-notes/conference/socc-2022/serving-unseen-deep-learning-model-with-near-optimal-configurations-a-fast-adaptive-search-approach.md)
   * [SIGCOMM 2022](reading-notes/conference/sigcomm-2022/README.md)
     * [Multi-resource interleaving for deep learning training](reading-notes/conference/sigcomm-2022/multi-resource-interleaving-for-deep-learning-training.md)

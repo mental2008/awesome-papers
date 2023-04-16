@@ -37,6 +37,10 @@ This paper presents **DisaggRec**, _a disaggregated system_ for _large-scale rec
 * Minimize the cost subject to latency targets and availability requirements.
 * Focus on _two industry-grade models_ — a memory-intensive RM1 and a compute-intensive RM2.
 
+### System Architecture
+
 <figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Disaggregated System Architecture.</p></figcaption></figure>
+
+### Model Serving
 
 <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>RPC-based Model Serving.</p></figcaption></figure>
