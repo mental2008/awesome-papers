@@ -4,7 +4,7 @@
 
 URL: [https://arxiv.org/abs/1604.06174](https://arxiv.org/abs/1604.06174)
 
-Authors: Tianqi Chen, Bing Xu, Chiyuan Zhang, Carlos Guestrin _Unveristy of Washington, Dato. Inc, Massachusetts Institute of Technology_
+Authors: Tianqi Chen (_UW_), Bing Xu (_Dato. Inc_), Chiyuan Zhang (_MIT_), Carlos Guestrin (_UW_).
 
 ### Code (memonger - memory monger)
 
