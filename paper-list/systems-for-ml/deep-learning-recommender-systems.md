@@ -1,5 +1,13 @@
 # Deep Learning Recommender Systems
 
+DLRS: Deep Learning Recommender System
+
+## Deep Learning Recommendation Model
+
+|   Name  | Conference | Institution              | Links                                                                                                                                                                                                                    | Remarks            |
+| :-----: | ---------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| **WDL** | DLRS 2016  | <ul><li>Google</li></ul> | <ul><li><a href="../../reading-notes/miscellaneous/arxiv/2016/wide-and-deep-learning-for-recommender-systems.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/2988450.2988454">Paper</a></li></ul> | Wide & Deep model. |
+
 ## Optimizing Embedding Tables
 
 |      Name     | Conference                                                 | Institution                                                                         | Links                                                                                                                                                                                                                                                                                                                                                  | Remarks                                                                                     |

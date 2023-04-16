@@ -113,6 +113,7 @@
       * [Singularity: Planet-scale, preemptive and elastic scheduling of AI workloads](reading-notes/miscellaneous/arxiv/singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md)
       * [Aryl: An elastic cluster scheduler for deep learning](reading-notes/miscellaneous/arxiv/2022/aryl-an-elastic-cluster-scheduler-for-deep-learning.md)
     * [2016](reading-notes/miscellaneous/arxiv/2016/README.md)
+      * [Wide & deep learning for recommender systems](reading-notes/miscellaneous/arxiv/2016/wide-and-deep-learning-for-recommender-systems.md)
       * [Training deep nets with sublinear memory cost](Miscellaneous/arXiv-2016/training-deep-nets-with-sublinear-memory-cost.md)
   * [MSR Technical Report](reading-notes/miscellaneous/msr-technical-report/README.md)
     * [Heuristics for vector bin packing](reading-notes/miscellaneous/msr-technical-report/heuristics-for-vector-bin-packing.md)

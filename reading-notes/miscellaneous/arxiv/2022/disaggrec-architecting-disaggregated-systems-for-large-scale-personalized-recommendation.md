@@ -43,4 +43,4 @@ This paper presents **DisaggRec**, _a disaggregated system_ for _large-scale rec
 
 ### Model Serving
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>RPC-based Model Serving.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>RPC-based Model Serving.</p></figcaption></figure>

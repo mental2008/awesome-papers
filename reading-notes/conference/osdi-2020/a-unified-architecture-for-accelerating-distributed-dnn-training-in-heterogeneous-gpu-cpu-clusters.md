@@ -37,7 +37,7 @@ It outperforms the state-of-the-art open-source _all-reduce_ and _PS_.
     * (Internally) synchronize the tensors among the local GPUs
     * (Externally) communicate with SS
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>BytePS architecture.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>BytePS architecture.</p></figcaption></figure>
 
 ### Communication design
 
