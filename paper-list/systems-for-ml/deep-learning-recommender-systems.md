@@ -4,9 +4,10 @@ DLRS: Deep Learning Recommender System
 
 ## Deep Learning Recommendation Model
 
-|   Name  | Conference | Institution              | Links                                                                                                                                                                                                                    | Remarks            |
-| :-----: | ---------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| **WDL** | DLRS 2016  | <ul><li>Google</li></ul> | <ul><li><a href="../../reading-notes/miscellaneous/arxiv/2016/wide-and-deep-learning-for-recommender-systems.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/2988450.2988454">Paper</a></li></ul> | Wide & Deep model. |
+|   Name  | Conference   | Institution               | Links                                                                                                                                                                                                                    | Remarks                                                                                 |
+| :-----: | ------------ | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| **ETA** | DLP-KDD 2022 | <ul><li>Alibaba</li></ul> | <ul><li><a href="https://arxiv.org/abs/2209.12212">Paper</a></li></ul>                                                                                                                                                   | _Efficient target attention_ network; locality-sensitive hashing; deployed on _Taobao_. |
+| **WDL** | DLRS 2016    | <ul><li>Google</li></ul>  | <ul><li><a href="../../reading-notes/miscellaneous/arxiv/2016/wide-and-deep-learning-for-recommender-systems.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/2988450.2988454">Paper</a></li></ul> | Wide & Deep model.                                                                      |
 
 ## Optimizing Embedding Tables
 
