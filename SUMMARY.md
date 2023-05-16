@@ -45,6 +45,7 @@
   * [ATC 2022](reading-notes/conference/atc-2022/README.md)
     * [Direct access, high-performance memory disaggregation with DirectCXL](reading-notes/conference/atc-2022/direct-access-high-performance-memory-disaggregation-with-directcxl.md)
   * [OSDI 2022](reading-notes/conference/osdi-2022/README.md)
+    * [Orca: A distributed serving system for transformer-based generative models](reading-notes/conference/osdi-2022/orca-a-distributed-serving-system-for-transformer-based-generative-models.md)
     * [Microsecond-scale preemption for concurrent GPU-accelerated DNN inferences](reading-notes/conference/osdi-2022/microsecond-scale-preemption-for-concurrent-gpu-accelerated-dnn-inferences.md)
     * [Looking beyond GPUs for DNN scheduling on multi-tenant clusters](reading-notes/conference/osdi-2022/looking-beyond-gpus-for-dnn-scheduling-on-multi-tenant-clusters.md)
   * [IPDPS 2022](reading-notes/conference/ipdps-2022/README.md)
