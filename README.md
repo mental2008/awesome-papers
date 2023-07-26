@@ -13,7 +13,7 @@ Hi all, thank you for visiting here ;-) These are my personal paper reading note
 
 ## Epilogue
 
-If it helps, you could star the [GitHub repository](https://github.com/mental2008/awesome-papers).
+If it helps, you could _star_ the [GitHub repository](https://github.com/mental2008/awesome-papers).
 
 For a better experience, please check out the [website](https://paper.yanglingyun.me).
 
@@ -21,4 +21,4 @@ For a better experience, please check out the [website](https://paper.yanglingyu
 
 Released under the [MIT License](LICENSE/).
 
-Copyright © 2022-2023 [Lingyun Yang](https://github.com/mental2008).
+Copyright © 2022 [Lingyun Yang](https://github.com/mental2008).

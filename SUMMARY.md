@@ -23,9 +23,10 @@
   * [GPU Disaggregation](paper-list/resource-disaggregation/gpu-disaggregation.md)
   * [Memory Disaggregation](paper-list/resource-disaggregation/memory-disaggregation.md)
 * [Resource Fragmentation](paper-list/resource-fragmentation.md)
-* [Sky Computing](paper-list/sky-computing.md)
-* [RDMA](paper-list/rdma.md)
-* [Serverless Computing](paper-list/serverless-computing.md)
+* [Cloud Computing](paper-list/cloud-computing/README.md)
+  * [Sky Computing](paper-list/cloud-computing/sky-computing.md)
+  * [Serverless Computing](paper-list/cloud-computing/serverless-computing.md)
+* [Remote Direct Memory Access (RDMA)](paper-list/rdma.md)
 
 ## Reading Notes
 
