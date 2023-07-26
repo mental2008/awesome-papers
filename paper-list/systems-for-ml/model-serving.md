@@ -2,7 +2,7 @@
 
 ## Inference Serving System
 
-Large language models (LLMs) are _hot_ and _diverse_ compared to conventional models. Therefore, I have classified the related works for LLMs in [another paper list](large-language-model-llm.md).
+Large language models (LLMs) are _hot_ and _diverse_ compared to conventional models. Therefore, I have classified the related works for LLMs in [another paper list](llm.md).
 
 |          Name          | Conference                                             | Institution                   | Links                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Remarks                                               |
 | :--------------------: | ------------------------------------------------------ | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |

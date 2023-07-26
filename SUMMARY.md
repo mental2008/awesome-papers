@@ -5,14 +5,14 @@
 ## Paper List
 
 * [Systems for ML](paper-list/systems-for-ml/README.md)
-  * [Large Language Model (LLM)](paper-list/systems-for-ml/large-language-model-llm.md)
+  * [Large Language Model (LLM)](paper-list/systems-for-ml/llm.md)
   * [Data Processing](paper-list/systems-for-ml/data-processing.md)
   * [Deep Learning Training](paper-list/systems-for-ml/deep-learning-training.md)
   * [Model Serving](paper-list/systems-for-ml/model-serving.md)
   * [Resource Scheduler](paper-list/systems-for-ml/resource-scheduler.md)
-  * [Deep Learning Recommendation Model (DLRM)](paper-list/systems-for-ml/deep-learning-recommendation-model-dlrm.md)
-  * [Mixture of Experts (MoE)](paper-list/systems-for-ml/mixture-of-experts-moe.md)
-  * [Hyper-Parameter Tuning (HPO)](paper-list/systems-for-ml/hyper-parameter-tuning-hpo.md)
+  * [Deep Learning Recommendation Model (DLRM)](paper-list/systems-for-ml/dlrm.md)
+  * [Mixture of Experts (MoE)](paper-list/systems-for-ml/moe.md)
+  * [Hyper-Parameter Tuning (HPO)](paper-list/systems-for-ml/hpo.md)
   * [Reinforcement Learning (RL)](paper-list/systems-for-ml/reinforcement-learning-rl.md)
   * [Deep Learning Compiler](paper-list/systems-for-ml/deep-learning-compiler.md)
   * [Deep Learning Framework](paper-list/systems-for-ml/deep-learning-framework.md)
