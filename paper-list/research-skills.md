@@ -8,6 +8,8 @@
 
 The Ph.D. Grind, by Philip J. Guo
 
+[A PhD Is Not Enough!: A Guide to Survival in Science](https://www.usu.edu/biomath/files/peter-feibelm.pdf), by Peter J. Feibelman
+
 ## Paper Reading
 
 [How to Read a Paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf), by Srinivasan Keshav \[[Personal Note](../reading-notes/journal/ccr/how-to-read-a-paper.md)]
