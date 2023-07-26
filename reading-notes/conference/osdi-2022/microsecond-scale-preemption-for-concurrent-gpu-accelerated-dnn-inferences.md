@@ -20,7 +20,7 @@ Artifact: [https://github.com/SJTU-IPADS/reef-artifacts/tree/osdi22-ae](https://
 
 ### TL;DR
 
-This paper presents a GPU-accelerated DNN inference serving system named **Reef**, which enables microsecond-scale **kernel preemption** and controlled **concurrent execution** in GPU scheduling.
+This paper presents a GPU-accelerated DNN inference serving system named **REEF**, which enables microsecond-scale **kernel preemption** and controlled **concurrent execution** in GPU scheduling.
 
 ### Technical details
 
