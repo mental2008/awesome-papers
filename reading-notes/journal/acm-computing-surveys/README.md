@@ -1,2 +1,0 @@
-# ACM Computing Surveys
-

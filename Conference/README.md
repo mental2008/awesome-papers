@@ -30,4 +30,6 @@
 | [ASPLOS 2020](../reading-notes/conference/asplos-2020.md)   | Mar 16-20, 2020    | Virtual                                       |                                                                       |
 | [MLSys 2020](../reading-notes/conference/mlsys-2020.md)     | Mar 2-4, 2020      | Austin, TX, USA                               |                                                                       |
 | [EuroSys 2019](../reading-notes/conference/eurosys-2019.md) | Mar 25-28, 2019    | Dresden, Germany                              |                                                                       |
+| [SoCC 2017](../reading-notes/conference/socc-2017/)         | Sep 25-27, 2017    | Santa Clara, California, USA                  |                                                                       |
 | [ASPLOS 2017](../reading-notes/conference/asplos-2017/)     | Apr 8-12, 2017     | Xi'an, China                                  |                                                                       |
+| [NSDI 2017](NSDI-2017/)                                     | Mar 27-29, 2017    | Boston, MA, USA                               |                                                                       |
