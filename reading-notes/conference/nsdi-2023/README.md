@@ -4,7 +4,9 @@
 
 Homepage: [https://www.usenix.org/conference/nsdi23](https://www.usenix.org/conference/nsdi23)
 
-### Paper List
+Paper List: [https://www.usenix.org/conference/nsdi23/technical-sessions](https://www.usenix.org/conference/nsdi23/technical-sessions)
 
-* (Spring) [https://www.usenix.org/conference/nsdi23/spring-accepted-papers](https://www.usenix.org/conference/nsdi23/spring-accepted-papers)
-* (Fall) [https://www.usenix.org/conference/nsdi23/fall-accepted-papers](https://www.usenix.org/conference/nsdi23/fall-accepted-papers)
+### Accepted Papers
+
+* Spring: [https://www.usenix.org/conference/nsdi23/spring-accepted-papers](https://www.usenix.org/conference/nsdi23/spring-accepted-papers)
+* Fall: [https://www.usenix.org/conference/nsdi23/fall-accepted-papers](https://www.usenix.org/conference/nsdi23/fall-accepted-papers)

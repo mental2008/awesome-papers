@@ -6,21 +6,21 @@
 
 Homepage: [https://www.usenix.org/conference/atc22](https://www.usenix.org/conference/atc22)
 
-Paper list: [https://www.usenix.org/conference/atc22/technical-sessions](https://www.usenix.org/conference/atc22/technical-sessions)
+Paper List: [https://www.usenix.org/conference/atc22/technical-sessions](https://www.usenix.org/conference/atc22/technical-sessions)
 
-## Papers that appeal to me
+## Papers
 
-### DNN inference
+### DNN Inference
 
-* DNN batching inference system to reduce the latency and improve the throughput: [DVABatch, SJTU](https://www.usenix.org/conference/atc22/presentation/cui) \[ [Artifact](https://github.com/sjtu-epcc/DVABatch) ]
-* DNN inference scheduling framework to improve the GPU utilization under SLO constraints: [Gpulet, KAIST](https://www.usenix.org/conference/atc22/presentation/choi-seungbeom) \[ [Code](https://github.com/casys-kaist/glet) ]
-* Secure DNN inference system to ensure model confidentiality, low latency, high accuracy with integrity protection: [SOTER, HKU](https://www.usenix.org/conference/atc22/presentation/shen) \[ [Artifact](https://github.com/hku-systems/SOTER) ]
+* [DVABatch: Diversity-aware Multi-Entry Multi-Exit Batching for Efficient Processing of DNN Services on GPUs](https://www.usenix.org/conference/atc22/presentation/cui) \[[Personal Note](dvabatch.md), [Code](https://github.com/sjtu-epcc/DVABatch)]
+* [Serving Heterogeneous Machine Learning Models on Multi-GPU Servers with Spatio-Temporal Sharing](https://www.usenix.org/conference/atc22/presentation/choi-seungbeom) \[[Personal Note](gpulet.md), [Code](https://github.com/casys-kaist/glet)]
+* [SOTER: Guarding Black-box Inference for General Neural Networks at the Edge](https://www.usenix.org/conference/atc22/presentation/shen) \[[Personal Note](soter.md), [Code](https://github.com/hku-systems/SOTER)]
 
-### DNN training
+### DNN Training
 
-* Distributed training framework for large models: [Whale, Alibaba](https://www.usenix.org/conference/atc22/presentation/jia-xianyan) \[ [Code](https://github.com/alibaba/EasyParallelLibrary) ]
+* [Whale: Efficient Giant Model Training over Heterogeneous GPUs](https://www.usenix.org/conference/atc22/presentation/jia-xianyan) \[[Personal Note](whale.md), [Code](https://github.com/alibaba/EasyParallelLibrary)]
 
-### Resource manager
+### Resource Manager
 
-* Resource manager which co-locates cloud gaming and DL training to improve the GPU utilization: [PilotFish, SJTU & MSRA](https://www.usenix.org/conference/atc22/presentation/zhang-wei)
-* GPU memory manager which harvests the temporarily available neighbor GPUs' memory: [memHarvester, KAIST](https://www.usenix.org/conference/atc22/presentation/choi-sangjin)
+* [PilotFish: Harvesting Free Cycles of Cloud Gaming with Deep Learning Training](https://www.usenix.org/conference/atc22/presentation/zhang-wei) \[[Personal Note](pilotfish.md)]
+* [Memory Harvesting in Multi-GPU Systems with Hierarchical Unified Virtual Memory](https://www.usenix.org/conference/atc22/presentation/choi-sangjin) \[[Personal Note](memharvester.md)]

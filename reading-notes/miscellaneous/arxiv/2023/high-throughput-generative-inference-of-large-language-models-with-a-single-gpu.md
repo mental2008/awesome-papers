@@ -1,14 +1,12 @@
 ---
-description: >-
-  #large_language_model #offloading_system #memory_hierarchy #tensor_placement
-  #compression #LLM_inference
+description: An offloading framework for high-throughput LLM inference.
 ---
 
 # High-throughput generative inference of large language models with a single GPU
 
 ## Meta Info
 
-Presented in [arxiv:2303.06865](https://arxiv.org/abs/2303.06865).
+Presented in [arxiv:2303.06865](https://arxiv.org/abs/2303.06865). (Accepted in ICML 2023)
 
 Authors: Ying Sheng (_Stanford_), Lianmin Zheng (_UC Berkeley_), Binhang Yuan (_ETH_), Zhuohan Li (_UC Berkeley_), Max Ryabinin (_Yandex & HSE University_), Daniel Y. Fu, Zhiqiang Xie (_Stanford_), Beidi Chen (_Meta & CMU_), Clark Barrett (_Stanford_), Joseph E. Gonzalez (_UC Berkeley_), Percy Liang, Christopher Ré (_Stanford_), Ion Stoica (_UC Berkeley_), Ce Zhang (_ETH_).
 
