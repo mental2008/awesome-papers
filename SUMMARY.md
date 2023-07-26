@@ -27,6 +27,7 @@
   * [Sky Computing](paper-list/cloud-computing/sky-computing.md)
   * [Serverless Computing](paper-list/cloud-computing/serverless-computing.md)
 * [Remote Direct Memory Access (RDMA)](paper-list/rdma.md)
+* [Research Skills](paper-list/research-skills.md)
 
 ## Reading Notes
 
@@ -126,7 +127,7 @@
     * [CSUR 2017](reading-notes/journal/csur/csur-2017/README.md)
       * [GPU virtualization and scheduling methods: A comprehensive survey](reading-notes/journal/csur/csur-2017/gpu-virtualization-survey.md)
   * [ACM SIGCOMM Computer Communication Review (CCR)](reading-notes/journal/ccr/README.md)
-    * [Data-driven Networking Research: models for academic collaboration with industry](reading-notes/journal/ccr/data-driven-networking-research-models-for-academic-collaboration-with-industry.md)
+    * [Data-driven Networking Research: models for academic collaboration with industry](reading-notes/journal/ccr/data-driven-networking-research.md)
     * [How to Read a Paper](reading-notes/journal/ccr/how-to-read-a-paper.md)
 * [Miscellaneous](Miscellaneous/README.md)
   * [arXiv](reading-notes/miscellaneous/arxiv/README.md)
