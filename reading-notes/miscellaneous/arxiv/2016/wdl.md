@@ -1,7 +1,5 @@
 ---
-description: >-
-  #deep_learning_recommendation_model #deep_learning_recommender_system
-  #multithreading_parallelism
+description: A recommender system with a wide & deep model (WDL).
 ---
 
 # Wide & deep learning for recommender systems

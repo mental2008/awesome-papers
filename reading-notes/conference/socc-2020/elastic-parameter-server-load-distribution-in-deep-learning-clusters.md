@@ -2,7 +2,7 @@
 
 ## Metadata
 
-Presented in [SoCC '20](https://dl.acm.org/doi/10.1145/3419111.3421307). \[ [Paper](https://dl.acm.org/doi/pdf/10.1145/3419111.3421307) ]
+Presented in [SoCC 2020](https://dl.acm.org/doi/10.1145/3419111.3421307).
 
 Authors: Yangrui Chen, Yanghua Peng, Yixin Bao, Chuan Wu, Yibo Zhu, Chuanxiong Guo
 
@@ -12,8 +12,8 @@ A work across HKU and ByteDance.
 
 ### Motivation
 
-* Parameter servers (PS) are widely used in distrubuted DNN training. But their performance will be damanged by **stragglers** because of some reasons (e.g., _imbalanced parameter distribution_, _bandwidth contention_, or _computation interference_).
-* **Few** existing studies have investigated **efficient parameter (aka load) distribution** among parameter servers (PS).
+* Parameter servers (PS) are widely used in distributed DNN training. But their performance will be damaged by **stragglers** for some reasons (e.g., _imbalanced parameter distribution_, _bandwidth contention_, or _computation interference_).
+* **Few** studies have investigated **efficient parameter (aka load) distribution** among parameter servers (PS).
 
 ### Solution
 

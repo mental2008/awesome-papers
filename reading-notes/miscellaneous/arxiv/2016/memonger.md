@@ -1,6 +1,10 @@
+---
+description: Reduce memory cost to store intermediate results and gradients.
+---
+
 # Training deep nets with sublinear memory cost
 
-## Metadata
+## Meta Info
 
 URL: [https://arxiv.org/abs/1604.06174](https://arxiv.org/abs/1604.06174)
 
