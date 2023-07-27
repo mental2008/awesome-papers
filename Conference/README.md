@@ -9,6 +9,7 @@
 | [ICML 2023](../reading-notes/conference/icml-2023.md)       | Jul 23-29, 2023    | Hawaii Convention Center                      |                                                                       |
 | [ATC 2023](../reading-notes/conference/atc-2023/)           | Jul 10-12, 2023    | Boston, MA, USA                               | Co-located with [OSDI 2023](../reading-notes/conference/osdi-2023.md) |
 | [OSDI 2023](../reading-notes/conference/osdi-2023.md)       | Jul 10-12, 2023    | Boston, MA, USA                               | Co-located with [ATC 2023](../reading-notes/conference/atc-2023/)     |
+| [HotOS 2023](../reading-notes/conference/hotos-2023.md)     | Jun 22-24, 2023    | Providence, Rhode Island, USA                 |                                                                       |
 | [ISCA 2023](../reading-notes/conference/isca-2023.md)       | Jun 17-21, 2023    | Orlando, FL, USA                              |                                                                       |
 | [MLSys 2023](../reading-notes/conference/mlsys-2023.md)     | Jun 4-8, 2023      | Southern Florida, USA                         |                                                                       |
 | [EuroSys 2023](../reading-notes/conference/eurosys-2023.md) | May 9-12, 2023     | Rome, Italy                                   |                                                                       |

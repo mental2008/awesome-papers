@@ -1,3 +1,9 @@
+---
+description: >-
+  Trace analysis in Alibaba production clusters, which co-locates different
+  workloads to improve resource efficiency.
+---
+
 # Who limits the resource efficiency of my datacenter: An analysis of Alibaba datacenter traces
 
 ## Metadata

@@ -1,7 +1,7 @@
 ---
 description: >-
-  #priority_flow_control #PFC #RoCE #RDMA_over_Converged_Ethernet
-  #remote_direct_memory_access #RDMA #loss_recovery #selective_retransmission
+  An improved RoCE NIC (IRN) design that makes a few simple changes to the RoCE
+  NIC for better handling of packets.
 ---
 
 # Revisiting network support for RDMA
@@ -14,7 +14,7 @@ Authors: Radhika Mittal (_UC Berkeley_), Alexander Shpiner (_Mellanox_), Aurojit
 
 ## Understanding the paper
 
-* This paper proposes an **improved RoCE NIC (IRN)** design that _makes a few simple changes to the RoCE NIC_ for _better handling of packet_.
+* This paper proposes an **improved RoCE NIC (IRN)** design that _makes a few simple changes to the RoCE NIC_ for _better handling of packets_.
   * It shows that PFC is not _fundamentally required_ to support RoCE.
   * It shows that _IRN (without PFC)_ outperforms _RoCE (with PFC)_ by 6-83% for typical network scenarios.
 
