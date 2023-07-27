@@ -4,9 +4,19 @@
 
 [How to Have a Bad Career in Research/Academia](https://people.eecs.berkeley.edu/\~pattrsn/talks/BadCareer.pdf), by David A. Patterson
 
+[You and Your Research](https://blog.samaltman.com/you-and-your-research), by Richard Hamming
+
+[Principles of Effective Research](https://michaelnielsen.org/blog/principles-of-effective-research/), by Michael A. Nielsen
+
+[An Opinionated Guide to ML Research](http://joschu.net/blog/opinionated-guide-ml-research.html), by John Schulman
+
+[Practicing AI research](https://www.jasonwei.net/blog/practicing-ai-research), by Jason Wei
+
 ## Before you start your PhD
 
 The Ph.D. Grind, by Philip J. Guo
+
+[A Survival Guide to a PhD](http://karpathy.github.io/2016/09/07/phd/), by Andrej Karpathy
 
 [A PhD Is Not Enough!: A Guide to Survival in Science](https://www.usu.edu/biomath/files/peter-feibelm.pdf), by Peter J. Feibelman
 

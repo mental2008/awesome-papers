@@ -28,6 +28,7 @@
   * [Serverless Computing](paper-list/cloud-computing/serverless-computing.md)
 * [Remote Direct Memory Access (RDMA)](paper-list/rdma.md)
 * [Research Skills](paper-list/research-skills.md)
+* [Misc](paper-list/misc.md)
 
 ## Reading Notes
 
