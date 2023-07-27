@@ -1,5 +1,5 @@
 ---
-description: '#serverless #API_remoting'
+description: Transparently enable serverless functions to use GPUs through CUDA APIs.
 ---
 
 # DGSF: Disaggregated GPUs for serverless functions

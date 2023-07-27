@@ -1,3 +1,9 @@
+---
+description: >-
+  Reduce the system-wide GPU memory consumption for co-located DNN training
+  jobs.
+---
+
 # Zico: Efficient GPU memory sharing for concurrent DNN training
 
 ## Metadata

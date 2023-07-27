@@ -2,7 +2,7 @@
 
 ## Generally Speaking
 
-<table><thead><tr><th width="174">Name</th><th align="center">Conference</th><th>Institution</th><th>Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>The Sky Above The Clouds</strong></td><td align="center">arXiv 2205.07147</td><td><ul><li>UC Berkeley</li></ul></td><td><ul><li><a href="https://arxiv.org/abs/2205.07147">Paper</a></li></ul></td><td>A Berkeley View on the Future of Cloud Computing.</td></tr><tr><td><strong>From Cloud Computing to Sky Computing</strong></td><td align="center"><a href="../../reading-notes/conference/hotos-2021/">HotOS 2021</a></td><td><ul><li>UC Berkeley</li></ul></td><td><ul><li><a href="../../reading-notes/conference/hotos-2021/sky-computing.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3458336.3465301">Paper</a></li></ul></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="174">Name</th><th align="center">Conference</th><th>Institution</th><th>Links</th><th data-hidden>Remarks</th></tr></thead><tbody><tr><td><strong>The Sky Above The Clouds: A Berkeley View on the Future of Cloud Computing</strong></td><td align="center">arXiv 2205.07147</td><td><ul><li>UC Berkeley</li></ul></td><td><ul><li><a href="https://arxiv.org/abs/2205.07147">Paper</a></li></ul></td><td>.</td></tr><tr><td><strong>From Cloud Computing to Sky Computing</strong></td><td align="center"><a href="../../reading-notes/conference/hotos-2021/">HotOS 2021</a></td><td><ul><li>UC Berkeley</li></ul></td><td><ul><li><a href="../../reading-notes/conference/hotos-2021/sky-computing.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3458336.3465301">Paper</a></li></ul></td><td></td></tr></tbody></table>
 
 ## Intercloud Broker
 

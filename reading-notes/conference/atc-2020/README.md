@@ -4,4 +4,4 @@
 
 Homepage: [https://www.usenix.org/conference/atc20](https://www.usenix.org/conference/atc20)
 
-Paper list: [https://www.usenix.org/conference/atc20/technical-sessions](https://www.usenix.org/conference/atc20/technical-sessions)
+Paper List: [https://www.usenix.org/conference/atc20/technical-sessions](https://www.usenix.org/conference/atc20/technical-sessions)
