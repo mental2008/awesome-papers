@@ -29,7 +29,7 @@ Currently, there is no framework to consider sharing anomaly in multi-tenant GPU
   * Level-4 cell: Node (8 GPUs)
   * Level-5 cell: Rack (multi-node)
 
-![System architecture: a two-layer design](<../../../.gitbook/assets/hived-system-arch (1).png>)
+![System architecture: a two-layer design](<../../../.gitbook/assets/hived-system-arch.png>)
 
 * HiveD separates **resource reservation** and **resource allocation** (which is determined by schedulers). Therefore, it can easily incorporate any state-of-the-art deep learning scheduler (e.g., YARN-CS, Gandiva, Tiresias), which means that each VC can apply a diverse scheduler to achieve different objectives (e.g., cluster utilization, job completion time, fairness).
 * HiveD has been open-sourced and integrated in [OpenPAI](https://github.com/microsoft/pai).
