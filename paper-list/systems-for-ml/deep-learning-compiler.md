@@ -6,10 +6,10 @@ DSA: Domain-Specific Architecture
 
 ## System
 
-|   Name   | Conference | Institution              | Links                                                                                                                                                                                                                                               |
-| :------: | ---------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **MLIR** | CGO 2021   | <ul><li>Google</li></ul> | <ul><li><a href="https://research.google/pubs/pub49988/">Paper</a></li><li><a href="https://mlir.llvm.org/">Homepage</a></li></ul>                                                                                                                  |
-|  **TVM** | OSDI 2018  | <ul><li>UW</li></ul>     | <ul><li><a href="https://www.usenix.org/conference/osdi18/presentation/chen">Paper</a></li><li><a href="https://github.com/apache/tvm">Code</a></li><li><a href="https://www.usenix.org/conference/osdi18/presentation/chen">Homepage</a></li></ul> |
+| Name     |                       Conference                       | Institution              | Links                                                                                                                                                                                                                                               |
+| -------- | :----------------------------------------------------: | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **MLIR** |                        CGO 2021                        | <ul><li>Google</li></ul> | <ul><li><a href="https://research.google/pubs/pub49988/">Paper</a></li><li><a href="https://mlir.llvm.org/">Homepage</a></li></ul>                                                                                                                  |
+| **TVM**  | [OSDI 2018](../../reading-notes/conference/osdi-2018/) | <ul><li>UW</li></ul>     | <ul><li><a href="https://www.usenix.org/conference/osdi18/presentation/chen">Paper</a></li><li><a href="https://github.com/apache/tvm">Code</a></li><li><a href="https://www.usenix.org/conference/osdi18/presentation/chen">Homepage</a></li></ul> |
 
 ## Tensor Program Generation
 

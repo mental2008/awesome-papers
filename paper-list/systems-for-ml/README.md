@@ -1,6 +1,6 @@
 # Systems for ML
 
-## Lifecycle
+## ML Lifecycle
 
 * [Data Processing](data-processing.md)
 * [Deep Learning Training](deep-learning-training.md)
@@ -10,7 +10,7 @@
 * [Deep Learning Framework](deep-learning-framework.md)
 * [Cloud-Edge Collaboration](cloud-edge-collaboration.md)
 
-## Workloads
+## Specific Workloads
 
 * [Large Language Model (LLM)](llm.md)
 * [Mixture of Experts (MoE)](moe.md)
