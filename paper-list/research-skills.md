@@ -24,6 +24,8 @@ The Ph.D. Grind, by Philip J. Guo
 
 [How to Read a Paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf), by Srinivasan Keshav \[[Personal Note](../reading-notes/journal/ccr/how-to-read-a-paper.md)]
 
+[Efficient Reading of Papers in Science and Technology](https://www.cs.columbia.edu/\~hgs/netbib/efficientReading.pdf), by Michael J. Hanson and Dylan J. McNamee
+
 ## Writing a Paper
 
 [How (and How Not) to Write a Good Systems Paper](https://www.usenix.org/legacy/publications/library/proceedings/dsl97/good\_paper.html), by Roy Levin and David D. Redell
