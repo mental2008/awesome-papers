@@ -39,8 +39,8 @@ This paper presents **DisaggRec**, _a disaggregated system_ for _large-scale rec
 
 ### System Architecture
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Disaggregated System Architecture.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/disaggrec-disaggregated-system-architecture.png" alt=""><figcaption><p>Disaggregated System Architecture.</p></figcaption></figure>
 
 ### Model Serving
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>RPC-based Model Serving.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/disaggrec-rpc-based-model-serving.png" alt=""><figcaption><p>RPC-based Model Serving.</p></figcaption></figure>

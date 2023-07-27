@@ -37,7 +37,7 @@ This paper presents a GPU-accelerated DNN inference serving system named **REEF*
         * The execution time: best-effort kernels < real-time kernel
         * The CU occupancy: best-effort kernels > real-time kernel
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Extended GPU runtime for instant preemption.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/extended-gpu-runtime-for-instant-preemption.png" alt=""><figcaption><p>Extended GPU runtime for instant preemption.</p></figcaption></figure>
 
 * For host queues (HQs), dequeue all buffered kernels and reclaim memory
 * For device queues (DQs), inject a piece of code at the beginning of each kernel in advance and terminate itself when preemption flag is true.

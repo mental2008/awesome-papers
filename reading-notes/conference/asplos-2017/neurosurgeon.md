@@ -22,7 +22,7 @@ It doesn't require per-application profiling.
 
 ### Overview
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p>System Overview.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/neurosurgeon-system-overview.png" alt=""><figcaption><p>System Overview.</p></figcaption></figure>
 
 ### Dynamic DNN Partitioning
 

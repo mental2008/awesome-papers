@@ -32,7 +32,7 @@ What we need in sky computing:
 2. **An intercloud layer**: route jobs to the right cloud.
 3. **A peering laye**r: allow cloud to have agreements with each other about how to exchange services.
 
-![The analogy between the Internet and Sky Computing](analogy-between-the-internet-and-sky-computing.png)
+![The analogy between the Internet and Sky Computing](.gitbook/../../../../.gitbook/assets/analogy-between-the-internet-and-sky-computing.png)
 
 #### Compatibility layer
 

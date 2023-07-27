@@ -37,7 +37,7 @@ It outperforms the state-of-the-art open-source _all-reduce_ and _PS_.
     * (Internally) synchronize the tensors among the local GPUs
     * (Externally) communicate with SS
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>BytePS architecture.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/byteps-architecture.png" alt=""><figcaption><p>BytePS architecture.</p></figcaption></figure>
 
 ### Communication design
 
@@ -54,7 +54,7 @@ It outperforms the state-of-the-art open-source _all-reduce_ and _PS_.
       * Broadcast back the global sum.
     *
 
-        <figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>PCIe-only machine topology and BytePS data flow.</p></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/pcie-only-machine-topology-and-byteps-data-flow.png" alt=""><figcaption><p>PCIe-only machine topology and BytePS data flow.</p></figcaption></figure>
   * NVLink-based topology
     * _Reduce_ tensors from all GPUs to _GPU2_.
     * Copy the results to CPU memory from _GPU2_.
@@ -62,7 +62,7 @@ It outperforms the state-of-the-art open-source _all-reduce_ and _PS_.
     * Prevent GPUs from using _the P0 - CPU0 bandwidth_ for communication, so _the NIC can run to full 100Gbps bandwidth_.
     *
 
-        <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>NVLink-based machine topology and BytePS data flow.</p></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/nvlink-based-machine-topology-and-byteps-data-flow.png.png" alt=""><figcaption><p>NVLink-based machine topology and BytePS data flow.</p></figcaption></figure>
   * **Two principles**
     * Avoid direct GPU-to-GPU memory copy when the two GPUs are _not_ under the same PCIe switch.
     * Minimize traffic on the PCIe switch to the CPU link that is _shared by GPUs and NIC_.

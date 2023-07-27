@@ -22,6 +22,6 @@ A work across HKU and ByteDance.
   * An _exploitation-exploration_ method is used to 1) scale in and out parameter servers, 2) adjust parameter distribution among PSs.
   * Implemented on BytePS and vanilla MXNet PS architectures.
 
-![The workflow of PSLD](https://user-images.githubusercontent.com/22493630/138033042-e50a21dd-6e86-4251-b330-edef57f0d611.png)
+![The workflow of PSLD](../../../.gitbook/assets/psld-workflow.png)
 
 Not read the details of the algorithms.

@@ -67,7 +67,7 @@ Two types of interceptors:
   * Communication. (Barrier)
   * Device Synchronization.
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Overview of Device Proxy</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/overview-of-device-proxy.png" alt=""><figcaption><p>Overview of Device Proxy</p></figcaption></figure>
 
 #### Checkpoint device state
 
@@ -99,4 +99,4 @@ Two types of interceptors:
 
 ### Transparent elasticity
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Elasticity in Singularity vs. today</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/elasticity-in-singularity-vs-today.png" alt=""><figcaption><p>Elasticity in Singularity vs. today</p></figcaption></figure>

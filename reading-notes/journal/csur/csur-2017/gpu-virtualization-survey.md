@@ -18,7 +18,7 @@ GPU virtualization can be implemented on **three approaches**.
 * The requests will be processed remotely and the results are returned to the guest OS.
 * The core difficulty is that **the GPU driver implementation is not open source**.
 
-<figure><img src="../../../../Journal/ACM-Computing-Surveys-2017/architecture-of-the-api-remoting-approach.png" alt=""><figcaption><p>Architecture of the API remoting approach</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/architecture-of-the-api-remoting-approach.png" alt=""><figcaption><p>Architecture of the API remoting approach</p></figcaption></figure>
 
 ### **Para & full virtualization**
 
@@ -26,7 +26,7 @@ GPU virtualization can be implemented on **three approaches**.
 * This approach uses **a custom GPU driver** based on **the available documentation** to realize GPU virtualization at the driver level.
 * NVIDIA-related **reverse engineering** is required.
 
-<figure><img src="../../../../Journal/ACM-Computing-Surveys-2017/architecture-of-the-full-or-para-virtualization-approach.png" alt=""><figcaption><p>Architecture of the full or para virtualization approach</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/architecture-of-the-full-or-para-virtualization-approach.png" alt=""><figcaption><p>Architecture of the full or para virtualization approach</p></figcaption></figure>
 
 ### **Hardware-supported virtualization**
 
@@ -34,4 +34,4 @@ GPU virtualization can be implemented on **three approaches**.
 * This approach requires that a guest OS is given direct access to GPUs with **hardware extension features**.
 * For example, NVIDIA GRID allows some GPUs to be multiplexed.
 
-<figure><img src="../../../../Journal/ACM-Computing-Surveys-2017/architecture-of-the-hardware-supported-approach.png" alt=""><figcaption><p>Architecture of the hardware-supported approach</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/architecture-of-the-hardware-supported-approach.png" alt=""><figcaption><p>Architecture of the hardware-supported approach</p></figcaption></figure>

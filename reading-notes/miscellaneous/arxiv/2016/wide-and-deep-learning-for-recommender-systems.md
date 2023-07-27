@@ -36,7 +36,7 @@ Authors: Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandr
   * High-dimensional categorical features are converted into _a low-dimensional and dense real-valued vector_, often referred to as _an embedding vector_.
   * The dimensionality of the embeddings is usually on the order of O(10) to O(100).
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Wide &#x26; Deep model structure for apps recommendation.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/deep-model-structure-for-apps-recommendation.png" alt=""><figcaption><p>Wide &#x26; Deep model structure for apps recommendation.</p></figcaption></figure>
 
 ### Recommendation pipeline overview
 
@@ -47,4 +47,4 @@ Authors: Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandr
   * Each request includes a set of item candidates and user features
   * Use _multithreading parallelism_ to _run smaller batches in parallel_, instead of _scoring all candidate items in a single-batch inference_
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Apps recommendation pipeline overview.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/apps-recommendation-pipeline-overview.png" alt=""><figcaption><p>Apps recommendation pipeline overview.</p></figcaption></figure>
