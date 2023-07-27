@@ -4,10 +4,5 @@
 
 ## Detailed Aspects
 
-{% content-ref url="sky-computing.md" %}
-[sky-computing.md](sky-computing.md)
-{% endcontent-ref %}
-
-{% content-ref url="serverless-computing.md" %}
-[serverless-computing.md](serverless-computing.md)
-{% endcontent-ref %}
+* [Sky Computing](sky-computing.md)
+* [Serverless Computing](serverless-computing.md)
