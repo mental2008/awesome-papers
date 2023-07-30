@@ -46,7 +46,7 @@ The Ph.D. Grind, by Philip J. Guo
 
 ## Student Mentorship
 
-[Your students are your legacy](https://dl.acm.org/doi/10.1145/1467247.1467259), by David A. Patterson \[[中文译本](https://blog.sciencenet.cn/blog-414166-302397.html) from 包云岗]
+[Your students are your legacy](https://dl.acm.org/doi/10.1145/1467247.1467259), by David A. Patterson \[[中文译本](https://blog.sciencenet.cn/blog-414166-302397.html)]
 
 ***
 

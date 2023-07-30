@@ -21,4 +21,4 @@ For a better experience, please check out the [website](https://paper.yanglingyu
 
 Released under the [MIT License](LICENSE/).
 
-Copyright © 2021 [Lingyun Yang](https://github.com/mental2008).
+Copyright © 2023 [Lingyun Yang](https://github.com/mental2008).
