@@ -8,6 +8,10 @@
 |  **EVStore**  | [ASPLOS 2023](../../reading-notes/conference/asplos-2023/) | <ul><li>UChicago</li><li>Many others</li></ul>                                      | <ul><li><a href="../../reading-notes/conference/asplos-2023/evstore.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3575693.3575718">Paper</a></li><li><a href="https://github.com/ucare-uchicago/ev-store-dlrm">Code</a></li></ul> | A _caching_ layer optimized for embedding _access patterns_.                                |
 | **DisaggRec** | arXiv 2212.00939                                           | <ul><li>Meta AI</li><li>WashU</li><li>UPenn</li><li>Cornell</li><li>Intel</li></ul> | <ul><li><a href="broken-reference">Personal Notes</a></li><li><a href="https://arxiv.org/abs/2212.00939">Paper</a></li></ul>                                                                                                                               | _Disaggregated_ system; _decouple_ CPUs and memory resources; _partition embedding tables_. |
 
+## Faster Model Update
+
+<table><thead><tr><th>Name</th><th align="center">Conference</th><th width="160">Institution</th><th>Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>Ekko</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2022/">OSDI 2022</a></td><td><ul><li>Tencent</li><li>University of Edinburgh</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/osdi22/presentation/sima">Paper</a></li></ul></td><td>P2P model update dissemination.</td></tr></tbody></table>
+
 ## DLRM
 
 |   Name  | Conference   | Institution               | Links                                                                                                                                                                                                                    | Remarks                                                                                 |
