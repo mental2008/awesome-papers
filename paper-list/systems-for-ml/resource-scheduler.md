@@ -1,23 +1,94 @@
 # Resource Scheduler
 
-## Notes
-
-DL: Deep Learning
-
-ML: Machine Learning
-
 ## Scheduling for DL Training Workloads
 
-<table><thead><tr><th width="132">Name</th><th width="132" align="center">Container</th><th>Institution</th><th width="133">Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>Lyra</strong></td><td align="center"><a href="../../reading-notes/conference/eurosys-2023.md">EuroSys 2023</a></td><td><ul><li>ByteDance</li><li>CityU</li><li>CUHK</li></ul></td><td><ul><li><a href="../../reading-notes/miscellaneous/arxiv/2022/aryl-an-elastic-cluster-scheduler-for-deep-learning.md">Personal Notes</a></li><li><a href="https://arxiv.org/abs/2202.07896">arXiv</a></li></ul></td><td>Loan idle inference GPU servers for elastic training jobs.</td></tr><tr><td><strong>Shockwave</strong></td><td align="center"><a href="../../reading-notes/conference/nsdi-2023/">NSDI 2023</a></td><td><ul><li>UW-Madison</li><li>UT-Austin</li></ul></td><td><ul><li><a href="../../reading-notes/conference/nsdi-2023/shockwave.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/nsdi23/presentation/zheng">Paper</a></li><li><a href="https://github.com/uw-mad-dash/shockwave">Code</a></li></ul></td><td>Elastic resource requirements; extend market theory.</td></tr><tr><td><strong>Lucid</strong></td><td align="center"><a href="../../reading-notes/conference/asplos-2023/">ASPLOS 2023</a></td><td><ul><li>NTU</li><li>Shanghai AI Lab</li><li>SenseTime</li></ul></td><td><ul><li><a href="../../reading-notes/conference/asplos-2023/lucid.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3575693.3575705">Paper</a></li><li><a href="https://github.com/S-Lab-System-Group/Lucid">Code</a></li></ul></td><td>Interpretability.</td></tr><tr><td><strong>Muri</strong></td><td align="center"><a href="../../reading-notes/conference/sigcomm-2022/">SIGCOMM 2022</a></td><td><ul><li>PKU</li><li>ByteDance</li></ul></td><td><ul><li><a href="../../reading-notes/conference/sigcomm-2022/multi-resource-interleaving-for-deep-learning-training.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3544216.3544224">Paper</a></li><li><a href="https://github.com/Rivendile/Muri">Code</a></li></ul></td><td>Pack jobs along multiple resource types in the time dimension; integrate with PyTorch.</td></tr><tr><td><strong>Singularity</strong></td><td align="center">arXiv 2202.07848</td><td><ul><li>Microsoft</li></ul></td><td><ul><li><a href="../../reading-notes/miscellaneous/arxiv/singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md">Personal Notes</a></li><li><a href="https://arxiv.org/abs/2202.07848">Paper</a></li></ul></td><td>Live GPU job migration.</td></tr><tr><td><strong>Synergy</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2022/">OSDI 2022</a></td><td><ul><li>Microsoft Research</li><li>UT-Austin</li><li>VMware Research</li></ul></td><td><ul><li><a href="../../reading-notes/conference/osdi-2022/synergy.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/osdi22/presentation/mohan">Paper</a></li><li><a href="https://github.com/msr-fiddle/synergy">Code</a></li></ul></td><td>Consider the allocation of CPU and memory resources.</td></tr><tr><td><strong>Pollux</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2021/">OSDI 2021</a></td><td><ul><li>Petuum</li><li>CMU</li></ul></td><td><ul><li><a href="../../reading-notes/conference/osdi-2021/pollux.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/osdi21/presentation/qiao">Paper</a></li><li><a href="https://github.com/petuum/adaptdl">Code</a></li></ul></td><td>Co-adaptively <em>allocates resources</em> (number of GPUs) and <em>tunes the hyperparameters</em> (batch size and learning rate) for all DL training jobs.</td></tr><tr><td><strong>MAPA</strong></td><td align="center">SC 2021</td><td><ul><li>UC Riverside</li><li>Pacific Northwest National Lab</li><li>University of Sydney</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/10.1145/3458817.3480853">Paper</a></li><li><a href="https://github.com/socal-ucr/MAPA">Code</a></li></ul></td><td>Consider multi-GPU accelerator topologies such as <em>single/double NVLink</em>.</td></tr><tr><td><strong>Astraea</strong></td><td align="center">TPDS 2021</td><td><ul><li>PKU</li><li>NTU</li><li>SenseTime</li></ul></td><td><ul><li><a href="https://ieeexplore.ieee.org/abstract/document/9655467">Paper</a></li></ul></td><td>Long-term GPU-time fairness.</td></tr><tr><td><strong>AntMan</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2020/">OSDI 2020</a></td><td><ul><li>Alibaba</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/osdi20/presentation/xiao">Paper</a></li><li><a href="https://github.com/alibaba/GPU-scheduler-for-deep-learning">Code</a></li></ul></td><td>Co-locate resource-guarantee and best-effort jobs.</td></tr><tr><td><strong>HiveD</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2020/">OSDI 2020</a></td><td><ul><li>MSRA</li></ul></td><td><ul><li><a href="../../reading-notes/conference/osdi-2020/hived.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/osdi20/presentation/zhao-hanyu">Paper</a></li><li><a href="https://github.com/microsoft/hivedscheduler">Code</a></li></ul></td><td>Virtual private clusters; resource isolation and management for multi-tenant clusters.</td></tr><tr><td><strong>Gavel</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2020/">OSDI 2020</a></td><td><ul><li>MSR</li><li>Stanford</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/osdi20/presentation/narayanan-deepak">Paper</a></li><li><a href="https://github.com/stanford-futuredata/gavel">Code</a></li></ul></td><td>Consider <em>performance heterogeneity</em> across multiple accelerator types.</td></tr><tr><td><strong>Themis</strong></td><td align="center"><a href="../../reading-notes/conference/eurosys-2020.md">EuroSys 2020</a></td><td><ul><li>UW-Madison</li><li>MSR</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/nsdi20/presentation/mahajan">Paper</a></li></ul></td><td>Long-term fairness.</td></tr><tr><td><strong>AlloX</strong></td><td align="center"><a href="../../reading-notes/conference/eurosys-2020.md">EuroSys 2020</a></td><td><ul><li>Stony Brook University</li><li>SUNY Korea</li><li>UMich</li></ul></td><td><ul><li><a href="https://doi.org/10.1145/3342195.3387547">Paper</a></li><li><a href="https://github.com/lenhattan86/allox">Code</a></li></ul></td><td><em>CPU-GPU hybrid</em> clusters; min-cost bipartite matching.</td></tr><tr><td><strong>GandivaFair</strong></td><td align="center">EuroSys 2019</td><td><ul><li>MSR India</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/10.1145/3342195.3387555">Paper</a></li></ul></td><td>Achieve efficiency and fairness despite cluster heterogeneity.</td></tr><tr><td><strong>Tiresias</strong></td><td align="center">NSDI 2019</td><td><ul><li><a href="https://symbioticlab.org/">UMich SymbioticLab</a></li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/nsdi19/presentation/gu">Paper</a></li><li><a href="https://github.com/SymbioticLab/Tiresias">Code</a></li></ul></td><td>Relax consolidated placement constraint.</td></tr><tr><td><strong>Gandiva</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2018/">OSDI 2018</a></td><td><ul><li>MSRA</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/osdi18/presentation/xiao">Paper</a></li></ul></td><td>Hyper-parameter tuning jobs; job packing; migration; grow-shrink; time-slicing.</td></tr><tr><td><strong>Optimus</strong></td><td align="center">EuroSys 2018</td><td><ul><li>HKU</li><li>ByteDance</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/10.1145/3190508.3190517">Paper</a></li><li><a href="https://github.com/pengyanghua/optimus">Code</a></li></ul></td><td>Minimize JCT based on <em>online resource-performance models</em>.</td></tr><tr><td><strong>Topology-aware scheduling</strong></td><td align="center">SC 2017</td><td><ul><li>Barcelona Supercomputing Center</li><li>IBM Watson Research Center</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/10.1145/3126908.3126933">Paper</a></li><li><a href="https://github.com/HiEST/gpu-topo-aware">Code</a></li></ul></td><td>Consider multiple link technologies such as <em>PCI-e</em> and <em>NVLink</em>.</td></tr></tbody></table>
+* Sia: Heterogeneity-aware, goodput-optimized ML-cluster scheduling (SOSP 2023) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613175)]
+  * CMU & Cornell & Petuum Inc.
+* Lyra: Elastic Scheduling for Deep Learning Clusters ([EuroSys 2023](../../reading-notes/conference/eurosys-2023.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2022/aryl-an-elastic-cluster-scheduler-for-deep-learning.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3552326.3587445)] \[[arXiv](https://arxiv.org/abs/2202.07896)]
+  * ByteDance & CityU & CUHK
+  * Loan idle inference GPU servers for elastic training jobs.
+* Shockwave: Fair and Efficient Cluster Scheduling for Dynamic Adaptation in Machine Learning ([NSDI 2023](../../reading-notes/conference/nsdi-2023/)) \[[Personal Notes](../../reading-notes/conference/nsdi-2023/shockwave.md)] \[[Paper](https://www.usenix.org/conference/nsdi23/presentation/zheng)] \[[Code](https://github.com/uw-mad-dash/shockwave)]
+  * UW-Madison & UT-Austin
+  * Elastic resource requirements; extend market theory.
+* Lucid: A Non-intrusive, Scalable and Interpretable Scheduler for Deep Learning Training Jobs ([ASPLOS 2023](../../reading-notes/conference/asplos-2023/)) \[[Personal Notes](../../reading-notes/conference/asplos-2023/lucid.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3575693.3575705)] \[[Code](https://github.com/S-Lab-System-Group/Lucid)]
+  * NTU & Shanghai AI Lab & SenseTime
+  * Scheduling interpretability
+* Multi-Resource Interleaving for Deep Learning Training ([SIGCOMM 2022](../../reading-notes/conference/sigcomm-2022/)) \[[Personal Notes](../../reading-notes/conference/sigcomm-2022/multi-resource-interleaving-for-deep-learning-training.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3544216.3544224)] \[[Code](https://github.com/Rivendile/Muri)]
+  * PKU & ByteDance
+  * Muri: Pack jobs along multiple resource types in the time dimension
+  * Integrate with PyTorch
+* Singularity: Planet-Scale, Preemptive and Elastic Scheduling of AI Workloads (arXiv 2202.07848) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/singularity-planet-scale-preemptive-and-elastic-scheduling-of-ai-workloads.md)] \[[Paper](https://arxiv.org/abs/2202.07848)]
+  * Microsoft
+  * Live GPU job migration
+* Looking Beyond GPUs for DNN Scheduling on Multi-Tenant Clusters ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Personal Notes](../../reading-notes/conference/osdi-2022/synergy.md)] \[[Paper](https://www.usenix.org/conference/osdi22/presentation/mohan)] \[[Code](https://github.com/msr-fiddle/synergy)]
+  * MSR & UT-Austin & VMware Research
+  * Consider the allocation of CPU and memory resources.
+* Pollux: Co-adaptive Cluster Scheduling for Goodput-Optimized Deep Learning ([OSDI 2021](../../reading-notes/conference/osdi-2021/)) \[[Personal Notes](../../reading-notes/conference/osdi-2021/pollux.md)] \[[Paper](https://www.usenix.org/conference/osdi21/presentation/qiao)] \[[Code](https://github.com/petuum/adaptdl)]
+  * Petuum & CMU
+  * **Best Paper Award**
+  * Co-adaptively allocates resources (number of GPUs) and tunes the hyperparameters (batch size and learning rate) for all DL training jobs.
+* MAPA: Multi-Accelerator Pattern Allocation Policy for Multi-Tenant GPU Servers (SC 2021) \[[Paper](https://dl.acm.org/doi/10.1145/3458817.3480853)] \[[Code](https://github.com/socal-ucr/MAPA)]
+  * UC Riverside & Pacific Northwest National Lab & USydney
+  * Consider multi-GPU accelerator topologies such as single/double NVLink.
+* Astraea: A Fair Deep Learning Scheduler for Multi-Tenant GPU Clusters (TPDS 2021) \[[Paper](https://ieeexplore.ieee.org/abstract/document/9655467)]
+  * PKU & NTU & SenseTime
+  * Long-term GPU-time fairness
+* AntMan: Dynamic Scaling on GPU Clusters for Deep Learning ([OSDI 2020](../../reading-notes/conference/osdi-2020/)) \[[Paper](https://www.usenix.org/conference/osdi20/presentation/xiao)] \[[Code](https://github.com/alibaba/GPU-scheduler-for-deep-learning)]
+  * Alibaba
+  * Co-locate resource-guarantee and best-effort jobs.
+* HiveD: Sharing a GPU Cluster for Deep Learning with Guarantees ([OSDI 2020](../../reading-notes/conference/osdi-2020/)) \[[Personal Notes](../../reading-notes/conference/osdi-2020/hived.md)] \[[Paper](https://www.usenix.org/conference/osdi20/presentation/zhao-hanyu)] \[[Code](https://github.com/microsoft/hivedscheduler)]
+  * MSRA
+  * Virtual private clusters; resource isolation and management for multi-tenant clusters.
+* Heterogeneity-Aware Cluster Scheduling Policies for Deep Learning Workloads ([OSDI 2020](../../reading-notes/conference/osdi-2020/)) \[[Paper](https://www.usenix.org/conference/osdi20/presentation/narayanan-deepak)] \[[Code](https://github.com/stanford-futuredata/gavel)]
+  * MSR & Stanford
+  * Gavel: Consider performance heterogeneity across multiple accelerator types.
+* Themis: Fair and Efficient GPU Cluster Scheduling ([EuroSys 2020](../../reading-notes/conference/eurosys-2020.md)) \[[Paper](https://www.usenix.org/conference/nsdi20/presentation/mahajan)]
+  * UW-Madison & MSR
+  * Long-term fairness
+* AlloX: Compute Allocation in Hybrid Clusters ([EuroSys 2020](../../reading-notes/conference/eurosys-2020.md)) \[[Paper](https://doi.org/10.1145/3342195.3387547)] \[[Code](https://github.com/lenhattan86/allox)]
+  * Stony Brook University & SUNY Korea & UMich
+  * CPU-GPU hybrid clusters; min-cost bipartite matching.
+* Balancing Efficiency and Fairness in Heterogeneous GPU Clusters for Deep Learning (EuroSys 2019) \[[Paper](https://dl.acm.org/doi/10.1145/3342195.3387555)]
+  * MSR India
+  * $$\text{Gandiva}_\text{Fair}$$: Achieve efficiency and fairness despite cluster heterogeneity
+* Tiresias: A GPU Cluster Manager for Distributed Deep Learning (NSDI 2019) \[[Paper](https://www.usenix.org/conference/nsdi19/presentation/gu)] \[[Code](https://github.com/SymbioticLab/Tiresias)]
+  * UMich SymbioticLab
+  * Relax consolidated placement constraint
+* Gandiva: Introspective Cluster Scheduling for Deep Learning ([OSDI 2018](../../reading-notes/conference/osdi-2018/)) \[[Paper](https://www.usenix.org/conference/osdi18/presentation/xiao)]
+  * MSRA
+  * Hyper-parameter tuning jobs; job packing; migration; grow-shrink; time-slicing.
+* Optimus: An Efficient Dynamic Resource Scheduler for Deep Learning Clusters (EuroSys 2018) \[[Paper](https://dl.acm.org/doi/10.1145/3190508.3190517)] \[[Code](https://github.com/pengyanghua/optimus)]
+  * HKU & ByteDance
+  * Minimize JCT based on online resource-performance models.
+* Topology-Aware GPU Scheduling for Learning Workloads in Cloud Environments (SC 2017) \[[Paper](https://dl.acm.org/doi/10.1145/3126908.3126933)] \[[Code](https://github.com/HiEST/gpu-topo-aware)]
+  * Barcelona Supercomputing Center & IBM Watson Research Center
+  * Consider multiple link technologies such as PCI-e and NVLink.
 
 ## Scheduling for General ML Training Workloads
 
-<table><thead><tr><th width="109">Name</th><th width="126" align="center">Conference</th><th width="134">Institution</th><th width="132">Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>SLAQ</strong></td><td align="center"><a href="../../reading-notes/conference/socc-2017/">SoCC 2017</a></td><td><ul><li>Princeton</li></ul></td><td><ul><li><a href="../../reading-notes/conference/socc-2017/slaq.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3127479.3127490">Paper</a></li></ul></td><td>Fine-grained job-level scheduler; leverage the <em>iterative nature</em> of general ML training algorithms.</td></tr></tbody></table>
+* SLAQ: Quality-Driven Scheduling for Distributed Machine Learning ([SoCC 2017](../../reading-notes/conference/socc-2017/)) \[[Personal Notes](../../reading-notes/conference/socc-2017/slaq.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3127479.3127490)]
+  * Princeton
+  * Fine-grained job-level scheduler
+  * Leverage the iterative nature of general ML training algorithms
 
 ## Trace Analysis
 
-<table><thead><tr><th width="139" align="center">Source</th><th width="140" align="center">Conference</th><th width="153">Institution</th><th>Links</th><th>Remarks</th></tr></thead><tbody><tr><td align="center"><strong>Alibaba PAI</strong></td><td align="center"><a href="../../reading-notes/conference/nsdi-2022.md">NSDI 2022</a></td><td><ul><li>HKUST</li><li>Alibaba</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/nsdi22/presentation/weng">Paper</a></li><li><a href="https://github.com/alibaba/clusterdata/tree/master/cluster-trace-gpu-v2020">Trace</a></li></ul></td><td>GPU sharing traces.</td></tr><tr><td align="center"><strong>SenseTime Helios</strong></td><td align="center">SC 2021</td><td><ul><li>NTU</li><li>SenseTime</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/10.1145/3458817.3476223">Paper</a></li><li><a href="https://github.com/S-Lab-System-Group/HeliosData">Trace</a></li></ul></td><td>DL training workloads.</td></tr><tr><td align="center"><strong>Microsoft Philly</strong></td><td align="center">ATC 2019</td><td><ul><li>MSR</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/atc19/presentation/jeon">Paper</a></li><li><a href="https://github.com/msr-fiddle/philly-traces">Trace</a></li></ul></td><td>DL training workloads.</td></tr><tr><td align="center"><strong>Alibaba PAI</strong></td><td align="center">IISWC 2019</td><td><ul><li>Alibaba</li></ul></td><td><ul><li><a href="https://ieeexplore.ieee.org/document/9042047">Paper</a></li></ul></td><td>DL training workloads.</td></tr></tbody></table>
+* MLaaS in the Wild: Workload Analysis and Scheduling in Large-Scale Heterogeneous GPU Clusters ([NSDI 2022](../../reading-notes/conference/nsdi-2022.md)) \[[Paper](https://www.usenix.org/conference/nsdi22/presentation/weng)] \[[Trace](https://github.com/alibaba/clusterdata/tree/master/cluster-trace-gpu-v2020)]
+  * HKUSt & Alibaba
+  * GPU sharing traces
+* Characterization and Prediction of Deep Learning Workloads in Large-Scale GPU Datacenters (SC 2021) \[[Paper](https://dl.acm.org/doi/10.1145/3458817.3476223)] \[[Trace](https://github.com/S-Lab-System-Group/HeliosData)]
+  * NTU & SenseTime
+* Analysis of Large-Scale Multi-Tenant GPU Clusters for DNN Training Workloads (ATC 2019) \[[Paper](https://www.usenix.org/conference/atc19/presentation/jeon)] \[[Trace](https://github.com/msr-fiddle/philly-traces)]
+  * MSR
+* Characterizing Deep Learning Training Workloads on Alibaba-PAI (IISWC 2019) \[[Paper](https://ieeexplore.ieee.org/document/9042047)]
+  * Alibaba PAI
 
 ## Survey
 
-<table><thead><tr><th>Survey</th><th width="133" align="center">Container</th><th width="170">Institute</th><th>Links</th></tr></thead><tbody><tr><td><strong>Deep learning workload scheduling in GPU datacenters: Taxonomy, challenges and vision</strong></td><td align="center">arXiv 2205.11913</td><td><ul><li>NTU</li><li>PKU</li><li>SenseTime</li></ul></td><td><ul><li><a href="https://arxiv.org/abs/2205.11913">arXiv</a></li><li><a href="https://github.com/S-Lab-System-Group/Awesome-DL-Scheduling-Papers">Paper List</a></li></ul></td></tr></tbody></table>
+* Deep Learning Workload Scheduling in GPU Datacenters: Taxonomy, Challenges and Vision (arXiv 2205.11913) \[[Paper](https://arxiv.org/abs/2205.11913)] \[[Paper List](https://github.com/S-Lab-System-Group/Awesome-DL-Scheduling-Papers)]
+  * NTU & PKU & SenseTime
+
+## Acronyms
+
+* DL: Deep Learning
+* ML: Machine Learning

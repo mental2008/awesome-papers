@@ -2,22 +2,65 @@
 
 ## Parallelism
 
-<table><thead><tr><th width="139">Name</th><th width="137" align="center">Conference</th><th width="127">Institution</th><th width="122">Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>Tofu</strong></td><td align="center"><a href="../../reading-notes/conference/eurosys-2019.md">EuroSys 2019</a></td><td><ul><li>NYU</li></ul></td><td><ul><li><a href="https://doi.org/10.1145/3302424.3303953">Paper</a></li></ul></td><td><em>Automatic partition</em> a dataflow graph of fine-grained tensor operations.</td></tr><tr><td><strong>CNN Parallelism</strong></td><td align="center">arXiv 1404.599</td><td><ul><li>Google</li></ul></td><td><ul><li><a href="https://arxiv.org/abs/1404.5997">Paper</a></li></ul></td><td><em>Data parallelism</em> for <em>convolutional layers</em>; <em>model parallelism</em> for <em>fully-connected layers</em>.</td></tr></tbody></table>
+* Supporting Very Large Models using Automatic Dataflow Graph Partitioning ([EuroSys 2019](../../reading-notes/conference/eurosys-2019.md)) \[[Paper](https://doi.org/10.1145/3302424.3303953)]
+  * NYU
+  * Tofu: _Automatic partition_ a dataflow graph of fine-grained tensor operations.
+* One weird trick for parallelizing convolutional neural networks (arXiv 1404.599) \[[Paper](https://arxiv.org/abs/1404.5997)]
+  * Google
+  * _Data parallelism_ for _convolutional layers_; _model parallelism_ for _fully-connected layers_.
 
-## Network Communication
+## Optimizing Network Communication
 
-<table><thead><tr><th width="116">Name</th><th width="134" align="center">Conference</th><th width="149">Institution</th><th width="137">Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>BytePS</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2020/">OSDI 2020</a></td><td><ul><li>Tsinghua University</li><li>ByteDance</li></ul></td><td><ul><li><a href="../../reading-notes/conference/osdi-2020/a-unified-architecture-for-accelerating-distributed-dnn-training-in-heterogeneous-gpu-cpu-clusters.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/osdi20/presentation/jiang">Paper</a></li><li><a href="https://github.com/bytedance/byteps">Code</a></li></ul></td><td><em>Communication framework; leverage</em> spare CPU and bandwidth resources; consider <em>network topology.</em></td></tr></tbody></table>
+* A Unified Architecture for Accelerating Distributed DNN Training in Heterogeneous GPU/CPU Clusters ([OSDI 2020](../../reading-notes/conference/osdi-2020/)) \[[Personal Notes](../../reading-notes/conference/osdi-2020/a-unified-architecture-for-accelerating-distributed-dnn-training-in-heterogeneous-gpu-cpu-clusters.md)] \[[Paper](https://www.usenix.org/conference/osdi20/presentation/jiang)] \[[Code](https://github.com/bytedance/byteps)]
+  * THU & ByteDance
+  * BytePS: Communication framework
+  * Leverage spare CPU and bandwidth resources
+  * Consider network topology
 
 ## Reduce GPU Memory Footprints
 
 ### GPU Sharing
 
-<table><thead><tr><th width="133">Name</th><th width="131" align="center">Conference</th><th width="168">Institution</th><th width="132">Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>Zico</strong></td><td align="center"><a href="../../reading-notes/conference/atc-2021/">ATC 2021</a></td><td><ul><li>UNIST</li><li>Ajou University</li><li>Alibaba</li><li>KAIST</li></ul></td><td><ul><li><a href="../../reading-notes/conference/atc-2021/zico.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/atc21/presentation/lim">Paper</a></li></ul></td><td>Reduce the <em>overall</em> GPU consumption for <em>co-located</em> DNN training jobs; NVIDIA MPS.</td></tr><tr><td><strong>Salus</strong></td><td align="center"><a href="../../reading-notes/conference/mlsys-2020.md">MLSys 2020</a></td><td><ul><li><a href="https://symbioticlab.org/">UMich SymbioticLab</a></li></ul></td><td><ul><li><a href="https://proceedings.mlsys.org/paper/2020/file/f7177163c833dff4b38fc8d2872f1ec6-Paper.pdf">Paper</a></li><li><a href="https://github.com/symbioticlab/salus">Code</a></li></ul></td><td>Fine-grained GPU sharing; <em>customized</em> TensorFlow.</td></tr><tr><td><strong>Gandiva</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2018/">OSDI 2018</a></td><td><ul><li>MSRA</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/osdi18/presentation/xiao">Paper</a></li></ul></td><td>Time slicing; suspend and resume; mini-batch granularity.</td></tr></tbody></table>
+* Zico: Efficient GPU Memory Sharing for Concurrent DNN Training ([ATC 2021](../../reading-notes/conference/atc-2021/)) \[[Personal Notes](../../reading-notes/conference/atc-2021/zico.md)] \[[Paper](https://www.usenix.org/conference/atc21/presentation/lim)]
+  * UNIST & Ajou & Alibaba & KAIST
+  * Reduce the _overall_ GPU consumption for _co-located_ DNN training jobs
+  * Utilize NVIDIA MPS
+* Salus: Fine-Grained GPU Sharing Primitives for Deep Learning Applications ([MLSys 2020](../../reading-notes/conference/mlsys-2020.md)) \[[Paper](https://proceedings.mlsys.org/paper\_files/paper/2020/hash/d9cd83bc91b8c36a0c7c0fcca59228f2-Abstract.html)] \[[Code](https://github.com/symbioticlab/salus)]
+  * UMich SymbioticLab
+  * Fine-grained GPU sharing; customized TensorFlow.
+* Gandiva: Introspective Cluster Scheduling for Deep Learning ([OSDI 2018](../../reading-notes/conference/osdi-2018/)) \[[Paper](https://www.usenix.org/conference/osdi18/presentation/xiao)]
+  * MSRA
+  * Time slicing; suspend and resume; mini-batch granularity.
 
 ### Tensor Swapping / Recomputation
 
-<table><thead><tr><th width="170">Name</th><th align="center">Conference</th><th>Institution</th><th width="132">Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>SwapAdvisor</strong></td><td align="center"><a href="../../reading-notes/conference/asplos-2020.md">ASPLOS 2020</a></td><td><ul><li>NYU</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/10.1145/3373376.3378530">Paper</a></li></ul></td><td><em>Tensor swapping</em>; consider both <em>GPU memory allocation</em> and <em>operator scheduling</em>.</td></tr><tr><td><strong>Capuchin</strong></td><td align="center"><a href="../../reading-notes/conference/asplos-2020.md">ASPLOS 2020</a></td><td><ul><li>HUST</li><li>MSRA</li><li>USC</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/10.1145/3373376.3378505">Paper</a></li></ul></td><td>Combination of <em>tensor swapping</em> and <em>recomputation</em>.</td></tr><tr><td><strong>Checkmate</strong></td><td align="center"><a href="../../reading-notes/conference/mlsys-2020.md">MLSys 2020</a></td><td><ul><li>UC Berkeley</li></ul></td><td><ul><li><a href="https://proceedings.mlsys.org/paper/2020/hash/084b6fbb10729ed4da8c3d3f5a3ae7c9-Abstract.html">Paper</a></li><li><a href="https://github.com/parasj/checkmate">Code</a></li></ul></td><td>Define <em>tensor recomputation</em> as an optimization problem.</td></tr><tr><td><strong>Superneurons</strong></td><td align="center">PPoPP 2018</td><td><ul><li>Brown University</li><li>UESTC</li><li>Los Alamos National Laboratory</li><li>Pacific Northwest National Laboratory</li><li>MIT</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/10.1145/3200691.3178491">Paper</a></li></ul></td><td><em>Cost-aware</em> recomputation; <em>remove the convolutional layer tensor</em> with low computational overhead.</td></tr><tr><td><strong>vDNN</strong></td><td align="center">MICRO 2016</td><td><ul><li>NVIDIA</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/10.5555/3195638.3195660">Paper</a></li></ul></td><td>Predictively <em>swap tensors</em> to <em>overlap the CPU-GPU communication time</em>.</td></tr><tr><td><strong>Memory Monger</strong></td><td align="center">arXiv 1604.06174</td><td><ul><li>UW</li><li>Dato Inc.</li><li>MIT</li></ul></td><td><ul><li><a href="../../Miscellaneous/arXiv-2016/training-deep-nets-with-sublinear-memory-cost.md">Personal Notes</a></li><li><a href="https://arxiv.org/abs/1604.06174">Paper</a></li><li><a href="https://github.com/dmlc/mxnet-memonger">Code</a></li></ul></td><td>Sublinear memory cost; trade computation for memory.</td></tr></tbody></table>
+* SwapAdvisor: Pushing Deep Learning Beyond the GPU Memory Limit via Smart Swapping ([ASPLOS 2020](../../reading-notes/conference/asplos-2020.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3373376.3378530)]
+  * NYU
+  * Tensor swapping
+  * Consider both GPU memory allocation and operator scheduling
+* Capuchin: Tensor-based GPU Memory Management for Deep Learning ([ASPLOS 2020](../../reading-notes/conference/asplos-2020.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3373376.3378505)]
+  * HUST & MSRA & USC
+  * Combination of tensor swapping and recomputation.
+* Checkmate: Breaking the Memory Wall with Optimal Tensor Rematerialization ([MLSys 2020](../../reading-notes/conference/mlsys-2020.md)) \[[Paper](https://proceedings.mlsys.org/paper\_files/paper/2020/hash/0b816ae8f06f8dd3543dc3d9ef196cab-Abstract.html)] \[[Code](https://github.com/parasj/checkmate)]
+  * UC Berkeley
+  * Define tensor recomputation as an optimization problem.
+* SuperNeurons: Dynamic GPU Memory Management for Training Deep Neural Networks (PPoPP 2018) \[[Paper](https://dl.acm.org/doi/10.1145/3200691.3178491)]
+  * Brown & UESTC & Los Alamos National Laboratory & Pacific Northwest National Laboratory & MIT
+  * Cost-aware recomputation
+  * Remove the convolutional layer tensor with low computational overhead
+* vDNN: Virtualized Deep Neural Networks for Scalable, Memory-Efficient Neural Network Design (MICRO 2016) \[[Paper](https://dl.acm.org/doi/10.5555/3195638.3195660)]
+  * NVIDIA
+  * Predictively swap tensors to overlap the CPU-GPU communication time.
+* Training Deep Nets with Sublinear Memory Cost (arXiv 1604.06174) \[[Personal Notes](../../Miscellaneous/arXiv-2016/training-deep-nets-with-sublinear-memory-cost.md)] \[[Paper](https://arxiv.org/abs/1604.06174)] \[[Code](https://github.com/dmlc/mxnet-memonger)]
+  * UW & Dato Inc. & MIT
+  * Memory Monger
+  * Sublinear memory cost; trade computation for memory.
 
 ### Compression
 
-<table><thead><tr><th width="108">Name</th><th width="135" align="center">Conference</th><th width="130">Institution</th><th width="138">Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>Echo</strong></td><td align="center">ISCA 2020</td><td><ul><li>UofT</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/abs/10.1109/ISCA45697.2020.00092">Paper</a></li></ul></td><td>LSTM RNN training.</td></tr><tr><td><strong>Gist</strong></td><td align="center">ISCA 2018</td><td><ul><li>MSR</li><li>UMich</li><li>UofR</li></ul></td><td><ul><li><a href="https://www.microsoft.com/en-us/research/uploads/prod/2018/04/fiddle-gist-isca18.pdf">Paper</a></li></ul></td><td>Data encoding.</td></tr></tbody></table>
+* Echo: Compiler-based GPU Memory Footprint Reduction for LSTM RNN Training (ISCA 2020) \[[Paper](https://dl.acm.org/doi/abs/10.1109/ISCA45697.2020.00092)]
+  * UofT
+  * LSTM RNN training
+* Gist: Efficient Data Encoding for Deep Neural Network Training (ISCA 2018) \[[Paper](https://www.microsoft.com/en-us/research/uploads/prod/2018/04/fiddle-gist-isca18.pdf)]
+  * MSR & UMich & UofT
+  * Data encoding

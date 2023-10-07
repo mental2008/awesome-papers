@@ -2,12 +2,22 @@
 
 ## LLM Training
 
+* Oobleck: Resilient Distributed Training of Large Models Using Pipeline Templates (SOSP 2023) \[[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613152)] \[[arXiv](https://browse.arxiv.org/abs/2309.08125)] \[[Code](https://github.com/SymbioticLab/Oobleck)]
+  * UMich SymbioticLab & AWS & PKU
+* GEMINI: Fast Failure Recovery in Distributed Training with In-Memory Checkpoints (SOSP 2023) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613145)]
+  * Rice & AWS
+* Bamboo: Making Preemptible Instances Resilient for Affordable Training of Large DNNs ([NSDI 2023](../../reading-notes/conference/nsdi-2023/)) \[[Paper](https://www.usenix.org/conference/nsdi23/presentation/thorpe)] \[[Code](https://github.com/uclasystem/bamboo)]
+  * UCLA & CMU & MSR & Princeton
+  * Resilient distributed training
 * Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Paper](https://www.usenix.org/conference/osdi22/presentation/zheng-lianmin)] \[[Code](https://github.com/alpa-projects/alpa)] \[[Docs](https://alpa.ai/)]
   * UC Berkeley & AWS & Google & SJTU & CMU & Duke
   * Generalize the search through _parallelism strategies_.
 
 ## LLM Inference
 
+* Efficient Memory Management for Large Language Model Serving with PagedAttention (SOSP 2023) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613165)] \[[arXiv](https://browse.arxiv.org/abs/2309.06180)] \[[Code](https://github.com/vllm-project/vllm)] \[[Homepage](https://vllm.ai/)]
+  * UC Berkeley & Stanford & UCSD
+  * vLLM, PagedAttention
 * Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Paper](https://proceedings.mlr.press/v202/liu23am.html)] \[[Code](https://github.com/FMInference/DejaVu)]
   * Rice & ZJU & Stanford & UCSD & ETH & Adobe & Meta AI & CMU
   * A system to predict _contextual sparsity_ (small, input-dependent sets that yield _approximately_ the same output).

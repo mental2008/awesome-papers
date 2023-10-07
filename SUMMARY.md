@@ -37,6 +37,7 @@
   * [SoCC 2023](reading-notes/conference/socc-2023.md)
   * [SOSP 2023](reading-notes/conference/sosp-2023.md)
   * [SIGCOMM 2023](reading-notes/conference/sigcomm-2023.md)
+  * [HotChips 2023](reading-notes/conference/hotchips-2023.md)
   * [ICML 2023](reading-notes/conference/icml-2023.md)
   * [ATC 2023](reading-notes/conference/atc-2023/README.md)
     * [Accelerating Distributed MoE Training and Inference with Lina](reading-notes/conference/atc-2023/lina.md)
