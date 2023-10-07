@@ -45,6 +45,7 @@
     * [Beware of Fragmentation: Scheduling GPU-Sharing Workloads with Fragmentation Gradient Descent](reading-notes/conference/atc-2023/fgd.md)
   * [OSDI 2023](reading-notes/conference/osdi-2023.md)
   * [HotOS 2023](reading-notes/conference/hotos-2023.md)
+  * [SIGMOD 2023](reading-notes/conference/sigmod-2023.md)
   * [ISCA 2023](reading-notes/conference/isca-2023.md)
   * [MLSys 2023](reading-notes/conference/mlsys-2023.md)
   * [EuroSys 2023](reading-notes/conference/eurosys-2023.md)
