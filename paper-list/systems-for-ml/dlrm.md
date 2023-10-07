@@ -2,19 +2,33 @@
 
 ## Optimizing Embedding Tables
 
-|      Name     | Conference                                                 | Institution                                                                         | Links                                                                                                                                                                                                                                                      | Remarks                                                                                     |
-| :-----------: | ---------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-|  **AdaEmbed** | [OSDI 2023](../../reading-notes/conference/osdi-2023.md)   | <ul><li>UMich</li><li>Meta</li></ul>                                                | <ul><li><a href="https://www.usenix.org/conference/osdi23/presentation/lai">Paper</a></li></ul>                                                                                                                                                            | In-training pruning                                                                         |
-|  **EVStore**  | [ASPLOS 2023](../../reading-notes/conference/asplos-2023/) | <ul><li>UChicago</li><li>Many others</li></ul>                                      | <ul><li><a href="../../reading-notes/conference/asplos-2023/evstore.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3575693.3575718">Paper</a></li><li><a href="https://github.com/ucare-uchicago/ev-store-dlrm">Code</a></li></ul> | A _caching_ layer optimized for embedding _access patterns_.                                |
-| **DisaggRec** | arXiv 2212.00939                                           | <ul><li>Meta AI</li><li>WashU</li><li>UPenn</li><li>Cornell</li><li>Intel</li></ul> | <ul><li><a href="broken-reference">Personal Notes</a></li><li><a href="https://arxiv.org/abs/2212.00939">Paper</a></li></ul>                                                                                                                               | _Disaggregated_ system; _decouple_ CPUs and memory resources; _partition embedding tables_. |
+* AdaEmbed: Adaptive Embedding for Large-Scale Recommendation Models ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://www.usenix.org/conference/osdi23/presentation/lai)]
+  * UMich SymbioticLab & Meta
+  * In-training pruning
+* EVStore: Storage and Caching Capabilities for Scaling Embedding Tables in Deep Recommendation Systems ([ASPLOS 2023](../../reading-notes/conference/asplos-2023/)) \[[Personal Notes](../../reading-notes/conference/asplos-2023/evstore.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3575693.3575718)] \[[Code](https://github.com/ucare-uchicago/ev-store-dlrm)]
+  * UChicago & Beijing University of Technology & Bandung Institute of Technology, Indonesia & Seagate Technology & Emory
+  * A _caching_ layer optimized for embedding _access patterns_.
+* DisaggRec: Architecting Disaggregated Systems for Large-Scale Personalized Recommendation (arXiv 2212.00939) \[[Personal Notes](broken-reference)] \[[Paper](https://arxiv.org/abs/2212.00939)]
+  * Meta AI & WashU & UPenn & Cornell & Intel
+  * _Disaggregated_ system; _decouple_ CPUs and memory resources; _partition embedding tables_.
 
 ## Faster Model Update
 
-<table><thead><tr><th>Name</th><th align="center">Conference</th><th width="160">Institution</th><th>Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>Ekko</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2022/">OSDI 2022</a></td><td><ul><li>Tencent</li><li>University of Edinburgh</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/osdi22/presentation/sima">Paper</a></li></ul></td><td>P2P model update dissemination.</td></tr></tbody></table>
+* Ekko: A Large-Scale Deep Learning Recommender System with Low-Latency Model Update ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Paper](https://www.usenix.org/conference/osdi22/presentation/sima)]
+  * Tencent & Edinburgh
+  * P2P model update dissemination.
 
 ## DLRM
 
-|   Name  | Conference   | Institution               | Links                                                                                                                                                                                                                    | Remarks                                                                                 |
-| :-----: | ------------ | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
-| **ETA** | DLP-KDD 2022 | <ul><li>Alibaba</li></ul> | <ul><li><a href="https://arxiv.org/abs/2209.12212">Paper</a></li></ul>                                                                                                                                                   | _Efficient target attention_ network; locality-sensitive hashing; deployed on _Taobao_. |
-| **WDL** | DLRS 2016    | <ul><li>Google</li></ul>  | <ul><li><a href="../../reading-notes/miscellaneous/arxiv/2016/wide-and-deep-learning-for-recommender-systems.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/2988450.2988454">Paper</a></li></ul> | Wide & Deep model.                                                                      |
+* Efficient Long Sequential User Data Modeling for Click-Through Rate Prediction (DLP-KDD 2022) \[[Paper](https://arxiv.org/abs/2209.12212)]
+  * Alibaba
+  * ETA: _Efficient target attention_ network
+  * Locality-sensitive hashing
+  * Deployed on Taobao_._
+* Wide & Deep Learning for Recommender Systems (DLRS 2016) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2016/wide-and-deep-learning-for-recommender-systems.md)] \[[Paper](https://dl.acm.org/doi/10.1145/2988450.2988454)]
+  * Google
+  * WDL: Wide & Deep model
+
+## Acronyms
+
+* DLRM: Deep Learning Recommendation Model

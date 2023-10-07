@@ -1,13 +1,32 @@
 # Deep Learning Compiler
 
-## Notes
+## System Architecture
 
-DSA: Domain-Specific Architecture
-
-## System
-
-<table><thead><tr><th width="134">Name</th><th width="143" align="center">Conference</th><th width="147">Institution</th><th>Links</th></tr></thead><tbody><tr><td><strong>MLIR</strong></td><td align="center">CGO 2021</td><td><ul><li>Google</li></ul></td><td><ul><li><a href="https://research.google/pubs/pub49988/">Paper</a></li><li><a href="https://mlir.llvm.org/">Homepage</a></li></ul></td></tr><tr><td><strong>TVM</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2018/">OSDI 2018</a></td><td><ul><li>UW</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/osdi18/presentation/chen">Paper</a></li><li><a href="https://github.com/apache/tvm">Code</a></li><li><a href="https://www.usenix.org/conference/osdi18/presentation/chen">Homepage</a></li></ul></td></tr></tbody></table>
+* MLIR: Scaling Compiler Infrastructure for Domain Specific Computation (CGO 2021) \[[Paper](https://research.google/pubs/pub49988/)] \[[Homepage](https://mlir.llvm.org/)]
+  * Google
+* TVM: An Automated End-to-End Optimizing Compiler for Deep Learning ([OSDI 2018](../../reading-notes/conference/osdi-2018/)) \[[Paper](https://www.usenix.org/conference/osdi18/presentation/chen)] \[[Code](https://github.com/apache/tvm)] \[[Homepage](https://www.usenix.org/conference/osdi18/presentation/chen)]
+  * UW & AWS & SJTU & UC Davis & Cornell
 
 ## Tensor Program Generation
 
-<table><thead><tr><th width="149">Name</th><th width="146" align="center">Conference</th><th>Institution</th><th width="117">Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>Cocktailer</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2023.md">OSDI 2023</a></td><td><ul><li>THU</li><li>MSRA</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/osdi23/presentation/zhang-chen">Paper</a></li></ul></td><td>Co-optimize the execution of control flow and data flow.</td></tr><tr><td><strong>Welder</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2023.md">OSDI 2023</a></td><td><ul><li>PKU</li><li>MSRA</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/osdi23/presentation/shi">Paper</a></li></ul></td><td>Optimize memory access.</td></tr><tr><td><strong>GraphTurbo</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2023.md">OSDI 2023</a></td><td><ul><li>Stream Computing</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/osdi23/presentation/zhao">Paper</a></li></ul></td><td>Scheduler for DSA.</td></tr><tr><td><strong>EINNET</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2023.md">OSDI 2023</a></td><td><ul><li>THU</li><li>CMU</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/osdi23/presentation/zheng">Paper</a></li></ul></td><td>Leverage <em>transformations</em> between general tensor algebra expressions.</td></tr><tr><td><strong>AStitch</strong></td><td align="center">ASPLOS 2022</td><td><ul><li>Alibaba</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/10.1145/3503222.3507723">Paper</a></li></ul></td><td>Memory-intensive operators.</td></tr><tr><td><strong>Ansor</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2020/">OSDI 2020</a></td><td><ul><li>UC Berkeley</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/osdi20/presentation/zheng">Paper</a></li></ul></td><td></td></tr></tbody></table>
+* Cocktailer: Analyzing and Optimizing Dynamic Control Flow in Deep Learning ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://www.usenix.org/conference/osdi23/presentation/zhang-chen)]
+  * THU & MSRA
+  * Co-optimize the execution of control flow and data flow.
+* Welder: Scheduling Deep Learning Memory Access via Tile-graph ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://www.usenix.org/conference/osdi23/presentation/shi)]
+  * PKU & MSRA
+  * Optimize memory access.
+* Effectively Scheduling Computational Graphs of Deep Neural Networks toward Their Domain-Specific Accelerators ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://www.usenix.org/conference/osdi23/presentation/zhao)]
+  * Stream Computing
+  * GraphTurbo: Scheduler for DSA.
+* EINNET: Optimizing Tensor Programs with Derivation-Based Transformations ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://www.usenix.org/conference/osdi23/presentation/zheng)]
+  * THU & CMU
+  * Leverage _transformations_ between general tensor algebra expressions.
+* AStitch: Enabling a New Multi-dimensional Optimization Space for Memory-Intensive ML Training and Inference on Modern SIMT Architectures (ASPLOS 2022) \[[Paper](https://dl.acm.org/doi/10.1145/3503222.3507723)]
+  * Alibaba
+  * Memory-intensive operators.
+* Ansor: Generating High-Performance Tensor Programs for Deep Learning ([OSDI 2020](../../reading-notes/conference/osdi-2020/)) \[[Paper](https://www.usenix.org/conference/osdi20/presentation/zheng)]
+  * UC Berkeley
+
+## Acronyms
+
+* DSA: Domain-Specific Architecture

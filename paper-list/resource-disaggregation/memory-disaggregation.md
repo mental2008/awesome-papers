@@ -2,15 +2,43 @@
 
 ## CXL-based Disaggregation
 
-<table><thead><tr><th>Name</th><th align="center">Conference</th><th>Institution</th><th width="143">Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>CXL-ANNS</strong></td><td align="center"><a href="../../reading-notes/conference/atc-2023/">ATC 2023</a></td><td><ul><li>KAIST</li><li>Panmnesia, Inc.</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/atc23/presentation/jang">Paper</a></li></ul></td><td>CXL-based memory disaggregation for <em>approximate nearest neighbor search (ANNS) services</em>.</td></tr><tr><td><strong>CXL-flash</strong></td><td align="center"><a href="../../reading-notes/conference/atc-2023/">ATC 2023</a></td><td><ul><li>Syracuse University</li><li>DGIST</li><li>FADU Inc.</li><li>Soongsil University</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/atc23/presentation/yang-shao-peng">Paper</a></li></ul></td><td>CXL-enabled <em>flash device</em>; caching and prefetching.</td></tr><tr><td><strong>TPP</strong></td><td align="center"><a href="../../reading-notes/conference/asplos-2023/">ASPLOS 2023</a></td><td><ul><li><a href="https://symbioticlab.org/">UMich SymbioticLab</a></li><li>NVIDIA</li><li>Meta</li></ul></td><td><ul><li><a href="../../reading-notes/conference/asplos-2023/tpp.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3582016.3582063">Paper</a></li><li><a href="https://lwn.net/Articles/876993/">Code</a></li></ul></td><td>CXL 1.1; identify and place hot/cold pages to appropriate memory tiers (i.e., local memory or CXL memory).</td></tr><tr><td><strong>Pond</strong></td><td align="center"><a href="../../reading-notes/conference/asplos-2023/">ASPLOS 2023</a></td><td><ul><li>Microsoft Azure</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/abs/10.1145/3575693.3578835">Paper</a></li></ul></td><td></td></tr><tr><td><strong>DirectCXL</strong></td><td align="center"><a href="../../reading-notes/conference/atc-2022/">ATC 2022</a></td><td><ul><li>KAIST</li></ul></td><td><ul><li><a href="../../reading-notes/conference/atc-2022/directcxl.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/atc22/presentation/gouk">Paper</a></li></ul></td><td>CXL 2.0; 6.2x shorter latency &#x26; 3x better performance than RDMA-based memory disaggregation.</td></tr></tbody></table>
+* CXL-ANNS: Software-Hardware Collaborative Memory Disaggregation and Computation for Billion-Scale Approximate Nearest Neighbor Search ([ATC 2023](../../reading-notes/conference/atc-2023/)) \[[Paper](https://www.usenix.org/conference/atc23/presentation/jang)]
+  * KAIST & Panmnesia, Inc.
+  * Approximate nearest neighbor search (ANNS) services.
+* Overcoming the Memory Wall with CXL-Enabled SSDs ([ATC 2023](../../reading-notes/conference/atc-2023/)) \[[Paper](https://www.usenix.org/conference/atc23/presentation/yang-shao-peng)]
+  * Syracuse & DGIST & FADU Inc. & Soongsil
+  * CXL-flash: CXL-enabled _flash device_; caching and prefetching.
+* TPP: Transparent Page Placement for CXL-Enabled Tiered-Memory ([ASPLOS 2023](../../reading-notes/conference/asplos-2023/)) \[[Personal Notes](../../reading-notes/conference/asplos-2023/tpp.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3582016.3582063)] \[[Code](https://lwn.net/Articles/876993/)]
+  * UMich SymbioticLab & NVIDIA & Meta
+  * CXL 1.1
+  * Identify and place hot/cold pages to appropriate memory tiers (i.e., local memory or CXL memory).
+* Pond: CXL-Based Memory Pooling Systems for Cloud Platforms ([ASPLOS 2023](../../reading-notes/conference/asplos-2023/)) \[[Paper](https://dl.acm.org/doi/abs/10.1145/3575693.3578835)]
+  * Microsoft Azure
+* Direct Access, High-Performance Memory Disaggregation with DirectCXL ([ATC 2022](../../reading-notes/conference/atc-2022/)) \[[Personal Notes](../../reading-notes/conference/atc-2022/directcxl.md)] \[[Paper](https://www.usenix.org/conference/atc22/presentation/gouk)]
+  * KAIST
+  * CXL 2.0
+  * 6.2x shorter latency & 3x better performance than RDMA-based memory disaggregation.
 
 ## RDMA-based Disaggregation
 
-|      Name      | Conference                                             | Institution                                                                                       | Links                                                                                                                                                                                   |                                                                    |
-| :------------: | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-|  **DisaggRec** | arXiv 2212.00939                                       | <p></p><ul><li>Meta AI</li><li>WashU</li><li>UPenn</li><li>Cornell</li><li>Intel</li></ul>        | <p></p><ul><li><a href="broken-reference">Personal Notes</a></li><li><a href="https://arxiv.org/abs/2212.00939">Paper</a></li></ul>                                                     | Deep learning recommendation models; partition _embedding tables_. |
-|    **Hydra**   | FAST 2022                                              | <ul><li><a href="https://symbioticlab.org/">UMich SymbioticLab</a></li></ul>                      | <ul><li><a href="https://www.usenix.org/conference/fast22/presentation/lee">Paper</a></li><li><a href="https://github.com/SymbioticLab/Hydra">Code</a></li></ul>                        | In-memory erasure coding.                                          |
-|    **Kona**    | ASPLOS 2021                                            | <ul><li>VMWare</li><li>Penn State</li><li>ETH</li><li>EPFL</li><li>UMich</li><li>Google</li></ul> | <ul><li><a href="https://dl.acm.org/doi/10.1145/3445814.3446713">Paper</a></li><li><a href="https://github.com/project-kona/asplos21-ae">Code</a></li></ul>                             | Cache coherence.                                                   |
-|    **Leap**    | [ATC 2020](../../reading-notes/conference/atc-2020/)   | <ul><li><a href="https://symbioticlab.org/">UMich SymbioticLab</a></li></ul>                      | <ul><li><a href="https://www.usenix.org/conference/atc20/presentation/al-maruf">Paper</a></li><li><a href="https://github.com/SymbioticLab/leap">Code</a></li></ul>                     | **Best Paper**; memory prefetching.                                |
-|   **LegoOS**   | [OSDI 2018](../../reading-notes/conference/osdi-2018/) | <ul><li>Purdue</li></ul>                                                                          | <ul><li><a href="https://www.usenix.org/conference/osdi18/presentation/shan">Paper</a></li><li><a href="https://github.com/WukLab/LegoOS">Code</a></li></ul>                            | **Best Paper**; _splitkernel_.                                     |
-| **Infiniswap** | NSDI 2017                                              | <ul><li><a href="https://symbioticlab.org/">UMich SymbioticLab</a></li></ul>                      | <ul><li><a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/gu">Paper</a></li><li><a href="https://github.com/SymbioticLab/Infiniswap">Code</a></li></ul> | Remote memory paging system.                                       |
+* DisaggRec: Architecting Disaggregated Systems for Large-Scale Personalized Recommendation (arXiv 2212.00939) \[[Personal Notes](broken-reference)] \[[Paper](https://arxiv.org/abs/2212.00939)]
+  * Meta AI & WashU & UPenn & Cornell & Intel
+  * Deep learning recommendation models; partition _embedding tables_.
+* Hydra: Resilient and Highly Available Remote Memory (FAST 2022) \[[Paper](https://www.usenix.org/conference/fast22/presentation/lee)] \[[Code](https://github.com/SymbioticLab/Hydra)]
+  * UMich SymbioticLab
+  * In-memory erasure coding.
+* Rethinking Software Runtimes for Disaggregated Memory (ASPLOS 2021) \[[Paper](https://dl.acm.org/doi/10.1145/3445814.3446713)] \[[Code](https://github.com/project-kona/asplos21-ae)]
+  * VMWare & Penn State & ETH & EPFL & UMich & Google
+  * Kona
+  * Cache coherence.
+* Effectively Prefetching Remote Memory with Leap ([ATC 2020](../../reading-notes/conference/atc-2020/)) \[[Paper](https://www.usenix.org/conference/atc20/presentation/al-maruf)] \[[Code](https://github.com/SymbioticLab/leap)]
+  * UMich SymbioticLab
+  * **Best Paper**
+  * Memory prefetching
+* LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation ([OSDI 2018](../../reading-notes/conference/osdi-2018/)) \[[Paper](https://www.usenix.org/conference/osdi18/presentation/shan)] \[[Code](https://github.com/WukLab/LegoOS)]
+  * Purdue
+  * **Best Paper**
+  * _Splitkernel_
+* Efficient Memory Disaggregation with Infiniswap (NSDI 2017) \[[Paper](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/gu)] \[[Code](https://github.com/SymbioticLab/Infiniswap)]
+  * UMich SymbioticLab
+  * Remote memory paging system.
