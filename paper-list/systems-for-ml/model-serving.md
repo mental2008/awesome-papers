@@ -1,15 +1,36 @@
 # Model Serving
 
-## Model Serving System
-
+{% hint style="info" %}
 Large language models (LLMs) are _hot_ and _diverse_ compared to conventional models. Therefore, I have classified the related works for LLMs in [another paper list](llm.md).
+{% endhint %}
 
-<table data-full-width="false"><thead><tr><th width="142">Name</th><th width="152">Conference</th><th width="157">Institution</th><th width="161">Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>REEF</strong></td><td><a href="../../reading-notes/conference/osdi-2022/">OSDI 2022</a></td><td><ul><li>SJTU</li></ul></td><td><ul><li><a href="../../reading-notes/conference/osdi-2022/reef.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/osdi22/presentation/han">Paper</a></li><li><a href="https://github.com/SJTU-IPADS/reef">Code</a></li><li><a href="https://github.com/SJTU-IPADS/disb">Benchmark</a></li><li><a href="https://github.com/SJTU-IPADS/reef-artifacts/tree/osdi22-ae">Artifact</a></li></ul></td><td>GPU <em>kernel preemption</em>; <em>concurrent</em> DNN inferences.</td></tr><tr><td><strong>INFaaS</strong></td><td><a href="../../reading-notes/conference/atc-2021/">ATC 2021</a></td><td><ul><li>Stanford</li></ul></td><td><ul><li><a href="https://www.usenix.org/conference/atc21/presentation/romero">Paper</a></li><li><a href="https://github.com/stanford-mast/INFaaS">Code</a></li></ul></td><td><strong>Best Paper</strong>; consider <em>model-variants</em>.</td></tr><tr><td><strong>Clipper</strong></td><td><a href="../../reading-notes/conference/nsdi-2017/">NSDI 2017</a></td><td><ul><li>UC Berkeley</li></ul></td><td><ul><li><a href="../../reading-notes/conference/nsdi-2017/clipper.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw">Paper</a></li><li><a href="https://github.com/ucbrise/clipper">Code</a></li></ul></td><td>Caching, batching, adaptive model selection.</td></tr><tr><td><strong>TensorFlow Serving</strong></td><td>NIPS 2017 Workshop on ML Systems</td><td><ul><li>Google</li></ul></td><td><ul><li><a href="https://arxiv.org/abs/1712.06139">Paper</a></li></ul></td><td></td></tr></tbody></table>
+## Model Serving Systems
+
+* Microsecond-scale Preemption for Concurrent GPU-accelerated DNN Inferences ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Personal Notes](../../reading-notes/conference/osdi-2022/reef.md)] \[[Paper](https://www.usenix.org/conference/osdi22/presentation/han)] \[[Code](https://github.com/SJTU-IPADS/reef)] \[[Benchmark](https://github.com/SJTU-IPADS/disb)] \[[Artifact](https://github.com/SJTU-IPADS/reef-artifacts/tree/osdi22-ae)]
+  * SJTU
+  * REEF: GPU kernel preemption; dynamic kernel padding.
+* INFaaS: Automated Model-less Inference Serving ([ATC 2021](../../reading-notes/conference/atc-2021/)) \[[Paper](https://www.usenix.org/conference/atc21/presentation/romero)] \[[Code](https://github.com/stanford-mast/INFaaS)]
+  * Stanford
+  * **Best Paper**
+  * Consider _model-variants_
+* Clipper: A Low-Latency Online Prediction Serving System ([NSDI 2017](../../reading-notes/conference/nsdi-2017/)) \[[Personal Notes](../../reading-notes/conference/nsdi-2017/clipper.md)] \[[Paper](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw)] \[[Code](https://github.com/ucbrise/clipper)]
+  * UC Berkeley
+  * Caching, batching, adaptive model selection.
+* TensorFlow-Serving: Flexible, High-Performance ML Serving (NIPS 2017 Workshop on ML Systems) \[[Paper](https://arxiv.org/abs/1712.06139)]
+  * Google
 
 ## Auto-Configuration for Model Serving
 
-<table><thead><tr><th width="132">Name</th><th width="126" align="center">Conference</th><th width="155">Institution</th><th>Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>Falcon</strong></td><td align="center"><a href="../../reading-notes/conference/socc-2022/">SoCC 2022</a></td><td><ul><li>Institute of Software, Chinese Academy of Sciences</li></ul></td><td><ul><li><a href="../../reading-notes/conference/socc-2022/falcon.md">Personal Notes</a></li><li><a href="https://dl.acm.org/doi/10.1145/3542929.3563485">Paper</a></li><li><a href="https://github.com/dos-lab/Falcon">Code</a></li></ul></td><td>Characterize a DL model by its key operators.</td></tr><tr><td><strong>Morphling</strong></td><td align="center"><a href="../../reading-notes/conference/socc-2021.md">SoCC 2021</a></td><td><ul><li>HKUST</li><li>Alibaba</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/10.1145/3472883.3486987">Paper</a></li><li><a href="https://github.com/kubedl-io/morphling">Code</a></li></ul></td><td>Meta learning; bayesian optimization.</td></tr></tbody></table>
+* Serving Unseen Deep Learning Models with Near-Optimal Configurations: a Fast Adaptive Search Approach ([SoCC 2022](../../reading-notes/conference/socc-2022/)) \[[Personal Notes](../../reading-notes/conference/socc-2022/falcon.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3542929.3563485)] \[[Code](https://github.com/dos-lab/Falcon)]
+  * ISCAS
+  * Characterize a DL model by its key operators.
+* Morphling: Fast, Near-Optimal Auto-Configuration for Cloud-Native Model Serving ([SoCC 2021](../../reading-notes/conference/socc-2021.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3472883.3486987)] \[[Code](https://github.com/kubedl-io/morphling)]
+  * HKUST & Alibaba
+  * Meta learning; bayesian optimization; Kubernetes.
 
 ## Survey
 
-<table><thead><tr><th width="232">Survey</th><th align="center">Conference</th><th>Institute</th><th>Links</th></tr></thead><tbody><tr><td><strong>A survey of multi-tenant deep learning inference on GPU</strong></td><td align="center">MLSys 2022 Workshop on Cloud Intelligence / AIOps</td><td><ul><li>George Mason University</li><li>Microsoft</li><li>University of Maryland</li></ul></td><td><ul><li><a href="https://arxiv.org/abs/2203.09040">Paper</a></li></ul></td></tr><tr><td><strong>A survey of large-scale deep learning serving system optimization: Challenges and opportunities</strong></td><td align="center">arXiv 2111.14247</td><td><ul><li>George Mason University</li><li>Microsoft</li><li>University of Pittsburgh</li><li>University of Maryland</li></ul></td><td><ul><li><a href="https://arxiv.org/abs/2111.14247">Paper</a></li></ul></td></tr></tbody></table>
+* A Survey of Multi-Tenant Deep Learning Inference on GPU (MLSys 2022 Workshop on Cloud Intelligence / AIOps) \[[Paper](https://arxiv.org/abs/2203.09040)]
+  * George Mason & Microsoft & Maryland
+* A Survey of Large-Scale Deep Learning Serving System Optimization: Challenges and Opportunities (arXiv 2111.14247) \[[Paper](https://arxiv.org/abs/2111.14247)]
+  * George Mason & Microsoft & Pittsburgh & Maryland

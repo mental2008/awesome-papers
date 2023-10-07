@@ -7,7 +7,7 @@
   * TGS: _Transparent_ GPU sharing; adaptive rate control; unified memory.
 * Microsecond-scale Preemption for Concurrent GPU-accelerated DNN Inferences ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Personal Notes](../../reading-notes/conference/osdi-2022/reef.md)] \[[Paper](https://www.usenix.org/conference/osdi22/presentation/han)] \[[Code](https://github.com/SJTU-IPADS/reef)] \[[Benchmark](https://github.com/SJTU-IPADS/disb)] \[[Artifact](https://github.com/SJTU-IPADS/reef-artifacts/tree/osdi22-ae)]
   * SJTU
-  * GPU kernel preemption; dynamic kernel padding.
+  * REEF: GPU kernel preemption; dynamic kernel padding.
 * Gemini: Enabling Multi-Tenant GPU Sharing Based on Kernel Burst Estimation ([TCC 2021](../../reading-notes/journal/tcc/tcc-2021/)) \[[Paper](https://ieeexplore.ieee.org/document/9566822)] \[[Code](https://github.com/NTHU-LSALAB/Gemini)]
   * National Tsing Hua University
   * Enable fine-grained GPU allocation; launch kernels together.
@@ -23,6 +23,9 @@
 
 ## GPU Spatial Sharing
 
+* MuxFlow: Efficient and Safe GPU Sharing in Large-Scale Production Deep Learning Clusters (arXiv 2303.13803) \[[Paper](https://arxiv.org/abs/2303.13803)]
+  * PKU & ByteDance
+  * Utilize NVIDIA MPS
 * NVIDIA Multi-Instance GPU (MIG) \[[Homepage](https://www.nvidia.com/en-us/technologies/multi-instance-gpu/)]
   * Partition the GPU into as many as _seven instances_, each _fully isolated_ with its own high-bandwidth memory, cache, and compute cores.
   * Available for NVIDIA H100, A100, and A30 GPUs.

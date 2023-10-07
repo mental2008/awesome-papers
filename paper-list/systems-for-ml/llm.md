@@ -1,20 +1,50 @@
 # Large Language Model (LLM)
 
-## Training
+## LLM Training
 
-|   Name   | Conference                                             | Institution                                                                                    | Links                                                                                                                                                                                                                  | Remarks                                                 |
-| :------: | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| **Alpa** | [OSDI 2022](../../reading-notes/conference/osdi-2022/) | <ul><li>UC Berkeley</li><li>AWS</li><li>Google</li><li>SJTU</li><li>CMU</li><li>Duke</li></ul> | <ul><li><a href="https://www.usenix.org/conference/osdi22/presentation/zheng-lianmin">Paper</a></li><li><a href="https://github.com/alpa-projects/alpa">Code</a></li><li><a href="https://alpa.ai/">Docs</a></li></ul> | Generalize the search through _parallelism strategies_. |
+* Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Paper](https://www.usenix.org/conference/osdi22/presentation/zheng-lianmin)] \[[Code](https://github.com/alpa-projects/alpa)] \[[Docs](https://alpa.ai/)]
+  * UC Berkeley & AWS & Google & SJTU & CMU & Duke
+  * Generalize the search through _parallelism strategies_.
 
-## Inference
+## LLM Inference
 
-<table><thead><tr><th width="139">Name</th><th width="132" align="center">Conference</th><th width="143">Institution</th><th width="147">Links</th><th>Remarks</th></tr></thead><tbody><tr><td><strong>Deja Vu</strong></td><td align="center"><a href="../../reading-notes/conference/icml-2023.md">ICML 2023</a></td><td><ul><li>Rice</li><li>ZJU</li><li>Stanford</li><li>UCSD</li><li>ETH</li><li>Adobe</li><li>Meta AI</li><li>CMU</li></ul></td><td><ul><li><a href="https://proceedings.mlr.press/v202/liu23am.html">Paper</a></li><li><a href="https://github.com/FMInference/DejaVu">Code</a></li></ul></td><td>A system to predict <em>contextual sparsity</em> (small, input-dependent sets that yield <em>approximately</em> the same output).</td></tr><tr><td><strong>FlexGen</strong></td><td align="center"><a href="../../reading-notes/conference/icml-2023.md">ICML 2023</a></td><td><ul><li>Stanford</li><li>UC Berkeley</li><li>ETH</li><li>Yandex</li><li>HSE University</li><li>Meta</li><li>CMU</li></ul></td><td><ul><li><a href="../../reading-notes/miscellaneous/arxiv/2023/high-throughput-generative-inference-of-large-language-models-with-a-single-gpu.md">Personal Notes</a></li><li><a href="https://arxiv.org/abs/2303.06865">Paper</a></li><li><a href="https://github.com/FMInference/FlexGen">Code</a></li></ul></td><td><em>High-throughput serving; only use a single GPU.</em></td></tr><tr><td><strong>FastServe</strong></td><td align="center">arXiv 2305.05920</td><td><ul><li>PKU</li></ul></td><td><ul><li><a href="https://arxiv.org/abs/2305.05920">Paper</a></li></ul></td><td>Skip-join multi-level feedback queue scheduling instead of first-come-frist-serve; proactive kv cache swapping; compared to <strong>Orca</strong>.</td></tr><tr><td><strong>AlpaServe</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2023.md">OSDI 2023</a></td><td><ul><li>UC Berkeley</li><li>PKU</li><li>UPenn</li><li>Stanford</li><li>Google</li></ul></td><td><ul><li><a href="https://arxiv.org/abs/2302.11665">Paper</a></li></ul></td><td>Trade-off between <em>the overhead of model parallelism</em> and <em>reduced serving latency by statistical multiplexing</em>.</td></tr><tr><td><strong>PaLM Inference</strong></td><td align="center"><a href="../../reading-notes/conference/mlsys-2023.md">MLSys 2023</a></td><td><ul><li>Google</li></ul></td><td><ul><li><a href="https://arxiv.org/abs/2211.05102">Paper</a></li><li><a href="https://github.com/google-research/google-research/tree/master/scaling_transformer_inference_efficiency">Code</a></li></ul></td><td>Model partitioning; PaLM; TPUv4.</td></tr><tr><td><strong>DeepSpeed-Inference</strong></td><td align="center"><a href="../../reading-notes/conference/sc-2022.md">SC 2022</a></td><td><ul><li>Microsoft</li></ul></td><td><ul><li><a href="https://dl.acm.org/doi/abs/10.5555/3571885.3571946">Paper</a></li><li><a href="https://github.com/microsoft/DeepSpeed">Code</a></li><li><a href="https://www.deepspeed.ai/inference/">Homepage</a></li></ul></td><td>Leverage <em>CPU/NVMe/GPU memory</em>.</td></tr><tr><td><strong>Orca</strong></td><td align="center"><a href="../../reading-notes/conference/osdi-2022/">OSDI 2022</a></td><td><ul><li>Seoul National University</li><li>FriendliAI</li></ul></td><td><ul><li><a href="../../reading-notes/conference/osdi-2022/orca.md">Personal Notes</a></li><li><a href="https://www.usenix.org/conference/osdi22/presentation/yu">Paper</a></li></ul></td><td><em>Iteration-level</em> scheduling; <em>selective batching</em>.</td></tr></tbody></table>
+* Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Paper](https://proceedings.mlr.press/v202/liu23am.html)] \[[Code](https://github.com/FMInference/DejaVu)]
+  * Rice & ZJU & Stanford & UCSD & ETH & Adobe & Meta AI & CMU
+  * A system to predict _contextual sparsity_ (small, input-dependent sets that yield _approximately_ the same output).
+* FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/high-throughput-generative-inference-of-large-language-models-with-a-single-gpu.md)] \[[Paper](https://proceedings.mlr.press/v202/sheng23a.html)] \[[Code](https://github.com/FMInference/FlexGen)]
+  * Stanford & UC Berkeley & ETH & Yandex & HSE & Meta & CMU
+  * _High-throughput serving; only use a single GPU._
+* Fast Distributed Inference Serving for Large Language Models (arXiv 2305.05920) \[[Paper](https://arxiv.org/abs/2305.05920)]
+  * PKU
+  * Skip-join multi-level feedback queue scheduling instead of first-come-frist-serve.
+  * Proactive kv cache swapping.
+  * Compared to Orca
+* AlpaServe: Statistical Multiplexing with Model Parallelism for Deep Learning Serving ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://arxiv.org/abs/2302.11665)] \[[Code](https://github.com/alpa-projects/mms)]
+  * UC Berkeley & PKU & UPenn & Stanford & Google
+  * Trade-off between _the overhead of model parallelism_ and _reduced serving latency by statistical multiplexing_.
+* Efficiently Scaling Transformer Inference ([MLSys 2023](../../reading-notes/conference/mlsys-2023.md)) \[[Paper](https://proceedings.mlsys.org/paper\_files/paper/2023/hash/523f87e9d08e6071a3bbd150e6da40fb-Abstract-mlsys2023.html)]
+  * Google
+  * **Outstanding Paper Award**
+  * Model partitioning; PaLM; TPUv4
+* DeepSpeed-Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale ([SC 2022](../../reading-notes/conference/sc-2022.md)) \[[Paper](https://dl.acm.org/doi/abs/10.5555/3571885.3571946)] \[[Code](https://github.com/microsoft/DeepSpeed)] \[[Homepage](https://www.deepspeed.ai/inference/)]
+  * Microsoft DeepSpeed
+  * Leverage CPU/NVMe/GPU memory.
+* Orca: A Distributed Serving System for Transformer-Based Generative Models ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Personal Notes](../../reading-notes/conference/osdi-2022/orca.md)] \[[Paper](https://www.usenix.org/conference/osdi22/presentation/yu)]
+  * Seoul National University & FriendliAI
+  * Iteration-level scheduling; selective batching.
 
-## Models
+## LLMs
 
-|    Model    | Conference       | Institution                       | Links                                                                                                                                                                                                              | Remarks                                                                             |
-| :---------: | ---------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
-| **LLaMA 2** | arXiv 2307.09288 | <ul><li>Meta AI</li></ul>         | <ul><li><a href="https://arxiv.org/abs/2307.09288">Paper</a></li><li><a href="https://ai.meta.com/llama/">Homepage</a></li></ul>                                                                                   | Released with a _permissive_ community license and is available for commercial use. |
-|  **LLaMA**  | arXiv 2302.13971 | <ul><li>Meta AI</li></ul>         | <ul><li><a href="https://arxiv.org/abs/2302.13971">Paper</a></li><li><a href="https://github.com/facebookresearch/llama">Code</a></li></ul>                                                                        | \[**6.7B, 13B, 32.5B, 65.2B**]; _open-access_.                                      |
-|  **BLOOM**  | arXiv 2211.05100 | <ul><li>Multiple groups</li></ul> | <ul><li><a href="https://arxiv.org/abs/2211.05100">Paper</a></li><li><a href="https://huggingface.co/bigscience/bloom">Model</a></li><li><a href="https://bigscience.huggingface.co/blog/bloom">Blog</a></li></ul> | **176B**; _open-access_.                                                            |
-|   **PaLM**  | arXiv 2204.02311 | <ul><li>Google Research</li></ul> | <ul><li><a href="https://arxiv.org/abs/2204.02311">Paper</a></li><li><a href="https://developers.googleblog.com/2023/03/announcing-palm-api-and-makersuite.html">PaLM API</a></li></ul>                            | **540B**; open access to PaLM APIs in March 2023.                                   |
+* Llama 2: Open Foundation and Fine-Tuned Chat Models (arXiv 2307.09288) \[[Paper](https://arxiv.org/abs/2307.09288)] \[[Homepage](https://ai.meta.com/llama/)]
+  * Released with a _permissive_ community license and is available for commercial use.
+* LLaMA: Open and Efficient Foundation Language Models (arXiv 2302.13971) \[[Paper](https://arxiv.org/abs/2302.13971)] \[[Code](https://github.com/facebookresearch/llama)]
+  * Meta AI
+  * \[**6.7B, 13B, 32.5B, 65.2B**]; _open-access_.
+* PaLM: Scaling Language Modeling with Pathways ([JMLR 2023](https://www.jmlr.org/papers/v24/22-1144.html)) \[[Paper](https://www.jmlr.org/papers/v24/22-1144.html)] \[[PaLM API](https://developers.googleblog.com/2023/03/announcing-palm-api-and-makersuite.html)]
+  * **540B**; open access to PaLM APIs in March 2023.
+* BLOOM: A 176B-Parameter Open-Access Multilingual Language Model (arXiv 2211.05100) \[[Paper](https://arxiv.org/abs/2211.05100)] \[[Model](https://huggingface.co/bigscience/bloom)] \[[Blog](https://bigscience.huggingface.co/blog/bloom)]
+  * **176B**; _open-access_.
+
+## Acronyms
+
+* LLM: Large Language Model
