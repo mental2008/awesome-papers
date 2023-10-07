@@ -12,4 +12,6 @@ Paper List: [https://mlsys.org/Conferences/2023/Schedule](https://mlsys.org/Conf
 
 ### Distributed Inference
 
-* [Efficiently Scaling Transformer Inference](https://arxiv.org/abs/2211.05102)
+* Efficiently Scaling Transformer Inference \[[Paper](https://proceedings.mlsys.org/paper\_files/paper/2023/hash/523f87e9d08e6071a3bbd150e6da40fb-Abstract-mlsys2023.html)]
+  * Google
+  * **Outstanding Paper Award**

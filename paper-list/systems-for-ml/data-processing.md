@@ -1,6 +1,6 @@
 # Data Processing
 
-* Disaggregating ML Input Data Processing at Scale (SoCC 2023)
+* Disaggregating ML Input Data Processing at Scale ([SoCC 2023](../../reading-notes/conference/socc-2023.md))
   * Google & ETH
 * GoldMiner: Elastic Scaling of Training Data Pre-Processing Pipelines for Deep Learning (SIGMOD 2023) \[[Paper](https://dl.acm.org/doi/10.1145/3589773)]
   * Alibaba & PKU

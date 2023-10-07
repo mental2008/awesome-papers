@@ -2,9 +2,9 @@
 
 ## LLM Training
 
-* Oobleck: Resilient Distributed Training of Large Models Using Pipeline Templates (SOSP 2023) \[[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613152)] \[[arXiv](https://browse.arxiv.org/abs/2309.08125)] \[[Code](https://github.com/SymbioticLab/Oobleck)]
+* Oobleck: Resilient Distributed Training of Large Models Using Pipeline Templates ([SOSP 2023](../../reading-notes/conference/sosp-2023.md)) \[[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613152)] \[[arXiv](https://browse.arxiv.org/abs/2309.08125)] \[[Code](https://github.com/SymbioticLab/Oobleck)]
   * UMich SymbioticLab & AWS & PKU
-* GEMINI: Fast Failure Recovery in Distributed Training with In-Memory Checkpoints (SOSP 2023) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613145)]
+* GEMINI: Fast Failure Recovery in Distributed Training with In-Memory Checkpoints ([SOSP 2023](../../reading-notes/conference/sosp-2023.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613145)]
   * Rice & AWS
 * Bamboo: Making Preemptible Instances Resilient for Affordable Training of Large DNNs ([NSDI 2023](../../reading-notes/conference/nsdi-2023/)) \[[Paper](https://www.usenix.org/conference/nsdi23/presentation/thorpe)] \[[Code](https://github.com/uclasystem/bamboo)]
   * UCLA & CMU & MSR & Princeton
