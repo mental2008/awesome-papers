@@ -16,8 +16,8 @@ Authors: Rachel Potvin, Josh Levenberg (_Google_)
 ### Key systems
 
 * **Piper**: The distributed source-code repository
-  * Implemented on top of standard Google infrastructure (originally [Bigtable](app://obsidian.md/@chang2006Bigtable), now [Spanner](app://obsidian.md/@corbett2012Spanner))
-  * Reply on the [Paxos](app://obsidian.md/@lamport1998Paxos) algorithm to guarantee consistency across replicas
+  * Implemented on top of standard Google infrastructure (originally Bigtable, now Spanner)
+  * Reply on the Paxos algorithm to guarantee consistency across replicas
 * **CitC** (Clients in the Cloud): The workspace client
   * With _a cloud-based storage backend_ and _a Linux-only FUSE13 file system_
 * **Critique**: The code-review tool
