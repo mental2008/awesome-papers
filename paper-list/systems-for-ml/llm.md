@@ -15,7 +15,7 @@
 
 ## LLM Inference
 
-* Efficient Memory Management for Large Language Model Serving with PagedAttention (SOSP 2023) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613165)] \[[arXiv](https://browse.arxiv.org/abs/2309.06180)] \[[Code](https://github.com/vllm-project/vllm)] \[[Homepage](https://vllm.ai/)]
+* Efficient Memory Management for Large Language Model Serving with PagedAttention ([SOSP 2023](../../reading-notes/conference/sosp-2023.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613165)] \[[arXiv](https://browse.arxiv.org/abs/2309.06180)] \[[Code](https://github.com/vllm-project/vllm)] \[[Homepage](https://vllm.ai/)]
   * UC Berkeley & Stanford & UCSD
   * vLLM, PagedAttention
 * Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Paper](https://proceedings.mlr.press/v202/liu23am.html)] \[[Code](https://github.com/FMInference/DejaVu)]
@@ -43,17 +43,34 @@
   * Seoul National University & FriendliAI
   * Iteration-level scheduling; selective batching.
 
+### Speculative Decoding
+
+* Online Speculative Decoding (arXiv: 2310.07177) \[[Paper](https://arxiv.org/abs/2310.07177)]
+  * UC Berkeley & UCSD & Sisu Data & SJTU
+* SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification (arXiv: 2305.09781) \[[Paper](https://arxiv.org/abs/2305.09781)] \[[Code](https://github.com/flexflow/FlexFlow/tree/inference)]
+  * CMU
+* Speculative Decoding with Big Little Decoder (NeurIPS 2023) \[[Paper](https://arxiv.org/abs/2302.07863)]
+  * UC Berkeley & ICSI & LBNL
+* Fast Inference from Transformers via Speculative Decoding ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Paper](https://openreview.net/pdf?id=C9NEblP8vS)]
+  * Google Research
+
 ## LLMs
 
 * Llama 2: Open Foundation and Fine-Tuned Chat Models (arXiv 2307.09288) \[[Paper](https://arxiv.org/abs/2307.09288)] \[[Homepage](https://ai.meta.com/llama/)]
   * Released with a _permissive_ community license and is available for commercial use.
 * LLaMA: Open and Efficient Foundation Language Models (arXiv 2302.13971) \[[Paper](https://arxiv.org/abs/2302.13971)] \[[Code](https://github.com/facebookresearch/llama)]
   * Meta AI
-  * \[**6.7B, 13B, 32.5B, 65.2B**]; _open-access_.
-* PaLM: Scaling Language Modeling with Pathways ([JMLR 2023](https://www.jmlr.org/papers/v24/22-1144.html)) \[[Paper](https://www.jmlr.org/papers/v24/22-1144.html)] \[[PaLM API](https://developers.googleblog.com/2023/03/announcing-palm-api-and-makersuite.html)]
+  * **6.7B, 13B, 32.5B, 65.2B**
+  * Open-access
+* PaLM: Scaling Language Modeling with Pathways (JMLR 2023) \[[Paper](https://www.jmlr.org/papers/v24/22-1144.html)] \[[PaLM API](https://developers.googleblog.com/2023/03/announcing-palm-api-and-makersuite.html)]
   * **540B**; open access to PaLM APIs in March 2023.
 * BLOOM: A 176B-Parameter Open-Access Multilingual Language Model (arXiv 2211.05100) \[[Paper](https://arxiv.org/abs/2211.05100)] \[[Model](https://huggingface.co/bigscience/bloom)] \[[Blog](https://bigscience.huggingface.co/blog/bloom)]
-  * **176B**; _open-access_.
+  * **176B**
+  * open-access
+* OPT: Open Pre-trained Transformer Language Models (arXiv: 2205.01068) \[[Paper](https://arxiv.org/abs/2205.01068)] \[[Code](https://github.com/facebookresearch/metaseq/tree/main/projects/OPT)]
+  * Meta AI
+  * Range from 125M to 175B parameters.
+  * Open-access
 
 ## Acronyms
 
