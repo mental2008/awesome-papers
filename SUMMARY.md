@@ -33,6 +33,7 @@
 ## Reading Notes
 
 * [Conference](reading-notes/conference/README.md)
+  * [NSDI 2024](reading-notes/conference/nsdi-2024.md)
   * [SC 2023](reading-notes/conference/sc-2023.md)
   * [SoCC 2023](reading-notes/conference/socc-2023.md)
   * [SOSP 2023](reading-notes/conference/sosp-2023.md)
