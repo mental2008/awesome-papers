@@ -2,7 +2,7 @@
 
 ## Scheduling for DL Training Workloads
 
-* Sia: Heterogeneity-aware, goodput-optimized ML-cluster scheduling ([SOSP 2023](../../reading-notes/conference/sosp-2023.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613175)]
+* Sia: Heterogeneity-aware, goodput-optimized ML-cluster scheduling ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613175)]
   * CMU & Cornell & Petuum Inc.
 * Lyra: Elastic Scheduling for Deep Learning Clusters ([EuroSys 2023](../../reading-notes/conference/eurosys-2023.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2022/aryl-an-elastic-cluster-scheduler-for-deep-learning.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3552326.3587445)] \[[arXiv](https://arxiv.org/abs/2202.07896)]
   * ByteDance & CityU & CUHK

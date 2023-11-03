@@ -2,10 +2,11 @@
 
 ## Optimizing Embedding Tables
 
-* UGACHE: A Unified GPU Cache for Embedding-based Deep Learning ([SOSP 2023](../../reading-notes/conference/sosp-2023.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613169)]
+* UGache: A Unified GPU Cache for Embedding-based Deep Learning ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Personal Notes](../../reading-notes/conference/sosp-2023/ugache-a-unified-gpu-cache-for-embedding-based-deep-learning.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613169)]
   * SJTU
-  * A unified multi-GPU cache system.
-* Bagpipe: Accelerating Deep Recommendation Model Training ([SOSP 2023](../../reading-notes/conference/sosp-2023.md)) \[[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613142)]
+  * A _unified multi-GPU cache_ system.
+  * Used for GNN training and DLR inference.
+* Bagpipe: Accelerating Deep Recommendation Model Training ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613142)]
   * UW-Madison & UChicago
 * AdaEmbed: Adaptive Embedding for Large-Scale Recommendation Models ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://www.usenix.org/conference/osdi23/presentation/lai)]
   * UMich SymbioticLab & Meta

@@ -18,7 +18,8 @@ Homepage: [https://sosp2023.mpi-sws.org/](https://sosp2023.mpi-sws.org/)
 
 ### Deep Learning Recommendation Models (DLRMs)
 
-* UGACHE: A Unified GPU Cache for Embedding-based Deep Learning \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613169)]
+* UGache: A Unified GPU Cache for Embedding-based Deep Learning \[[Personal Notes](ugache-a-unified-gpu-cache-for-embedding-based-deep-learning.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613169)]
   * SJTU
+  * Multi-GPU embedding cache; exploit cross-GPU interconnects (NVLink, NVSwitch).
 * Bagpipe: Accelerating Deep Recommendation Model Training \[[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613142)]
   * UW-Madison & UChicago

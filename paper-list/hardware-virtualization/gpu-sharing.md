@@ -23,7 +23,7 @@
 
 ## GPU Spatial Sharing
 
-* Paella: Low-latency Model Serving with Software-defined GPU Scheduling ([SOSP 2023](../../reading-notes/conference/sosp-2023.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613163)]
+* Paella: Low-latency Model Serving with Software-defined GPU Scheduling ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613163)]
   * UPenn & DBOS, Inc.
 * MuxFlow: Efficient and Safe GPU Sharing in Large-Scale Production Deep Learning Clusters (arXiv 2303.13803) \[[Paper](https://arxiv.org/abs/2303.13803)]
   * PKU & ByteDance
