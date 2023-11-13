@@ -15,9 +15,27 @@
 
 ## LLM Inference
 
+* S-LoRA: Serving Thousands of Concurrent LoRA Adapters (arXiv 2311.03285) \[[Paper](https://arxiv.org/abs/2311.03285)] \[[Code](https://github.com/S-LoRA/S-LoRA)]
+  * UC Berkeley
+  * A system to serve many LoRA adapters
+  * Store all adapters in the main memory and fetch the adapters used by the currently running queries to the GPU memory
+  * Unified Paging — a unified memory pool to manage dynamic adapter weights with different ranks and KV cache tensors with varying sequence lengths
+  * Employ a tensor parallelism strategy and highly optimized custom CUDA kernels for heterogeneous batching of LoRA computation
+  * Built on top of [LightLLM](https://github.com/ModelTC/lightllm)
+* Punica: Multi-Tenant LoRA Serving (arXiv 2310.18547) \[[Paper](https://arxiv.org/abs/2310.18547)] \[[Code](https://github.com/punica-ai/punica)]
+  * UW & Duke
+  * A system to serve multiple LoRA models in a shared GPU cluster
+  * A CUDA kernel — Segmented Gather Matrix-Vector Multiplication (SGMV)
+    * Batch GPU operations for concurrent execution of different LoRA models
+    * A GPU only needs to store a single copy of the pre-trained model
+  * A request scheduling mechanism to consolidate multi-tenant LoRA serving workloads
+    * Route the new request to a small set of active GPUs
+    * Allocate additional GPU resources when the existing GPUs are fully utilized
+    * Periodically migrate existing requests for consolidation
 * Efficient Memory Management for Large Language Model Serving with PagedAttention ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613165)] \[[arXiv](https://browse.arxiv.org/abs/2309.06180)] \[[Code](https://github.com/vllm-project/vllm)] \[[Homepage](https://vllm.ai/)]
   * UC Berkeley & Stanford & UCSD
   * vLLM, PagedAttention
+  * Partition the KV cache of each sequence into blocks, each block containing the keys and values for a fixed number of tokens
 * Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Paper](https://proceedings.mlr.press/v202/liu23am.html)] \[[Code](https://github.com/FMInference/DejaVu)]
   * Rice & ZJU & Stanford & UCSD & ETH & Adobe & Meta AI & CMU
   * A system to predict _contextual sparsity_ (small, input-dependent sets that yield _approximately_ the same output).
@@ -27,7 +45,7 @@
 * Fast Distributed Inference Serving for Large Language Models (arXiv 2305.05920) \[[Paper](https://arxiv.org/abs/2305.05920)]
   * PKU
   * Skip-join multi-level feedback queue scheduling instead of first-come-frist-serve.
-  * Proactive kv cache swapping.
+  * Proactive KV cache swapping.
   * Compared to Orca
 * AlpaServe: Statistical Multiplexing with Model Parallelism for Deep Learning Serving ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://arxiv.org/abs/2302.11665)] \[[Code](https://github.com/alpa-projects/mms)]
   * UC Berkeley & PKU & UPenn & Stanford & Google
