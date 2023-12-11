@@ -1,5 +1,9 @@
 # Deep Learning Compiler
 
+{% hint style="info" %}
+No active maintenance.
+{% endhint %}
+
 ## System Architecture
 
 * MLIR: Scaling Compiler Infrastructure for Domain Specific Computation (CGO 2021) \[[Paper](https://research.google/pubs/pub49988/)] \[[Homepage](https://mlir.llvm.org/)]

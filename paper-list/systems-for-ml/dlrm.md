@@ -2,7 +2,7 @@
 
 ## Optimizing Embedding Tables
 
-* UGache: A Unified GPU Cache for Embedding-based Deep Learning ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Personal Notes](../../reading-notes/conference/sosp-2023/ugache-a-unified-gpu-cache-for-embedding-based-deep-learning.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613169)]
+* UGache: A Unified GPU Cache for Embedding-based Deep Learning ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Personal Notes](../../reading-notes/conference/sosp-2023/ugache.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613169)]
   * SJTU
   * A _unified multi-GPU cache_ system.
   * Used for GNN training and DLR inference.

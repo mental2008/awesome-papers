@@ -1,5 +1,9 @@
 # Cloud-Edge Collaboration
 
+{% hint style="info" %}
+No active maintenance.
+{% endhint %}
+
 ## Framework
 
 * Walle: An End-to-End, General-Purpose, and Large-Scale Production System for Device-Cloud Collaborative Machine Learning ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Paper](https://www.usenix.org/conference/osdi22/presentation/lv)] \[[Code](https://github.com/alibaba/MNN)] \[[中文官网](http://www.mnn.zone/)]

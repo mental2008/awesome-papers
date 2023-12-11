@@ -1,5 +1,9 @@
 # Hyper-Parameter Tuning (HPO)
 
+{% hint style="info" %}
+No active maintenance.
+{% endhint %}
+
 ## Optimizing HPO Workloads
 
 * Hydro: Surrogate-Based Hyperparameter Tuning Service in Datacenters ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://www.usenix.org/conference/osdi23/presentation/hu)] \[[Code](https://github.com/S-Lab-System-Group/Hydro)]

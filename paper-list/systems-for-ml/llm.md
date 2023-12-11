@@ -15,6 +15,17 @@
 
 ## LLM Inference
 
+* SpotServe: Serving Generative Large Language Models on Preemptible Instances ([ASPLOS 2024](../../reading-notes/conference/asplos-2024/)) \[[Personal Notes](../../reading-notes/conference/asplos-2024/spotserve.md)] \[[Paper](https://arxiv.org/abs/2311.15566)] \[[Code](https://github.com/Hsword/SpotServe)]
+  * CMU & PKU & CUHK
+  * Distributed LLM serving system on preemptible/spot instances
+  * Techniques
+    * Dynamically adapt the LLM parallelization configuration
+    * Minimize the cost of migrating instances for dynamic reparallelization
+    * Stateful inference recovery
+* HexGen: Generative Inference of Foundation Model over Heterogeneous Decentralized Environment (arXiv 2311.11514) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/hexgen.md)] \[[Paper](https://arxiv.org/abs/2311.11514)] \[[Code](https://github.com/Relaxed-System-Lab/HexGen)]
+  * HKUST & ETH & CMU
+  * Support _asymmetric_ tensor model parallelism and pipeline parallelism under the _heterogeneous_ setting (i.e., each pipeline parallel stage can be assigned with a different number of layers and tensor model parallel degree)
+  * Propose _a heuristic-based evolutionary algorithm_ to search for the optimal layout
 * S-LoRA: Serving Thousands of Concurrent LoRA Adapters (arXiv 2311.03285) \[[Paper](https://arxiv.org/abs/2311.03285)] \[[Code](https://github.com/S-LoRA/S-LoRA)]
   * UC Berkeley
   * A system to serve many LoRA adapters
@@ -39,7 +50,7 @@
 * Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Paper](https://proceedings.mlr.press/v202/liu23am.html)] \[[Code](https://github.com/FMInference/DejaVu)]
   * Rice & ZJU & Stanford & UCSD & ETH & Adobe & Meta AI & CMU
   * A system to predict _contextual sparsity_ (small, input-dependent sets that yield _approximately_ the same output).
-* FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/high-throughput-generative-inference-of-large-language-models-with-a-single-gpu.md)] \[[Paper](https://proceedings.mlr.press/v202/sheng23a.html)] \[[Code](https://github.com/FMInference/FlexGen)]
+* FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/flexgen.md)] \[[Paper](https://proceedings.mlr.press/v202/sheng23a.html)] \[[Code](https://github.com/FMInference/FlexGen)]
   * Stanford & UC Berkeley & ETH & Yandex & HSE & Meta & CMU
   * _High-throughput serving; only use a single GPU._
 * Fast Distributed Inference Serving for Large Language Models (arXiv 2305.05920) \[[Paper](https://arxiv.org/abs/2305.05920)]
