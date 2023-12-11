@@ -2,7 +2,9 @@
 
 > If you can't explain it simply, you don't understand it well enough. — Albert Einstein
 
-Hi all, thank you for visiting here ;-) These are my personal paper reading notes. I have a broad interest in systems, machine learning, and other funny stuff.
+Hi all, thank you for visiting here ;-) These are my personal paper reading notes.
+
+I have a broad interest in systems, machine learning, and other funny stuff.
 
 ## Welcome
 
