@@ -2,11 +2,11 @@
 
 ## 2024
 
-|            Conference           |        When        | Where                                        | Remarks |
-| :-----------------------------: | :----------------: | -------------------------------------------- | :-----: |
-|   [ASPLOS 2024](asplos-2024/)   | Apr 27-May 1, 2024 | Hilton La Jolla Torrey Pines, San Diego, USA |   TBD   |
-| [EuroSys 2024](eurosys-2024.md) |   Apr 23-26, 2024  | Athens, Greece                               |   TBD   |
-|    [NSDI 2024](nsdi-2024.md)    |   Apr 16-18, 2024  | Santa Clara, CA, USA                         |   TBD   |
+|           Conference          |        When        | Where                                        | Remarks |
+| :---------------------------: | :----------------: | -------------------------------------------- | :-----: |
+|  [ASPLOS 2024](asplos-2024/)  | Apr 27-May 1, 2024 | Hilton La Jolla Torrey Pines, San Diego, USA |   TBD   |
+| [EuroSys 2024](eurosys-2024/) |   Apr 23-26, 2024  | Athens, Greece                               |   TBD   |
+|   [NSDI 2024](nsdi-2024.md)   |   Apr 16-18, 2024  | Santa Clara, CA, USA                         |   TBD   |
 
 ## 2023
 

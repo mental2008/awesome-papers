@@ -23,7 +23,11 @@
 
 ## GPU Spatial Sharing
 
-* Paella: Low-latency Model Serving with Software-defined GPU Scheduling ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613163)]
+* Orion: Interference-aware, Fine-grained GPU Sharing for ML Applications ([EuroSys 2024](../../reading-notes/conference/eurosys-2024/)) \[[Personal Notes](../../reading-notes/conference/eurosys-2024/orion-interference-aware-fine-grained-gpu-sharing-for-ml-applications.md)] \[[Paper](https://anakli.inf.ethz.ch/papers/orion\_eurosys24.pdf)]
+  * Intercept GPU kernel launches and schedule individual GPU operators
+  * Utilize CUDA stream priorities; consider the PCIe bandwidth
+  * Use NVIDIA Nsight Compute and NVIDIA Nsight Systems to collect the compute throughput, memory throughput, and execution time of each kernel
+* Paella: Low-latency Model Serving with Software-defined GPU Scheduling ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613163)] \[[Code](https://github.com/eniac/paella)]
   * UPenn & DBOS, Inc.
 * MuxFlow: Efficient and Safe GPU Sharing in Large-Scale Production Deep Learning Clusters (arXiv 2303.13803) \[[Paper](https://arxiv.org/abs/2303.13803)]
   * PKU & ByteDance
