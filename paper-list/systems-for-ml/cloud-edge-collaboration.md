@@ -1,6 +1,6 @@
 # Cloud-Edge Collaboration
 
-{% hint style="info" %}
+{% hint style="warning" %}
 No active maintenance.
 {% endhint %}
 

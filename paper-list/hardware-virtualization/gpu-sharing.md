@@ -1,7 +1,20 @@
 # GPU Sharing
 
+{% hint style="info" %}
+I am actively maintaining this list.
+{% endhint %}
+
 ## GPU Temporal Sharing
 
+* Orion: Interference-aware, Fine-grained GPU Sharing for ML Applications ([EuroSys 2024](../../reading-notes/conference/eurosys-2024/)) \[[Personal Notes](../../reading-notes/conference/eurosys-2024/orion-interference-aware-fine-grained-gpu-sharing-for-ml-applications.md)] \[[Paper](https://anakli.inf.ethz.ch/papers/orion\_eurosys24.pdf)]
+  * ETH
+  * Intercept GPU kernel launches and schedule individual GPU operators
+  * Utilize CUDA stream priorities; consider the PCIe bandwidth
+  * Use NVIDIA Nsight Compute and NVIDIA Nsight Systems to collect the compute throughput, memory throughput, and execution time of each kernel
+* Interference-aware Multiplexing for Deep Learning in GPU Clusters: A Middleware Approach ([SC 2023](../../reading-notes/conference/sc-2023/)) \[[Personal Notes](../../reading-notes/conference/sc-2023/iadeep.md)] \[[Paper](https://doi.org/10.1145/3581784.3607060)] \[[Code](https://github.com/buzy-coder/IADeep)]
+  * UMacau & SIAT, CAS
+  * IADeep — a cluster scheduler on top of Kubernetes
+  * Tune training configurations (e.g., batch size) across all co-located tasks; choose appropriate tasks to multiplex on a GPU device; consider PCIe bandwidth
 * Transparent GPU Sharing in Container Clouds for Deep Learning Workloads ([NSDI 2023](../../reading-notes/conference/nsdi-2023/)) \[[Paper](https://www.usenix.org/conference/nsdi23/presentation/wu)] \[[Code](https://github.com/pkusys/TGS)]
   * PKU
   * TGS: _Transparent_ GPU sharing; adaptive rate control; unified memory.
@@ -23,11 +36,6 @@
 
 ## GPU Spatial Sharing
 
-* Orion: Interference-aware, Fine-grained GPU Sharing for ML Applications ([EuroSys 2024](../../reading-notes/conference/eurosys-2024/)) \[[Personal Notes](../../reading-notes/conference/eurosys-2024/orion-interference-aware-fine-grained-gpu-sharing-for-ml-applications.md)] \[[Paper](https://anakli.inf.ethz.ch/papers/orion\_eurosys24.pdf)]
-  * ETH
-  * Intercept GPU kernel launches and schedule individual GPU operators
-  * Utilize CUDA stream priorities; consider the PCIe bandwidth
-  * Use NVIDIA Nsight Compute and NVIDIA Nsight Systems to collect the compute throughput, memory throughput, and execution time of each kernel
 * Paella: Low-latency Model Serving with Software-defined GPU Scheduling ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613163)] \[[Code](https://github.com/eniac/paella)]
   * UPenn & DBOS, Inc.
   * Instrument kernels to expose at runtime, detailed information about the occupancy and utilization of the GPU's SMs

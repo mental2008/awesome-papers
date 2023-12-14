@@ -1,7 +1,11 @@
 # Model Serving
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Large language models (LLMs) are _hot_ and _diverse_ compared to conventional models. Therefore, I have classified the related works for LLMs in [another paper list](llm.md).
+{% endhint %}
+
+{% hint style="info" %}
+I am actively maintaining this list.
 {% endhint %}
 
 ## Model Serving Systems

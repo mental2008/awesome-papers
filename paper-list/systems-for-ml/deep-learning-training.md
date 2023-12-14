@@ -1,7 +1,14 @@
 # Deep Learning Training
 
+## Elastic Training
+
+* EasyScale: Elastic Training with Consistent Accuracy and Improved Utilization on GPUs ([SC 2023](../../reading-notes/conference/sc-2023/)) \[[Paper](https://doi.org/10.1145/3581784.3607054)] \[[Code](https://github.com/sUntvoOk/EasyScale\_info\_for\_SC23)]
+  * BUAA & Alibaba
+
 ## Parallelism
 
+* Hanayo: Harnessing Wave-like Pipeline Parallelism for Enhanced Large Model Training Efficiency ([SC 2023](../../reading-notes/conference/sc-2023/)) \[[Paper](https://doi.org/10.1145/3581784.3607073)] \[[Code](https://github.com/MaruyamaAya/Wpipe)]
+  * NUS
 * Supporting Very Large Models using Automatic Dataflow Graph Partitioning ([EuroSys 2019](../../reading-notes/conference/eurosys-2019.md)) \[[Paper](https://doi.org/10.1145/3302424.3303953)]
   * NYU
   * Tofu: _Automatic partition_ a dataflow graph of fine-grained tensor operations.
