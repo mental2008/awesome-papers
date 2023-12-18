@@ -167,5 +167,5 @@
 
 ## About Myself
 
-* [Academic Profile](https://www.cse.ust.hk/\~lyangbk/)
-* [Personal Blog (in Chinese)](https://blog.yanglingyun.me)
+* [Academic Profile](https://www.lingyunyang.com/)
+* [Personal Blog (in Chinese)](https://blog.lingyunyang.com/)
