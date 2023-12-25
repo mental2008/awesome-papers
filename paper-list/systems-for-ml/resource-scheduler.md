@@ -6,6 +6,8 @@ I am actively maintaining this list.
 
 ## Scheduling for DL Training Workloads
 
+* Blox: A Modular Toolkit for Deep Learning Schedulers ([EuroSys 2024](../../reading-notes/conference/eurosys-2024/)) \[[arXiv](https://arxiv.org/abs/2312.12621)] \[[Code](https://github.com/msr-fiddle/blox)]
+  * UW-Madison & MSR
 * Interference-aware Multiplexing for Deep Learning in GPU Clusters: A Middleware Approach ([SC 2023](../../reading-notes/conference/sc-2023/)) \[[Personal Notes](../../reading-notes/conference/sc-2023/iadeep.md)] \[[Paper](https://doi.org/10.1145/3581784.3607060)] \[[Code](https://github.com/buzy-coder/IADeep)]
   * UMacau & SIAT, CAS
   * IADeep — a cluster scheduler to co-locate DL training tasks
