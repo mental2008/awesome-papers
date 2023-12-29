@@ -15,3 +15,8 @@
   * CityU & ByteDance & CUHK
 * Optimizing Dynamic Neural Networks with Brainstorm ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://www.usenix.org/conference/osdi23/presentation/cui)]
   * SJTU & MSRA & USTC
+
+## Models
+
+* Mixtral-8x7B \[[Hugging Face](https://huggingface.co/mistralai/Mixtral-8x7B-v0.1)] \[[Blog](https://mistral.ai/news/mixtral-of-experts/)]
+  * Mistral AI
