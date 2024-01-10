@@ -19,25 +19,34 @@ I am actively maintaining this list.
 
 ## LLM Inference
 
-* SpotServe: Serving Generative Large Language Models on Preemptible Instances ([ASPLOS 2024](../../reading-notes/conference/asplos-2024/)) \[[Personal Notes](../../reading-notes/conference/asplos-2024/spotserve.md)] \[[Paper](https://arxiv.org/abs/2311.15566)] \[[Code](https://github.com/Hsword/SpotServe)]
+* PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU (arXiv 2312.12456) \[[arXiv](https://arxiv.org/abs/2312.12456)]
+  * SJTU
+  * A GPU-CPU hybrid inference engine
+  * Hot-activated neurons are preloaded onto the GPU for fast access; cold-activated neurons are computed on the CPU
+* LLM in a flash: Efficient Large Language Model Inference with Limited Memory (arXiv 2312.11514) \[[arXiv](https://arxiv.org/abs/2312.11514)]
+  * Apple
+* Splitwise: Efficient Generative LLM Inference Using Phase Splitting (arXiv 2311.18677) \[[arXiv](https://arxiv.org/abs/2311.18677)] \[[Blog](https://www.microsoft.com/en-us/research/blog/splitwise-improves-gpu-usage-by-splitting-llm-inference-phases/)]
+  * UW & Microsoft
+  * Split the two phases (i.e., prefill and decode) of a LLM inference request to separate machines
+* SpotServe: Serving Generative Large Language Models on Preemptible Instances ([ASPLOS 2024](../../reading-notes/conference/asplos-2024/)) \[[Personal Notes](../../reading-notes/conference/asplos-2024/spotserve.md)] \[[arXiv](https://arxiv.org/abs/2311.15566)] \[[Code](https://github.com/Hsword/SpotServe)]
   * CMU & PKU & CUHK
   * Distributed LLM serving system on preemptible/spot instances
   * Techniques
     * Dynamically adapt the LLM parallelization configuration
     * Minimize the cost of migrating instances for dynamic reparallelization
     * Stateful inference recovery
-* HexGen: Generative Inference of Foundation Model over Heterogeneous Decentralized Environment (arXiv 2311.11514) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/hexgen.md)] \[[Paper](https://arxiv.org/abs/2311.11514)] \[[Code](https://github.com/Relaxed-System-Lab/HexGen)]
+* HexGen: Generative Inference of Foundation Model over Heterogeneous Decentralized Environment (arXiv 2311.11514) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/hexgen.md)] \[[arXiv](https://arxiv.org/abs/2311.11514)] \[[Code](https://github.com/Relaxed-System-Lab/HexGen)]
   * HKUST & ETH & CMU
   * Support _asymmetric_ tensor model parallelism and pipeline parallelism under the _heterogeneous_ setting (i.e., each pipeline parallel stage can be assigned with a different number of layers and tensor model parallel degree)
   * Propose _a heuristic-based evolutionary algorithm_ to search for the optimal layout
-* S-LoRA: Serving Thousands of Concurrent LoRA Adapters (arXiv 2311.03285) \[[Paper](https://arxiv.org/abs/2311.03285)] \[[Code](https://github.com/S-LoRA/S-LoRA)]
+* S-LoRA: Serving Thousands of Concurrent LoRA Adapters (arXiv 2311.03285) \[[arXiv](https://arxiv.org/abs/2311.03285)] \[[Code](https://github.com/S-LoRA/S-LoRA)]
   * UC Berkeley
   * A system to serve many LoRA adapters
   * Store all adapters in the main memory and fetch the adapters used by the currently running queries to the GPU memory
   * Unified Paging — a unified memory pool to manage dynamic adapter weights with different ranks and KV cache tensors with varying sequence lengths
   * Employ a tensor parallelism strategy and highly optimized custom CUDA kernels for heterogeneous batching of LoRA computation
   * Built on top of [LightLLM](https://github.com/ModelTC/lightllm)
-* Punica: Multi-Tenant LoRA Serving (arXiv 2310.18547) \[[Paper](https://arxiv.org/abs/2310.18547)] \[[Code](https://github.com/punica-ai/punica)]
+* Punica: Multi-Tenant LoRA Serving (arXiv 2310.18547) \[[arXiv](https://arxiv.org/abs/2310.18547)] \[[Code](https://github.com/punica-ai/punica)]
   * UW & Duke
   * A system to serve multiple LoRA models in a shared GPU cluster
   * A CUDA kernel — Segmented Gather Matrix-Vector Multiplication (SGMV)
