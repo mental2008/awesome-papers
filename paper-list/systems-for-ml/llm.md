@@ -19,6 +19,11 @@ I am actively maintaining this list.
 
 ## LLM Inference
 
+* Efficiently Programming Large Language Models using SGLang (arXiv 2312.07104) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2024/sglang.md)] \[[arXiv](https://arxiv.org/abs/2312.07104)] \[[Code](https://github.com/sgl-project/sglang)]
+  * Co-design the front-end programming interface and back-end serving runtime
+  * SGLang; SGVM w/ **RadixAttention**
+  * Reuse KV cache across multiple calls and programs
+  * UC Berkeley & Stanford
 * PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU (arXiv 2312.12456) \[[arXiv](https://arxiv.org/abs/2312.12456)]
   * SJTU
   * A GPU-CPU hybrid inference engine
