@@ -4,13 +4,13 @@
 
 |           Conference          |        When        | Where                                        |             Remarks            |
 | :---------------------------: | :----------------: | -------------------------------------------- | :----------------------------: |
-|            ATC 2024           |   Jul 10-12, 2024  | Santa Clara, CA, USA                         | TBD; co-located with OSDI 2023 |
-|           OSDI 2024           |   Jul 10-12, 2024  | Santa Clara, CA, USA                         |  TBD; co-located with ATC 2023 |
-|           MLSys 2024          |   May 13-16, 2024  | Santa Clara Convention Center, USA           |               TBD              |
-|  [ASPLOS 2024](asplos-2024/)  | Apr 27-May 1, 2024 | Hilton La Jolla Torrey Pines, San Diego, USA |               TBD              |
-| [EuroSys 2024](eurosys-2024/) |   Apr 23-26, 2024  | Athens, Greece                               |               TBD              |
-|   [NSDI 2024](nsdi-2024.md)   |   Apr 16-18, 2024  | Santa Clara, CA, USA                         |               TBD              |
-|           HPCA 2024           |    Mar 2-6, 2024   | Edinburgh, Scotland, UK                      |               TBD              |
+|    [ATC 2024](atc-2024.md)    |   Jul 10-12, 2024  | Santa Clara, CA, USA                         | TBD; co-located with OSDI 2023 |
+|   [OSDI 2024](osdi-2024.md)   |   Jul 10-12, 2024  | Santa Clara, CA, USA                         |  TBD; co-located with ATC 2023 |
+|           MLSys 2024          |   May 13-16, 2024  | Santa Clara Convention Center, USA           |                                |
+|  [ASPLOS 2024](asplos-2024/)  | Apr 27-May 1, 2024 | Hilton La Jolla Torrey Pines, San Diego, USA |                                |
+| [EuroSys 2024](eurosys-2024/) |   Apr 23-26, 2024  | Athens, Greece                               |                                |
+|   [NSDI 2024](nsdi-2024.md)   |   Apr 16-18, 2024  | Santa Clara, CA, USA                         |                                |
+|           HPCA 2024           |    Mar 2-6, 2024   | Edinburgh, Scotland, UK                      |                                |
 
 ## 2023
 

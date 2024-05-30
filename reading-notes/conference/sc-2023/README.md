@@ -4,7 +4,7 @@
 
 Homepage: [https://sc23.supercomputing.org/](https://sc23.supercomputing.org/)
 
-Paper List:&#x20;
+Paper list: [https://dl.acm.org/doi/proceedings/10.1145/3581784](https://dl.acm.org/doi/proceedings/10.1145/3581784)
 
 ## Papers
 
