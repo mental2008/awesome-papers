@@ -35,6 +35,8 @@
 * [Conference](reading-notes/conference/README.md)
   * [ATC 2024](reading-notes/conference/atc-2024.md)
   * [OSDI 2024](reading-notes/conference/osdi-2024.md)
+  * [CVPR 2024](reading-notes/conference/cvpr-2024.md)
+  * [MLSys 2024](reading-notes/conference/mlsys-2024.md)
   * [ASPLOS 2024](reading-notes/conference/asplos-2024/README.md)
     * [SpotServe: Serving generative large language models on preemptible instances](reading-notes/conference/asplos-2024/spotserve.md)
   * [EuroSys 2024](reading-notes/conference/eurosys-2024/README.md)
