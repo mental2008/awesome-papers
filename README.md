@@ -1,6 +1,6 @@
 # Introduction
 
-> “If you can't explain it simply, you don't understand it well enough.” — Albert Einstein
+> “Think different.” —— Apple Inc.
 
 Hi all, thank you for visiting here ;-) These are my personal paper reading notes.
 
@@ -24,4 +24,4 @@ For a better experience, please check out the [website](https://paper.lingyunyan
 
 Released under the [MIT License](LICENSE/).
 
-Copyright © 2021-2023 [Lingyun Yang](https://github.com/mental2008).
+Copyright © 2021—2024 [Lingyun Yang](https://github.com/mental2008).
