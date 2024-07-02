@@ -11,6 +11,7 @@
 |           ICML 2024           |   Jul 21-27, 2024  | Messe Wien Exhibition Congress Center, Vienna, Austria |               **Upcoming**              |
 |    [ATC 2024](atc-2024.md)    |   Jul 10-12, 2024  | Santa Clara, CA, USA                                   | **Upcoming**; co-located with OSDI 2023 |
 |   [OSDI 2024](osdi-2024.md)   |   Jul 10-12, 2024  | Santa Clara, CA, USA                                   |  **Upcoming**; co-located with ATC 2023 |
+|   [ISCA 2024](isca-2024.md)   | Jun 29-Jul 3, 2024 | Buenos Aires, Argentina                                |                                         |
 |   [CVPR 2024](cvpr-2024.md)   |   Jun 17-21, 2024  | Seattle Convention Center, Seattle, WA, USA            |                                         |
 |  [MLSys 2024](mlsys-2024.md)  |   May 13-16, 2024  | Santa Clara Convention Center, USA                     |                                         |
 |  [ASPLOS 2024](asplos-2024/)  | Apr 27-May 1, 2024 | Hilton La Jolla Torrey Pines, San Diego, USA           |                                         |
