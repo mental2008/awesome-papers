@@ -10,9 +10,10 @@
 * [Deep Learning Framework](deep-learning-framework.md)
 * [Cloud-Edge Collaboration](cloud-edge-collaboration.md)
 
-## Specific Workloads
+## Various Workloads
 
 * [Large Language Model (LLM)](llm.md)
+* [Diffusion Models](diffusion-models.md)
 * [Mixture of Experts (MoE)](moe.md)
 * [Hyper-Parameter Tuning (HPO)](hpo.md)
 * [Reinforcement Learning (RL)](rl.md)
