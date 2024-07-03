@@ -2,9 +2,11 @@
 
 > “Think different.” —— Apple Inc.
 
-Hi all, thank you for visiting here ;-) These are my personal paper reading notes.
+Hi all, thank you for visiting here ;-)
 
-I have a broad interest in systems (e.g., OSDI, SOSP, NSDI, ATC, EuroSys, SoCC, ASPLOS, MLSys), machine learning (e.g., ICML, ICLR, NeurIPS), and other funny stuff.
+I am currently a graduate student at HKUST. These are my personal paper reading notes.
+
+Specifically, I have a broad interest in systems (e.g., OSDI, SOSP, NSDI, ATC, EuroSys, SoCC, ASPLOS, MLSys), machine learning (e.g., ICML, ICLR, NeurIPS), and other funny stuff.
 
 ## Welcome
 
