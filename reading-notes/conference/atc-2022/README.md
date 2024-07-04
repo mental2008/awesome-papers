@@ -6,7 +6,7 @@
 
 Homepage: [https://www.usenix.org/conference/atc22](https://www.usenix.org/conference/atc22)
 
-Paper List: [https://www.usenix.org/conference/atc22/technical-sessions](https://www.usenix.org/conference/atc22/technical-sessions)
+Paper list: [https://www.usenix.org/conference/atc22/technical-sessions](https://www.usenix.org/conference/atc22/technical-sessions)
 
 ## Papers
 

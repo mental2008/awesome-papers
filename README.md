@@ -16,6 +16,10 @@ Specifically, I have a broad interest in systems (e.g., OSDI, SOSP, NSDI, ATC, E
 4. Even if the paper you are interested in is not in my notes, you can also [create an issue](https://github.com/mental2008/awesome-papers/issues/new) to let me know. I will read it and give you my thoughts if I have time.
 5. Welcome to [submit a pull request](https://github.com/mental2008/awesome-papers/pulls) if you find any typos.
 
+## Changelogs
+
+* 07/2024: Organize the papers of [CVPR 2024](reading-notes/conference/cvpr-2024.md), [ISCA 2024](reading-notes/conference/isca-2024.md); create a new paper list of [Diffusion models](paper-list/systems-for-ml/diffusion-models.md).
+
 ## Epilogue
 
 If it helps, you could star the [GitHub repository](https://github.com/mental2008/awesome-papers).

@@ -2,8 +2,8 @@
 
 ## Meta Info
 
-ACM Symposium on High-Performance Parallel and Distributed Computing
+ACM Symposium on High-Performance Parallel and Distributed Computing 2020
 
 Homepage: [https://www.hpdc.org/2020/](https://www.hpdc.org/2020/)
 
-Paper List: [https://www.hpdc.org/2020/program/](https://www.hpdc.org/2020/program/)
+Paper list: [https://www.hpdc.org/2020/program/](https://www.hpdc.org/2020/program/)

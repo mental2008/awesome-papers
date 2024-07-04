@@ -4,4 +4,4 @@
 
 Homepage: [https://conferences.sigcomm.org/sigcomm/2018/](https://conferences.sigcomm.org/sigcomm/2018/)
 
-Paper List: [https://conferences.sigcomm.org/sigcomm/2018/accepted-papers.html](https://conferences.sigcomm.org/sigcomm/2018/accepted-papers.html)
+Paper list: [https://conferences.sigcomm.org/sigcomm/2018/accepted-papers.html](https://conferences.sigcomm.org/sigcomm/2018/accepted-papers.html)

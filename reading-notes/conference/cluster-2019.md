@@ -4,4 +4,4 @@
 
 Homepage: [https://clustercomp.org/2019/](https://clustercomp.org/2019/)
 
-Paper List: [https://clustercomp.org/2019/program/](https://clustercomp.org/2019/program/)
+Paper list: [https://clustercomp.org/2019/program/](https://clustercomp.org/2019/program/)

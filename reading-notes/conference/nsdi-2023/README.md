@@ -4,7 +4,7 @@
 
 Homepage: [https://www.usenix.org/conference/nsdi23](https://www.usenix.org/conference/nsdi23)
 
-Paper List: [https://www.usenix.org/conference/nsdi23/technical-sessions](https://www.usenix.org/conference/nsdi23/technical-sessions)
+Paper list: [https://www.usenix.org/conference/nsdi23/technical-sessions](https://www.usenix.org/conference/nsdi23/technical-sessions)
 
 ### Accepted Papers
 
