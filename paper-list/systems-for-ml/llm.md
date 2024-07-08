@@ -19,6 +19,9 @@ I am actively maintaining this list.
 
 ## LLM Inference
 
+* Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving (arXiv:2407.00079) \[[arXiv](https://arxiv.org/abs/2407.00079)] \[[Code](https://github.com/kvcache-ai/Mooncake)]
+  * Mootshot AI & Tsinghua
+  * Separate the prefill and decoding clusters; prediction-based early rejection.
 * Efficiently Programming Large Language Models using SGLang (arXiv 2312.07104) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2024/sglang.md)] \[[arXiv](https://arxiv.org/abs/2312.07104)] \[[Code](https://github.com/sgl-project/sglang)]
   * UC Berkeley & Stanford
   * Co-design the front-end programming interface and back-end serving runtime
