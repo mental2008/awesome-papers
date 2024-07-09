@@ -14,6 +14,7 @@
 
 * [Large Language Model (LLM)](llm.md)
 * [Diffusion Models](diffusion-models.md)
+* [Deep Learning Recommendation Model (DLRM)](dlrm.md)
 * [Mixture of Experts (MoE)](moe.md)
 * [Hyper-Parameter Tuning (HPO)](hpo.md)
 * [Reinforcement Learning (RL)](rl.md)

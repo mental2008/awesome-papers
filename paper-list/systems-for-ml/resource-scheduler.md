@@ -6,6 +6,9 @@ I am actively maintaining this list.
 
 ## Scheduling for DL Training Workloads
 
+* CASSINI: Network-Aware Job Scheduling in Machine Learning Clusters ([NSDI 2024](../../reading-notes/conference/nsdi-2024.md)) \[[Paper](https://www.usenix.org/conference/nsdi24/presentation/rajasekaran)]
+  * MIT & UT-Austin
+  * Consider the communication pattern of different jobs while placing them on network links.
 * Blox: A Modular Toolkit for Deep Learning Schedulers ([EuroSys 2024](../../reading-notes/conference/eurosys-2024/)) \[[arXiv](https://arxiv.org/abs/2312.12621)] \[[Code](https://github.com/msr-fiddle/blox)]
   * UW-Madison & MSR
 * Interference-aware Multiplexing for Deep Learning in GPU Clusters: A Middleware Approach ([SC 2023](../../reading-notes/conference/sc-2023/)) \[[Personal Notes](../../reading-notes/conference/sc-2023/iadeep.md)] \[[Paper](https://doi.org/10.1145/3581784.3607060)] \[[Code](https://github.com/buzy-coder/IADeep)]
