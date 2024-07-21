@@ -28,6 +28,7 @@
 * [Cloud Computing](paper-list/cloud-computing/README.md)
   * [Sky Computing](paper-list/cloud-computing/sky-computing.md)
   * [Serverless Computing](paper-list/cloud-computing/serverless-computing.md)
+  * [Spot Instances](paper-list/cloud-computing/spot-instances.md)
 * [Remote Direct Memory Access (RDMA)](paper-list/rdma.md)
 * [Research Skills](paper-list/research-skills.md)
 * [Miscellaneous](paper-list/misc.md)

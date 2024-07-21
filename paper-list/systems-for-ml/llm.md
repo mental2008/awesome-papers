@@ -19,9 +19,15 @@ I am actively maintaining this list.
 
 ## LLM Inference
 
-* Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving (arXiv:2407.00079) \[[arXiv](https://arxiv.org/abs/2407.00079)] \[[Code](https://github.com/kvcache-ai/Mooncake)]
-  * Mootshot AI & Tsinghua
-  * Separate the prefill and decoding clusters; prediction-based early rejection.
+* Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/agrawal)] \[[Code](https://github.com/microsoft/sarathi-serve)] \[[arXiv](https://arxiv.org/abs/2403.02310)]
+  * MSR India & GaTech
+  * **Sarathi-Serve**
+* ServerlessLLM: Low-Latency Serverless Inference for Large Language Models ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/fu)] \[[Code](https://github.com/ServerlessLLM/ServerlessLLM)] \[[arXiv](https://arxiv.org/abs/2401.14351)]
+  * Edinburgh
+* Parrot: Efficient Serving of LLM-based Applications with Semantic Variable ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/lin-chaofan)] \[[Code](https://github.com/microsoft/ParrotServe)]
+  * SJTU & MSRA
+* Tender: Accelerating Large Language Models via Tensor Decomposition and Runtime Requantization ([ISCA 2024](../../reading-notes/conference/isca-2024.md))
+* ALISA: Accelerating Large Language Model Inference via Sparsity-Aware KV Caching ([ISCA 2024](../../reading-notes/conference/isca-2024.md))
 * Efficiently Programming Large Language Models using SGLang (arXiv 2312.07104) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2024/sglang.md)] \[[arXiv](https://arxiv.org/abs/2312.07104)] \[[Code](https://github.com/sgl-project/sglang)]
   * UC Berkeley & Stanford
   * Co-design the front-end programming interface and back-end serving runtime
@@ -33,41 +39,12 @@ I am actively maintaining this list.
   * Hot-activated neurons are preloaded onto the GPU for fast access; cold-activated neurons are computed on the CPU
 * LLM in a flash: Efficient Large Language Model Inference with Limited Memory (arXiv 2312.11514) \[[arXiv](https://arxiv.org/abs/2312.11514)]
   * Apple
-* Splitwise: Efficient Generative LLM Inference Using Phase Splitting ([ISCA 2024](../../reading-notes/conference/isca-2024.md)) \[[arXiv](https://arxiv.org/abs/2311.18677)] \[[Blog](https://www.microsoft.com/en-us/research/blog/splitwise-improves-gpu-usage-by-splitting-llm-inference-phases/)]
-  * UW & Microsoft
-  * Split the two phases (i.e., prefill and decode) of a LLM inference request to separate machines
 * SpotServe: Serving Generative Large Language Models on Preemptible Instances ([ASPLOS 2024](../../reading-notes/conference/asplos-2024/)) \[[Personal Notes](../../reading-notes/conference/asplos-2024/spotserve.md)] \[[arXiv](https://arxiv.org/abs/2311.15566)] \[[Code](https://github.com/Hsword/SpotServe)]
   * CMU & PKU & CUHK
-  * Distributed LLM serving system on preemptible/spot instances
-  * Techniques
-    * Dynamically adapt the LLM parallelization configuration
-    * Minimize the cost of migrating instances for dynamic re-parallelization
-    * Stateful inference recovery
-* HexGen: Generative Inference of Foundation Model over Heterogeneous Decentralized Environment (ICML 2024) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/hexgen.md)] \[[arXiv](https://arxiv.org/abs/2311.11514)] \[[Code](https://github.com/Relaxed-System-Lab/HexGen)]
+* HexGen: Generative Inference of Foundation Model over Heterogeneous Decentralized Environment ([ICML 2024](../../reading-notes/conference/icml-2024.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/hexgen.md)] \[[arXiv](https://arxiv.org/abs/2311.11514)] \[[Code](https://github.com/Relaxed-System-Lab/HexGen)]
   * HKUST & ETH & CMU
   * Support _asymmetric_ tensor model parallelism and pipeline parallelism under the _heterogeneous_ setting (i.e., each pipeline parallel stage can be assigned with a different number of layers and tensor model parallel degree)
   * Propose _a heuristic-based evolutionary algorithm_ to search for the optimal layout
-* S-LoRA: Serving Thousands of Concurrent LoRA Adapters ([MLSys 2024](../../reading-notes/conference/mlsys-2024.md)) \[[arXiv](https://arxiv.org/abs/2311.03285)] \[[Code](https://github.com/S-LoRA/S-LoRA)]
-  * UC Berkeley
-  * A system to serve many LoRA adapters
-  * Store all adapters in the main memory and fetch the adapters used by the currently running queries to the GPU memory
-  * Unified Paging — a unified memory pool to manage dynamic adapter weights with different ranks and KV cache tensors with varying sequence lengths
-  * Employ a tensor parallelism strategy and highly optimized custom CUDA kernels for heterogeneous batching of LoRA computation
-  * Built on top of [LightLLM](https://github.com/ModelTC/lightllm)
-* Punica: Multi-Tenant LoRA Serving ([MLSys 2024](../../reading-notes/conference/mlsys-2024.md)) \[[arXiv](https://arxiv.org/abs/2310.18547)] \[[Code](https://github.com/punica-ai/punica)]
-  * UW & Duke
-  * A system to serve multiple LoRA models in a shared GPU cluster
-  * A CUDA kernel — Segmented Gather Matrix-Vector Multiplication (SGMV)
-    * Batch GPU operations for concurrent execution of different LoRA models
-    * A GPU only needs to store a single copy of the pre-trained model
-  * A request scheduling mechanism to consolidate multi-tenant LoRA serving workloads
-    * Route the new request to a small set of active GPUs
-    * Allocate additional GPU resources when the existing GPUs are fully utilized
-    * Periodically migrate existing requests for consolidation
-* Efficient Memory Management for Large Language Model Serving with PagedAttention ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613165)] \[[arXiv](https://browse.arxiv.org/abs/2309.06180)] \[[Code](https://github.com/vllm-project/vllm)] \[[Homepage](https://vllm.ai/)]
-  * UC Berkeley & Stanford & UCSD
-  * vLLM, PagedAttention
-  * Partition the KV cache of each sequence into blocks, each block containing the keys and values for a fixed number of tokens
 * Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Paper](https://proceedings.mlr.press/v202/liu23am.html)] \[[Code](https://github.com/FMInference/DejaVu)]
   * Rice & ZJU & Stanford & UCSD & ETH & Adobe & Meta AI & CMU
   * A system to predict _contextual sparsity_ (small, input-dependent sets that yield _approximately_ the same output).
@@ -89,20 +66,60 @@ I am actively maintaining this list.
 * DeepSpeed-Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale ([SC 2022](../../reading-notes/conference/sc-2022.md)) \[[Paper](https://dl.acm.org/doi/abs/10.5555/3571885.3571946)] \[[Code](https://github.com/microsoft/DeepSpeed)] \[[Homepage](https://www.deepspeed.ai/inference/)]
   * Microsoft DeepSpeed
   * Leverage CPU/NVMe/GPU memory.
+
+### Request Scheduling
+
+* Llumnix: Dynamic Scheduling for Large Language Model Serving ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/sun-biao)] \[[Code](https://github.com/AlibabaPAI/llumnix)]
+  * Alibaba
 * Orca: A Distributed Serving System for Transformer-Based Generative Models ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Personal Notes](../../reading-notes/conference/osdi-2022/orca.md)] \[[Paper](https://www.usenix.org/conference/osdi22/presentation/yu)]
   * Seoul National University & FriendliAI
   * Iteration-level scheduling; selective batching.
 
+### KV Cache Management
+
+* InfiniGen: Efficient Generative Inference of Large Language Models with Dynamic KV Cache Management ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/lee)]
+  * Seoul National University
+* Efficient Memory Management for Large Language Model Serving with PagedAttention ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613165)] \[[arXiv](https://browse.arxiv.org/abs/2309.06180)] \[[Code](https://github.com/vllm-project/vllm)] \[[Homepage](https://vllm.ai/)]
+  * UC Berkeley & Stanford & UCSD
+  * vLLM, PagedAttention
+  * Partition the KV cache of each sequence into blocks, each block containing the keys and values for a fixed number of tokens
+
+### Phase Disaggregation
+
+* Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving (arXiv:2407.00079) \[[arXiv](https://arxiv.org/abs/2407.00079)] \[[Code](https://github.com/kvcache-ai/Mooncake)]
+  * Mootshot AI & Tsinghua
+  * Separate the prefill and decoding clusters; prediction-based early rejection.
+* DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/zhong-yinmin)] \[[Code](https://github.com/LLMServe/DistServe)]
+  * PKU & UCSD
+* Splitwise: Efficient Generative LLM Inference Using Phase Splitting ([ISCA 2024](../../reading-notes/conference/isca-2024.md)) \[[arXiv](https://arxiv.org/abs/2311.18677)] \[[Blog](https://www.microsoft.com/en-us/research/blog/splitwise-improves-gpu-usage-by-splitting-llm-inference-phases/)]
+  * UW & Microsoft
+  * **Best Paper Award**
+  * Split the two phases (i.e., prefill and decode) of a LLM inference request to separate machines
+
+### LoRA Serving
+
+* dLoRA: Dynamically Orchestrating Requests and Adapters for LoRA LLM Serving ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/wu-bingyang)]
+  * PKU & Shanghai AI Lab
+* S-LoRA: Serving Thousands of Concurrent LoRA Adapters ([MLSys 2024](../../reading-notes/conference/mlsys-2024.md)) \[[arXiv](https://arxiv.org/abs/2311.03285)] \[[Code](https://github.com/S-LoRA/S-LoRA)]
+  * UC Berkeley
+* Punica: Multi-Tenant LoRA Serving ([MLSys 2024](../../reading-notes/conference/mlsys-2024.md)) \[[arXiv](https://arxiv.org/abs/2310.18547)] \[[Code](https://github.com/punica-ai/punica)]
+  * UW & Duke
+
 ### Speculative Decoding
 
-* Online Speculative Decoding (arXiv: 2310.07177) \[[Paper](https://arxiv.org/abs/2310.07177)]
+* Online Speculative Decoding ([ICML 2024](../../reading-notes/conference/icml-2024.md)) \[[arXiv](https://arxiv.org/abs/2310.07177)]
   * UC Berkeley & UCSD & Sisu Data & SJTU
-* SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification (arXiv: 2305.09781) \[[Paper](https://arxiv.org/abs/2305.09781)] \[[Code](https://github.com/flexflow/FlexFlow/tree/inference)]
+* SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification ([ASPLOS 2024](../../reading-notes/conference/asplos-2024/)) \[[arXiv](https://arxiv.org/abs/2305.09781)] \[[Code](https://github.com/flexflow/FlexFlow/tree/inference)]
   * CMU
 * Speculative Decoding with Big Little Decoder (NeurIPS 2023) \[[Paper](https://arxiv.org/abs/2302.07863)]
   * UC Berkeley & ICSI & LBNL
 * Fast Inference from Transformers via Speculative Decoding ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Paper](https://openreview.net/pdf?id=C9NEblP8vS)]
   * Google Research
+
+### Fairness
+
+* Fairness in Serving Large Language Models ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/sheng)] \[[Code](https://github.com/Ying1123/VTC-artifact)]
+  * UC Berkeley
 
 ## LLMs
 
@@ -125,3 +142,4 @@ I am actively maintaining this list.
 ## Acronyms
 
 * LLM: Large Language Model
+* LoRA: Low-Rank Adaptation

@@ -8,4 +8,3 @@
 ## Detailed Aspects
 
 * [Sky Computing](sky-computing.md)
-* [Serverless Computing](serverless-computing.md)

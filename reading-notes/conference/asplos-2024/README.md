@@ -10,6 +10,11 @@ Homepage: [https://asplos-conference.org/2024/](https://asplos-conference.org/20
 
 * SpotServe: Serving Generative Large Language Models on Preemptible Instances \[[Personal Notes](spotserve.md)] \[[Paper](https://arxiv.org/abs/2311.15566)] \[[Code](https://github.com/Hsword/SpotServe)]
   * CMU & PKU & CUHK
+  * Distributed LLM serving system on preemptible/spot instances
+  * Techniques
+    * Dynamically adapt the LLM parallelization configuration
+    * Minimize the cost of migrating instances for dynamic re-parallelization
+    * Stateful inference recovery
 
 ### Model Serving
 
