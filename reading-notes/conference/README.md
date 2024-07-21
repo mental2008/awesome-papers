@@ -8,7 +8,7 @@
 |            SC 2024            |   Nov 17-22, 2024  | Atlanta, GA, USA                                       |                  **Upcoming**                 |
 |           SOSP 2024           |    Nov 4-6, 2024   | Hilton Austin, Texas, USA                              |                  **Upcoming**                 |
 |          SIGCOMM 2024         |    Aug 4-8, 2024   | Sydney, Australia                                      |                  **Upcoming**                 |
-|           ICML 2024           |   Jul 21-27, 2024  | Messe Wien Exhibition Congress Center, Vienna, Austria |                 👀**Ongoing!**                |
+|   [ICML 2024](icml-2024.md)   |   Jul 21-27, 2024  | Messe Wien Exhibition Congress Center, Vienna, Austria |                 👀**Ongoing!**                |
 |    [ATC 2024](atc-2024.md)    |   Jul 10-12, 2024  | Santa Clara, CA, USA                                   | 🧐; co-located with [OSDI 2024](osdi-2024.md) |
 |   [OSDI 2024](osdi-2024.md)   |   Jul 10-12, 2024  | Santa Clara, CA, USA                                   |  🧐; co-located with [ATC 2024](atc-2024.md)  |
 |   [ISCA 2024](isca-2024.md)   | Jun 29-Jul 3, 2024 | Buenos Aires, Argentina                                |                       🧐                      |
