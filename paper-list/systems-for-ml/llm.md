@@ -6,6 +6,16 @@ I am actively maintaining this list.
 
 ## LLM Training
 
+### Hybrid parallelism
+
+* Accelerating the Training of Large Language Models using Efficient Activation Rematerialization and Optimal Hybrid Parallelism ([ATC 2024](../../reading-notes/conference/atc-2024.md)) \[[Paper](https://www.usenix.org/conference/atc24/presentation/yuan)] \[[Code](https://github.com/kwai/Megatron-Kwai/tree/atc24ae/examples/atc24)]
+  * Kuaishou
+* Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Paper](https://www.usenix.org/conference/osdi22/presentation/zheng-lianmin)] \[[Code](https://github.com/alpa-projects/alpa)] \[[Docs](https://alpa.ai/)]
+  * UC Berkeley & AWS & Google & SJTU & CMU & Duke
+  * Generalize the search through _parallelism strategies_.
+
+### Fault tolerance
+
 * Oobleck: Resilient Distributed Training of Large Models Using Pipeline Templates ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613152)] \[[arXiv](https://browse.arxiv.org/abs/2309.08125)] \[[Code](https://github.com/SymbioticLab/Oobleck)]
   * UMich SymbioticLab & AWS & PKU
 * Gemini: Fast Failure Recovery in Distributed Training with In-Memory Checkpoints ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613145)]
@@ -13,9 +23,6 @@ I am actively maintaining this list.
 * Bamboo: Making Preemptible Instances Resilient for Affordable Training of Large DNNs ([NSDI 2023](../../reading-notes/conference/nsdi-2023/)) \[[Paper](https://www.usenix.org/conference/nsdi23/presentation/thorpe)] \[[Code](https://github.com/uclasystem/bamboo)]
   * UCLA & CMU & MSR & Princeton
   * Resilient distributed training
-* Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Paper](https://www.usenix.org/conference/osdi22/presentation/zheng-lianmin)] \[[Code](https://github.com/alpa-projects/alpa)] \[[Docs](https://alpa.ai/)]
-  * UC Berkeley & AWS & Google & SJTU & CMU & Duke
-  * Generalize the search through _parallelism strategies_.
 
 ## LLM Inference
 
@@ -130,6 +137,11 @@ I am actively maintaining this list.
 
 * Fairness in Serving Large Language Models ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/sheng)] \[[Code](https://github.com/Ying1123/VTC-artifact)]
   * UC Berkeley
+
+## LLM Alignment
+
+* PUZZLE: Efficiently Aligning Large Language Models through Light-Weight Context Switch ([ATC 2024](../../reading-notes/conference/atc-2024.md)) \[[Paper](https://www.usenix.org/conference/atc24/presentation/lei)]
+  * THU
 
 ## LLMs
 

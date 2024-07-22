@@ -10,6 +10,8 @@ I am actively maintaining this list.
 
 ## Model Serving Systems
 
+* Usher: Holistic Interference Avoidance for Resource Optimized ML Inference ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/shubha)] \[[Code](https://github.com/ss7krd/Usher)]
+  * UVA & GaTech
 * Paella: Low-latency Model Serving with Software-defined GPU Scheduling ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613163)]
   * UPenn & DBOS, Inc.
 * Microsecond-scale Preemption for Concurrent GPU-accelerated DNN Inferences ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Personal Notes](../../reading-notes/conference/osdi-2022/reef.md)] \[[Paper](https://www.usenix.org/conference/osdi22/presentation/han)] \[[Code](https://github.com/SJTU-IPADS/reef)] \[[Benchmark](https://github.com/SJTU-IPADS/disb)] \[[Artifact](https://github.com/SJTU-IPADS/reef-artifacts/tree/osdi22-ae)]
