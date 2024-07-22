@@ -1,5 +1,7 @@
 # Data Processing
 
+* Pecan: Cost-Efficient ML Data Preprocessing with Automatic Transformation Ordering and Hybrid Placement ([ATC 2024](../../reading-notes/conference/atc-2024.md)) \[[Paper](https://www.usenix.org/conference/atc24/presentation/graur)] \[[Code](https://github.com/eth-easl/pecan-experiments)]
+  * ETH & Google
 * Disaggregating ML Input Data Processing at Scale ([SoCC 2023](../../reading-notes/conference/socc-2023.md))
   * Google & ETH
 * GoldMiner: Elastic Scaling of Training Data Pre-Processing Pipelines for Deep Learning (SIGMOD 2023) \[[Paper](https://dl.acm.org/doi/10.1145/3589773)]

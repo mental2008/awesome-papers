@@ -41,16 +41,9 @@ I am actively maintaining this list.
   * Apple
 * SpotServe: Serving Generative Large Language Models on Preemptible Instances ([ASPLOS 2024](../../reading-notes/conference/asplos-2024/)) \[[Personal Notes](../../reading-notes/conference/asplos-2024/spotserve.md)] \[[arXiv](https://arxiv.org/abs/2311.15566)] \[[Code](https://github.com/Hsword/SpotServe)]
   * CMU & PKU & CUHK
-* HexGen: Generative Inference of Foundation Model over Heterogeneous Decentralized Environment ([ICML 2024](../../reading-notes/conference/icml-2024.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/hexgen.md)] \[[arXiv](https://arxiv.org/abs/2311.11514)] \[[Code](https://github.com/Relaxed-System-Lab/HexGen)]
-  * HKUST & ETH & CMU
-  * Support _asymmetric_ tensor model parallelism and pipeline parallelism under the _heterogeneous_ setting (i.e., each pipeline parallel stage can be assigned with a different number of layers and tensor model parallel degree)
-  * Propose _a heuristic-based evolutionary algorithm_ to search for the optimal layout
 * Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Paper](https://proceedings.mlr.press/v202/liu23am.html)] \[[Code](https://github.com/FMInference/DejaVu)]
   * Rice & ZJU & Stanford & UCSD & ETH & Adobe & Meta AI & CMU
   * A system to predict _contextual sparsity_ (small, input-dependent sets that yield _approximately_ the same output).
-* FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/flexgen.md)] \[[Paper](https://proceedings.mlr.press/v202/sheng23a.html)] \[[Code](https://github.com/FMInference/FlexGen)]
-  * Stanford & UC Berkeley & ETH & Yandex & HSE & Meta & CMU
-  * _High-throughput serving; only use a single GPU._
 * Fast Distributed Inference Serving for Large Language Models (arXiv 2305.05920) \[[Paper](https://arxiv.org/abs/2305.05920)]
   * PKU
   * Skip-join multi-level feedback queue scheduling instead of first-come-frist-serve.
@@ -89,6 +82,8 @@ I am actively maintaining this list.
 * Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving (arXiv:2407.00079) \[[arXiv](https://arxiv.org/abs/2407.00079)] \[[Code](https://github.com/kvcache-ai/Mooncake)]
   * Mootshot AI & Tsinghua
   * Separate the prefill and decoding clusters; prediction-based early rejection.
+* Inference without Interference: Disaggregate LLM Inference for Mixed Downstream Workloads (arXiv:2401.11181) \[[arXiv](https://arxiv.org/abs/2401.11181)]
+  * ICT, CAS & Huawei Cloud
 * DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/zhong-yinmin)] \[[Code](https://github.com/LLMServe/DistServe)]
   * PKU & UCSD
 * Splitwise: Efficient Generative LLM Inference Using Phase Splitting ([ISCA 2024](../../reading-notes/conference/isca-2024.md)) \[[arXiv](https://arxiv.org/abs/2311.18677)] \[[Blog](https://www.microsoft.com/en-us/research/blog/splitwise-improves-gpu-usage-by-splitting-llm-inference-phases/)]
@@ -100,6 +95,8 @@ I am actively maintaining this list.
 
 * dLoRA: Dynamically Orchestrating Requests and Adapters for LoRA LLM Serving ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/wu-bingyang)]
   * PKU & Shanghai AI Lab
+* CaraServe: CPU-Assisted and Rank-Aware LoRA Serving for Generative LLM Inference (arXiv:2401.11240) \[[arXiv](https://arxiv.org/abs/2401.11240)]
+  * HKUST & CUHK-Shenzhen & Shanghai AI Lab & Huawei Cloud
 * S-LoRA: Serving Thousands of Concurrent LoRA Adapters ([MLSys 2024](../../reading-notes/conference/mlsys-2024.md)) \[[arXiv](https://arxiv.org/abs/2311.03285)] \[[Code](https://github.com/S-LoRA/S-LoRA)]
   * UC Berkeley
 * Punica: Multi-Tenant LoRA Serving ([MLSys 2024](../../reading-notes/conference/mlsys-2024.md)) \[[arXiv](https://arxiv.org/abs/2310.18547)] \[[Code](https://github.com/punica-ai/punica)]
@@ -115,6 +112,19 @@ I am actively maintaining this list.
   * UC Berkeley & ICSI & LBNL
 * Fast Inference from Transformers via Speculative Decoding ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Paper](https://openreview.net/pdf?id=C9NEblP8vS)]
   * Google Research
+
+### Offloading
+
+* FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/flexgen.md)] \[[Paper](https://proceedings.mlr.press/v202/sheng23a.html)] \[[Code](https://github.com/FMInference/FlexGen)]
+  * Stanford & UC Berkeley & ETH & Yandex & HSE & Meta & CMU
+  * _High-throughput serving; only use a single GPU._
+
+### Heterogeneous Environment
+
+* HexGen: Generative Inference of Foundation Model over Heterogeneous Decentralized Environment ([ICML 2024](../../reading-notes/conference/icml-2024.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/hexgen.md)] \[[arXiv](https://arxiv.org/abs/2311.11514)] \[[Code](https://github.com/Relaxed-System-Lab/HexGen)]
+  * HKUST & ETH & CMU
+  * Support _asymmetric_ tensor model parallelism and pipeline parallelism under the _heterogeneous_ setting (i.e., each pipeline parallel stage can be assigned with a different number of layers and tensor model parallel degree)
+  * Propose _a heuristic-based evolutionary algorithm_ to search for the optimal layout
 
 ### Fairness
 
