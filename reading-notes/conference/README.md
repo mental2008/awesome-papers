@@ -2,22 +2,22 @@
 
 ## 2024
 
-|           Conference          |        When        | Where                                                  |                    Remarks                    |
-| :---------------------------: | :----------------: | ------------------------------------------------------ | :-------------------------------------------: |
-|           SoCC 2024           |   Nov 22-24, 2024  | Seattle, Washington, USA                               |                  **Upcoming**                 |
-|            SC 2024            |   Nov 17-22, 2024  | Atlanta, GA, USA                                       |                  **Upcoming**                 |
-|           SOSP 2024           |    Nov 4-6, 2024   | Hilton Austin, Texas, USA                              |                  **Upcoming**                 |
-|          SIGCOMM 2024         |    Aug 4-8, 2024   | Sydney, Australia                                      |                  **Upcoming**                 |
-|   [ICML 2024](icml-2024.md)   |   Jul 21-27, 2024  | Messe Wien Exhibition Congress Center, Vienna, Austria |                 👀**Ongoing!**                |
-|    [ATC 2024](atc-2024.md)    |   Jul 10-12, 2024  | Santa Clara, CA, USA                                   | 🧐; co-located with [OSDI 2024](osdi-2024.md) |
-|   [OSDI 2024](osdi-2024.md)   |   Jul 10-12, 2024  | Santa Clara, CA, USA                                   |  🧐; co-located with [ATC 2024](atc-2024.md)  |
-|   [ISCA 2024](isca-2024.md)   | Jun 29-Jul 3, 2024 | Buenos Aires, Argentina                                |                       🧐                      |
-|   [CVPR 2024](cvpr-2024.md)   |   Jun 17-21, 2024  | Seattle Convention Center, Seattle, WA, USA            |                       🧐                      |
-|  [MLSys 2024](mlsys-2024.md)  |   May 13-16, 2024  | Santa Clara Convention Center, USA                     |                                               |
-|  [ASPLOS 2024](asplos-2024/)  | Apr 27-May 1, 2024 | Hilton La Jolla Torrey Pines, San Diego, USA           |                       🧐                      |
-| [EuroSys 2024](eurosys-2024/) |   Apr 23-26, 2024  | Athens, Greece                                         |                                               |
-|   [NSDI 2024](nsdi-2024.md)   |   Apr 16-18, 2024  | Santa Clara, CA, USA                                   |                       🧐                      |
-|           HPCA 2024           |    Mar 2-6, 2024   | Edinburgh, Scotland, UK                                |                                               |
+|            Conference           |        When        | Where                                                  |                    Remarks                    |
+| :-----------------------------: | :----------------: | ------------------------------------------------------ | :-------------------------------------------: |
+|            SoCC 2024            |   Nov 22-24, 2024  | Seattle, Washington, USA                               |                  **Upcoming**                 |
+|             SC 2024             |   Nov 17-22, 2024  | Atlanta, GA, USA                                       |                  **Upcoming**                 |
+|            SOSP 2024            |    Nov 4-6, 2024   | Hilton Austin, Texas, USA                              |                  **Upcoming**                 |
+| [SIGCOMM 2024](sigcomm-2024.md) |    Aug 4-8, 2024   | Sydney, Australia                                      |                  **Upcoming**                 |
+|    [ICML 2024](icml-2024.md)    |   Jul 21-27, 2024  | Messe Wien Exhibition Congress Center, Vienna, Austria |                 👀**Ongoing!**                |
+|     [ATC 2024](atc-2024.md)     |   Jul 10-12, 2024  | Santa Clara, CA, USA                                   | 🧐; co-located with [OSDI 2024](osdi-2024.md) |
+|    [OSDI 2024](osdi-2024.md)    |   Jul 10-12, 2024  | Santa Clara, CA, USA                                   |  🧐; co-located with [ATC 2024](atc-2024.md)  |
+|    [ISCA 2024](isca-2024.md)    | Jun 29-Jul 3, 2024 | Buenos Aires, Argentina                                |                       🧐                      |
+|    [CVPR 2024](cvpr-2024.md)    |   Jun 17-21, 2024  | Seattle Convention Center, Seattle, WA, USA            |                       🧐                      |
+|   [MLSys 2024](mlsys-2024.md)   |   May 13-16, 2024  | Santa Clara Convention Center, USA                     |                                               |
+|   [ASPLOS 2024](asplos-2024/)   | Apr 27-May 1, 2024 | Hilton La Jolla Torrey Pines, San Diego, USA           |                       🧐                      |
+|  [EuroSys 2024](eurosys-2024/)  |   Apr 23-26, 2024  | Athens, Greece                                         |                                               |
+|    [NSDI 2024](nsdi-2024.md)    |   Apr 16-18, 2024  | Santa Clara, CA, USA                                   |                       🧐                      |
+|            HPCA 2024            |    Mar 2-6, 2024   | Edinburgh, Scotland, UK                                |                                               |
 
 ## 2023
 
