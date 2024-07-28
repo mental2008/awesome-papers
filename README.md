@@ -18,7 +18,7 @@ Specifically, I have a broad interest in systems (e.g., OSDI, SOSP, NSDI, ATC, E
 
 ## Changelogs
 
-* 07/2024: Organize the papers of [ATC 2024](reading-notes/conference/atc-2024.md), [OSDI 2024](reading-notes/conference/osdi-2024.md), [NSDI 2024](reading-notes/conference/nsdi-2024.md), [CVPR 2024](reading-notes/conference/cvpr-2024.md), [ISCA 2024](reading-notes/conference/isca-2024.md); create a new paper list of [Systems for diffusion models](paper-list/systems-for-ml/diffusion-models.md); update the paper list of [Systems for LLMs](paper-list/systems-for-ml/llm.md), [Systems for DLRMs](paper-list/systems-for-ml/dlrm.md), [Resource Scheduler](paper-list/systems-for-ml/resource-scheduler.md).
+* 07/2024: Organize the papers of [SIGCOMM 2024](reading-notes/conference/sigcomm-2024.md), [ICML 2024](reading-notes/conference/icml-2024.md), [ATC 2024](reading-notes/conference/atc-2024.md), [OSDI 2024](reading-notes/conference/osdi-2024.md), [NSDI 2024](reading-notes/conference/nsdi-2024.md), [CVPR 2024](reading-notes/conference/cvpr-2024.md), [ISCA 2024](reading-notes/conference/isca-2024.md); create a new paper list of [Systems for diffusion models](paper-list/systems-for-ml/diffusion-models.md); update the paper list of [Systems for LLMs](paper-list/systems-for-ml/llm.md), [Systems for DLRMs](paper-list/systems-for-ml/dlrm.md), [Resource Scheduler](paper-list/systems-for-ml/resource-scheduler.md).
 
 ## Epilogue
 

@@ -2,6 +2,8 @@
 
 ## Serving Diffusion Models
 
+* PipeFusion: Displaced Patch Pipeline Parallelism for Inference of Diffusion Transformer Models (arXiv:2405.14430) \[[arXiv](https://arxiv.org/abs/2405.14430)] \[[Code](https://github.com/xdit-project/xDiT)]
+  * Tencent & HKU
 * Cache Me if You Can: Accelerating Diffusion Models through Block Caching ([CVPR 2024](../../reading-notes/conference/cvpr-2024.md)) \[[Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Wimbauer\_Cache\_Me\_if\_You\_Can\_Accelerating\_Diffusion\_Models\_through\_Block\_CVPR\_2024\_paper.html)] \[[Homepage](https://fwmb.github.io/blockcaching/)]
   * Meta & TUM & MCML & Oxford
 * CAT-DM: Controllable Accelerated Virtual Try-on with Diffusion Model ([CVPR 2024](../../reading-notes/conference/cvpr-2024.md)) \[[Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Zeng\_CAT-DM\_Controllable\_Accelerated\_Virtual\_Try-on\_with\_Diffusion\_Model\_CVPR\_2024\_paper.html)] \[[Code](https://github.com/zengjianhao/CAT-DM)]

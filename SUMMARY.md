@@ -5,11 +5,11 @@
 ## Paper List
 
 * [Systems for ML](paper-list/systems-for-ml/README.md)
-  * [Large Language Model (LLM)](paper-list/systems-for-ml/llm.md)
   * [Data Processing](paper-list/systems-for-ml/data-processing.md)
   * [Deep Learning Training](paper-list/systems-for-ml/deep-learning-training.md)
   * [Resource Scheduler](paper-list/systems-for-ml/resource-scheduler.md)
   * [Model Serving](paper-list/systems-for-ml/model-serving.md)
+  * [Large Language Model (LLM)](paper-list/systems-for-ml/llm.md)
   * [Diffusion Models](paper-list/systems-for-ml/diffusion-models.md)
   * [Deep Learning Recommendation Model (DLRM)](paper-list/systems-for-ml/dlrm.md)
   * [Mixture of Experts (MoE)](paper-list/systems-for-ml/moe.md)
