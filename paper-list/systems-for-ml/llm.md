@@ -26,7 +26,7 @@ I am actively maintaining this list.
 
 ## LLM Inference
 
-* CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving ([SIGCOMM 2024](../../reading-notes/conference/sigcomm-2024.md)) \[[arXiv](https://arxiv.org/abs/2310.07240)] \[[Code](https://github.com/UChi-JCL/CacheGen)]
+* CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving ([SIGCOMM 2024](../../reading-notes/conference/sigcomm-2024.md)) \[[arXiv](https://arxiv.org/abs/2310.07240)] \[[Code](https://github.com/UChi-JCL/CacheGen)] \[[Video](https://www.youtube.com/watch?v=H4\_OUWvdiNo)]
   * UChicago & Microsoft & Stanford
 * Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/agrawal)] \[[Code](https://github.com/microsoft/sarathi-serve)] \[[arXiv](https://arxiv.org/abs/2403.02310)]
   * MSR India & GaTech
