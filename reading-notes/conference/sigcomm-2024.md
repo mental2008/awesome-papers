@@ -49,7 +49,7 @@ Homepage: [https://conferences.sigcomm.org/sigcomm/2024/](https://conferences.si
     * Designs: reduce the GPU utilization problem to a flow optimization problem; GPU intensity-aware communication scheduling; prioritize the DLT flows with high GPU computation intensity.
 * Accelerating Model Training in Multi-cluster Environments with Consumer-grade GPUs \[[Paper](https://dl.acm.org/doi/10.1145/3651890.3672228)]
   * KAIST & UC Irvine & VMware Research
-  * Cache-aware gradient compression; a CPU-based sparse optimizer.
+  * **StellaTrain**: Cache-aware gradient compression; a CPU-based sparse optimizer.
   * Adapt training configurations to fluctuating dynamic network bandwidth -> Enable co-training using on-premises and cloud clusters.
 
 ### Data Processing
