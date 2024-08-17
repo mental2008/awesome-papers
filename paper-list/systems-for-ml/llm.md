@@ -145,24 +145,6 @@ I am actively maintaining this list.
 * PUZZLE: Efficiently Aligning Large Language Models through Light-Weight Context Switch ([ATC 2024](../../reading-notes/conference/atc-2024.md)) \[[Paper](https://www.usenix.org/conference/atc24/presentation/lei)]
   * THU
 
-## LLMs
-
-* Llama 2: Open Foundation and Fine-Tuned Chat Models (arXiv 2307.09288) \[[Paper](https://arxiv.org/abs/2307.09288)] \[[Homepage](https://ai.meta.com/llama/)]
-  * Released with a _permissive_ community license and is available for commercial use.
-* LLaMA: Open and Efficient Foundation Language Models (arXiv 2302.13971) \[[Paper](https://arxiv.org/abs/2302.13971)] \[[Code](https://github.com/facebookresearch/llama)]
-  * Meta AI
-  * **6.7B, 13B, 32.5B, 65.2B**
-  * Open-access
-* PaLM: Scaling Language Modeling with Pathways (JMLR 2023) \[[Paper](https://www.jmlr.org/papers/v24/22-1144.html)] \[[PaLM API](https://developers.googleblog.com/2023/03/announcing-palm-api-and-makersuite.html)]
-  * **540B**; open access to PaLM APIs in March 2023.
-* BLOOM: A 176B-Parameter Open-Access Multilingual Language Model (arXiv 2211.05100) \[[Paper](https://arxiv.org/abs/2211.05100)] \[[Model](https://huggingface.co/bigscience/bloom)] \[[Blog](https://bigscience.huggingface.co/blog/bloom)]
-  * **176B**
-  * open-access
-* OPT: Open Pre-trained Transformer Language Models (arXiv: 2205.01068) \[[Paper](https://arxiv.org/abs/2205.01068)] \[[Code](https://github.com/facebookresearch/metaseq/tree/main/projects/OPT)]
-  * Meta AI
-  * Range from 125M to 175B parameters.
-  * Open-access
-
 ## Acronyms
 
 * LLM: Large Language Model
