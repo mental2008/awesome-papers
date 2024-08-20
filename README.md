@@ -18,7 +18,7 @@ Specifically, I have a broad interest in systems (e.g., OSDI, SOSP, NSDI, ATC, E
 
 ## Changelogs
 
-* 08/2024: Update the reading notes of [SIGCOMM 2024](reading-notes/conference/sigcomm-2024.md); create new paper lists of [diffusion models](paper-list/artificial-intelligence/diffusion-models.md), [language models](paper-list/artificial-intelligence/language-models.md), and [deep learning recommendation models](paper-list/artificial-intelligence/dlrm.md).
+* 08/2024: Organize the papers of [VLDB 2024](reading-notes/conference/vldb-2024.md); update the reading notes of [SIGCOMM 2024](reading-notes/conference/sigcomm-2024.md); create new paper lists of [diffusion models](paper-list/artificial-intelligence/diffusion-models.md), [language models](paper-list/artificial-intelligence/language-models.md), and [deep learning recommendation models](paper-list/artificial-intelligence/dlrm.md).
 * 07/2024: Organize the papers of [SIGCOMM 2024](reading-notes/conference/sigcomm-2024.md), [ICML 2024](reading-notes/conference/icml-2024.md), [ATC 2024](reading-notes/conference/atc-2024.md), [OSDI 2024](reading-notes/conference/osdi-2024.md), [NSDI 2024](reading-notes/conference/nsdi-2024.md), [CVPR 2024](reading-notes/conference/cvpr-2024.md), [ISCA 2024](reading-notes/conference/isca-2024.md); create a new paper list of [systems for diffusion models](paper-list/systems-for-ml/diffusion-models.md); update the paper list of [systems for LLMs](paper-list/systems-for-ml/llm.md), [systems for DLRMs](paper-list/systems-for-ml/dlrm.md), and [resource scheduler](paper-list/systems-for-ml/resource-scheduler.md).
 
 ## Epilogue
