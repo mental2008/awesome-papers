@@ -40,6 +40,7 @@
 ## Reading Notes
 
 * [Conference](reading-notes/conference/README.md)
+  * [SOSP 2024](reading-notes/conference/sosp-2024.md)
   * [VLDB 2024](reading-notes/conference/vldb-2024.md)
   * [SIGCOMM 2024](reading-notes/conference/sigcomm-2024.md)
   * [ICML 2024](reading-notes/conference/icml-2024.md)
