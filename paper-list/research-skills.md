@@ -2,7 +2,7 @@
 
 ## Generally Speaking
 
-* [How to Have a Bad Career in Research/Academia](https://people.eecs.berkeley.edu/\~pattrsn/talks/BadCareer.pdf), by David A. Patterson
+* [How to Have a Bad Career in Research/Academia](https://people.eecs.berkeley.edu/~pattrsn/talks/BadCareer.pdf), by David A. Patterson
 * [You and Your Research](https://blog.samaltman.com/you-and-your-research), by Richard Hamming
 * [Principles of Effective Research](https://michaelnielsen.org/blog/principles-of-effective-research/), by Michael A. Nielsen
 * [An Opinionated Guide to ML Research](http://joschu.net/blog/opinionated-guide-ml-research.html), by John Schulman
@@ -17,18 +17,19 @@
 ## Paper Reading
 
 * [How to Read a Paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf), by Srinivasan Keshav \[[Personal Note](../reading-notes/journal/ccr/2007/how-to-read-a-paper.md)]
-* [Efficient Reading of Papers in Science and Technology](https://www.cs.columbia.edu/\~hgs/netbib/efficientReading.pdf), by Michael J. Hanson and Dylan J. McNamee
+* [Efficient Reading of Papers in Science and Technology](https://www.cs.columbia.edu/~hgs/netbib/efficientReading.pdf), by Michael J. Hanson and Dylan J. McNamee
 
 ## Writing a Paper
 
-* [How (and How Not) to Write a Good Systems Paper](https://www.usenix.org/legacy/publications/library/proceedings/dsl97/good\_paper.html), by Roy Levin and David D. Redell
-* [How to write a technical paper or a research paper](https://homes.cs.washington.edu/\~mernst/advice/write-technical-paper.html), by Michael Ernst
+* [How (and How Not) to Write a Good Systems Paper](https://www.usenix.org/legacy/publications/library/proceedings/dsl97/good_paper.html), by Roy Levin and David D. Redell (9th SOSP Program Committee Co-chairmen)
+* [The Science of Scientific Writing](https://www.usenix.org/sites/default/files/gopen_and_swan_science_of_scientific_writing.pdf), by George D. Gopen and Judith A. Swan
+* [How to write a technical paper or a research paper](https://homes.cs.washington.edu/~mernst/advice/write-technical-paper.html), by Michael Ernst
 * [Writing Perfect Papers](https://iqua.ece.toronto.edu/papers/writing-perfect-papers-2021.pdf), by Baochun Li
 * [10 tips on how we write papers](https://www.cell.com/matter/fulltext/S2590-2385\(22\)00543-4), by Edward H. Sargent
 
 ## Presentation
 
-* [The Art of Presentation](https://www.cs.cityu.edu.hk/\~jia/research/the-art-of-presentation.pdf), by Baochun Li
+* [The Art of Presentation](https://www.cs.cityu.edu.hk/~jia/research/the-art-of-presentation.pdf), by Baochun Li
 
 ## Faculty Job Search
 
@@ -50,4 +51,4 @@
 
 * [博士这五年](https://zhuanlan.zhihu.com/p/25099638), by 李沐
 * [机器学习科研的十年](https://zhuanlan.zhihu.com/p/74249758), by 陈天奇
-* [博士五年总结系列](https://yuandong-tian.com/five\_year\_summary\_of\_PhD.pdf), by 田渊栋
+* [博士五年总结系列](https://yuandong-tian.com/five_year_summary_of_PhD.pdf), by 田渊栋
