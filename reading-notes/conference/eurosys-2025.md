@@ -8,9 +8,9 @@ Paper list: [https://2025.eurosys.org/accepted-papers.html](https://2025.eurosys
 
 ## Papers
 
-### Large Language Model (LLM)
+### Large Language Models (LLMs)
 
-* LLM Inference
+* LLM inference
   * Fast State Restoration in LLM Serving with HCache
     * THU
   * Stateful Large Language Model Serving with Pensieve
@@ -19,7 +19,7 @@ Paper list: [https://2025.eurosys.org/accepted-papers.html](https://2025.eurosys
     * CUHK-Shenzhen & UChicago & Stanford
   * T-MAC: CPU Renaissance via Table Lookup for Low-Bit LLM Deployment on Edge
     * USTC & MSRA
-* LLM Fine-tuning
+* RLHF
   * HybridFlow: A Flexible and Efficient RLHF Framework
     * HKU & ByteDance
 
@@ -30,7 +30,7 @@ Paper list: [https://2025.eurosys.org/accepted-papers.html](https://2025.eurosys
 * FlowCheck: Decoupling Checkpointing and Training of Large-Scale Models
   * SJTU & Alibaba Cloud
 
-### Model Serving
+### ML Inference
 
 * A House United Within Itself: SLO-Awareness for On-Premises Containerized ML Inference Clusters via Faro
   * UIUC & IBM Research
@@ -51,3 +51,9 @@ Paper list: [https://2025.eurosys.org/accepted-papers.html](https://2025.eurosys
   * SJTU & Microsoft & Alibaba
 * Multiplexing Dynamic Deep Learning Workloads with SLO-awareness in GPU Clusters
   * University of Macau & SIAT, CAS
+
+## Acronyms
+
+RLHF: Reinforcement Learning from Human Feedback
+
+ML: Machine Learning
