@@ -19,7 +19,7 @@ Paper list: [https://2025.eurosys.org/accepted-papers.html](https://2025.eurosys
     * CUHK-Shenzhen & UChicago & Stanford
   * T-MAC: CPU Renaissance via Table Lookup for Low-Bit LLM Deployment on Edge
     * USTC & MSRA
-* RLHF
+* LLM fine-tuning
   * HybridFlow: A Flexible and Efficient RLHF Framework
     * HKU & ByteDance
 
@@ -54,6 +54,5 @@ Paper list: [https://2025.eurosys.org/accepted-papers.html](https://2025.eurosys
 
 ## Acronyms
 
-RLHF: Reinforcement Learning from Human Feedback
-
-ML: Machine Learning
+* RLHF: Reinforcement Learning from Human Feedback
+* ML: Machine Learning
