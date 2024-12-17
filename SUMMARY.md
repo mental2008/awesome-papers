@@ -40,6 +40,9 @@
 ## Reading Notes
 
 * [Conference](reading-notes/conference/README.md)
+  * [NSDI 2025](reading-notes/conference/nsdi-2025.md)
+  * [ASPLOS 2025](reading-notes/conference/asplos-2025.md)
+  * [EuroSys 2025](reading-notes/conference/eurosys-2025.md)
   * [SOSP 2024](reading-notes/conference/sosp-2024.md)
   * [VLDB 2024](reading-notes/conference/vldb-2024.md)
   * [SIGCOMM 2024](reading-notes/conference/sigcomm-2024.md)

@@ -1,5 +1,15 @@
 # Conference
 
+## 2025
+
+|            Conference           |        When        |          Where         | Remarks                                         |
+| :-----------------------------: | :----------------: | :--------------------: | ----------------------------------------------- |
+|    [NSDI 2025](nsdi-2025.md)    |   Apr 28-30, 2025  |  Philadelphia, PA, USA |                                                 |
+|  [ASPLOS 2025](asplos-2025.md)  | Mar 30-Apr 3, 2025 | Rotterdam, Netherlands | Co-located with [EuroSys 2025](eurosys-2025.md) |
+| [EuroSys 2025](eurosys-2025.md) | Mar 30-Apr 3, 2025 | Rotterdam, Netherlands | Co-located with [ASPLOS 2025](asplos-2025.md)   |
+
+
+
 ## 2024
 
 |            Conference           |        When        | Where                                                  |                    Remarks                    |
