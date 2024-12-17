@@ -14,9 +14,9 @@
 
 |            Conference           |        When        | Where                                                  |                    Remarks                    |
 | :-----------------------------: | :----------------: | ------------------------------------------------------ | :-------------------------------------------: |
-|            SoCC 2024            |   Nov 22-24, 2024  | Seattle, Washington, USA                               |                  **Upcoming**                 |
-|             SC 2024             |   Nov 17-22, 2024  | Atlanta, GA, USA                                       |                  **Upcoming**                 |
-|    [SOSP 2024](sosp-2024.md)    |    Nov 4-6, 2024   | Hilton Austin, Texas, USA                              |                  **Upcoming**                 |
+|            SoCC 2024            |   Nov 22-24, 2024  | Seattle, Washington, USA                               |                                               |
+|             SC 2024             |   Nov 17-22, 2024  | Atlanta, GA, USA                                       |                                               |
+|    [SOSP 2024](sosp-2024.md)    |    Nov 4-6, 2024   | Hilton Austin, Texas, USA                              |                                               |
 |    [VLDB 2024](vldb-2024.md)    |   Aug 26-30, 2024  | Guangzhou, China                                       |                       🧐                      |
 | [SIGCOMM 2024](sigcomm-2024.md) |    Aug 4-8, 2024   | Sydney, Australia                                      |                       🧐                      |
 |    [ICML 2024](icml-2024.md)    |   Jul 21-27, 2024  | Messe Wien Exhibition Congress Center, Vienna, Austria |                                               |
