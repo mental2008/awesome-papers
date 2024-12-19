@@ -13,11 +13,18 @@ Paper list: [https://www.usenix.org/conference/nsdi23/technical-sessions](https:
 
 ## Papers
 
-### LLMs
+### Large Language Model (LLM)
 
 * Bamboo: Making Preemptible Instances Resilient for Affordable Training of Large DNNs \[[Paper](https://www.usenix.org/conference/nsdi23/presentation/thorpe)] \[[Code](https://github.com/uclasystem/bamboo)]
   * UCLA & CMU & MSR & Princeton
   * Resilient distributed training
+
+### Model Serving
+
+* Shepherd: Serving DNNs in the wild \[[Paper](https://www.usenix.org/conference/nsdi23/presentation/zhang-hong)] \[[Personal Notes](shepherd.md)]
+  * UWaterloo & Yale & UC Berkeley
+  * Handle the short-term workload unpredictability.
+  * Aggregate request streams into moderately-sized groups; leverage preemption and model-specific batching.
 
 ### RDMA
 

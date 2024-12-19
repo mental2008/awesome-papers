@@ -79,6 +79,7 @@
   * [MLSys 2023](reading-notes/conference/mlsys-2023.md)
   * [EuroSys 2023](reading-notes/conference/eurosys-2023.md)
   * [NSDI 2023](reading-notes/conference/nsdi-2023/README.md)
+    * [Shepherd: Serving DNNs in the wild](reading-notes/conference/nsdi-2023/shepherd.md)
     * [Understanding RDMA microarchitecture resources for performance isolation](reading-notes/conference/nsdi-2023/husky.md)
     * [Skyplane: Optimizing transfer cost and throughput using cloud-aware overlays](reading-notes/conference/nsdi-2023/skyplane.md)
     * [Shockwave: Fair and efficient cluster scheduling for dynamic adaptation in machine learning](reading-notes/conference/nsdi-2023/shockwave.md)
