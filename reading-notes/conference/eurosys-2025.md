@@ -35,11 +35,6 @@ Paper list: [https://2025.eurosys.org/accepted-papers.html](https://2025.eurosys
 * A House United Within Itself: SLO-Awareness for On-Premises Containerized ML Inference Clusters via Faro
   * UIUC & IBM Research
 
-### Deep Learning Compilation
-
-* SpaceFusion: Advanced Deep Learning Operator Fusion via Space-Mapping Graph
-  * SJTU
-
 ### Serverless Computing
 
 * Serverless Cold Starts and Where to Find Them
