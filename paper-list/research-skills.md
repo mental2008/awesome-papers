@@ -10,6 +10,7 @@
 
 ## Before you start your Ph.D.
 
+* [Ph.D. Advice: Useful Thoughts about Research](https://www.eecs.harvard.edu/htk/phdadvice/), by H.T. Kung
 * The Ph.D. Grind, by Philip J. Guo
 * [A Survival Guide to a PhD](http://karpathy.github.io/2016/09/07/phd/), by Andrej Karpathy
 * [A PhD Is Not Enough!: A Guide to Survival in Science](https://www.usu.edu/biomath/files/peter-feibelm.pdf), by Peter J. Feibelman
