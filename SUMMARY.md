@@ -44,6 +44,7 @@
   * [ASPLOS 2025](reading-notes/conference/asplos-2025.md)
   * [EuroSys 2025](reading-notes/conference/eurosys-2025.md)
   * [SoCC 2024](reading-notes/conference/socc-2024.md)
+  * [HotNets 2024](reading-notes/conference/hotnets-2024.md)
   * [SC 2024](reading-notes/conference/sc-2024.md)
   * [SOSP 2024](reading-notes/conference/sosp-2024.md)
   * [VLDB 2024](reading-notes/conference/vldb-2024.md)
