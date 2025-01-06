@@ -23,7 +23,7 @@
 |    [OSDI 2024](osdi-2024.md)    |   Jul 10-12, 2024  | Santa Clara, CA, USA                                   |  🧐; co-located with [ATC 2024](atc-2024.md)  |
 |    [ISCA 2024](isca-2024.md)    | Jun 29-Jul 3, 2024 | Buenos Aires, Argentina                                |                       🧐                      |
 |    [CVPR 2024](cvpr-2024.md)    |   Jun 17-21, 2024  | Seattle Convention Center, Seattle, WA, USA            |                       🧐                      |
-|   [MLSys 2024](mlsys-2024.md)   |   May 13-16, 2024  | Santa Clara Convention Center, USA                     |                                               |
+|   [MLSys 2024](mlsys-2024.md)   |   May 13-16, 2024  | Santa Clara Convention Center, USA                     |                       🧐                      |
 |   [ASPLOS 2024](asplos-2024/)   | Apr 27-May 1, 2024 | Hilton La Jolla Torrey Pines, San Diego, USA           |                       🧐                      |
 |  [EuroSys 2024](eurosys-2024/)  |   Apr 23-26, 2024  | Athens, Greece                                         |                                               |
 |    [NSDI 2024](nsdi-2024.md)    |   Apr 16-18, 2024  | Santa Clara, CA, USA                                   |                       🧐                      |

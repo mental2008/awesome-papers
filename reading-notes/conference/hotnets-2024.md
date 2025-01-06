@@ -10,14 +10,14 @@ Paper list: [https://conferences.sigcomm.org/hotnets/2024/program.html](https://
 
 ### Large Language Models (LLMs)
 
-* Networking for LLM Training
+* Networking for LLM training
   * I’ve Got 99 Problems But FLOPS Ain’t One \[[Paper](https://conferences.sigcomm.org/hotnets/2024/papers/hotnets24-333.pdf)]
     * University Politehnica of Bucharest
     * The future of large-scale AI infrastructure requires
       * (1) novel wide-area transports for inter-DC communication;
       * (2) a multipath transport and novel datacenter topologies for intra-datacenter communication;
       * (3) high-speed scale-up networks and transport.
-* LLM for Networking
+* LLM for networking
   * Designing Network Algorithms via Large Language Models \[[Paper](https://conferences.sigcomm.org/hotnets/2024/papers/hotnets24-88.pdf)]
     * MSR
     * **NADA**: Network Algorithm Design Automation via LLMs
@@ -62,5 +62,5 @@ Paper list: [https://conferences.sigcomm.org/hotnets/2024/program.html](https://
 ## Acronyms
 
 * TTL: Time-To-Live
-* DNN: Deep Neural Networks
+* DNN: Deep Neural Network
 * DC: Datacenter
