@@ -18,7 +18,7 @@ Specifically, I have a broad interest in systems (e.g., OSDI, SOSP, NSDI, ATC, E
 
 ## Changelogs
 
-* 01/2025: Update the paper list of [Research Skills](paper-list/research-skills.md); organize the papers of [HotNets 2024](reading-notes/conference/hotnets-2024.md), [MLSys 2024](reading-notes/conference/mlsys-2024.md).
+* 01/2025: Update the paper list of [research skills](paper-list/research-skills.md) and [systems for diffusion models](paper-list/systems-for-ml/diffusion-models.md); organize the papers of [HotNets 2024](reading-notes/conference/hotnets-2024.md), [MLSys 2024](reading-notes/conference/mlsys-2024.md).
 * 12/2024: Briefly organize the papers of [EuroSys 2025](reading-notes/conference/eurosys-2025.md) (only Spring cycle); organize the papers of [SoCC 2024](reading-notes/conference/socc-2024.md), [SC 2024](reading-notes/conference/sc-2024.md); update the reading notes of [SOSP 2024](reading-notes/conference/sosp-2024.md).
 * 09/2024: Organize the papers of [SOSP 2024](reading-notes/conference/sosp-2024.md).
 * 08/2024: Organize the papers of [VLDB 2024](reading-notes/conference/vldb-2024.md); update the reading notes of [SIGCOMM 2024](reading-notes/conference/sigcomm-2024.md); create new paper lists of [diffusion models](paper-list/artificial-intelligence/diffusion-models.md), [language models](paper-list/artificial-intelligence/language-models.md), and [deep learning recommendation models](paper-list/artificial-intelligence/dlrm.md).
