@@ -12,6 +12,7 @@
 
 |            Conference           |        When        | Where                                                  |                    Remarks                    |
 | :-----------------------------: | :----------------: | ------------------------------------------------------ | :-------------------------------------------: |
+| [NeurIPS 2024](neurips-2024.md) |   Dec 10-15, 2024  | Vancouver Convention Center, Canada                    |                      WIP                      |
 |    [SoCC 2024](socc-2024.md)    |   Nov 22-24, 2024  | Seattle, Washington, USA                               |                       🧐                      |
 | [HotNets 2024](hotnets-2024.md) |   Nov 18-19, 2024  | Irvine, California, USA                                |                       🧐                      |
 |      [SC 2024](sc-2024.md)      |   Nov 17-22, 2024  | Atlanta, GA, USA                                       |                       🧐                      |

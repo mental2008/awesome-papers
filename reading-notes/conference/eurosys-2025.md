@@ -6,6 +6,11 @@ Homepage: [https://2025.eurosys.org](https://2025.eurosys.org)
 
 Paper list: [https://2025.eurosys.org/accepted-papers.html](https://2025.eurosys.org/accepted-papers.html)
 
+### Acceptance Rate
+
+* Fall: 8.2% (= 30 / 367)
+* Spring: 10.5% (= 42 / ?)
+
 ## Papers
 
 ### Large Language Models (LLMs)
