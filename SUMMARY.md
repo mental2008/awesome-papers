@@ -43,6 +43,8 @@
   * [NSDI 2025](reading-notes/conference/nsdi-2025.md)
   * [ASPLOS 2025](reading-notes/conference/asplos-2025.md)
   * [EuroSys 2025](reading-notes/conference/eurosys-2025.md)
+  * [HPCA 2025](reading-notes/conference/hpca-2025.md)
+  * [PPoPP 2025](reading-notes/conference/ppopp-2025.md)
   * [NeurIPS 2024](reading-notes/conference/neurips-2024.md)
   * [SoCC 2024](reading-notes/conference/socc-2024.md)
   * [HotNets 2024](reading-notes/conference/hotnets-2024.md)

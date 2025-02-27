@@ -7,6 +7,8 @@
 |    [NSDI 2025](nsdi-2025.md)    |   Apr 28-30, 2025  |  Philadelphia, PA, USA |                                                    |
 |  [ASPLOS 2025](asplos-2025.md)  | Mar 30-Apr 3, 2025 | Rotterdam, Netherlands | Co-located with [EuroSys 2025](eurosys-2025.md)    |
 | [EuroSys 2025](eurosys-2025.md) | Mar 30-Apr 3, 2025 | Rotterdam, Netherlands | WIP; co-located with [ASPLOS 2025](asplos-2025.md) |
+|    [HPCA 2025](hpca-2025.md)    |    Mar 1-5, 2025   |   Las Vegas, NV, USA   | Ongoing                                            |
+|   [PPoPP 2025](ppopp-2025.md)   |    Mar 1-5, 2025   |   Las Vegas, NV, USA   | Ongoing                                            |
 
 ## 2024
 
