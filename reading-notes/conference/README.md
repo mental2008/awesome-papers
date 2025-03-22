@@ -2,13 +2,13 @@
 
 ## 2025
 
-|            Conference           |        When        |          Where         | Remarks                                                 |
-| :-----------------------------: | :----------------: | :--------------------: | ------------------------------------------------------- |
-|    [NSDI 2025](nsdi-2025.md)    |   Apr 28-30, 2025  |  Philadelphia, PA, USA | TBD; 🧐                                                 |
-|  [ASPLOS 2025](asplos-2025.md)  | Mar 30-Apr 3, 2025 | Rotterdam, Netherlands | TBD; co-located with [EuroSys 2025](eurosys-2025.md)    |
-| [EuroSys 2025](eurosys-2025.md) | Mar 30-Apr 3, 2025 | Rotterdam, Netherlands | TBD; WIP; co-located with [ASPLOS 2025](asplos-2025.md) |
-|    [HPCA 2025](hpca-2025.md)    |    Mar 1-5, 2025   |   Las Vegas, NV, USA   | 🧐                                                      |
-|   [PPoPP 2025](ppopp-2025.md)   |    Mar 1-5, 2025   |   Las Vegas, NV, USA   | 🧐                                                      |
+|            Conference           |        When        |          Where         | Remarks                                                     |
+| :-----------------------------: | :----------------: | :--------------------: | ----------------------------------------------------------- |
+|    [NSDI 2025](nsdi-2025.md)    |   Apr 28-30, 2025  |  Philadelphia, PA, USA | 🧐; TBD                                                     |
+|  [ASPLOS 2025](asplos-2025.md)  | Mar 30-Apr 3, 2025 | Rotterdam, Netherlands | Incoming; co-located with [EuroSys 2025](eurosys-2025.md)   |
+| [EuroSys 2025](eurosys-2025.md) | Mar 30-Apr 3, 2025 | Rotterdam, Netherlands | 🧐; incoming; co-located with [ASPLOS 2025](asplos-2025.md) |
+|    [HPCA 2025](hpca-2025.md)    |    Mar 1-5, 2025   |   Las Vegas, NV, USA   | 🧐                                                          |
+|   [PPoPP 2025](ppopp-2025.md)   |    Mar 1-5, 2025   |   Las Vegas, NV, USA   | 🧐                                                          |
 
 ## 2024
 
