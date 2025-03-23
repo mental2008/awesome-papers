@@ -40,6 +40,7 @@
 ## Reading Notes
 
 * [Conference](reading-notes/conference/README.md)
+  * [MLSys 2025](reading-notes/conference/mlsys-2025.md)
   * [NSDI 2025](reading-notes/conference/nsdi-2025.md)
   * [ASPLOS 2025](reading-notes/conference/asplos-2025.md)
   * [EuroSys 2025](reading-notes/conference/eurosys-2025.md)
