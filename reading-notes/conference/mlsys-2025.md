@@ -6,6 +6,10 @@ Homepage: [https://mlsys.org/Conferences/2025](https://mlsys.org/Conferences/202
 
 Paper list: [https://mlsys.org/virtual/2025/papers.html?filter=titles](https://mlsys.org/virtual/2025/papers.html?filter=titles)
 
+### Acceptance Rate
+
+22.5% (= 61 / 271)
+
 ## Papers
 
 ### Large Language Models (LLMs)
