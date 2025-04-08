@@ -27,12 +27,14 @@ Paper list: [https://2025.eurosys.org/accepted-papers.html](https://2025.eurosys
     * NYU
   * CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion
     * CUHK-Shenzhen & UChicago & Stanford
+    * **Best Paper Award (Spring)**
   * T-MAC: CPU Renaissance via Table Lookup for Low-Bit LLM Deployment on Edge
     * USTC & MSRA
   * DeltaZip: Efficient Serving of Multiple Full-Model-Tuned LLMs
     * ETH & MIT
   * SpInfer: Leveraging Low-Level Sparsity for Efficient Large Language Model Inference on GPUs
     * HKUST-GZ
+    * **Best Paper Award (Fall)**
 * LLM Fine-Tuning
   * HybridFlow: A Flexible and Efficient RLHF Framework
     * HKU & ByteDance
