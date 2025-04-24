@@ -6,10 +6,19 @@ Homepage: [https://2025.eurosys.org](https://2025.eurosys.org)
 
 Paper list: [https://2025.eurosys.org/accepted-papers.html](https://2025.eurosys.org/accepted-papers.html)
 
+Proceedings: [https://dl.acm.org/doi/proceedings/10.1145/3689031](https://dl.acm.org/doi/proceedings/10.1145/3689031)
+
 ### Acceptance Rate
 
+* Overall: 12.2% (= 85 / 696)
+  * Total: 85 (= 44 + 41)
+  * 11 revised papers from EuroSys'25 Fall
 * Fall: 8.2% (= 30 / 367)
-* Spring: 10.5% (= 42 / ?)
+  * 14 revised papers from EuroSys'25 Spring
+  * Total: 44 (= 30 + 14)
+* Spring: 9.7% (= 32 / 329)
+  * 9 revised papers from EuroSys'24 Fall
+  * Total: 41 (= 32 + 9)
 
 ## Papers
 

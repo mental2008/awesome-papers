@@ -4,9 +4,20 @@
 
 Homepage: [https://www.asplos-conference.org/asplos2025/](https://www.asplos-conference.org/asplos2025/)
 
+### Proceedings
+
+* Volume 1: [https://dl.acm.org/doi/proceedings/10.1145/3669940](https://dl.acm.org/doi/proceedings/10.1145/3669940)
+* Volume 2: [https://dl.acm.org/doi/proceedings/10.1145/3676641](https://dl.acm.org/doi/proceedings/10.1145/3676641)
+
 ### Acceptance Rate
 
-* Summer: 12.7% (65 / 510)
+* Overall: 17.5% (= 160 / 912)
+* Fall: 14.1% (= 46 / 326)
+  * Major Revision: 20 (invited) -> pending
+* Summer: 12.7% (= 65 / 510)
+  * Major Revision: 42 (invited) -> 40 (accepted)
+* Spring: 2.6% (= 2 / 76)
+  * Major Revision: 7 (invited) -> 7 (accepted)
 
 ## Papers
 
