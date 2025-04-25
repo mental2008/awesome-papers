@@ -72,7 +72,7 @@ Homepage: [https://www.asplos-conference.org/asplos2025/](https://www.asplos-con
   * Accelerating Retrieval-Augmented Generation
     * Cornell & Kansas & UMass Amherst & Samsung Electronics
 * Security
-  * PipeLLM: Fast and Confidential Large Language Model Services with Speculative Pipelined Encryption’
+  * PipeLLM: Fast and Confidential Large Language Model Services with Speculative Pipelined Encryption
     * SJTU IPADS
 * Coarse-Grained Reconfigurable Array (CGRA)
   * PICACHU: Plug-In CGRA Handling Upcoming Nonlinear Operations in LLMs
