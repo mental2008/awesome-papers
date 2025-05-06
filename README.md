@@ -18,6 +18,7 @@ Specifically, I have a broad interest in systems (e.g., OSDI, SOSP, NSDI, ATC, E
 
 ## Changelogs
 
+* 05/2025: Organize the papers of [HotOS 2025](reading-notes/conference/hotos-2025.md).
 * 03/2025: Organize the papers of [NSDI 2025](reading-notes/conference/nsdi-2025.md), [EuroSys 2025](reading-notes/conference/eurosys-2025.md) (Fall cycle), [ASPLOS 2025](reading-notes/conference/asplos-2025.md), [MLSys 2025](reading-notes/conference/mlsys-2025.md); update the paper list of [systems for LLMs](paper-list/systems-for-ml/llm.md).
 * 02/2025: Organize the papers of [HPCA 2025](reading-notes/conference/hpca-2025.md), [PPoPP 2025](reading-notes/conference/ppopp-2025.md).
 * 01/2025: Update the paper list of [research skills](paper-list/research-skills.md) and [systems for diffusion models](paper-list/systems-for-ml/diffusion-models.md); organize the papers of [HotNets 2024](reading-notes/conference/hotnets-2024.md), [MLSys 2024](reading-notes/conference/mlsys-2024.md), [NeurIPS 2024](reading-notes/conference/neurips-2024.md).
