@@ -4,6 +4,7 @@
 
 |            Conference           |        When        |                  Where                 | Remarks                                                      |
 | :-----------------------------: | :----------------: | :------------------------------------: | ------------------------------------------------------------ |
+|    [ICML 2025](icml-2025.md)    |   Jul 13-19, 2025  |   Vancouver Convention Center, Canada  |                                                              |
 |     [ATC 2025](atc-2025.md)     |    Jul 7-9, 2025   |             Boston, MA, USA            | TBD; co-located with [OSDI 2025](osdi-2025.md)               |
 |    [OSDI 2025](osdi-2025.md)    |    Jul 7-9, 2025   |             Boston, MA, USA            | TBD; co-located with [ATC 2025](atc-2025.md)                 |
 |   [MLSys 2025](mlsys-2025.md)   |   May 12-15, 2025  | Santa Clara Convention Center, CA, USA | 🧐 Incoming                                                  |
