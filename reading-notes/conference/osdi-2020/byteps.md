@@ -52,17 +52,13 @@ It outperforms the state-of-the-art open-source _all-reduce_ and _PS_.
       * Let GPUs under the same PCIe switch sum the tensors.
       * Copy to CPU and let CPU do the global summation.
       * Broadcast back the global sum.
-    *
-
-        <figure><img src="../../../.gitbook/assets/pcie-only-machine-topology-and-byteps-data-flow.png" alt=""><figcaption><p>PCIe-only machine topology and BytePS data flow.</p></figcaption></figure>
+    * ![PCIe-only machine topology and BytePS data flow.](../../../.gitbook/assets/image.png)
   * NVLink-based topology
     * _Reduce_ tensors from all GPUs to _GPU2_.
     * Copy the results to CPU memory from _GPU2_.
     * After CS gets the aggregated results from SS, _GPU2_ copy the data into GPU memory and broadcast them to other GPUs.
     * Prevent GPUs from using _the P0 - CPU0 bandwidth_ for communication, so _the NIC can run to full 100Gbps bandwidth_.
-    *
-
-        <figure><img src="../../../.gitbook/assets/nvlink-based-machine-topology-and-byteps-data-flow.png.png" alt=""><figcaption><p>NVLink-based machine topology and BytePS data flow.</p></figcaption></figure>
+    * ![NVLink-based machine topology and BytePS data flow.](../../../.gitbook/assets/nvlink-based-machine-topology-and-byteps-data-flow.png)
   * **Two principles**
     * Avoid direct GPU-to-GPU memory copy when the two GPUs are _not_ under the same PCIe switch.
     * Minimize traffic on the PCIe switch to the CPU link that is _shared by GPUs and NIC_.

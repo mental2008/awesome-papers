@@ -22,7 +22,7 @@
 
 * Fast Distributed Deep Learning over RDMA (EuroSys 2019) \[[Paper](https://dl.acm.org/doi/10.1145/3302424.3303975)]
   * MSRA
-* Towards Zero Copy Dataflows using RDMA (SIGCOMM 2017 Posters and Demos) \[[Paper](https://dl.acm.org/doi/10.1145/3123878.3131975)] \[[Code](https://github.com/tensorflow/networking/tree/master/tensorflow\_networking/gdr)]
+* Towards Zero Copy Dataflows using RDMA (SIGCOMM 2017 Posters and Demos) \[[Paper](https://dl.acm.org/doi/10.1145/3123878.3131975)] \[[Code](https://github.com/tensorflow/networking/tree/master/tensorflow_networking/gdr)]
   * HKUST
   * Merged into TensorFlow.
 
@@ -31,7 +31,7 @@
 * Empowering Azure Storage with RDMA ([NSDI 2023](../reading-notes/conference/nsdi-2023/)) \[[Paper](https://www.usenix.org/conference/nsdi23/presentation/bai)]
   * Microsoft
   * Production experience in Microsoft Azure
-  * Around **70%** of traffic in Azure is RDMA**.**
+  * Around **70%** of traffic in Azure is RDM&#x41;**.**
 * When Cloud Storage Meets RDMA ([NSDI 2021](../reading-notes/conference/nsdi-2021.md)) \[[Paper](https://www.usenix.org/conference/nsdi21/presentation/gao)]
   * NJU & Alibaba
   * Pangu
