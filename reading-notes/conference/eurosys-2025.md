@@ -64,8 +64,11 @@ Proceedings: [https://dl.acm.org/doi/proceedings/10.1145/3689031](https://dl.acm
 
 * A House United Within Itself: SLO-Awareness for On-Premises Containerized ML Inference Clusters via Faro
   * UIUC & IBM Research
-* SpotHedge: Serving AI Models on Spot Instances
+* SkyServe: Serving AI Models across Regions and Clouds with Spot Instances \[[Paper](https://dl.acm.org/doi/10.1145/3689031.3717459)] \[[Code](https://github.com/skypilot-org/skypilot)] \[[arXiv](https://arxiv.org/abs/2411.01438)]
   * UC Berkeley
+  * Manage a mixture of spot and on-demand replicas across regions and clouds.
+  * Improve availability, reduce correlated preemptions, overprovision cheap spot replicas.
+  * Baselines: AWS Auto-scaling Group (ASG), MArk \[ATC'19], AWS spot node pool (AWSSpot), [SpotServe](asplos-2024/spotserve.md)
 
 ### Deep Learning Compilation
 
