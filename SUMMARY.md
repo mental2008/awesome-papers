@@ -44,6 +44,7 @@
   * [ATC 2025](reading-notes/conference/atc-2025.md)
   * [OSDI 2025](reading-notes/conference/osdi-2025.md)
   * [ISCA 2025](reading-notes/conference/isca-2025.md)
+  * [SIGMETRICS 2025](reading-notes/conference/sigmetrics-2025.md)
   * [HotOS 2025](reading-notes/conference/hotos-2025.md)
   * [MLSys 2025](reading-notes/conference/mlsys-2025.md)
   * [NSDI 2025](reading-notes/conference/nsdi-2025.md)
