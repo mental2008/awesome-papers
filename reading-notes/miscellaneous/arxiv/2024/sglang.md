@@ -6,7 +6,9 @@ description: LLM Inference
 
 ## Meta Info
 
-Presented in [arxiv:2312.07104](https://arxiv.org/abs/2312.07104). \[ [Code](https://github.com/sgl-project/sglang) ]
+Presented in [arxiv:2312.07104](https://arxiv.org/abs/2312.07104). \[[Code](https://github.com/sgl-project/sglang)]
+
+Accepted by [NeurIPS 2024](https://openreview.net/forum?id=VqkAKQibpq).
 
 Authors: Lianmin Zheng, Liangsheng Yin, Zhiqiang Xie, Jeff Huang, Chuyue Sun, Cody Hao Yu, Shiyi Cao, Christos Kozyrakis, Ion Stoica, Joseph E. Gonzalez, Clark Barrett, Ying Sheng (UCB, Stanford)
 
