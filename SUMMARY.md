@@ -40,6 +40,7 @@
 ## Reading Notes
 
 * [Conference](reading-notes/conference/README.md)
+  * [ASPLOS 2026](reading-notes/conference/asplos-2026.md)
   * [ICML 2025](reading-notes/conference/icml-2025.md)
   * [ATC 2025](reading-notes/conference/atc-2025.md)
   * [OSDI 2025](reading-notes/conference/osdi-2025.md)
