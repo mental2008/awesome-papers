@@ -41,6 +41,10 @@
 
 * [Conference](reading-notes/conference/README.md)
   * [ASPLOS 2026](reading-notes/conference/asplos-2026.md)
+  * [NSDI 2026](reading-notes/conference/nsdi-2026.md)
+  * [EuroSys 2026](reading-notes/conference/eurosys-2026.md)
+  * [ASPLOS 2026](reading-notes/conference/asplos-2026-1.md)
+  * [SOSP 2025](reading-notes/conference/sosp-2025.md)
   * [ICML 2025](reading-notes/conference/icml-2025.md)
   * [ATC 2025](reading-notes/conference/atc-2025.md)
   * [OSDI 2025](reading-notes/conference/osdi-2025.md)
