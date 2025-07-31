@@ -6,20 +6,20 @@
 
 ## 2025
 
-|            Conference           |        When        |                    Where                    | Remarks                                            |
-| :-----------------------------: | :----------------: | :-----------------------------------------: | -------------------------------------------------- |
-|    [SOSP 2025](sosp-2025.md)    |   Oct 13-16, 2025  | Lotte Hotel World, Seoul, Republic of Korea | Incoming                                           |
-| [SIGCOMM 2025](sigcomm-2025.md) |   Sep 8-11, 2025   |              Coimbra, Portugal              | Incoming                                           |
-|    [ICML 2025](icml-2025.md)    |   Jul 13-19, 2025  |     Vancouver Convention Center, Canada     |                                                    |
-|     [ATC 2025](atc-2025.md)     |    Jul 7-9, 2025   |    Sheraton Boston Hotel, Boston, MA, USA   | 😎 Co-located with [OSDI 2025](osdi-2025.md)       |
-|    [OSDI 2025](osdi-2025.md)    |    Jul 7-9, 2025   |    Sheraton Boston Hotel, Boston, MA, USA   | 😎 Co-located with [ATC 2025](atc-2025.md)         |
-|   [HotOS 2025](hotos-2025.md)   |   May 14-16, 2025  |            Banff, Alberta, Canada           | 🧐                                                 |
-|   [MLSys 2025](mlsys-2025.md)   |   May 12-15, 2025  |    Santa Clara Convention Center, CA, USA   | 🧐                                                 |
-|    [NSDI 2025](nsdi-2025.md)    |   Apr 28-30, 2025  |            Philadelphia, PA, USA            | 🧐😎                                               |
-|  [ASPLOS 2025](asplos-2025.md)  | Mar 30-Apr 3, 2025 |            Rotterdam, Netherlands           | 🧐 Co-located with [EuroSys 2025](eurosys-2025.md) |
-| [EuroSys 2025](eurosys-2025.md) | Mar 30-Apr 3, 2025 |            Rotterdam, Netherlands           | 🧐 Co-located with [ASPLOS 2025](asplos-2025.md)   |
-|    [HPCA 2025](hpca-2025.md)    |    Mar 1-5, 2025   |              Las Vegas, NV, USA             | 🧐                                                 |
-|   [PPoPP 2025](ppopp-2025.md)   |    Mar 1-5, 2025   |              Las Vegas, NV, USA             | 🧐                                                 |
+|            Conference           |        When        |                    Where                    | Remarks                                                                                                                              |
+| :-----------------------------: | :----------------: | :-----------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------ |
+|    [SOSP 2025](sosp-2025.md)    |   Oct 13-16, 2025  | Lotte Hotel World, Seoul, Republic of Korea | Incoming                                                                                                                             |
+| [SIGCOMM 2025](sigcomm-2025.md) |   Sep 8-11, 2025   |              Coimbra, Portugal              | Incoming                                                                                                                             |
+|    [ICML 2025](icml-2025.md)    |   Jul 13-19, 2025  |     Vancouver Convention Center, Canada     |                                                                                                                                      |
+|     [ATC 2025](atc-2025.md)     |    Jul 7-9, 2025   |    Sheraton Boston Hotel, Boston, MA, USA   | 😎 Co-located with [OSDI 2025](osdi-2025.md)                                                                                         |
+|    [OSDI 2025](osdi-2025.md)    |    Jul 7-9, 2025   |    Sheraton Boston Hotel, Boston, MA, USA   | 😎 Co-located with [ATC 2025](atc-2025.md)                                                                                           |
+|   [HotOS 2025](hotos-2025.md)   |   May 14-16, 2025  |            Banff, Alberta, Canada           | 🧐                                                                                                                                   |
+|   [MLSys 2025](mlsys-2025.md)   |   May 12-15, 2025  |    Santa Clara Convention Center, CA, USA   | 🧐                                                                                                                                   |
+|    [NSDI 2025](nsdi-2025.md)    |   Apr 28-30, 2025  |            Philadelphia, PA, USA            | 🧐😎                                                                                                                                 |
+|  [ASPLOS 2025](asplos-2025.md)  | Mar 30-Apr 3, 2025 |            Rotterdam, Netherlands           | 🧐 Co-located with [EuroSys 2025](eurosys-2025.md)                                                                                   |
+| [EuroSys 2025](eurosys-2025.md) | Mar 30-Apr 3, 2025 |            Rotterdam, Netherlands           | 🧐 Co-located with [ASPLOS 2025](asplos-2025.md)                                                                                     |
+|    [HPCA 2025](hpca-2025.md)    |    Mar 1-5, 2025   |              Las Vegas, NV, USA             | 🧐 Co-located with [PPoPP 2025](ppopp-2025.md), [CGO 2025](https://2025.cgo.org), [CC 2025](https://conf.researchr.org/home/CC-2025) |
+|   [PPoPP 2025](ppopp-2025.md)   |    Mar 1-5, 2025   |              Las Vegas, NV, USA             | 🧐 Co-located with [HPCA 2025](hpca-2025.md), [CGO 2025](https://2025.cgo.org), [CC 2025](https://conf.researchr.org/home/CC-2025)   |
 
 ## 2024
 
