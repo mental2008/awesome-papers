@@ -4,7 +4,7 @@
 
 Hi all, thank you for visiting here ;-)
 
-I am currently a graduate student at HKUST. These are my personal paper reading notes.
+I recently graduated from HKUST. These are my personal paper reading notes.
 
 Specifically, I have a broad interest in systems (e.g., OSDI, SOSP, NSDI, ATC, EuroSys, SoCC, ASPLOS, MLSys), machine learning (e.g., ICML, ICLR, NeurIPS), and other funny stuff.
 
