@@ -18,7 +18,7 @@ Specifically, I have a broad interest in systems (e.g., OSDI, SOSP, NSDI, ATC, E
 
 ## Changelogs
 
-* 10/2025: Organize the papers of [OSDI 2025](reading-notes/conference/osdi-2025.md), [ATC 2025](reading-notes/conference/atc-2025.md).
+* 10/2025: Organize the papers of [OSDI 2025](reading-notes/conference/osdi-2025.md), [ATC 2025](reading-notes/conference/atc-2025.md), [SOSP 2025](reading-notes/conference/sosp-2025.md).
 * 09/2025: Organize the papers of [SIGCOMM 2025](reading-notes/conference/sigcomm-2025.md).
 * 06/2025: Organize the papers of [ISCA 2025](reading-notes/conference/isca-2025.md), [SIGMETRICS 2025](reading-notes/conference/sigmetrics-2025.md).
 * 05/2025: Organize the papers of [HotOS 2025](reading-notes/conference/hotos-2025.md); fix the paper links of [MLSys 2025](reading-notes/conference/mlsys-2025.md).
