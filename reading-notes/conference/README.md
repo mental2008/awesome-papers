@@ -8,6 +8,7 @@
 
 |            Conference           |        When        |                    Where                    | Remarks                                                                                                                              |
 | :-----------------------------: | :----------------: | :-----------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------ |
+|             SC 2025             |   Nov 16-21, 2025  |      St. Louis, Missouri, United States     | Incoming                                                                                                                             |
 |    [SOSP 2025](sosp-2025.md)    |   Oct 13-16, 2025  | Lotte Hotel World, Seoul, Republic of Korea | 🧐                                                                                                                                   |
 | [SIGCOMM 2025](sigcomm-2025.md) |   Sep 8-11, 2025   |              Coimbra, Portugal              | 🧐                                                                                                                                   |
 |    [ICML 2025](icml-2025.md)    |   Jul 13-19, 2025  |     Vancouver Convention Center, Canada     |                                                                                                                                      |
