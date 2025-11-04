@@ -15,6 +15,8 @@ Homepage: [https://2026.eurosys.org](https://2026.eurosys.org)
 * LLM Inference
   * Taming Latency-Memory Trade-Off in MoE-Based LLM Serving via Fine-Grained Expert Offloading \[[Paper](https://doi.org/10.1145/3767295.3769319)] \[[arXiv](https://arxiv.org/abs/2502.05370)]
     * Stevens Institute of Technology & Waterloo & Rutgers
+  * FlexPipe: Adapting Dynamic LLM Serving Through Inflight Pipeline Refactoring in Fragmented Serverless Clusters \[[Paper](https://doi.org/10.1145/3767295.3769316)] \[[arXiv](https://arxiv.org/abs/2510.11938)]
+    * SIAT, CAS
 * LoRA Fine-Tuning
   * LoRAFusion: Efficient LoRA Fine-Tuning for LLMs \[[Paper](https://doi.org/10.1145/3767295.3769331)] \[[arXiv](https://arxiv.org/abs/2510.00206)]
     * UofT & Vector Institute & NVIDIA
