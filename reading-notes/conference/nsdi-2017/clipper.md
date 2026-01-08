@@ -24,7 +24,7 @@ This paper presents a general-purpose model serving system named **Clipper**, wh
 
 ### Technical details
 
-![The architecture of Clipper](clipper-architecture.png)
+![The architecture of Clipper](../../../.gitbook/assets/clipper-architecture.png)
 
 * Clipper is divided into two layers.
   * **Model abstraction layer**: provide a common interface across machine learning frameworks.

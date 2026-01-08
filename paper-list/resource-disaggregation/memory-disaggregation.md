@@ -21,7 +21,7 @@
 
 ## RDMA-based Disaggregation
 
-* DisaggRec: Architecting Disaggregated Systems for Large-Scale Personalized Recommendation (arXiv 2212.00939) \[[Personal Notes](broken-reference)] \[[Paper](https://arxiv.org/abs/2212.00939)]
+* DisaggRec: Architecting Disaggregated Systems for Large-Scale Personalized Recommendation (arXiv 2212.00939) \[[Personal Notes](/broken/pages/PZK9r9RRQdKqiSGt6JW4)] \[[Paper](https://arxiv.org/abs/2212.00939)]
   * Meta AI & WashU & UPenn & Cornell & Intel
   * Deep learning recommendation models; partition _embedding tables_.
 * Hydra: Resilient and Highly Available Remote Memory (FAST 2022) \[[Paper](https://www.usenix.org/conference/fast22/presentation/lee)] \[[Code](https://github.com/SymbioticLab/Hydra)]

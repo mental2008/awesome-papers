@@ -18,6 +18,7 @@ Specifically, I have a broad interest in systems (e.g., OSDI, SOSP, NSDI, ATC, E
 
 ## Changelogs
 
+* 01/2026: Organize the papers of [PPoPP 2026](reading-notes/conference/ppopp-2026.md).
 * 10/2025: Organize the papers of [OSDI 2025](reading-notes/conference/osdi-2025.md), [ATC 2025](reading-notes/conference/atc-2025.md), [SOSP 2025](reading-notes/conference/sosp-2025.md).
 * 09/2025: Organize the papers of [SIGCOMM 2025](reading-notes/conference/sigcomm-2025.md).
 * 06/2025: Organize the papers of [ISCA 2025](reading-notes/conference/isca-2025.md), [SIGMETRICS 2025](reading-notes/conference/sigmetrics-2025.md).
@@ -40,4 +41,4 @@ For a better experience, please check out the [website](https://paper.lingyunyan
 
 Released under the [MIT License](LICENSE/).
 
-Copyright © 2021—2025 [Lingyun Yang](https://github.com/mental2008).
+Copyright © 2021—2026 [Lingyun Yang](https://github.com/mental2008).
