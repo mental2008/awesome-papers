@@ -43,6 +43,7 @@
   * [NSDI 2026](reading-notes/conference/nsdi-2026.md)
   * [EuroSys 2026](reading-notes/conference/eurosys-2026.md)
   * [ASPLOS 2026](reading-notes/conference/asplos-2026.md)
+  * [HPCA 2026](reading-notes/conference/hpca-2026.md)
   * [PPoPP 2026](reading-notes/conference/ppopp-2026.md)
   * [SC 2025](reading-notes/conference/sc-2025.md)
   * [SOSP 2025](reading-notes/conference/sosp-2025.md)
