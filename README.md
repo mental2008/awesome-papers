@@ -4,9 +4,11 @@
 
 Hi all, thank you for visiting here ;-)
 
-I recently graduated from HKUST. These are my personal paper reading notes.
+I'm a senior engineer at Alibaba, working on AI infrastrucutre. Prior to that, I earned my Ph.D. degree from HKUST.
 
-Specifically, I have a broad interest in systems (e.g., OSDI, SOSP, NSDI, ATC, EuroSys, SoCC, ASPLOS, MLSys), machine learning (e.g., ICML, ICLR, NeurIPS), and other funny stuff.
+This space hosts my personal notes on academic papers. My interests span systems (e.g., OSDI, SOSP, NSDI, ATC, EuroSys, SoCC, ASPLOS, MLSys), machine learning (e.g., ICML, ICLR, NeurIPS), and other funny stuff.
+
+All views expressed here are my own.
 
 ## Welcome
 
