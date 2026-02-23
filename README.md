@@ -44,3 +44,5 @@ For a better experience, please check out the [website](https://paper.lingyunyan
 Released under the [MIT License](LICENSE/).
 
 Copyright © 2021—2026 [Lingyun Yang](https://github.com/mental2008).
+
+- [ODEI](https://api.odei.ai) - Constitutional world model for AI agents. Neo4j knowledge graph (91 nodes, 6 domains), 7-layer safety guardrails. [GitHub](https://github.com/odei-ai/web)
