@@ -198,6 +198,11 @@ I am actively maintaining this list.
 * Fairness in Serving Large Language Models ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/sheng)] \[[Code](https://github.com/Ying1123/VTC-artifact)]
   * UC Berkeley
 
+### LLM Reliability & Debugging
+
+* WFGY 1.0: A Framework for LLM Self-Healing and Debugging (Figshare) \[[DOI](https://doi.org/10.6084/m9.figshare.30338884)] \[[PDF](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf)] \[[Code](https://github.com/onestardao/WFGY)]
+  * Framework paper on detecting, isolating, and repairing reasoning failures in LLM pipelines; open-source implementation available.
+
 ## LLM Alignment
 
 * PUZZLE: Efficiently Aligning Large Language Models through Light-Weight Context Switch ([ATC 2024](../../reading-notes/conference/atc-2024.md)) \[[Paper](https://www.usenix.org/conference/atc24/presentation/lei)]
