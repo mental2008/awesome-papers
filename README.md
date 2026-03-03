@@ -4,7 +4,7 @@
 
 Hi all, thank you for visiting here ;-)
 
-I'm a senior engineer at Alibaba, working on AI infrastrucutre. Prior to that, I earned my Ph.D. degree from HKUST.
+I'm a senior engineer at Alibaba, working on AI infrastructure. Prior to that, I earned my Ph.D. degree from HKUST.
 
 This space hosts my personal notes on academic papers. My interests span systems (e.g., OSDI, SOSP, NSDI, ATC, EuroSys, SoCC, ASPLOS, MLSys), machine learning (e.g., ICML, ICLR, NeurIPS), and other funny stuff.
 
@@ -41,6 +41,6 @@ For a better experience, please check out the [website](https://paper.lingyunyan
 
 ## License
 
-Released under the [MIT License](LICENSE/).
+Released under the [MIT License](LICENSE).
 
 Copyright © 2021—2026 [Lingyun Yang](https://github.com/mental2008).
