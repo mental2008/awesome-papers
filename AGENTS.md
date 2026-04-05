@@ -75,6 +75,14 @@ If you introduce a brand new venue/year page, usually update:
 * `SUMMARY.md`
 * any relevant `paper-list/` pages if the paper should be surfaced by topic
 
+When the official conference website is available, infer `When`, `Where`, homepage, and similar venue metadata directly from the official site instead of leaving placeholders like `TBD`.
+
+When updating conference entries in `reading-notes/conference/README.md`, set the `Remarks` field relative to the current date:
+
+* use `Incoming` for conferences that have not started yet
+* remove `Incoming` once the conference has already finished
+* keep other remarks such as `🧐`, `😎`, `👨‍💻`, or co-location notes as applicable
+
 ## Naming Conventions
 
 ### `reading-notes/`

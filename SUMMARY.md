@@ -40,6 +40,7 @@
 ## Reading Notes
 
 * [Conference](reading-notes/conference/README.md)
+  * [OSDI 2026](reading-notes/conference/osdi-2026.md)
   * [MLSys 2026](reading-notes/conference/mlsys-2026.md)
   * [NSDI 2026](reading-notes/conference/nsdi-2026.md)
   * [EuroSys 2026](reading-notes/conference/eurosys-2026.md)
