@@ -1,5 +1,12 @@
-# macOS related files
+# OS-generated files
 **/.DS_Store
 
-# generated book files
+# Local preview build output
 _book/
+.honkit-preview/
+
+# Local Node/Honkit toolchain files used only for preview
+# Keep the repository focused on GitBook content source files.
+node_modules/
+package-lock.json
+package.json

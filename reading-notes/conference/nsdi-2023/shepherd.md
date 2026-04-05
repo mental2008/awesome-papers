@@ -41,13 +41,13 @@ Authors: Hong Zhang (_UWaterloo_), Yupeng Tang, Anurag Khandelwal (_Yale_), Ion 
 
 1. Each request stream has an average load $${rate}_i$$
 2. Measure the maximum goodput $$T_i$$, i.e., each stream $$i$$ can achieve on a single GPU
-3. Compute $$n_i = \frac{{rate}_i}{T_i}$$
+3. Compute $$n_i = \frac{rate_i}{T_i}$$
 
 ***
 
 Use an Integer Linear Programming (ILP) to **combine streams into serving groups** to maximize the minimum burst tolerance across all streams.
 
-Burst tolerance metric: $$bt(i) = \sum_{j}\frac{{size_j \cdot {x}_{ij}}}{{n}_{i}}$$
+Burst tolerance metric: $$bt(i) = \sum_j \frac{size_j \cdot x_{ij}}{n_i}$$
 
 * Decision variables
   * $$x_{ij} \in \{0,1\}$$: Is stream $$i$$ mapped to group $$j$$?
@@ -64,7 +64,7 @@ Burst tolerance metric: $$bt(i) = \sum_{j}\frac{{size_j \cdot {x}_{ij}}}{{n}_{i}
   * $$\text{maximize}\ min_{i}{\{bt(i)\}}$$
 * **Constraints**
   * Cluster-size limit
-    * $$\sum_{j}{{size}_j} \le N$$
+    * $$\sum_j size_j \le N$$
   * Group-worker limit
     * $${size}_j \le G$$
   * GPU memory limit
