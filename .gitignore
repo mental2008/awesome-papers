@@ -4,6 +4,7 @@
 # Local preview build output
 _book/
 .honkit-preview/
+.tmp/
 
 # Local Node/Honkit toolchain files used only for preview
 # Keep the repository focused on GitBook content source files.

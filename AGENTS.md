@@ -7,8 +7,10 @@ This file defines repository-specific conventions for `awesome-papers`.
 For general GitBook syntax, custom blocks, frontmatter, configuration, and platform behavior, consult:
 
 * `./skills/gitbook-skill.md`
+* `./skills/affiliation-abbreviations.md` for common institution-name abbreviations used in this repository
 
 Treat `skills/gitbook-skill.md` as the default GitBook skill for this repository. Do not duplicate its generic guidance here unless the repository intentionally overrides it.
+Default to the abbreviations in `skills/affiliation-abbreviations.md` when writing affiliation lines in notes and paper lists.
 
 ## Repo Nature
 
@@ -118,11 +120,60 @@ Typical structure:
 * title
 * `## Meta Info`
 * `Homepage: ...`
-* `Paper list: ...`
+* either:
+  * `Paper list: ...`
+* or, when multiple paper-list-related links need to be shown:
+  * `### Paper List`
+  * `Program: ...`
+  * `Proceedings Volume 1: ...`
+  * `Proceedings Volume 2: ...`
 * `## Papers`
 * optional `## Acronyms`
 
 These pages are venue-centric and time-centric.
+
+For conference pages that have an official proceedings split or otherwise need multiple paper-list-related links, prefer the current ASPLOS 2026 style:
+
+* if there is only one relevant link, keep it simple with `Paper list: ...`
+* if there are multiple relevant links, use a dedicated `### Paper List` subsection inside `## Meta Info`
+* list the conference `Program` link explicitly when it is useful
+* list each proceedings volume explicitly rather than collapsing them into one generic `Paper list` line
+* examples:
+  * `Paper list: ...`
+  * or:
+  * `Program: ...`
+  * `Proceedings Volume 1: ...`
+  * `Proceedings Volume 2: ...`
+
+### Current conference paper-list link style
+
+Use the current `reading-notes/conference/asplos-2026.md` style as the reference for conference paper lists.
+
+Typical item shape:
+
+* first line:
+  * `* <Paper Title> [[Paper]] [[arXiv]] [[Code]] [[Project]] [[Artifact]] [[Video]] ...`
+* following lines:
+  * `  * <Affiliations>`
+  * `  * <Short contribution summary>`
+  * `  * <Short contribution summary>`
+
+Practical conventions:
+
+* keep all resource links on the same title line
+* prefer `Paper` first when an official ACM/USENIX/IEEE proceedings link exists
+* keep `arXiv`, `Code`, `Project`, `Artifact`, `Video`, `Slides` and similar links after `Paper`
+* if two links serve different purposes, keep both instead of collapsing them
+  * example: `Paper` for ACM DOI and `Project` for the author or lab page
+* keep affiliations on the next bullet line, not inline on the title line
+* keep 1 to 3 short technical-summary bullets under each paper when useful
+* preserve existing links and notes when enriching entries; prefer additive edits over replacement
+
+When expanding an existing venue page:
+
+* do not delete or reduce existing notes that are already in the page unless the user explicitly asks for cleanup
+* preserve existing links such as `Paper`, `arXiv`, `Code`, `Slides`, `Artifact`, or `Program` whenever they already exist
+* prefer additive editing over rewriting existing content from scratch
 
 ### Leaf paper notes in `reading-notes/`
 
@@ -147,6 +198,69 @@ Typical entry structure:
 * 1 to 3 lines of concise technical summary when useful
 
 These pages are topic-centric and act as curated research maps.
+
+### Current `paper-list/` formatting style
+
+Use the current hand-maintained `paper-list/` pages as the formatting reference.
+
+Typical item shape:
+
+* first line:
+  * `* <Paper Title> (<Venue/Source>) [[Personal Notes]] [[Paper]] [[arXiv]] [[Code]] ...`
+* second line:
+  * `  * <Affiliation 1> & <Affiliation 2> ...`
+* optional following lines:
+  * `  * <1 short technical point>`
+  * `  * <1 short technical point>`
+
+Practical conventions:
+
+* keep the venue or source immediately after the title in parentheses
+  * examples: `([OSDI 2024](...))`, `(arXiv:2502.11101)`, `(SIGMOD 2025)`
+* keep resource links on the same title line
+* prefer this resource-link order when available:
+  * `Personal Notes`, `Paper`, `arXiv`, `Code`, `Docs`, `Homepage`, `Slides`, `Artifact`, `Benchmark`, `Trace`, `Video`, `Blog`
+* keep the affiliation as a separate bullet line directly under the title line
+* use 1 to 3 short summary bullets only when they add real value
+* preserve emphasis already common in the repo for standout signals
+  * examples: `**Best Paper Award**`, system names such as `**Sarathi-Serve**`
+* for topic pages, concise phrases are preferred over long prose paragraphs
+* when a paper already has a personal note, keep `[[Personal Notes](...)]` near the front of the resource links
+* do not collapse existing useful source distinctions
+  * for example, keep both `Paper` and `arXiv` if both are useful
+  * keep `Project` or `Homepage` when they are distinct from the ACM/USENIX paper page
+
+### Acronyms and section titles
+
+Default to keeping both the full term and the acronym in section titles when the acronym is widely used and helps readability.
+
+Example:
+
+* prefer `### Large Language Models (LLMs)`
+* similarly keep forms like `Retrieval-Augmented Generation (RAG)` when they help readers recognize the topic faster
+
+The `## Acronyms` section is still useful as a glossary, but it does not imply that the acronym must be removed from headings.
+
+When a page includes `## Acronyms`, sort acronym entries alphabetically by the acronym itself unless the user explicitly requests a different order.
+
+### Paper entry enrichment
+
+When adding paper entries to venue pages or topic pages:
+
+* keep the author affiliation line
+* add relevant links when available, prioritizing `Paper`, then `arXiv`, then `Code`
+* add 1 to 3 short lines summarizing the technical contribution, such as:
+  * key mechanism
+  * systems design
+  * optimization target
+  * difference from prior work
+* when possible, ground contribution summaries in the paper abstract rather than in title-only inference
+* prefer this contribution pattern:
+  * what system, method, or analysis the paper introduces
+  * what key mechanism, control policy, or architectural idea it uses
+  * what target, guarantee, or tradeoff it improves
+* avoid vague filler such as `Likely`, `Suggest`, or `Focus on` when the paper contribution can be stated directly
+* in contribution summaries, avoid promotional adjectives such as `efficient`, `robust`, or similar paper-title modifiers unless the adjective itself is the technical point
 
 ## Maintenance Habits
 
@@ -207,10 +321,18 @@ This reflects the intended classification logic:
 4. keep environment or deployment constraints visible
    * heterogeneous environment, fairness
 
+In venue pages such as `reading-notes/conference/asplos-2026.md`, the LLM section may use one extra hierarchy level when it improves organization:
+
+* first-level buckets such as `LLM Training` or `LLM Inference`
+* second-level buckets such as `Prefill-Decode Multiplexing`, `MoE Inference`, `Multimodal Model Training`, or `RL Post-Training`
+
+Prefer this deeper structure when a first-level LLM bucket contains multiple clearly different subtopics.
+
 When adding LLM content:
 
 * first decide whether it belongs to training, inference, or alignment
 * if inference-related, prefer an existing subsection before creating a new one
+* if a training or inference bucket becomes crowded, group papers with an additional subtopic layer instead of keeping one flat list
 * create a new subsection only when the topic is clearly recurring and not well represented by the current taxonomy
 
 ## Local Preview
@@ -220,6 +342,11 @@ The source of truth is GitBook-oriented Markdown in the repository.
 If local preview support exists, it must not require rewriting repository source away from GitBook-native syntax. Prefer compatibility preprocessing for local preview over changing the committed GitBook content.
 
 Current local preview commands are defined in `package.json`.
+
+Interpret user requests as follows:
+
+* when the user asks to "本地构建预览页面" or otherwise asks for a local preview, default to starting the local preview server rather than only running a static build
+* only running `build` is insufficient for that request unless the user explicitly asks for build-only verification
 
 ## Practical Editing Guidance
 
