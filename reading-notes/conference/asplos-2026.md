@@ -59,7 +59,6 @@ Homepage: [https://www.asplos-conference.org/asplos2026/](https://www.asplos-con
       * SJTU & CUHK
       * Introduce an MoE inference system with adaptive-precision expert offloading.
       * Jointly tune expert offloading and precision to reduce memory pressure during serving.
-  * Decode Optimization
   * Compression
     * ZipServ: Fast and Memory-Efficient LLM Inference with Hardware-Aware Lossless Compression \[[Paper](https://dl.acm.org/doi/10.1145/3779212.3790250)] \[[arXiv](https://arxiv.org/abs/2603.17435)] \[[Code](https://github.com/xxyux/ZipServ)]
       * HKUST-GZ & HIT-SZ & HKUST
@@ -150,12 +149,12 @@ Homepage: [https://www.asplos-conference.org/asplos2026/](https://www.asplos-con
     * Exploit dynamic sparsity to accelerate large-scale video DiT training.
     * Use hybrid sparsity-aware context parallelism to rebalance workloads under heterogeneous attention sparsity.
 * Diffusion Model Serving
-  * TetriServe: Efficiently Serving Mixed DiT Workloads \[[Paper](https://dl.acm.org/doi/10.1145/3779212.3790233)] \[[Paper PDF](https://symbioticlab.org/publications/files/tetriserve%3Aasplos26/tetriserve-asplos26.pdf)] \[[arXiv](https://arxiv.org/abs/2602.05116)]
+  * TetriServe: Efficiently Serving Mixed DiT Workloads \[[Paper](https://dl.acm.org/doi/10.1145/3779212.3790233)] \[[arXiv](https://arxiv.org/abs/2602.05116)] \[[Code](https://github.com/DiT-Serving/TetriServe)]
     * UMich & UW-Madison & NTU
     * Present a serving system for mixed DiT workloads.
     * Coordinate scheduling and batching across heterogeneous diffusion requests in a shared runtime.
 * Mixture-of-Diffusion Models
-  * MoDM: Efficient Serving for Image Generation via Mixture-of-Diffusion Models \[[Paper](https://dl.acm.org/doi/10.1145/3760250.3762220)]
+  * MoDM: Efficient Serving for Image Generation via Mixture-of-Diffusion Models \[[Paper](https://dl.acm.org/doi/10.1145/3760250.3762220)] \[[Code](https://github.com/stsxxx/MoDM)]
     * UMich & Intel Labs
     * Introduce mixture-of-diffusion models for image generation serving.
     * Use specialization across diffusion sub-models to improve efficiency and quality-cost tradeoffs.
