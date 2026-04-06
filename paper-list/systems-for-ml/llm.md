@@ -36,7 +36,7 @@ I am actively maintaining this list.
   * CMU & PKU & CUHK
 * Fast Distributed Inference Serving for Large Language Models (arXiv 2305.05920) \[[Paper](https://arxiv.org/abs/2305.05920)]
   * PKU
-  * Skip-join multi-level feedback queue scheduling instead of first-come-frist-serve.
+  * Skip-join multi-level feedback queue scheduling instead of first-come-first-serve.
   * Proactive KV cache swapping.
   * Compared to Orca
 * AlpaServe: Statistical Multiplexing with Model Parallelism for Deep Learning Serving ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://arxiv.org/abs/2302.11665)] \[[Code](https://github.com/alpa-projects/mms)]
