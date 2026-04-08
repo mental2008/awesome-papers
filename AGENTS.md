@@ -9,10 +9,12 @@ For general GitBook syntax, custom blocks, frontmatter, configuration, and platf
 * `./skills/gitbook-skill.md`
 * `./skills/affiliation-abbreviations.md` for common institution-name abbreviations used in this repository
 * `./skills/conference-papers-skill.md` for updating conference venue pages and curating accepted papers based on the repository's focus
+* `./skills/git-workflow-skill.md` for repository-specific Git workflow, change-summary flow, and commit-message conventions
 
 Treat `skills/gitbook-skill.md` as the default GitBook skill for this repository. Do not duplicate its generic guidance here unless the repository intentionally overrides it.
 Default to the abbreviations in `skills/affiliation-abbreviations.md` when writing affiliation lines in notes and paper lists.
 Use `skills/conference-papers-skill.md` when updating `reading-notes/conference/` pages, syncing official accepted lists, or deciding which conference papers should be curated into a venue page.
+Use `skills/git-workflow-skill.md` when summarizing pending changes, proposing commit messages, creating commits, or pushing to the remote branch.
 
 ## Repo Nature
 
@@ -165,6 +167,10 @@ Practical conventions:
 * prefer this resource-link order when available:
   * `Personal Notes`, `Paper`, `arXiv`, `Code`, `Docs`, `Homepage`, `Slides`, `Artifact`, `Benchmark`, `Trace`, `Video`, `Blog`
 * keep the affiliation as a separate bullet line directly under the title line
+* within the same section or subsection of a `paper-list/` page, sort papers by publication time in reverse chronological order by default
+  * use conference/journal publication time when available
+  * for arXiv-only papers, use the arXiv posting time
+  * if a page already has a clear local ordering convention, preserve it unless the user asks to reorder
 * use 1 to 3 short summary bullets only when they add real value
 * preserve emphasis already common in the repo for standout signals
   * examples: `**Best Paper Award**`, system names such as `**Sarathi-Serve**`
@@ -268,14 +274,7 @@ Avoid treating this repo like an application codebase. The primary quality bar h
 
 ## Commit Workflow
 
-For this repository, use the following commit workflow:
-
-* When the user says "总结一下这次的改动" or asks for a summary of the current changes, first provide:
-  * a concise change summary
-  * a proposed git commit message that records the substance of the changes
-* Do not create the commit until the user confirms the summary/message or explicitly says the changes are OK.
-* After the user confirms, create the local commit and then push it to the remote branch.
-* Do not split commit and push into two separate confirmation steps unless the user explicitly asks for that.
+For repository-specific Git workflow, change-summary behavior, and commit-message conventions, use `skills/git-workflow-skill.md`.
 
 The intended sequence is:
 
