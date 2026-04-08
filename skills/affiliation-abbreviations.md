@@ -51,6 +51,7 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * University of Science and Technology of China -> USTC
 * University of Virginia -> UVA
 * University of Washington -> UW
+* Xi'an Jiaotong University -> XJTU
 * Zhejiang University -> ZJU
 
 ## Usage Notes
