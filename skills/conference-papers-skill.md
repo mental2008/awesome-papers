@@ -151,6 +151,7 @@ This section is the maintained reference for major directions and their preferre
 
 * `LLM Training`
   * `MoE Training`
+  * `Cross-Cluster Training`
   * `LoRA Fine-Tuning`
   * `Memory and Data Pipeline`
   * `Scheduling and Parallelism`
@@ -160,6 +161,7 @@ This section is the maintained reference for major directions and their preferre
   * `Training Monitoring and Diagnosis`
 * `LLM Inference`
   * `LLM-based Applications`
+  * `Workload Characterization`
   * `Retrieval-Augmented Generation (RAG)`
   * `Request Scheduling`
   * `KV Cache Management`

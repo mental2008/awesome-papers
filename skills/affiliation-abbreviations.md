@@ -25,7 +25,9 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * Microsoft Research India -> MSR India
 * Microsoft Research Asia -> MSRA
 * Nanjing University -> NJU
+* Nanyang Technological University -> NTU
 * National University of Singapore -> NUS
+* National University of Defense Technology -> NUDT
 * North Carolina State University -> NCSU
 * Peking University -> PKU
 * Pennsylvania State University -> Penn State
