@@ -9,7 +9,7 @@ Papers on using LLMs or agents for kernel generation, tensor program generation,
   * Introduce an autonomous GPU kernel optimizer that starts from end-to-end PyTorch models and iteratively optimizes the most impactful kernels.
   * Use Amdahl's law to rank kernel opportunities and a five-stage correctness pipeline to validate candidate optimizations.
   * Report strong kernel-level and end-to-end model speedups across matmul, attention, convolution, and MLP workloads on H100 GPUs.
-* Towards Cold-Start Drafting and Continual Refining: A Value-Driven Memory Approach with Application to NPU Kernel Synthesis (arXiv:2603.10846) \[[arXiv](https://arxiv.org/abs/2603.10846)] \[[Homepage](https://evokernel.zhuo.li/)]
+* Towards Cold-Start Drafting and Continual Refining: A Value-Driven Memory Approach with Application to NPU Kernel Synthesis (arXiv:2603.10846) \[[arXiv](https://arxiv.org/abs/2603.10846)] \[[Homepage](https://evokernel.zhuo.li/)] \[[Dataset](https://huggingface.co/datasets/noahli/EvoKernel)]
   * SJTU & Shanghai AI Lab & MemTensor
   * Introduce **EvoKernel**, a self-evolving agentic framework for NPU kernel synthesis in data-scarce programming domains.
   * Formulate synthesis as a memory-based reinforcement learning task with value-driven retrieval and cross-task memory sharing for cold-start drafting and continual latency refinement.
@@ -27,6 +27,11 @@ Papers on using LLMs or agents for kernel generation, tensor program generation,
 
 ## Benchmarks
 
+* SOL-ExecBench: Speed-of-Light Benchmarking for Real-World GPU Kernels Against Hardware Limits (arXiv:2603.19173) \[[arXiv](https://arxiv.org/abs/2603.19173)] \[[Code](https://github.com/NVIDIA/SOL-ExecBench)] \[[Benchmark](https://research.nvidia.com/benchmarks/sol-execbench)]
+  * NVIDIA
+  * Present a benchmark of 235 CUDA kernel optimization problems extracted from 124 production and emerging AI models, targeting NVIDIA Blackwell GPUs.
+  * Measure candidate kernels against analytically derived Speed-of-Light bounds via **SOLAR**, using a SOL Score that quantifies how much of the remaining gap to hardware-efficient execution is closed.
+  * Provide a sandboxed evaluation harness with GPU clock locking, L2 cache clearing, isolated subprocess execution, and static-analysis-based checks against reward hacking.
 * TritonBench: Benchmarking Large Language Model Capabilities for Generating Triton Operators (arXiv:2502.14752) \[[arXiv](https://arxiv.org/abs/2502.14752)] \[[Benchmark](https://github.com/thunlp/TritonBench)]
   * THU-NLP
   * Present the first comprehensive benchmark for Triton operator generation.
