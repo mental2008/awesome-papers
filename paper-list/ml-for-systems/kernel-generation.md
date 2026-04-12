@@ -4,6 +4,11 @@ Papers on using LLMs or agents for kernel generation, tensor program generation,
 
 ## Agent-Based Kernel Generation
 
+* KernelEvolve: Scaling Agentic Kernel Coding for Heterogeneous AI Accelerators at Meta (ISCA 2026) \[[arXiv](https://arxiv.org/abs/2512.23236)] \[[Blog](https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/)]
+  * Meta
+  * Present **KernelEvolve**, an agentic kernel coding framework that automates kernel generation and optimization from kernel specifications for recommendation workloads across heterogeneous accelerators.
+  * Search over kernels across multiple programming abstractions, from Triton and CuTe DSL to low-level hardware-agnostic languages, using graph-based search with runtime-aware retrieval-augmented prompt synthesis.
+  * Validate 100% pass rates on all 250 KernelBench problems and on 160 PyTorch ATen operators across NVIDIA GPUs, AMD GPUs, and Meta accelerators, while reducing kernel development time from weeks to hours.
 * AutoKernel: Autonomous GPU Kernel Optimization via Iterative Agent-Driven Search (arXiv:2603.21331) \[[arXiv](https://arxiv.org/abs/2603.21331)] \[[Code](https://github.com/RightNow-AI/autokernel)]
   * RightNow AI
   * Introduce an autonomous GPU kernel optimizer that starts from end-to-end PyTorch models and iteratively optimizes the most impactful kernels.
