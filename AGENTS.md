@@ -10,11 +10,13 @@ For general GitBook syntax, custom blocks, frontmatter, configuration, and platf
 * `./skills/affiliation-abbreviations.md` for common institution-name abbreviations used in this repository
 * `./skills/conference-papers-skill.md` for updating conference venue pages and curating accepted papers based on the repository's focus
 * `./skills/git-workflow-skill.md` for repository-specific Git workflow, change-summary flow, and commit-message conventions
+* `./skills/research-radar-skill.md` for conservatively maintained, direction-specific scholar seeds when checking whether a topic has new papers
 
 Treat `skills/gitbook-skill.md` as the default GitBook skill for this repository. Do not duplicate its generic guidance here unless the repository intentionally overrides it.
 Default to the abbreviations in `skills/affiliation-abbreviations.md` when writing affiliation lines in notes and paper lists.
 Use `skills/conference-papers-skill.md` when updating `reading-notes/conference/` pages, syncing official accepted lists, or deciding which conference papers should be curated into a venue page.
 Use `skills/git-workflow-skill.md` when summarizing pending changes, proposing commit messages, creating commits, or pushing to the remote branch.
+Use `skills/research-radar-skill.md` when surveying whether a research direction has newly appeared papers or refreshing an existing `paper-list/` page, and treat its scholar seeds as a small, explicitly confirmed shortlist rather than an exhaustive roster.
 
 ## Repo Nature
 
