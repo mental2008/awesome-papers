@@ -42,6 +42,8 @@
 
 * [Conference](reading-notes/conference/README.md)
   * [OSDI 2026](reading-notes/conference/osdi-2026.md)
+  * [ISCA 2026](reading-notes/conference/isca-2026/README.md)
+    * [KernelEvolve: Scaling Agentic Kernel Coding for Heterogeneous AI Accelerators at Meta](reading-notes/conference/isca-2026/kernelevolve.md)
   * [MLSys 2026](reading-notes/conference/mlsys-2026.md)
   * [NSDI 2026](reading-notes/conference/nsdi-2026.md)
   * [EuroSys 2026](reading-notes/conference/eurosys-2026.md)

@@ -4,11 +4,21 @@ Papers on using LLMs or agents for kernel generation, tensor program generation,
 
 ## Agent-Based Kernel Generation
 
-* KernelEvolve: Scaling Agentic Kernel Coding for Heterogeneous AI Accelerators at Meta (ISCA 2026) \[[arXiv](https://arxiv.org/abs/2512.23236)] \[[Blog](https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/)]
+* KernelEvolve: Scaling Agentic Kernel Coding for Heterogeneous AI Accelerators at Meta (ISCA 2026) \[[Personal Notes](../../reading-notes/conference/isca-2026/kernelevolve.md)] \[[arXiv](https://arxiv.org/abs/2512.23236)] \[[Blog](https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/)]
   * Meta
   * Present **KernelEvolve**, an agentic kernel coding framework that automates kernel generation and optimization from kernel specifications for recommendation workloads across heterogeneous accelerators.
   * Search over kernels across multiple programming abstractions, from Triton and CuTe DSL to low-level hardware-agnostic languages, using graph-based search with runtime-aware retrieval-augmented prompt synthesis.
   * Validate 100% pass rates on all 250 KernelBench problems and on 160 PyTorch ATen operators across NVIDIA GPUs, AMD GPUs, and Meta accelerators, while reducing kernel development time from weeks to hours.
+* Improving Efficiency of GPU Kernel Optimization Agents using a Domain-Specific Language and Speed-of-Light Guidance (arXiv:2603.29010) \[[arXiv](https://arxiv.org/abs/2603.29010)]
+  * NVIDIA
+  * Introduce two efficiency principles for LLM-based GPU kernel optimization agents: a compact domain-specific language and Speed-of-Light (SOL) guidance.
+  * Implement these ideas in **muCUTLASS**, a CUTLASS-backed DSL that exposes kernel configuration, epilogue fusion, and multi-stage pipeline choices while SOL analysis steers search, budgets trials, and flags benchmark gaming.
+  * On 59 KernelBench problems, moving from low-level code generation to DSL code raises GPT-5-mini from a 0.40x regression to a 1.27x speedup over PyTorch; adding SOL-guided steering increases this to 1.56x while SOL-guided budgeting saves 19-43% of tokens.
+* AVO: Agentic Variation Operators for Autonomous Evolutionary Search (arXiv:2603.24517) \[[arXiv](https://arxiv.org/abs/2603.24517)]
+  * NVIDIA
+  * Introduce **AVO**, a family of evolutionary variation operators that replaces fixed mutation, crossover, and hand-designed heuristics with autonomous coding agents.
+  * Treat variation as a self-directed agent loop that consults the current lineage, a domain-specific knowledge base, and execution feedback to propose, repair, critique, and verify kernel edits.
+  * Run 7 days of autonomous evolution on attention kernels for NVIDIA Blackwell B200 GPUs, outperforming cuDNN by up to 3.5% and FlashAttention-4 by up to 10.5%, with additional transfer gains on grouped-query attention after 30 minutes of adaptation.
 * AutoKernel: Autonomous GPU Kernel Optimization via Iterative Agent-Driven Search (arXiv:2603.21331) \[[arXiv](https://arxiv.org/abs/2603.21331)] \[[Code](https://github.com/RightNow-AI/autokernel)]
   * RightNow AI
   * Introduce an autonomous GPU kernel optimizer that starts from end-to-end PyTorch models and iteratively optimizes the most impactful kernels.

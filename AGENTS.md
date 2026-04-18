@@ -83,6 +83,13 @@ If you introduce a brand new venue/year page, usually update:
 
 When the official conference website is available, infer `When`, `Where`, homepage, and similar venue metadata directly from the official site instead of leaving placeholders like `TBD`.
 
+For conference metadata placement:
+
+* keep `When` and `Where` in `reading-notes/conference/README.md` or the relevant parent conference index
+* default to **not** repeating `When` or `Where` inside the per-conference venue page's `## Meta Info`
+* in the venue page itself, usually keep only `Homepage` plus paper-list/proceedings links and other page-local metadata
+* only duplicate `When` / `Where` inside a venue page when the user explicitly asks for it or when preserving a clear legacy local style is more important
+
 When updating conference entries in `reading-notes/conference/README.md`, set the `Remarks` field relative to the current date:
 
 * use `Incoming` for conferences that have not started yet
@@ -132,6 +139,24 @@ Typical structure:
 * background / challenges / designs / implementation / evaluation / limitations
 
 These pages are the most detailed content units in the repository.
+
+### Images and figures in `reading-notes/`
+
+When adding images to note pages or venue pages:
+
+* download the image into `.gitbook/assets/` instead of hotlinking the external URL in Markdown
+* use a stable, descriptive filename that matches the paper or figure content when possible
+  * examples: `SpotServe-overview.png`, `KernelEvolve-overview.png`
+* reference the image with a relative path from the current Markdown file to `.gitbook/assets/`
+  * examples: `../../../.gitbook/assets/SpotServe-overview.png`, `../../.gitbook/assets/Falcon-hardware-transport-layers.png`
+* prefer the GitBook-friendly figure form with caption for important architecture or result figures:
+
+```html
+<figure><img src="../../../.gitbook/assets/<image-file>.png" alt=""><figcaption><p>Short caption.</p></figcaption></figure>
+```
+
+* use plain Markdown image syntax such as `![caption](../../../.gitbook/assets/<image-file>.png)` only when the local page already uses that style and no explicit figure caption block is needed
+* keep the image path relative; do not use absolute filesystem paths in committed Markdown
 
 ### Topic pages in `paper-list/`
 

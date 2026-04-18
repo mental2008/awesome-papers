@@ -79,6 +79,7 @@ When uncertain, prefer consistency with nearby pages like:
 2. Read the official source.
    * Use the official conference site, program, proceedings, or accepted paper list.
    * Infer metadata such as `Homepage`, `When`, `Where`, and paper-list links from the official source when available.
+   * When creating or updating a venue page, put `When` and `Where` in `reading-notes/conference/README.md` (or the relevant parent conference index) by default, and do not repeat them in the venue page unless the user asks or the local legacy style clearly expects it.
 3. Decide whether the task is:
    * preserving and extending an existing curated page
    * creating a new venue page
@@ -118,6 +119,12 @@ Typical conference page structure:
 * optional `### Acceptance Rate`
 * `## Papers`
 * optional `## Acronyms`
+
+Default metadata placement:
+
+* `When` and `Where` belong in `reading-notes/conference/README.md` or the relevant parent conference index
+* per-conference venue pages should usually omit `When` and `Where` from `## Meta Info`
+* venue pages should keep page-local metadata such as `Homepage`, `Paper list`, `Program`, `Proceedings`, and `Acceptance Rate`
 
 For proceedings-heavy pages, use the current `reading-notes/conference/asplos-2026.md` style.
 

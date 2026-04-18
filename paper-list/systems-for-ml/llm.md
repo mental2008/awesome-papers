@@ -101,6 +101,11 @@ I am actively maintaining this list.
 
 ### Prefill-Decode (PD) Disaggregation
 
+* Prefill-as-a-Service: KVCache of Next-Generation Models Could Go Cross-Datacenter (arXiv:2604.15039) \[[arXiv](https://arxiv.org/abs/2604.15039)]
+  * Moonshot AI & THU
+  * Introduce **PrfaaS**, a cross-datacenter serving architecture that selectively offloads long-context prefills to standalone compute-dense clusters and transfers the resulting KVCache over commodity Ethernet to local PD clusters for decode.
+  * Combine model-side KV efficiency with system-side selective offloading, bandwidth-aware scheduling, and cache-aware request placement instead of fully externalizing all prefill requests.
+  * Remove the requirement that heterogeneous accelerators share a single low-latency RDMA fabric; on an internal 1T-parameter hybrid model, improve serving throughput by 54% over homogeneous PD and 32% over a naive heterogeneous baseline.
 * Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving (FAST 2025) \[[Paper](https://www.usenix.org/conference/fast25/presentation/qin)] \[[arXiv](https://arxiv.org/abs/2407.00079)] \[[Slides](https://www.usenix.org/system/files/fast25_slides-qin.pdf)] \[[Code](https://github.com/kvcache-ai/Mooncake)]
   * Mootshot AI & Tsinghua
   * **Best Paper Award**

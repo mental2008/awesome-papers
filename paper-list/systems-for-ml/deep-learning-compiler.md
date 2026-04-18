@@ -13,6 +13,21 @@ No active maintenance.
 
 ## Tensor Program Generation
 
+### Megakernel Compilation
+
+* Event Tensor: A Unified Abstraction for Compiling Dynamic Megakernel ([MLSys 2026](../../reading-notes/conference/mlsys-2026.md)) \[[Paper](https://mlsys.org/virtual/2026/poster/3592)] \[[arXiv](https://arxiv.org/abs/2604.13327)]
+  * CMU
+  * Introduce **Event Tensor**, a unified compiler abstraction that represents tiled-task dependencies as first-class tensors for dynamic megakernels.
+  * Support both symbolic-shape dynamism and data-dependent dynamism, then lower the abstraction through the **Event Tensor Compiler (ETC)** with static and dynamic scheduling transformations.
+  * Achieve state-of-the-art LLM serving latency, including up to 1.40x speedup on fused GEMM and Reduce-Scatter kernels, up to 1.23x on MoE workloads, and up to 3.5x lower engine warmup overhead.
+* Mirage Persistent Kernel: A Compiler and Runtime for Mega-Kernelizing Tensor Programs (arXiv:2512.22219) \[[arXiv](https://arxiv.org/abs/2512.22219)] \[[Code](https://github.com/mirage-project/mirage)] \[[Homepage](https://catalyst.cs.cmu.edu/projects/mpk.html)]
+  * CMU
+  * Introduce **Mirage Persistent Kernel (MPK)**, the first compiler and runtime system that automatically transforms multi-GPU model inference into a single high-performance megakernel.
+  * Use an SM-level graph representation and an in-kernel parallel runtime with decentralized scheduling to enable cross-operator software pipelining and fine-grained kernel overlap.
+  * Reduce end-to-end LLM inference latency by up to 1.7x over kernel-per-operator serving systems while preserving flexible tensor-programming workflows.
+
+### General Tensor Program Generation
+
 * Cocktailer: Analyzing and Optimizing Dynamic Control Flow in Deep Learning ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://www.usenix.org/conference/osdi23/presentation/zhang-chen)]
   * THU & MSRA
   * Co-optimize the execution of control flow and data flow.
