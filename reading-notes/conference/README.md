@@ -6,9 +6,10 @@
 | :-----------------------------: | :----------------: | :------------------------------------------------: | ------------------------------------------------ |
 |    [OSDI 2026](osdi-2026.md)    |   Jul 13-15, 2026  |                  Seattle, WA, USA                  | Incoming                                         |
 |    [ISCA 2026](isca-2026/)      |  Jun 27-Jul 1, 2026|      Raleigh Convention Center, Raleigh, NC, USA   | Incoming                                         |
-|   [MLSys 2026](mlsys-2026.md)   |   May 17-22, 2026  |   Hyatt Regency Bellevue, Bellevue, WA, USA        | Incoming                                         |
-|    [NSDI 2026](nsdi-2026.md)    |    May 4-6, 2026   |   Hyatt Regency Lake Washington, Renton, WA, USA   | Incoming                                         |
-| [EuroSys 2026](eurosys-2026.md) |   Apr 27-30, 2026  |                   Edinburgh, UK                    | Incoming                                         |
+|    [CAIS 2026](cais-2026.md)    |  May 26-29, 2026   |                  San Jose, CA, USA                 | 🧐                                               |
+|   [MLSys 2026](mlsys-2026.md)   |   May 17-22, 2026  |   Hyatt Regency Bellevue, Bellevue, WA, USA        |                                                  |
+|    [NSDI 2026](nsdi-2026.md)    |    May 4-6, 2026   |   Hyatt Regency Lake Washington, Renton, WA, USA   | 🧐                                               |
+| [EuroSys 2026](eurosys-2026.md) |   Apr 27-30, 2026  |                   Edinburgh, UK                    | 😎                                               |
 |  [ASPLOS 2026](asplos-2026.md)  |   Mar 22-26, 2026  |                   Pittsburgh, USA                  | 🧐                                               |
 |    [HPCA 2026](hpca-2026.md)    | Jan 31-Feb 4, 2026 |                Sydney, Australia                   | 🧐 Co-located with [PPoPP 2026](ppopp-2026.md)  |
 |   [PPoPP 2026](ppopp-2026.md)   | Jan 31-Feb 4, 2026 |                Sydney, Australia                   | 🧐 Co-located with [HPCA 2026](hpca-2026.md)    |

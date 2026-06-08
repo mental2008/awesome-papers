@@ -19,6 +19,7 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * Hong Kong University of Science and Technology -> HKUST
 * Hong Kong University of Science and Technology (Guangzhou) -> HKUST-GZ
 * Illinois Institute of Technology -> IIT
+* Imperial College London -> ICL
 * Institute of Computing Technology, Chinese Academy of Sciences -> ICT, CAS
 * Institute of Software, Chinese Academy of Sciences -> IS, CAS
 * Microsoft Research -> MSR
