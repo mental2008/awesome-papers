@@ -20,6 +20,10 @@
 * [How to Read a Paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf), by Srinivasan Keshav \[[Personal Note](../reading-notes/journal/ccr/2007/how-to-read-a-paper.md)]
 * [Efficient Reading of Papers in Science and Technology](https://www.cs.columbia.edu/~hgs/netbib/efficientReading.pdf), by Michael J. Hanson and Dylan J. McNamee
 
+## Performance Evaluation
+
+* [Always Measure One Level Deeper](https://cacm.acm.org/research/always-measure-one-level-deeper/), by John Ousterhout
+
 ## Writing a Paper
 
 * [How (and How Not) to Write a Good Systems Paper](https://www.usenix.org/legacy/publications/library/proceedings/dsl97/good_paper.html), by Roy Levin and David D. Redell (9th SOSP Program Committee Co-chairmen)
