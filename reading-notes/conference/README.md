@@ -5,6 +5,7 @@
 |            Conference           |        When        |                       Where                        | Remarks                                          |
 | :-----------------------------: | :----------------: | :------------------------------------------------: | ------------------------------------------------ |
 |    [OSDI 2026](osdi-2026.md)    |   Jul 13-15, 2026  |                  Seattle, WA, USA                  | Incoming                                         |
+|    [ICML 2026](icml-2026.md)    |   Jul 6-11, 2026   | COEX Convention & Exhibition Center, Seoul, South Korea | 🧐                                          |
 |    [ISCA 2026](isca-2026/)      |  Jun 27-Jul 1, 2026|      Raleigh Convention Center, Raleigh, NC, USA   | Incoming                                         |
 |    [CAIS 2026](cais-2026.md)    |  May 26-29, 2026   |                  San Jose, CA, USA                 | 🧐                                               |
 |   [MLSys 2026](mlsys-2026.md)   |   May 17-22, 2026  |   Hyatt Regency Bellevue, Bellevue, WA, USA        |                                                  |

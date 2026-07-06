@@ -6,7 +6,7 @@ I am actively maintaining this list.
 
 ## LLM Training
 
-### Hybrid parallelism
+### Hybrid Parallelism
 
 * Accelerating the Training of Large Language Models using Efficient Activation Rematerialization and Optimal Hybrid Parallelism ([ATC 2024](../../reading-notes/conference/atc-2024.md)) \[[Paper](https://www.usenix.org/conference/atc24/presentation/yuan)] \[[Code](https://github.com/kwai/Megatron-Kwai/tree/atc24ae/examples/atc24)]
   * Kuaishou
@@ -14,7 +14,7 @@ I am actively maintaining this list.
   * UC Berkeley & AWS & Google & SJTU & CMU & Duke
   * Generalize the search through _parallelism strategies_.
 
-### Fault tolerance
+### Fault Tolerance
 
 * Oobleck: Resilient Distributed Training of Large Models Using Pipeline Templates ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613152)] \[[arXiv](https://browse.arxiv.org/abs/2309.08125)] \[[Code](https://github.com/SymbioticLab/Oobleck)]
   * UMich SymbioticLab & AWS & PKU
@@ -63,6 +63,27 @@ I am actively maintaining this list.
   * Co-design the front-end programming interface and back-end serving runtime
   * **SGLang**; SGVM w/ **RadixAttention**
   * Reuse KV cache across multiple calls and programs
+
+### Agentic Inference
+
+* ThunderAgent: A Fast, Simple, and Program-Aware Agentic Inference System ([ICML 2026](../../reading-notes/conference/icml-2026.md)) \[[Paper](https://openreview.net/forum?id=kR4iOTaAOJ)] \[[arXiv](https://arxiv.org/abs/2602.13692)] \[[Code](https://github.com/ThunderAgent-org/ThunderAgent)] \[[Blog](https://thunderagent.ai)]
+  * GaTech & UIUC & CMU & Together AI
+  * **Spotlight**
+  * Introduce **ThunderAgent**, an agentic inference and rollout system that represents workflows as LLM Programs with unified KV-cache, state, and tool-resource metadata.
+  * Use program-aware scheduling and tool resource management to improve KV-cache reuse, reduce memory imbalance, and prepare tool environments asynchronously.
+
+### Workload Characterization
+
+* TraceLab: Characterizing Coding Agent Workloads for LLM Serving (arXiv:2606.30560) \[[arXiv](https://arxiv.org/abs/2606.30560)] \[[Code](https://github.com/uw-syfi/TraceLab)] \[[Homepage](https://tracelab.cs.washington.edu)] \[[Blog](https://syfi.cs.washington.edu/blog/2026-06-25-tracelab/)]
+  * UW & Wuhan University of Technology & SJTU
+  * Release a coding-agent trace with 4,265 sessions, 357,161 agent steps, and 432,510 tool calls from Claude Code and Codex usage.
+  * Characterize long autonomous loops, long contexts with short outputs, heavy-tailed tool calls, and high but imperfect prefix-cache hit rates.
+  * Identify serving opportunities around lower-overhead tool calling, append-length-aware prefill, semantic-aware tool-latency prediction, and KV-cache management around human-paced gaps.
+* Measuring Agents in Production ([ICML 2026](../../reading-notes/conference/icml-2026.md)) \[[Paper](https://openreview.net/forum?id=mWxEAgz3xu)] \[[arXiv](https://arxiv.org/abs/2512.04123)]
+  * UC Berkeley & Intesa Sanpaolo & UIUC & Stanford & IBM Research
+  * **Oral**
+  * Present **MAP**, a systematic study of production LLM agents using 20 interviews and a survey of 86 deployed-systems practitioners across 26 domains.
+  * Find that production agents often use simple, controllable approaches: bounded step counts before human intervention, off-the-shelf prompting, and human evaluation.
 
 ### Retrieval-Augmented Generation (RAG)
 
