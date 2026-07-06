@@ -4,6 +4,10 @@
 
 ## Core Methods
 
+* MOPD: Multi-Teacher On-Policy Distillation for Capability Integration in LLM Post-Training (arXiv:2606.30406) \[[arXiv](https://arxiv.org/abs/2606.30406)]
+  * PKU & Xiaomi LLM Core & HKU & RUC
+  * Integrates multiple domain RL teachers by distilling each teacher on student-generated rollouts with dense token-level supervision.
+  * Outperforms Mix-RL, Cascade RL, off-policy finetuning, and parameter merging on Qwen3-30B-A3B; reports deployment in MiMo-V2-Flash.
 * DistiLLM-2: A Contrastive Approach Boosts the Distillation of LLMs (ICML 2025) \[[arXiv](https://arxiv.org/abs/2503.07067)]
   * KAIST & MSR
   * Couples loss formulation to data source (different loss on teacher- vs. student-generated tokens); contrastive objective compounds OPD gains.
@@ -22,8 +26,12 @@
   * Replace forward-KL (mode-covering) with **reverse-KL** optimized via policy-gradient on student rollouts.
   * Mode-seeking reduces hallucination and exposure bias; the first widely-cited OPD recipe for modern LLMs.
 
-## Analysis of On-Policy Data
+## Analysis
 
+* Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes (arXiv:2603.25562) \[[arXiv](https://arxiv.org/abs/2603.25562)] \[[Code](https://github.com/hhh675597/revisiting_opd)] \[[Blog](https://yuqianfu.notion.site/revisiting-opd)]
+  * CASIA & UCAS & Fudan
+  * Analyzes why sampled-token OPD is brittle: imbalanced token-level signal, unreliable teacher guidance on student-generated prefixes, and tokenizer / special-token mismatch.
+  * Proposes teacher top-K local support matching with truncated reverse-KL, top-p rollout sampling, and special-token masking for more stable OPD.
 * Retaining by Doing: The Role of On-Policy Data in Mitigating Forgetting (arXiv:2510.18874) \[[arXiv](https://arxiv.org/abs/2510.18874)]
   * Princeton
   * On-policy data is the active ingredient in RL's forgetting resistance; on-policy SFT alone closes much of the gap to full RL.
