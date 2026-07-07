@@ -15,6 +15,7 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * Carnegie Mellon University -> CMU
 * Chinese Academy of Sciences -> CAS
 * George Mason University -> GMU
+* Guangdong University of Technology -> GDUT
 * Harbin Institute of Technology (Shenzhen) -> HIT-SZ
 * Hong Kong University of Science and Technology -> HKUST
 * Hong Kong University of Science and Technology (Guangzhou) -> HKUST-GZ
@@ -35,6 +36,7 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * Rensselaer Polytechnic Institute -> RPI
 * Rice University -> Rice
 * Shanghai Jiao Tong University -> SJTU
+* Southeast University -> SEU
 * Stanford University -> Stanford
 * Sun Yat-sen University -> SYSU
 * Tianjin University -> TJU
@@ -49,6 +51,7 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * University of Hong Kong -> HKU
 * University of Illinois Urbana-Champaign -> UIUC
 * University of Massachusetts Amherst -> UMass Amherst
+* University of Manchester -> Manchester
 * University of Michigan -> UMich
 * University of Pennsylvania -> UPenn
 * University of Science and Technology of China -> USTC

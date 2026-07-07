@@ -2,6 +2,7 @@
 
 ## Training Methods
 
+* [Continual Pre-training](cpt.md)
 * [On-Policy Distillation](opd.md)
 
 ## Models

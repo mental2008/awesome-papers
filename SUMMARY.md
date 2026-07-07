@@ -21,6 +21,7 @@
 * [ML for Systems](paper-list/ml-for-systems/README.md)
   * [Kernel Generation](paper-list/ml-for-systems/kernel-generation.md)
 * [Artificial Intelligence (AI)](paper-list/artificial-intelligence/README.md)
+  * [Continual Pre-training](paper-list/artificial-intelligence/cpt.md)
   * [On-Policy Distillation](paper-list/artificial-intelligence/opd.md)
   * [Diffusion Models](paper-list/artificial-intelligence/diffusion-models.md)
   * [Language Models](paper-list/artificial-intelligence/language-models.md)
