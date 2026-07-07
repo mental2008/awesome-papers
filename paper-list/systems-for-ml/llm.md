@@ -63,7 +63,7 @@ I am actively maintaining this list.
   * NTU & HPC-AI Tech
   * Axis: **Speculative decoding for RL**
   * Addresses drafter staleness and draft-verification misalignment when integrating speculative decoding into RL systems.
-* Flexes: Taming Long-Tail Rollouts for RL Post-Training with Tail Batching ([NSDI 2026](../../reading-notes/conference/nsdi-2026.md)) \[[Paper](https://www.usenix.org/conference/nsdi26/presentation/gao-wei)] \[[arXiv](https://arxiv.org/abs/2509.21009)]
+* RollPacker: Taming Long-Tail Rollouts for RL Post-Training with Tail Batching ([NSDI 2026](../../reading-notes/conference/nsdi-2026.md)) \[[Paper](https://www.usenix.org/conference/nsdi26/presentation/gao-wei)] \[[arXiv](https://arxiv.org/abs/2509.21009)]
   * HKUST & Alibaba
   * Axis: **Rollout latency and long-tail mitigation**
   * Packs prompts with long-tail responses into tail batches while keeping most rollout rounds balanced and short.
