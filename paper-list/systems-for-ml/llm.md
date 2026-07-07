@@ -98,6 +98,10 @@ I am actively maintaining this list.
   * Meta
   * Axis: **Empirical reliability studies**
   * 16K-GPU training reliability is dominated by hardware failure attribution and mitigation; the contribution is a failure taxonomy and operational strategies rather than a new recovery mechanism.
+* Holmes: Localizing Irregularities in LLM Training with Mega-scale GPU Clusters ([NSDI 2025](../../reading-notes/conference/nsdi-2025.md)) \[[Paper](https://www.usenix.org/conference/nsdi25/presentation/yao)]
+  * FDU & Tencent & UChicago
+  * Axis: **Production reliability infrastructure**
+  * Silent irregular iterations can cost more training time than fail-stop failures; Holmes localizes them in real time using abnormal communication-operator detection, communication-operator graphs, and cross-iteration analysis.
 * MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs ([NSDI 2024](../../reading-notes/conference/nsdi-2024.md)) \[[Paper](https://www.usenix.org/conference/nsdi24/presentation/jiang-ziheng)] \[[Slides](https://www.usenix.org/system/files/nsdi24_slides-jiang_ziheng.pdf)] \[[Code](https://github.com/volcengine/veScale)]
   * ByteDance & PKU
   * Axis: **Production reliability infrastructure**
