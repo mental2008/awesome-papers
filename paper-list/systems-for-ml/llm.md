@@ -206,6 +206,10 @@ I am actively maintaining this list.
 
 ### KV Cache Management
 
+* Jenga: Effective Memory Management for Serving LLM with Heterogeneity ([SOSP 2025](../../reading-notes/conference/sosp-2025.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764823)] \[[arXiv](https://arxiv.org/abs/2503.18292)]
+  * THU & UChicago & UC Berkeley
+  * Heterogeneous embedding sizes, attention mechanisms, and token-dependency patterns in modern LLMs break fixed-page KV-cache assumptions and create fragmentation.
+  * Uses a two-level memory allocator with LCM-sized compatible pages and layer-specific caching/eviction policies for heterogeneous attention patterns.
 * Efficient Memory Management for Large Language Model Serving with PagedAttention ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613165)] \[[arXiv](https://browse.arxiv.org/abs/2309.06180)] \[[Code](https://github.com/vllm-project/vllm)] \[[Homepage](https://vllm.ai/)]
   * UC Berkeley & Stanford & UCSD
   * vLLM, PagedAttention
