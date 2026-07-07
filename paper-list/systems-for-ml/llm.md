@@ -14,15 +14,106 @@ I am actively maintaining this list.
   * UC Berkeley & AWS & Google & SJTU & CMU & Duke
   * Generalize the search through _parallelism strategies_.
 
-### Fault Tolerance
+### RL Post-Training
 
+{% hint style="info" %}
+**Reading map.** These works differ along six axes:
+
+* **Disaggregated RL systems**: split rollout, inference, environment, reward, and training stages across best-fit resources.
+* **Workflow scheduling and resource reallocation**: reshape RL pipelines or dynamically move compute, memory, communication, and parameters across roles.
+* **Rollout latency and long-tail mitigation**: predict, batch, reuse, or otherwise reduce long-tail rollout work.
+* **Speculative decoding for RL**: adapt draft-and-verify generation to RL training constraints such as drafter staleness and rollout distribution shift.
+* **Heterogeneous environments**: make RL training efficient across mixed GPU generations and hardware capabilities.
+* **Fault tolerance**: isolate and recover failures across trainer, rollout, and control-plane roles.
+{% endhint %}
+
+* RollArt: Disaggregated Multi-Task Agentic RL Training at Scale ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/gao)]
+  * HKUST & Alibaba & Tongyi Lab
+  * Axis: **Disaggregated RL systems**
+  * Maps agentic RL pipeline stages to best-fit hardware and coordinates prefill, decoding, environment, and reward workloads.
+* Weave: Efficient Co-Scheduling for Disaggregated RL Post-Training ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/wu-tianyuan)]
+  * HKUST & UIUC & Alibaba
+  * Axis: **Disaggregated RL systems**; **Workflow scheduling and resource reallocation**
+  * Reclaims dependency bubbles between rollout and training phases in disaggregated RL post-training.
+* RLinf: Flexible and Efficient Large-Scale Reinforcement Learning via Macro-to-Micro Flow Transformation ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/yu-chao)]
+  * THU & Infinigence-AI & PKU & UC Berkeley & Zhongguancun Academy & Beihang & SJTU
+  * Axis: **Workflow scheduling and resource reallocation**
+  * Transforms RL workflows from macro pipelines into micro flows to improve scheduling flexibility and hardware utilization.
+* DynaRL: Flexible and Dynamic Scheduling of Large-Scale Reinforcement Learning Training ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/wang-yuanqing)]
+  * PKU & Infinigence-AI & ICT, CAS & Beihang & THU & SJTU
+  * Axis: **Workflow scheduling and resource reallocation**
+  * Dynamically reallocates compute, memory, and communication resources across heterogeneous RL components.
+* Seer: Online Context Learning for Fast Synchronous LLM Reinforcement Learning ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/qin)]
+  * THU & Moonshot AI
+  * Axis: **Rollout latency and long-tail mitigation**
+  * Uses prompt-level context learning to predict rollout behavior and reduce long-tail latency in synchronous LLM RL.
+* RobustRL: Role-Based Fault Tolerance System for RL Post-Training ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/chen-zhenqian)]
+  * ZJU & SKLMEAC
+  * Axis: **Fault tolerance**
+  * Provides role-based fault isolation for trainer, rollout, and management failures during RL post-training.
+* Beat the long tail: Distribution-Aware Speculative Decoding for RL Training ([MLSys 2026](../../reading-notes/conference/mlsys-2026.md)) \[[Paper](https://openreview.net/forum?id=kMeqqPBjSl)]
+  * Together AI & Stanford & UCSD
+  * Axis: **Speculative decoding for RL**; **Rollout latency and long-tail mitigation**
+  * Identifies rollout length long-tail as a bottleneck and applies distribution-aware speculative decoding to accelerate generation.
+* HetRL: Efficient Reinforcement Learning for LLMs in Heterogeneous Environments ([MLSys 2026](../../reading-notes/conference/mlsys-2026.md)) \[[Paper](https://openreview.net/forum?id=LRLyuaz1W7)]
+  * Amazon
+  * Axis: **Heterogeneous environments**
+  * Optimizes LLM reinforcement learning across heterogeneous GPU environments with multi-generation hardware.
+* ReSpec: Towards Optimizing Speculative Decoding in Reinforcement Learning Systems ([MLSys 2026](../../reading-notes/conference/mlsys-2026.md)) \[[Paper](https://openreview.net/forum?id=HhDSxs7x2R)]
+  * NTU & HPC-AI Tech
+  * Axis: **Speculative decoding for RL**
+  * Addresses drafter staleness and draft-verification misalignment when integrating speculative decoding into RL systems.
+* Flexes: Taming Long-Tail Rollouts for RL Post-Training with Tail Batching ([NSDI 2026](../../reading-notes/conference/nsdi-2026.md)) \[[Paper](https://www.usenix.org/conference/nsdi26/presentation/gao-wei)] \[[arXiv](https://arxiv.org/abs/2509.21009)]
+  * HKUST & Alibaba
+  * Axis: **Rollout latency and long-tail mitigation**
+  * Packs prompts with long-tail responses into tail batches while keeping most rollout rounds balanced and short.
+* History Doesn't Repeat Itself but Rollouts Rhyme: Accelerating Reinforcement Learning with RhymeRL ([ASPLOS 2026](../../reading-notes/conference/asplos-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3779212.3790172)]
+  * SJTU & ByteDance
+  * Axis: **Rollout latency and long-tail mitigation**
+  * Exploits reusable structure across rollout histories to reduce redundant rollout work.
+* ReaL: Efficient RLHF Training of Large Language Models with Parameter Reallocation ([MLSys 2025](../../reading-notes/conference/mlsys-2025.md)) \[[Paper](https://mlsys.org/virtual/2025/poster/3228)] \[[arXiv](https://arxiv.org/abs/2406.14088)] \[[Code](https://github.com/openpsi-project/ReaLHF)]
+  * THU
+  * Axis: **Workflow scheduling and resource reallocation**
+
+### Reliability and Fault Tolerance
+
+{% hint style="info" %}
+**Reading map.** These works differ along four axes:
+
+* **Recovery mechanisms**: reduce lost work after failures through redundancy, checkpoint placement, or pre-planned reconfiguration.
+* **Production reliability infrastructure**: make failures observable, diagnosable, and routinely recoverable at 10K+ GPU scale.
+* **Empirical reliability studies**: characterize production failure modes and operational mitigations from large training runs.
+* **Workload resilience**: absorb dynamic workload variation before it turns into large efficiency loss or training instability.
+{% endhint %}
+
+* MegaScale-Omni: A Hyper-Scale, Workload-Resilient System for MultiModal LLM Training in Production ([EuroSys 2026](../../reading-notes/conference/eurosys-2026.md)) \[[Paper](https://doi.org/10.1145/3767295.3803587)] \[[arXiv](https://arxiv.org/abs/2605.08962)]
+  * SJTU & ByteDance
+  * Axis: **Workload resilience**
+  * MLLM training can lose efficiency even without hard failures when dynamic modality and length mixtures break static encoder-backbone parallelism; decouple encoder/LLM parallelism and rebalance data loading and resharding.
+* Robust LLM Training Infrastructure at ByteDance ([SOSP 2025](../../reading-notes/conference/sosp-2025.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764838)] \[[arXiv](https://arxiv.org/abs/2509.16293)]
+  * HKU & ByteDance Seed
+  * Axis: **Production reliability infrastructure**
+  * Large-scale LLM training needs training-aware fault management, not only generic cluster monitoring; exploit parallelism structure and training characteristics for high-capacity tolerance, fault demarcation, and localization.
+* Large-Scale AI Infra Reliability: Challenges, Strategies, and Llama 3 Training Experience (DSN-S 2025) \[[Paper](https://ieeexplore.ieee.org/document/11068359)]
+  * Meta
+  * Axis: **Empirical reliability studies**
+  * 16K-GPU training reliability is dominated by hardware failure attribution and mitigation; the contribution is a failure taxonomy and operational strategies rather than a new recovery mechanism.
+* MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs ([NSDI 2024](../../reading-notes/conference/nsdi-2024.md)) \[[Paper](https://www.usenix.org/conference/nsdi24/presentation/jiang-ziheng)] \[[Slides](https://www.usenix.org/system/files/nsdi24_slides-jiang_ziheng.pdf)] \[[Code](https://github.com/volcengine/veScale)]
+  * ByteDance & PKU
+  * Axis: **Production reliability infrastructure**
+  * Stability at 10K+ GPU scale is a full-stack property; deep observability across system components is needed to identify root causes and turn them into fault-tolerance and straggler-mitigation techniques.
 * Oobleck: Resilient Distributed Training of Large Models Using Pipeline Templates ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613152)] \[[arXiv](https://browse.arxiv.org/abs/2309.08125)] \[[Code](https://github.com/SymbioticLab/Oobleck)]
   * UMich SymbioticLab & AWS & PKU
+  * Axis: **Recovery mechanisms**
+  * Pre-generate heterogeneous pipeline templates and instantiate `f + 1` logically equivalent pipeline replicas, so failures can be handled by reconfiguration using already-replicated model states.
 * Gemini: Fast Failure Recovery in Distributed Training with In-Memory Checkpoints ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613145)]
   * Rice & AWS
+  * Axis: **Recovery mechanisms**
+  * Remote storage bandwidth makes checkpoint-based recovery slow; place checkpoints in aggregate host CPU memory and schedule checkpoint traffic to preserve training throughput.
 * Bamboo: Making Preemptible Instances Resilient for Affordable Training of Large DNNs ([NSDI 2023](../../reading-notes/conference/nsdi-2023/)) \[[Paper](https://www.usenix.org/conference/nsdi23/presentation/thorpe)] \[[Code](https://github.com/uclasystem/bamboo)]
   * UCLA & CMU & MSR & Princeton
-  * Resilient distributed training
+  * Axis: **Recovery mechanisms**
+  * Pipeline bubbles can hide redundant neighboring-layer computation, giving preemptible-instance training low-pause recovery without paying the full cost of frequent checkpointing.
 
 ## LLM Inference
 
@@ -233,3 +324,5 @@ I am actively maintaining this list.
 
 * LLM: Large Language Model
 * LoRA: Low-Rank Adaptation
+* RL: Reinforcement Learning
+* RLHF: Reinforcement Learning from Human Feedback

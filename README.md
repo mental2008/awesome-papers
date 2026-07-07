@@ -20,7 +20,7 @@ All views expressed here are my own.
 
 ## Changelogs
 
-* 07/2026: Organize the paper lists of [On-Policy Distillation](paper-list/artificial-intelligence/opd.md) and [Continual Pre-training](paper-list/artificial-intelligence/cpt.md); organize the papers of [MLSys 2026](reading-notes/conference/mlsys-2026.md) and [OSDI 2026](reading-notes/conference/osdi-2026.md).
+* 07/2026: Organize the paper lists of [On-Policy Distillation](paper-list/artificial-intelligence/opd.md) and [Continual Pre-training](paper-list/artificial-intelligence/cpt.md); organize the papers of [MLSys 2026](reading-notes/conference/mlsys-2026.md) and [OSDI 2026](reading-notes/conference/osdi-2026.md); update the paper list of [systems for LLMs](paper-list/systems-for-ml/llm.md).
 * 06/2026: Organize the papers of [CAIS 2026](reading-notes/conference/cais-2026.md).
 * 04/2026: Organize the papers of [ASPLOS 2026](reading-notes/conference/asplos-2026.md), [EuroSys 2026](reading-notes/conference/eurosys-2026.md), [NSDI 2026](reading-notes/conference/nsdi-2026.md); create the paper list of [Kernel Generation](paper-list/ml-for-systems/kernel-generation.md).
 * 01/2026: Organize the papers of [PPoPP 2026](reading-notes/conference/ppopp-2026.md), [HPCA 2026](reading-notes/conference/hpca-2026.md).
