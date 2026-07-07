@@ -43,6 +43,7 @@
 ## Reading Notes
 
 * [Conference](reading-notes/conference/README.md)
+  * [SOSP 2026](reading-notes/conference/sosp-2026.md)
   * [OSDI 2026](reading-notes/conference/osdi-2026.md)
   * [ICML 2026](reading-notes/conference/icml-2026.md)
   * [ISCA 2026](reading-notes/conference/isca-2026/README.md)
