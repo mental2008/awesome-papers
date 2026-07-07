@@ -55,6 +55,7 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * University of Michigan -> UMich
 * University of Pennsylvania -> UPenn
 * University of Science and Technology of China -> USTC
+* University of Toronto -> UofT
 * University of Virginia -> UVA
 * University of Washington -> UW
 * Xi'an Jiaotong University -> XJTU
