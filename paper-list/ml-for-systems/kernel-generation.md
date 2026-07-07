@@ -9,6 +9,16 @@ Papers on using LLMs or agents for kernel generation, tensor program generation,
   * Present **KernelEvolve**, an agentic kernel coding framework that automates kernel generation and optimization from kernel specifications for recommendation workloads across heterogeneous accelerators.
   * Search over kernels across multiple programming abstractions, from Triton and CuTe DSL to low-level hardware-agnostic languages, using graph-based search with runtime-aware retrieval-augmented prompt synthesis.
   * Validate 100% pass rates on all 250 KernelBench problems and on 160 PyTorch ATen operators across NVIDIA GPUs, AMD GPUs, and Meta accelerators, while reducing kernel development time from weeks to hours.
+* AccelOpt: A Self-Improving LLM Agentic System for AI Accelerator Kernel Optimization ([MLSys 2026](../../reading-notes/conference/mlsys-2026.md)) \[[Paper](https://openreview.net/forum?id=SBS4NJHYjZ)]
+  * Stanford & UofT & AWS
+  * Present **AccelOpt**, a self-improving LLM agentic system that optimizes AI accelerator kernels through iterative generation and optimization memory.
+* Agentic Operator Generation for ML ASICs ([MLSys 2026](../../reading-notes/conference/mlsys-2026.md)) \[[Paper](https://openreview.net/forum?id=O3Bx0nNGnW)]
+  * Meta
+  * Present **TritorX**, an agentic AI system that generates correct Triton kernels for Meta's MTIA accelerator at scale.
+  * Use LLM-driven generation with compilation-based validation to target an ML ASIC backend rather than only commodity GPUs.
+* Optimizing PyTorch Inference with LLM-Based Multi-Agent Systems ([MLSys 2026](../../reading-notes/conference/mlsys-2026.md)) \[[Paper](https://openreview.net/forum?id=MJxhiX3sSd)]
+  * LBNL
+  * Study LLM-based multi-agent systems for GPU kernel optimization and compare their dynamics against existing compilers and manual development.
 * Improving Efficiency of GPU Kernel Optimization Agents using a Domain-Specific Language and Speed-of-Light Guidance (arXiv:2603.29010) \[[arXiv](https://arxiv.org/abs/2603.29010)]
   * NVIDIA
   * Introduce two efficiency principles for LLM-based GPU kernel optimization agents: a compact domain-specific language and Speed-of-Light (SOL) guidance.
