@@ -13,6 +13,7 @@
 |    [NSDI 2026](nsdi-2026.md)    |    May 4-6, 2026   |   Hyatt Regency Lake Washington, Renton, WA, USA   | 🧐                                               |
 | [EuroSys 2026](eurosys-2026.md) |   Apr 27-30, 2026  |                   Edinburgh, UK                    | 😎                                               |
 |  [ASPLOS 2026](asplos-2026.md)  |   Mar 22-26, 2026  |                   Pittsburgh, USA                  | 🧐                                               |
+|    [FAST 2026](fast-2026.md)    |   Feb 24-26, 2026  |      Hyatt Regency Santa Clara, Santa Clara, CA, USA |                                                |
 |    [HPCA 2026](hpca-2026.md)    | Jan 31-Feb 4, 2026 |                Sydney, Australia                   | 🧐 Co-located with [PPoPP 2026](ppopp-2026.md)  |
 |   [PPoPP 2026](ppopp-2026.md)   | Jan 31-Feb 4, 2026 |                Sydney, Australia                   | 🧐 Co-located with [HPCA 2026](hpca-2026.md)    |
 
