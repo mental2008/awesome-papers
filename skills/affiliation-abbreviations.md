@@ -24,6 +24,7 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * Imperial College London -> ICL
 * Institute of Computing Technology, Chinese Academy of Sciences -> ICT, CAS
 * Institute of Software, Chinese Academy of Sciences -> IS, CAS
+* Mohamed bin Zayed University of Artificial Intelligence -> MBZUAI
 * Microsoft Research -> MSR
 * Microsoft Research India -> MSR India
 * Microsoft Research Asia -> MSRA

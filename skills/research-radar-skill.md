@@ -60,6 +60,22 @@ Notes:
 * Start here for compiler abstractions, tensor program generation, serving-aware compilation, and megakernel compilation.
 * Keep this seed list intentionally small until more names are explicitly confirmed.
 
+### Diffusion Models
+
+Closest local page:
+
+* `paper-list/systems-for-ml/diffusion-models.md`
+
+Confirmed priority scholars:
+
+* Yuke Wang (Rice)
+* Hao Zhang (UCSD)
+
+Notes:
+
+* Use this seed for diffusion model serving, video generation acceleration, patch-level serving, and generative image/video systems searches.
+* Keep this seed list intentionally small until more names are explicitly confirmed.
+
 ### High-Performance Operator Optimization
 
 Closest local pages:

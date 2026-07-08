@@ -38,8 +38,10 @@ Paper list: [https://ppopp26.sigplan.org/track/PPoPP-2026-papers](https://ppopp2
 
 * Difflow: A Data-Characteristic-Aware Serving System for Diffusion Models
   * THU
-* MixFusion: A Patch-Level Parallel Serving System for Mixed-Resolution Diffusion Models
+* MixFusion: A Patch-Level Parallel Serving System for Mixed-Resolution Diffusion Models \[[Paper](https://doi.org/10.1145/3774934.3786420)] \[[arXiv](https://arxiv.org/abs/2501.09253)] \[[Code](https://github.com/desenSunUBW/mixfusion)]
   * UWaterloo & CMU & Rice
+  * Use patch-level parallelism to batch mixed-resolution text-to-image diffusion requests.
+  * Combine patch-tailored cache management with SLO-aware scheduling and online latency prediction.
 
 ### GNN
 

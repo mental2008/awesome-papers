@@ -195,6 +195,7 @@ This section is the maintained reference for major directions and their preferre
 
 * `Image Generation`
 * `Video Generation`
+* `Image Editing`
 * `Diffusion Model Serving`
 * `Diffusion Model Training`
 * `Multimodal Diffusion Systems`

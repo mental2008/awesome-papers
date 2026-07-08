@@ -2,24 +2,29 @@
 
 ## Diffusion Model Serving
 
-* PatchedServe: A Patch Management Framework for SLO-Optimized Hybrid Resolution Diffusion Serving (arXiv:2501.09253) \[[arXiv](https://arxiv.org/abs/2501.09253)]
+### Image Generation
+
+* DiFlow: A System for Micro-Serving Text-to-Image Diffusion Workflows ([SOSP 2026](../../reading-notes/conference/sosp-2026.md)) \[[arXiv](https://arxiv.org/abs/2604.08123)]
+  * HKUST & Alibaba
+  * **Our work!**
+  * Decomposes text-to-image diffusion workflows into independently managed model-execution nodes.
+  * Enables per-model scaling, cross-workflow model sharing, and adaptive model parallelism for bursty serving workloads.
+* MixFusion: A Patch-Level Parallel Serving System for Mixed-Resolution Diffusion Models ([PPoPP 2026](../../reading-notes/conference/ppopp-2026.md)) \[[Paper](https://doi.org/10.1145/3774934.3786420)] \[[arXiv](https://arxiv.org/abs/2501.09253)] \[[Code](https://github.com/desenSunUBW/mixfusion)]
   * UWaterloo & CMU & Rice
-  * Serve requests with hybrid resolutions.
-* FlexCache: Flexible Approximate Cache System for Video Diffusion (arXiv:2501.04012) \[[arXiv](https://arxiv.org/abs/2501.04012)]
-  * UWaterloo
-  * Cache for text-to-video diffusion models.
+  * Uses patch-level parallelism to batch mixed-resolution text-to-image diffusion requests.
+  * Combines patch-tailored cache management with SLO-aware scheduling and online latency prediction.
 * xDiT: an Inference Engine for Diffusion Transformers (DiTs) with Massive Parallelism (arXiv:2411.01738) \[[arXiv](https://arxiv.org/abs/2411.01738)] \[[Code](https://github.com/xdit-project/xDiT)]
   * Tencent
   * Several parallel approaches for DiTs.
-* SwiftDiffusion: Efficient Diffusion Model Serving with Add-on Modules (arXiv:2407.02031) \[[arXiv](https://arxiv.org/abs/2407.02031)]
+* Katz: Efficient Workflow Serving for Diffusion Models with Many Adapters ([ATC 2025](../../reading-notes/conference/atc-2025.md)) \[[Paper](https://www.usenix.org/conference/atc25/presentation/li-suyi-katz)] \[[arXiv](https://arxiv.org/abs/2407.02031)] \[[Code](https://github.com/modelscope/Katz)] \[[Trace](https://modelscope.cn/datasets/mental2008/T2I-Model-Serving-Request-Trace)]
   * HKUST & Alibaba
+  * **Our work!**
+  * ControlNet-as-a-Service decouples ControlNets from the base model for caching, parallelization, and sharing.
+  * Bounded Asynchronous Loading overlaps LoRA loading with initial denoising steps; latent parallelism accelerates the base model across GPUs.
 * PipeFusion: Displaced Patch Pipeline Parallelism for Inference of Diffusion Transformer Models (arXiv:2405.14430) \[[arXiv](https://arxiv.org/abs/2405.14430)] \[[Code](https://github.com/xdit-project/xDiT)]
   * Tencent & HKU
 * Cache Me if You Can: Accelerating Diffusion Models through Block Caching ([CVPR 2024](../../reading-notes/conference/cvpr-2024.md)) \[[Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Wimbauer_Cache_Me_if_You_Can_Accelerating_Diffusion_Models_through_Block_CVPR_2024_paper.html)] \[[Homepage](https://fwmb.github.io/blockcaching/)]
   * Meta & TUM & MCML & Oxford
-* CAT-DM: Controllable Accelerated Virtual Try-on with Diffusion Model ([CVPR 2024](../../reading-notes/conference/cvpr-2024.md)) \[[Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Zeng_CAT-DM_Controllable_Accelerated_Virtual_Try-on_with_Diffusion_Model_CVPR_2024_paper.html)] \[[Code](https://github.com/zengjianhao/CAT-DM)]
-  * TJU & Tencent
-  * **CAT-DM**: **C**ontrollable **A**ccelerated virtual **T**ry-on with **D**iffusion **M**odel
 * DeepCache: Accelerating Diffusion Models for Free ([CVPR 2024](../../reading-notes/conference/cvpr-2024.md)) \[[Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Ma_DeepCache_Accelerating_Diffusion_Models_for_Free_CVPR_2024_paper.html)] \[[Code](https://github.com/horseee/DeepCache)]
   * NUS
 * DistriFusion: Distributed Parallel Inference for High-Resolution Diffusion Models ([CVPR 2024](../../reading-notes/conference/cvpr-2024.md)) \[[Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Li_DistriFusion_Distributed_Parallel_Inference_for_High-Resolution_Diffusion_Models_CVPR_2024_paper.html)] \[[Code](https://github.com/mit-han-lab/distrifuser)]
@@ -28,6 +33,26 @@
 * Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models ([NSDI 2024](../../reading-notes/conference/nsdi-2024.md)) \[[Paper](https://www.usenix.org/conference/nsdi24/presentation/agarwal-shubham)] \[[Slides](https://www.usenix.org/system/files/nsdi24_slides-agarwal_shubham.pdf)]
   * Adobe Research & UIUC
   * Skip a certain number of denoising steps.
+
+### Video Generation
+
+* Fast Video Generation with Sliding Tile Attention ([ICML 2025](../../reading-notes/conference/icml-2025.md)) \[[Paper](https://proceedings.mlr.press/v267/zhang25m.html)] \[[OpenReview](https://openreview.net/forum?id=U74MOXPEJd)] \[[arXiv](https://arxiv.org/abs/2502.04507)] \[[Code](https://github.com/hao-ai-lab/FastVideo)]
+  * UCSD & UMich & THU & UC Berkeley & MBZUAI
+  * Introduces **STA**, a tile-wise local spatiotemporal attention mechanism for video DiTs that exploits localized attention score structure.
+  * Uses a hardware-aware sliding-window design and kernel optimizations to speed up video diffusion attention and end-to-end HunyuanVideo generation.
+* FlexCache: Flexible Approximate Cache System for Video Diffusion (arXiv:2501.04012) \[[arXiv](https://arxiv.org/abs/2501.04012)]
+  * UWaterloo
+  * Cache for text-to-video diffusion models.
+
+### Image Editing
+
+* FlashPS: Efficient Generative Image Editing with Mask-aware Caching and Scheduling ([EuroSys 2026](../../reading-notes/conference/eurosys-2026.md)) \[[Paper](https://doi.org/10.1145/3767295.3769379)] \[[arXiv](https://arxiv.org/abs/2505.20600)] \[[Code](https://github.com/Sylvia-16/FlashPS)]
+  * HKUST & Alibaba
+  * **Our work!**
+  * Uses mask-aware caching and scheduling to accelerate generative image editing workloads.
+* CAT-DM: Controllable Accelerated Virtual Try-on with Diffusion Model ([CVPR 2024](../../reading-notes/conference/cvpr-2024.md)) \[[Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Zeng_CAT-DM_Controllable_Accelerated_Virtual_Try-on_with_Diffusion_Model_CVPR_2024_paper.html)] \[[Code](https://github.com/zengjianhao/CAT-DM)]
+  * TJU & Tencent
+  * **CAT-DM**: **C**ontrollable **A**ccelerated virtual **T**ry-on with **D**iffusion **M**odel
 
 ## Diffusion Model Training
 
