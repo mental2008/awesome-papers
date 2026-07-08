@@ -102,9 +102,15 @@ Confirmed priority scholars:
 
 * Mingxing Zhang (THU)
 
+Confirmed priority scholars by subdirection:
+
+* `KV Cache Management`
+  * Junchen Jiang (Chicago)
+
 Notes:
 
 * Use this seed for LLM inference and serving related searches.
+* Use the subdirection seeds when refreshing a specific LLM inference subsection such as KV cache management.
 * Keep this seed list intentionally small until more names are explicitly confirmed.
 
 ### Machine Learning Systems

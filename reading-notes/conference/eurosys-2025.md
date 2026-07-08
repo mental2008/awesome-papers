@@ -34,9 +34,10 @@ Proceedings: [https://dl.acm.org/doi/proceedings/10.1145/3689031](https://dl.acm
     * THU
   * Stateful Large Language Model Serving with Pensieve
     * NYU
-  * CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion
+  * CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion \[[Paper](https://doi.org/10.1145/3689031.3696098)] \[[arXiv](https://arxiv.org/abs/2405.16444)] \[[Code](https://github.com/YaoJiayi/CacheBlend)]
     * CUHK-Shenzhen & UChicago & Stanford
     * **Best Paper Award (Spring)**
+    * Reuses multiple precomputed KV caches for RAG inputs and selectively recomputes a small fraction of tokens to recover generation quality.
   * T-MAC: CPU Renaissance via Table Lookup for Low-Bit LLM Deployment on Edge
     * USTC & MSRA
   * DeltaZip: Efficient Serving of Multiple Full-Model-Tuned LLMs

@@ -31,7 +31,7 @@ Paper list: [https://mlsys.org/Conferences/2024/AcceptedPapers](https://mlsys.or
 * LLM inference
   * Keyformer: KV Cache reduction through key tokens selection for Efficient Generative Inference \[[Paper](https://proceedings.mlsys.org/paper_files/paper/2024/file/48fecef47b19fe501d27d338b6d52582-Paper-Conference.pdf)] \[[Code](https://github.com/d-matrix-ai/keyformer-llm)]
     * UBC & d-Matrix
-  * Prompt Cache: Modular Attention Reuse for Low-Latency Inference \[[Paper](https://proceedings.mlsys.org/paper_files/paper/2024/file/a66caa1703fe34705a4368c3014c1966-Paper-Conference.pdf)]
+  * Prompt Cache: Modular Attention Reuse for Low-Latency Inference \[[Paper](https://proceedings.mlsys.org/paper_files/paper/2024/file/a66caa1703fe34705a4368c3014c1966-Paper-Conference.pdf)] \[[arXiv](https://arxiv.org/abs/2311.04934)]
     * Yale & Google
   * HeteGen: Efficient Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices \[[Paper](https://proceedings.mlsys.org/paper_files/paper/2024/file/5431dca75a8d2abc1fb51e89e8324f10-Paper-Conference.pdf)]
     * NUS

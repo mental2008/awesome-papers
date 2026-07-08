@@ -238,12 +238,24 @@ I am actively maintaining this list.
 
 ### KV Cache Management
 
+* DroidSpeak: KV Cache Sharing Across Fine-tuned Model Variants ([NSDI 2026](../../reading-notes/conference/nsdi-2026.md)) \[[Paper](https://www.usenix.org/conference/nsdi26/presentation/liu-yuhan)] \[[arXiv](https://arxiv.org/abs/2411.02820)]
+  * UChicago & Microsoft
+  * Reuses prefix KV caches across fine-tuned LLM variants with the same architecture, including across distributed nodes.
+  * Selectively recomputes a small subset of layers from another model's KV cache and reuses the remaining layers with negligible quality loss.
 * Jenga: Effective Memory Management for Serving LLM with Heterogeneity ([SOSP 2025](../../reading-notes/conference/sosp-2025.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764823)] \[[arXiv](https://arxiv.org/abs/2503.18292)]
   * THU & UChicago & UC Berkeley
   * Heterogeneous embedding sizes, attention mechanisms, and token-dependency patterns in modern LLMs break fixed-page KV-cache assumptions and create fragmentation.
   * Uses a two-level memory allocator with LCM-sized compatible pages and layer-specific caching/eviction policies for heterogeneous attention patterns.
+* CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion ([EuroSys 2025](../../reading-notes/conference/eurosys-2025.md)) \[[Paper](https://doi.org/10.1145/3689031.3696098)] \[[arXiv](https://arxiv.org/abs/2405.16444)] \[[Code](https://github.com/YaoJiayi/CacheBlend)]
+  * CUHK-Shenzhen & UChicago & Stanford
+  * **Best Paper Award (Spring)**
+  * Combines multiple precomputed KV caches for RAG inputs while selectively recomputing a small fraction of tokens to recover cross-attention.
 * CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving ([SIGCOMM 2024](../../reading-notes/conference/sigcomm-2024.md)) \[[arXiv](https://arxiv.org/abs/2310.07240)] \[[Code](https://github.com/UChi-JCL/CacheGen)] \[[Video](https://www.youtube.com/watch?v=H4_OUWvdiNo)]
   * UChicago & Microsoft & Stanford
+* Prompt Cache: Modular Attention Reuse for Low-Latency Inference ([MLSys 2024](../../reading-notes/conference/mlsys-2024.md)) \[[Paper](https://proceedings.mlsys.org/paper_files/paper/2024/hash/a66caa1703fe34705a4368c3014c1966-Abstract-Conference.html)] \[[arXiv](https://arxiv.org/abs/2311.04934)]
+  * Yale & Google
+  * Precomputes and stores attention states for reusable prompt modules such as system messages, templates, and context documents.
+  * Uses a schema to preserve positional correctness during attention-state reuse and reduce time-to-first-token without model changes.
 * ALISA: Accelerating Large Language Model Inference via Sparsity-Aware KV Caching ([ISCA 2024](../../reading-notes/conference/isca-2024.md))
 * Efficient Memory Management for Large Language Model Serving with PagedAttention ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613165)] \[[arXiv](https://browse.arxiv.org/abs/2309.06180)] \[[Code](https://github.com/vllm-project/vllm)] \[[Homepage](https://vllm.ai/)]
   * UC Berkeley & Stanford & UCSD
@@ -273,12 +285,20 @@ I am actively maintaining this list.
 
 ### Chunked Prefill
 
+* LMPrefill: An Inference Engine for Prefill-only Workloads in Large Language Model Applications ([SOSP 2025](../../reading-notes/conference/sosp-2025.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764834)] \[[arXiv](https://arxiv.org/abs/2505.07203)]
+  * UChicago & THU & LinkedIn & UC Berkeley
+  * Targets LLM applications that generate only one output token and avoids storing KV caches for all layers.
+  * Combines hybrid prefilling, suffix KV cache discarding/offloading, and JCT-aware scheduling for prefill-only requests.
 * Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/agrawal)] \[[Code](https://github.com/microsoft/sarathi-serve)] \[[arXiv](https://arxiv.org/abs/2403.02310)]
   * MSR India & GaTech
   * **Sarathi-Serve**
 
 ### Serverless Inference
 
+* HydraServe: Minimizing Cold Start Latency for Serverless LLM Serving in Public Clouds ([NSDI 2026](../../reading-notes/conference/nsdi-2026.md)) \[[Paper](https://www.usenix.org/conference/nsdi26/presentation/lou)] \[[arXiv](https://arxiv.org/abs/2502.15524)] \[[Code](https://github.com/LLMServe/hydraserve)]
+  * PKU & Alibaba Cloud
+  * Minimizes serverless LLM cold-start latency in public clouds through proactive model distribution, overlapped worker startup, and GPU-network-contention-aware worker placement.
+  * Consolidates pipelines to reduce cold-start resource usage while improving SLO attainment.
 * FaaScale: Unlocking Fast LLM Scaling for Serverless Inference ([MLSys 2026](../../reading-notes/conference/mlsys-2026.md)) \[[Paper](https://openreview.net/forum?id=jgL8LuOVyT)] \[[arXiv](https://arxiv.org/abs/2502.09922)]
   * CUHK-SZ & UVA & HKUST & Alibaba & Nokia Bell Labs
   * Formerly **λScale**; enables fast model scaling for serverless LLM inference with pipelined multicast inference.
@@ -304,10 +324,6 @@ I am actively maintaining this list.
   * Key insight: the initial tokens of each chunk separately absorb a disproportionate amount of attention, preventing subsequent tokens from attending to relevant parts.
   * Propose an algorithm named _LegoLink_ to recompute k (≤ 32) initial tokens on each chunk (except the first chunk) → Recognize their non-initial status and cripple their attention-absorbing ability.
   * Compared to CacheBlend, LegoLink reduces recomputation complexity and relies on static attention sparsity.
-* CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion (arXiv:2405.16444) \[[arXiv](https://arxiv.org/abs/2405.16444)] \[[Code](https://github.com/YaoJiayi/CacheBlend)]
-  * UChicago
-  * For an LLM input including multiple text chunks, reuse all KV caches but re-compute a small fraction of KV.
-  * Objective: have both the speed of full KV reuse and the generation quality of full KV recompute.
 
 ### Compression
 
