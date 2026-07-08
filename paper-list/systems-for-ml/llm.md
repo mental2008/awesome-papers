@@ -90,6 +90,12 @@ I am actively maintaining this list.
 * **Workload resilience**: absorb dynamic workload variation before it turns into large efficiency loss or training instability.
 {% endhint %}
 
+* SDCs in the Wild: Characterizing and Diagnosing SDC-Defective GPUs in Production LLM Training ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/zheng)]
+  * SJTU & ByteDance Seed
+  * Axis: **Empirical reliability studies**; **Production reliability infrastructure**
+  * Characterizes 23 SDC-defective GPUs from production LLM training and shows synthetic microbenchmarks miss over 60% of defective devices because SDCs can be aging-related, data-dependent, unit-specific, and invisible to ECC/thermal protections.
+  * Introduces **SDCHunter**, replaying the exact training workload and input data that triggered the failure to diagnose defective GPUs.
+  * Deployed at ByteDance to mitigate 40 SDC incidents, with less than 4% training overhead, 100% coverage and device-level localization for real SDC-defective accelerators, and diagnosis shortened to within one hour.
 * MegaScale-Omni: A Hyper-Scale, Workload-Resilient System for MultiModal LLM Training in Production ([EuroSys 2026](../../reading-notes/conference/eurosys-2026.md)) \[[Paper](https://doi.org/10.1145/3767295.3803587)] \[[arXiv](https://arxiv.org/abs/2605.08962)]
   * SJTU & ByteDance
   * Axis: **Workload resilience**
@@ -378,3 +384,4 @@ I am actively maintaining this list.
 * LoRA: Low-Rank Adaptation
 * RL: Reinforcement Learning
 * RLHF: Reinforcement Learning from Human Feedback
+* SDC: Silent Data Corruption
