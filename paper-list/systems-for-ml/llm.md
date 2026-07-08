@@ -36,11 +36,11 @@ I am actively maintaining this list.
   * Axis: **Disaggregated RL systems**; **Workflow scheduling and resource reallocation**
   * Reclaims dependency bubbles between rollout and training phases in disaggregated RL post-training.
 * RLinf: Flexible and Efficient Large-Scale Reinforcement Learning via Macro-to-Micro Flow Transformation ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/yu-chao)]
-  * THU & Infinigence-AI & PKU & UC Berkeley & Zhongguancun Academy & Beihang & SJTU
+  * THU & Infinigence-AI & PKU & UC Berkeley & Zhongguancun Academy & BUAA & SJTU
   * Axis: **Workflow scheduling and resource reallocation**
   * Transforms RL workflows from macro pipelines into micro flows to improve scheduling flexibility and hardware utilization.
 * DynaRL: Flexible and Dynamic Scheduling of Large-Scale Reinforcement Learning Training ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/wang-yuanqing)]
-  * PKU & Infinigence-AI & ICT, CAS & Beihang & THU & SJTU
+  * PKU & Infinigence-AI & ICT, CAS & BUAA & THU & SJTU
   * Axis: **Workflow scheduling and resource reallocation**
   * Dynamically reallocates compute, memory, and communication resources across heterogeneous RL components.
 * Seer: Online Context Learning for Fast Synchronous LLM Reinforcement Learning ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/qin)]
@@ -67,6 +67,10 @@ I am actively maintaining this list.
   * HKUST & Alibaba
   * Axis: **Rollout latency and long-tail mitigation**
   * Packs prompts with long-tail responses into tail batches while keeping most rollout rounds balanced and short.
+* Taming the Long-Tail: Efficient Reasoning RL Training with Adaptive Drafter ([ASPLOS 2026](../../reading-notes/conference/asplos-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3779212.3790231)] \[[arXiv](https://arxiv.org/abs/2511.16665)] \[[Code](https://github.com/mit-han-lab/fastrl)]
+  * MIT & NVIDIA & ETH Zurich & MIT-IBM AI Lab & UMass Amherst
+  * Axis: **Speculative decoding for RL**; **Rollout latency and long-tail mitigation**
+  * Uses **TLT** to accelerate reasoning RL rollouts with adaptive speculative decoding, training a lightweight drafter on idle GPUs and selecting rollout strategies per batch.
 * History Doesn't Repeat Itself but Rollouts Rhyme: Accelerating Reinforcement Learning with RhymeRL ([ASPLOS 2026](../../reading-notes/conference/asplos-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3779212.3790172)]
   * SJTU & ByteDance
   * Axis: **Rollout latency and long-tail mitigation**
@@ -121,19 +125,39 @@ I am actively maintaining this list.
 
 ## LLM Inference
 
-* CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving ([SIGCOMM 2024](../../reading-notes/conference/sigcomm-2024.md)) \[[arXiv](https://arxiv.org/abs/2310.07240)] \[[Code](https://github.com/UChi-JCL/CacheGen)] \[[Video](https://www.youtube.com/watch?v=H4_OUWvdiNo)]
-  * UChicago & Microsoft & Stanford
-* Tender: Accelerating Large Language Models via Tensor Decomposition and Runtime Requantization ([ISCA 2024](../../reading-notes/conference/isca-2024.md))
-* ALISA: Accelerating Large Language Model Inference via Sparsity-Aware KV Caching ([ISCA 2024](../../reading-notes/conference/isca-2024.md))
-* LLM in a flash: Efficient Large Language Model Inference with Limited Memory (arXiv 2312.11514) \[[arXiv](https://arxiv.org/abs/2312.11514)]
-  * Apple
+### Heterogeneous Deployment
+
+* Coral: Cost-Efficient Multi-LLM Serving over Heterogeneous Cloud GPUs (arXiv:2605.04357) \[[arXiv](https://arxiv.org/abs/2605.04357)]
+  * CMU & PKU
+  * Jointly optimizes multi-model resource allocation and per-replica serving strategies across heterogeneous cloud GPUs under throughput demand, latency SLOs, price, and resource availability.
+  * Uses a lossless two-stage decomposition to preserve joint optimality while making online re-solving practical as demand and availability change.
+* SageServe: Optimizing LLM Serving on Cloud Data Centers with Forecast Aware Auto-Scaling (SIGMETRICS Abstracts 2026) \[[Paper](https://doi.org/10.1145/3771576)] \[[arXiv](https://arxiv.org/abs/2502.14617)] \[[Code](https://github.com/shashwatj07/SageServe)]
+  * UIUC & GaTech & IISc & Microsoft
+  * Serves mixed latency-sensitive and latency-insensitive LLM workloads across cloud regions with forecast-aware routing, GPU VM scaling, and model placement.
+  * Co-optimizes short-term request routing and longer-lead-time resource allocation with traffic forecasts and ILP scheduling.
+* Cauchy: A Cost-Efficient LLM Serving System through Adaptive Heterogeneous Deployment (SoCC 2025) \[[Paper](https://dl.acm.org/doi/10.1145/3772052.3772264)]
+  * BUAA & Kuaishou
+  * Deploys prefill and decode computation onto suitable heterogeneous GPU combos according to workload phase demands and cost efficiency.
+  * Combines combo selection, hierarchical request scheduling, and dynamic autoscaling to maintain SLOs under changing request rates.
+* Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs (arXiv:2502.00722) \[[arXiv](https://arxiv.org/abs/2502.00722)]
+  * Cambridge & HKUST & PKU & ETH & Purdue
+  * Characterizes how workload mix, GPU composition, deployment configuration, and request assignment affect LLM serving cost-efficiency on heterogeneous cloud GPUs.
+  * Uses mixed-integer linear programming to choose cost-efficient serving plans under price-budget and real-time GPU-availability constraints.
+* HexGen-2: Disaggregated Generative Inference of LLMs in Heterogeneous Environment (ICLR 2025) \[[Paper](https://openreview.net/forum?id=Cs6MrbFuMq)] \[[arXiv](https://arxiv.org/abs/2502.07903)]
+  * HKUST
+  * Extends heterogeneous LLM serving to prefill-decode disaggregation, jointly placing phase computation and KV-cache communication across heterogeneous GPUs and links.
+  * Combines graph partitioning and max-flow optimization to co-optimize resource allocation, per-phase parallel strategies, and inter-phase KV transfer.
+* HexGen: Generative Inference of Foundation Model over Heterogeneous Decentralized Environment ([ICML 2024](../../reading-notes/conference/icml-2024.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/hexgen.md)] \[[arXiv](https://arxiv.org/abs/2311.11514)] \[[Code](https://github.com/Relaxed-System-Lab/HexGen)]
+  * HKUST & ETH & CMU
+  * Supports _asymmetric_ tensor model parallelism and pipeline parallelism, allowing each pipeline stage to use a different layer count and tensor-parallel degree.
+  * Formulates heterogeneous decentralized inference placement as a constrained optimization problem and searches layouts with a heuristic evolutionary algorithm.
 * SpotServe: Serving Generative Large Language Models on Preemptible Instances ([ASPLOS 2024](../../reading-notes/conference/asplos-2024/)) \[[Personal Notes](../../reading-notes/conference/asplos-2024/spotserve.md)] \[[arXiv](https://arxiv.org/abs/2311.15566)] \[[Code](https://github.com/Hsword/SpotServe)]
   * CMU & PKU & CUHK
-* Fast Distributed Inference Serving for Large Language Models (arXiv 2305.05920) \[[Paper](https://arxiv.org/abs/2305.05920)]
-  * PKU
-  * Skip-join multi-level feedback queue scheduling instead of first-come-first-serve.
-  * Proactive KV cache swapping.
-  * Compared to Orca
+  * Dynamically adapts LLM parallelization configurations under changing preemptible-instance availability and workload fluctuation.
+  * Uses migration planning and stateful inference recovery to reduce tail latency and monetary cost on volatile GPU capacity.
+
+### Parallelism and Partitioning
+
 * AlpaServe: Statistical Multiplexing with Model Parallelism for Deep Learning Serving ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://arxiv.org/abs/2302.11665)] \[[Code](https://github.com/alpa-projects/mms)]
   * UC Berkeley & PKU & UPenn & Stanford & Google
   * Trade-off between _the overhead of model parallelism_ and _reduced serving latency by statistical multiplexing_.
@@ -204,6 +228,10 @@ I am actively maintaining this list.
 
 * Llumnix: Dynamic Scheduling for Large Language Model Serving ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/sun-biao)] \[[Code](https://github.com/AlibabaPAI/llumnix)]
   * Alibaba
+* FastServe: Iteration-Level Preemptive Scheduling for Large Language Model Inference ([NSDI 2026](../../reading-notes/conference/nsdi-2026.md)) \[[Paper](https://www.usenix.org/conference/nsdi26/presentation/wu-bingyang)] \[[arXiv](https://arxiv.org/abs/2305.05920)] \[[Code](https://github.com/LLMServe/FastServe)]
+  * PKU
+  * Enables iteration-level preemptive scheduling for autoregressive decoding instead of request-level FIFO execution.
+  * Combines a skip-join multi-level feedback queue scheduler with proactive intermediate-state swapping to reduce head-of-line blocking.
 * Orca: A Distributed Serving System for Transformer-Based Generative Models ([OSDI 2022](../../reading-notes/conference/osdi-2022/)) \[[Personal Notes](../../reading-notes/conference/osdi-2022/orca.md)] \[[Paper](https://www.usenix.org/conference/osdi22/presentation/yu)]
   * Seoul National University & FriendliAI
   * Iteration-level scheduling; selective batching.
@@ -214,6 +242,9 @@ I am actively maintaining this list.
   * THU & UChicago & UC Berkeley
   * Heterogeneous embedding sizes, attention mechanisms, and token-dependency patterns in modern LLMs break fixed-page KV-cache assumptions and create fragmentation.
   * Uses a two-level memory allocator with LCM-sized compatible pages and layer-specific caching/eviction policies for heterogeneous attention patterns.
+* CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving ([SIGCOMM 2024](../../reading-notes/conference/sigcomm-2024.md)) \[[arXiv](https://arxiv.org/abs/2310.07240)] \[[Code](https://github.com/UChi-JCL/CacheGen)] \[[Video](https://www.youtube.com/watch?v=H4_OUWvdiNo)]
+  * UChicago & Microsoft & Stanford
+* ALISA: Accelerating Large Language Model Inference via Sparsity-Aware KV Caching ([ISCA 2024](../../reading-notes/conference/isca-2024.md))
 * Efficient Memory Management for Large Language Model Serving with PagedAttention ([SOSP 2023](../../reading-notes/conference/sosp-2023/)) \[[Paper](https://dl.acm.org/doi/10.1145/3600006.3613165)] \[[arXiv](https://browse.arxiv.org/abs/2309.06180)] \[[Code](https://github.com/vllm-project/vllm)] \[[Homepage](https://vllm.ai/)]
   * UC Berkeley & Stanford & UCSD
   * vLLM, PagedAttention
@@ -248,8 +279,10 @@ I am actively maintaining this list.
 
 ### Serverless Inference
 
-* λScale: Enabling Fast Scaling for Serverless Large Language Model Inference (arXiv:2502.09922) \[[arXiv](https://arxiv.org/abs/2502.09922)]
+* FaaScale: Unlocking Fast LLM Scaling for Serverless Inference ([MLSys 2026](../../reading-notes/conference/mlsys-2026.md)) \[[Paper](https://openreview.net/forum?id=jgL8LuOVyT)] \[[arXiv](https://arxiv.org/abs/2502.09922)]
   * CUHK-SZ & UVA & HKUST & Alibaba & Nokia Bell Labs
+  * Formerly **λScale**; enables fast model scaling for serverless LLM inference with pipelined multicast inference.
+  * Uses **PipeCast** to adaptively multicast model blocks and dynamically form cross-node inference pipelines during model transfer.
 * ServerlessLLM: Low-Latency Serverless Inference for Large Language Models ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/fu)] \[[Code](https://github.com/ServerlessLLM/ServerlessLLM)] \[[arXiv](https://arxiv.org/abs/2401.14351)]
   * Edinburgh
 
@@ -276,6 +309,10 @@ I am actively maintaining this list.
   * For an LLM input including multiple text chunks, reuse all KV caches but re-compute a small fraction of KV.
   * Objective: have both the speed of full KV reuse and the generation quality of full KV recompute.
 
+### Compression
+
+* Tender: Accelerating Large Language Models via Tensor Decomposition and Runtime Requantization ([ISCA 2024](../../reading-notes/conference/isca-2024.md))
+
 ### Sparsity
 
 * InfiniGen: Efficient Generative Inference of Large Language Models with Dynamic KV Cache Management ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/lee)]
@@ -301,20 +338,11 @@ I am actively maintaining this list.
 
 ### Offloading
 
+* LLM in a flash: Efficient Large Language Model Inference with Limited Memory (arXiv 2312.11514) \[[arXiv](https://arxiv.org/abs/2312.11514)]
+  * Apple
 * FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU ([ICML 2023](../../reading-notes/conference/icml-2023.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/flexgen.md)] \[[Paper](https://proceedings.mlr.press/v202/sheng23a.html)] \[[Code](https://github.com/FMInference/FlexGen)]
   * Stanford & UC Berkeley & ETH & Yandex & HSE & Meta & CMU
   * _High-throughput serving; only use a single GPU._
-
-### Heterogeneous Environment
-
-* Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs (arXiv:2502.00722) \[[arXiv](https://arxiv.org/abs/2502.00722)]
-  * Cambridge & HKUST & PKU & ETH & Purdue
-* HexGen-2: Disaggregated Generative Inference of LLMs in Heterogeneous Environment (ICLR 2025) \[[Paper](https://openreview.net/forum?id=Cs6MrbFuMq)] \[[arXiv](https://arxiv.org/abs/2502.07903)]
-  * HKUST
-* HexGen: Generative Inference of Foundation Model over Heterogeneous Decentralized Environment ([ICML 2024](../../reading-notes/conference/icml-2024.md)) \[[Personal Notes](../../reading-notes/miscellaneous/arxiv/2023/hexgen.md)] \[[arXiv](https://arxiv.org/abs/2311.11514)] \[[Code](https://github.com/Relaxed-System-Lab/HexGen)]
-  * HKUST & ETH & CMU
-  * Support _asymmetric_ tensor model parallelism and pipeline parallelism under the _heterogeneous_ setting (i.e., each pipeline parallel stage can be assigned with a different number of layers and tensor model parallel degree)
-  * Propose _a heuristic-based evolutionary algorithm_ to search for the optimal layout
 
 ### Fairness
 

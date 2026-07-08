@@ -103,6 +103,10 @@ Homepage: [https://www.asplos-conference.org/asplos2026/](https://www.asplos-con
       * Reduce unnecessary KV accesses and improve data locality during decoding.
 * LLM Training
   * RL Post-Training
+    * Taming the Long-Tail: Efficient Reasoning RL Training with Adaptive Drafter \[[Paper](https://dl.acm.org/doi/10.1145/3779212.3790231)] \[[arXiv](https://arxiv.org/abs/2511.16665)] \[[Code](https://github.com/mit-han-lab/fastrl)]
+      * MIT & NVIDIA & ETH Zurich & MIT-IBM AI Lab & UMass Amherst
+      * Present **TLT**, a reasoning RL training system that accelerates long-tail rollout generation with adaptive speculative decoding.
+      * Train an Adaptive Drafter on idle GPUs during long-tail generation and use an Adaptive Rollout Engine to select speculative-decoding strategies per input batch.
     * History Doesn't Repeat Itself but Rollouts Rhyme: Accelerating Reinforcement Learning with RhymeRL \[[Paper](https://dl.acm.org/doi/10.1145/3779212.3790172)]
       * SJTU & ByteDance
       * Present **RhymeRL**, a framework that accelerates RL by exploiting reusable structure across rollout histories.

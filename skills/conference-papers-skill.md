@@ -173,6 +173,7 @@ This section is the maintained reference for major directions and their preferre
   * `Request Scheduling`
   * `KV Cache Management`
   * `Prefill-Decode (PD) Disaggregation`
+  * `Parallelism and Partitioning`
   * `Chunked Prefill`
   * `Serverless Inference`
   * `LoRA Serving`
@@ -183,7 +184,7 @@ This section is the maintained reference for major directions and their preferre
   * `MoE Inference`
   * `Attention Mechanisms`
   * `Offloading`
-  * `Heterogeneous Environment`
+  * `Heterogeneous Deployment`
   * `Trusted Execution`
 * `LLM Alignment`
   * `RLHF Systems`
@@ -251,14 +252,16 @@ When `LLM Inference` gets crowded, prefer existing subtopics before creating new
 * `Request Scheduling`
 * `KV Cache Management`
 * `Prefill-Decode (PD) Disaggregation`
+* `Parallelism and Partitioning`
 * `Chunked Prefill`
 * `Serverless Inference`
 * `LoRA Serving`
 * `Position-Independent Caching (PIC)`
 * `Sparsity`
 * `Speculative Decoding`
+* `Compression`
 * `Offloading`
-* `Heterogeneous Environment`
+* `Heterogeneous Deployment`
 * `Fairness`
 
 Prefer adding a second-level subtopic layer under major conference-page buckets even before they become crowded.

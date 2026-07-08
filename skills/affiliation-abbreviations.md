@@ -12,6 +12,7 @@ Use it as a lightweight normalization reference when writing or polishing affili
 
 * Alibaba Group -> Alibaba
 * Alibaba Cloud Computing -> Alibaba Cloud
+* Beihang University -> BUAA
 * Carnegie Mellon University -> CMU
 * Chinese Academy of Sciences -> CAS
 * George Mason University -> GMU

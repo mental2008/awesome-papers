@@ -40,7 +40,7 @@ Homepage: [https://www.asplos-conference.org/asplos2025/](https://www.asplos-con
   * COMET: Towards Practical W4A4KV4 LLMs Serving
     * ICT, CAS
   * Past-Future Scheduler for LLM Serving under SLA Guarantees
-    * Beihang University & SenseTime
+    * BUAA & SenseTime
   * POD-Attention: Unlocking Full Prefill-Decode Overlap for Faster LLM Inference
     * UW & MSR India
   * Medusa: Accelerating Serverless LLM Inference with Materialization

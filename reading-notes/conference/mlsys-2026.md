@@ -158,7 +158,7 @@ Paper list: [https://mlsys.org/virtual/2026/papers.html?filter=titles](https://m
       * MSR India
       * Propose **TokenWeave**, achieving practical compute-communication overlap for tensor-parallel LLM serving with minimal integration effort into existing engines.
     * TriInfer: Hybrid EPD Disaggregation for Efficient Multimodal Large Language Model Inference \[[Paper](https://openreview.net/forum?id=nNovi8fvGN)]
-      * Beihang
+      * BUAA
       * Propose **TriInfer**, a hybrid encode-prefill-decode disaggregation system for multimodal LLM inference with stage-aware resource management and SLO guarantees.
   * Retrieval-Augmented Generation (RAG)
     * TeleRAG: Efficient Retrieval-Augmented Generation Inference with Lookahead Retrieval \[[Paper](https://openreview.net/forum?id=YsOyCpMUYD)]
@@ -215,9 +215,10 @@ Paper list: [https://mlsys.org/virtual/2026/papers.html?filter=titles](https://m
       * Microsoft
       * Present **AIRS**, a system for scaling LLM-based live inference for search quality evaluation under resource-constrained environments.
   * Serverless
-    * FaaScale: Unlocking Fast LLM Scaling for Serverless Inference \[[Paper](https://openreview.net/forum?id=jgL8LuOVyT)]
+    * FaaScale: Unlocking Fast LLM Scaling for Serverless Inference \[[Paper](https://openreview.net/forum?id=jgL8LuOVyT)] \[[arXiv](https://arxiv.org/abs/2502.09922)]
       * CUHK-SZ & UVA & HKUST & Alibaba & Nokia Bell Labs
       * Present **FaaScale**, a serverless LLM system enabling fast model scaling through pipelined multicast inference that synergizes data transfer with cross-node pipeline execution.
+      * Use **PipeCast** to adaptively multicast model blocks and dynamically form inference pipelines on the fly during model transfer.
   * Multi-model Serving
     * BOute: Cost-Efficient LLM Serving with Heterogeneous LLMs and GPUs via Multi-Objective Bayesian Optimization \[[Paper](https://openreview.net/forum?id=ZVQb92umqX)]
       * Cambridge

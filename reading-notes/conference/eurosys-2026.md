@@ -91,7 +91,7 @@ Paper list: [https://2026.eurosys.org/papers.html](https://2026.eurosys.org/pape
       * UC Berkeley & RUC & Rice
       * Uses locality-aware cross-region load balancing for distributed LLM inference services.
     * PiLLM: Resource-Efficient LLM Inference Using Workload Prediction \[[Paper](https://doi.org/10.1145/3767295.3769393)]
-      * ShanghaiTech & SenseTime & Beihang
+      * ShanghaiTech & SenseTime & BUAA
       * Predicts workload behavior to improve resource efficiency in LLM inference.
   * KV Cache and Memory Management
     * Taming Latency-Memory Trade-Off in MoE-Based LLM Serving via Fine-Grained Expert Offloading \[[Paper](https://doi.org/10.1145/3767295.3769319)] \[[arXiv](https://arxiv.org/abs/2502.05370)]
@@ -114,7 +114,7 @@ Paper list: [https://2026.eurosys.org/papers.html](https://2026.eurosys.org/pape
     * SAS: Sparse Attention Synthesizer for Efficient Language Model Inference \[[Paper](https://doi.org/10.1145/3767295.3769364)]
       * Amazon
       * Synthesizes sparse attention patterns to accelerate language-model inference.
-  * Heterogeneous Environment
+  * Heterogeneous Deployment
     * Scaling LLM Test-Time Compute with Mobile NPU on Smartphones \[[Paper](https://doi.org/10.1145/3767295.3769382)]
       * THU & USTC & MSR & AIR, THU
       * Explores using mobile NPUs to scale LLM test-time compute on smartphones.
