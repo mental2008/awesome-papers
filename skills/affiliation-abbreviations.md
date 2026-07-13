@@ -68,5 +68,6 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * Prefer the official full institution name when first checking a paper's author list from the conference program or publisher page.
 * In curated notes, default to the abbreviations in this file for affiliation lines unless the full name is needed to avoid ambiguity.
 * Keep names consistent within one page.
+* Do not include non-institution labels such as `Independent Researcher` in affiliation lines by default.
 * If a page already uses abbreviated affiliation style, normalize both new and existing entries to the same local style.
 * If a full institution name is unusually informative or avoids ambiguity, prefer the full name.

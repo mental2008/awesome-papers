@@ -33,8 +33,8 @@ Homepage: [https://sigops.org/s/conferences/sosp/2025/](https://sigops.org/s/con
     * Formally verify that a distributed parallel execution plan is mathematically equivalent to the logical specification.
     * Introduce a stage-wise parallel verification algorithm and shape-reduction techniques → Reduce complexity while preserving formal correctness.
 * LLM Inference
-  * Jenga: Effective Memory Management for Serving LLM with Heterogeneity \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764823)] \[[arXiv](https://arxiv.org/abs/2503.18292)]
-    * THU & Chicago & UC Berkeley
+  * Jenga: Effective Memory Management for Serving LLM with Heterogeneity \[[Personal Notes](jenga.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764823)] \[[arXiv](https://arxiv.org/abs/2503.18292)]
+    * THU & UChicago & UC Berkeley
     * Two challenges
       * Recent models have heterogeneous embeddings with different sizes.
       * Some new architectures use only a subset of the prefix tokens to generate the next token.

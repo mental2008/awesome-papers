@@ -5,7 +5,7 @@
 |            Conference           |        When        |                       Where                        | Remarks                                          |
 | :-----------------------------: | :----------------: | :------------------------------------------------: | ------------------------------------------------ |
 |    [SOSP 2026](sosp-2026.md)    | Sep 29-Oct 2, 2026 | Clarion Congress Hotel Prague, Prague, Czechia     | Incoming                                         |
-|    [OSDI 2026](osdi-2026.md)    |   Jul 13-15, 2026  |                  Seattle, WA, USA                  | 🧐 Incoming                                      |
+|    [OSDI 2026](osdi-2026/)      |   Jul 13-15, 2026  |                  Seattle, WA, USA                  | 🧐 Incoming                                      |
 |    [ICML 2026](icml-2026.md)    |   Jul 6-11, 2026   | COEX Convention & Exhibition Center, Seoul, South Korea | 🧐                                          |
 |    [ISCA 2026](isca-2026/)      |  Jun 27-Jul 1, 2026|      Raleigh Convention Center, Raleigh, NC, USA   | Incoming                                         |
 |    [CAIS 2026](cais-2026.md)    |  May 26-29, 2026   |                  San Jose, CA, USA                 | 🧐                                               |
@@ -22,7 +22,7 @@
 |            Conference           |        When        |                    Where                    | Remarks                                                                                                                              |
 | :-----------------------------: | :----------------: | :-----------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------ |
 |      [SC 2025](sc-2025.md)      |   Nov 16-21, 2025  |      St. Louis, Missouri, United States     |                                                                                                                                      |
-|    [SOSP 2025](sosp-2025.md)    |   Oct 13-16, 2025  | Lotte Hotel World, Seoul, Republic of Korea | 🧐                                                                                                                                   |
+|    [SOSP 2025](sosp-2025/)      |   Oct 13-16, 2025  | Lotte Hotel World, Seoul, Republic of Korea | 🧐                                                                                                                                   |
 | [SIGCOMM 2025](sigcomm-2025.md) |   Sep 8-11, 2025   |              Coimbra, Portugal              | 🧐                                                                                                                                   |
 |    [ICML 2025](icml-2025.md)    |   Jul 13-19, 2025  |     Vancouver Convention Center, Canada     |                                                                                                                                      |
 |     [ATC 2025](atc-2025.md)     |    Jul 7-9, 2025   |    Sheraton Boston Hotel, Boston, MA, USA   | 🧐😎 Co-located with [OSDI 2025](osdi-2025.md)                                                                                       |

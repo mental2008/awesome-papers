@@ -27,27 +27,27 @@ I am actively maintaining this list.
 * **Fault tolerance**: isolate and recover failures across trainer, rollout, and control-plane roles.
 {% endhint %}
 
-* RollArt: Disaggregated Multi-Task Agentic RL Training at Scale ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/gao)]
+* RollArt: Disaggregated Multi-Task Agentic RL Training at Scale ([OSDI 2026](../../reading-notes/conference/osdi-2026/)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/gao)]
   * HKUST & Alibaba & Tongyi Lab
   * Axis: **Disaggregated RL systems**
   * Maps agentic RL pipeline stages to best-fit hardware and coordinates prefill, decoding, environment, and reward workloads.
-* Weave: Efficient Co-Scheduling for Disaggregated RL Post-Training ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/wu-tianyuan)]
+* Weave: Efficient Co-Scheduling for Disaggregated RL Post-Training ([OSDI 2026](../../reading-notes/conference/osdi-2026/)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/wu-tianyuan)]
   * HKUST & UIUC & Alibaba
   * Axis: **Disaggregated RL systems**; **Workflow scheduling and resource reallocation**
   * Reclaims dependency bubbles between rollout and training phases in disaggregated RL post-training.
-* RLinf: Flexible and Efficient Large-Scale Reinforcement Learning via Macro-to-Micro Flow Transformation ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/yu-chao)]
+* RLinf: Flexible and Efficient Large-Scale Reinforcement Learning via Macro-to-Micro Flow Transformation ([OSDI 2026](../../reading-notes/conference/osdi-2026/)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/yu-chao)]
   * THU & Infinigence-AI & PKU & UC Berkeley & Zhongguancun Academy & BUAA & SJTU
   * Axis: **Workflow scheduling and resource reallocation**
   * Transforms RL workflows from macro pipelines into micro flows to improve scheduling flexibility and hardware utilization.
-* DynaRL: Flexible and Dynamic Scheduling of Large-Scale Reinforcement Learning Training ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/wang-yuanqing)]
+* DynaRL: Flexible and Dynamic Scheduling of Large-Scale Reinforcement Learning Training ([OSDI 2026](../../reading-notes/conference/osdi-2026/)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/wang-yuanqing)]
   * PKU & Infinigence-AI & ICT, CAS & BUAA & THU & SJTU
   * Axis: **Workflow scheduling and resource reallocation**
   * Dynamically reallocates compute, memory, and communication resources across heterogeneous RL components.
-* Seer: Online Context Learning for Fast Synchronous LLM Reinforcement Learning ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/qin)]
+* Seer: Online Context Learning for Fast Synchronous LLM Reinforcement Learning ([OSDI 2026](../../reading-notes/conference/osdi-2026/)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/qin)]
   * THU & Moonshot AI
   * Axis: **Rollout latency and long-tail mitigation**
   * Uses prompt-level context learning to predict rollout behavior and reduce long-tail latency in synchronous LLM RL.
-* RobustRL: Role-Based Fault Tolerance System for RL Post-Training ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/chen-zhenqian)]
+* RobustRL: Role-Based Fault Tolerance System for RL Post-Training ([OSDI 2026](../../reading-notes/conference/osdi-2026/)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/chen-zhenqian)]
   * ZJU & SKLMEAC
   * Axis: **Fault tolerance**
   * Provides role-based fault isolation for trainer, rollout, and management failures during RL post-training.
@@ -90,17 +90,23 @@ I am actively maintaining this list.
 * **Workload resilience**: absorb dynamic workload variation before it turns into large efficiency loss or training instability.
 {% endhint %}
 
-* SDCs in the Wild: Characterizing and Diagnosing SDC-Defective GPUs in Production LLM Training ([OSDI 2026](../../reading-notes/conference/osdi-2026.md)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/zheng)]
+* SDCs in the Wild: Characterizing and Diagnosing SDC-Defective GPUs in Production LLM Training ([OSDI 2026](../../reading-notes/conference/osdi-2026/)) \[[Personal Notes](../../reading-notes/conference/osdi-2026/sdchunter.md)] \[[Paper](https://www.usenix.org/conference/osdi26/presentation/zheng)]
   * SJTU & ByteDance Seed
   * Axis: **Empirical reliability studies**; **Production reliability infrastructure**
   * Characterizes 23 SDC-defective GPUs from production LLM training and shows synthetic microbenchmarks miss over 60% of defective devices because SDCs can be aging-related, data-dependent, unit-specific, and invisible to ECC/thermal protections.
   * Introduces **SDCHunter**, replaying the exact training workload and input data that triggered the failure to diagnose defective GPUs.
   * Deployed at ByteDance to mitigate 40 SDC incidents, with less than 4% training overhead, 100% coverage and device-level localization for real SDC-defective accelerators, and diagnosis shortened to within one hour.
+* Safeguarding LLM Training at Scale: Online SDC Detection and Insights from 35 Million GPU Hours ([OSDI 2026](../../reading-notes/conference/osdi-2026/)) \[[Personal Notes](../../reading-notes/conference/osdi-2026/aegis.md)] \[[Paper](https://www.usenix.org/conference/osdi26/presentation/lei)]
+  * THU & ByteDance
+  * Axis: **Empirical reliability studies**; **Production reliability infrastructure**
+  * Presents **AEGIS**, an online SDC detection framework that decouples lightweight corruption sensing from definitive verification during large-scale LLM training.
+  * Uses a two-stage `cSensor-cVerifier` design to keep runtime monitoring lightweight while confirming suspected silent corruptions.
+  * Deployed over 35 million GPU hours in production, detecting 18 SDC incidents and 13 faulty GPUs with 0.86% overhead.
 * MegaScale-Omni: A Hyper-Scale, Workload-Resilient System for MultiModal LLM Training in Production ([EuroSys 2026](../../reading-notes/conference/eurosys-2026.md)) \[[Paper](https://doi.org/10.1145/3767295.3803587)] \[[arXiv](https://arxiv.org/abs/2605.08962)]
   * SJTU & ByteDance
   * Axis: **Workload resilience**
   * MLLM training can lose efficiency even without hard failures when dynamic modality and length mixtures break static encoder-backbone parallelism; decouple encoder/LLM parallelism and rebalance data loading and resharding.
-* Robust LLM Training Infrastructure at ByteDance ([SOSP 2025](../../reading-notes/conference/sosp-2025.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764838)] \[[arXiv](https://arxiv.org/abs/2509.16293)]
+* Robust LLM Training Infrastructure at ByteDance ([SOSP 2025](../../reading-notes/conference/sosp-2025/)) \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764838)] \[[arXiv](https://arxiv.org/abs/2509.16293)]
   * HKU & ByteDance Seed
   * Axis: **Production reliability infrastructure**
   * Large-scale LLM training needs training-aware fault management, not only generic cluster monitoring; exploit parallelism structure and training characteristics for high-capacity tolerance, fault demarcation, and localization.
@@ -248,7 +254,7 @@ I am actively maintaining this list.
   * UChicago & Microsoft
   * Reuses prefix KV caches across fine-tuned LLM variants with the same architecture, including across distributed nodes.
   * Selectively recomputes a small subset of layers from another model's KV cache and reuses the remaining layers with negligible quality loss.
-* Jenga: Effective Memory Management for Serving LLM with Heterogeneity ([SOSP 2025](../../reading-notes/conference/sosp-2025.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764823)] \[[arXiv](https://arxiv.org/abs/2503.18292)]
+* Jenga: Effective Memory Management for Serving LLM with Heterogeneity ([SOSP 2025](../../reading-notes/conference/sosp-2025/)) \[[Personal Notes](../../reading-notes/conference/sosp-2025/jenga.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764823)] \[[arXiv](https://arxiv.org/abs/2503.18292)]
   * THU & UChicago & UC Berkeley
   * Heterogeneous embedding sizes, attention mechanisms, and token-dependency patterns in modern LLMs break fixed-page KV-cache assumptions and create fragmentation.
   * Uses a two-level memory allocator with LCM-sized compatible pages and layer-specific caching/eviction policies for heterogeneous attention patterns.
@@ -291,7 +297,7 @@ I am actively maintaining this list.
 
 ### Chunked Prefill
 
-* LMPrefill: An Inference Engine for Prefill-only Workloads in Large Language Model Applications ([SOSP 2025](../../reading-notes/conference/sosp-2025.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764834)] \[[arXiv](https://arxiv.org/abs/2505.07203)]
+* LMPrefill: An Inference Engine for Prefill-only Workloads in Large Language Model Applications ([SOSP 2025](../../reading-notes/conference/sosp-2025/)) \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764834)] \[[arXiv](https://arxiv.org/abs/2505.07203)]
   * UChicago & THU & LinkedIn & UC Berkeley
   * Targets LLM applications that generate only one output token and avoids storing KV caches for all layers.
   * Combines hybrid prefilling, suffix KV cache discarding/offloading, and JCT-aware scheduling for prefill-only requests.

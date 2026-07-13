@@ -104,6 +104,21 @@ When uncertain, prefer consistency with nearby pages like:
 
 ## Venue Page Structure
 
+Use directory-style venue pages when a conference has, or is expected to have, paper-specific reading notes:
+
+* venue aggregation page: `reading-notes/conference/<venue>-<year>/README.md`
+* paper leaf notes: `reading-notes/conference/<venue>-<year>/<paper-slug>.md`
+* example: `reading-notes/conference/isca-2026/README.md` plus `reading-notes/conference/isca-2026/kernelevolve.md`
+
+Directory-style pages produce cleaner preview and published paths such as `/reading-notes/conference/isca-2026/`.
+
+If an existing single-file venue page later gains paper-specific notes, move the venue page into `reading-notes/conference/<venue>-<year>/README.md`, place the leaf notes in the same directory, and update:
+
+* `SUMMARY.md`
+* `reading-notes/conference/README.md`
+* topic pages under `paper-list/`
+* any other links that referenced the old `<venue>-<year>.md` path
+
 Typical conference page structure:
 
 * title

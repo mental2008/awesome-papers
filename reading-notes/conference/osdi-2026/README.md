@@ -52,13 +52,13 @@ Paper list: [https://www.usenix.org/conference/osdi26/technical-sessions](https:
       * **Operational Systems**
       * Characterize production pre-training data paths and optimize checkpoint replication, hot-file replication, and storage-side data transformation.
   * Reliability and Fault Tolerance
-    * SDCs in the Wild: Characterizing and Diagnosing SDC-Defective GPUs in Production LLM Training \[[Paper](https://www.usenix.org/conference/osdi26/presentation/zheng)]
+    * SDCs in the Wild: Characterizing and Diagnosing SDC-Defective GPUs in Production LLM Training \[[Personal Notes](sdchunter.md)] \[[Paper](https://www.usenix.org/conference/osdi26/presentation/zheng)]
       * SJTU & ByteDance Seed
       * **Operational Systems**
       * Characterize production SDC-defective GPUs and show why synthetic microbenchmarks miss data-dependent, aging-related, and model-sensitive corruption.
       * Introduce **SDCHunter**, replaying the exact failure-triggering training workload and input data to diagnose defective GPUs.
       * Deployed at ByteDance to mitigate 40 SDC incidents with less than 4% training overhead, 100% coverage and device-level localization for real SDC-defective accelerators, and diagnosis shortened to within one hour.
-    * Safeguarding LLM Training at Scale: Online SDC Detection and Insights from 35 Million GPU Hours \[[Paper](https://www.usenix.org/conference/osdi26/presentation/lei)]
+    * Safeguarding LLM Training at Scale: Online SDC Detection and Insights from 35 Million GPU Hours \[[Personal Notes](aegis.md)] \[[Paper](https://www.usenix.org/conference/osdi26/presentation/lei)]
       * THU & ByteDance
       * Present **AEGIS**, an online SDC detection framework that separates lightweight corruption sensing from definitive verification during LLM training.
     * OpGuard: Bitwise Alignment for Precise and General Debugging of Production LLM Training \[[Paper](https://www.usenix.org/conference/osdi26/presentation/zhou-ziming)]
