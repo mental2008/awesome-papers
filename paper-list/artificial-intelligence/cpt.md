@@ -46,7 +46,7 @@
   * UCAS & IA, CAS & RitzzAI
   * Models CPT loss curves as a transition between original and domain-specific training trajectories.
   * Decouples distribution shift and LR annealing to predict loss over CPT steps, replay ratios, and schedules.
-* D-CPT Law: Domain-specific Continual Pre-Training Scaling Law for Large Language Models (arXiv:2406.01375) \[[arXiv](https://arxiv.org/abs/2406.01375)]
+* D-CPT Law: Domain-specific Continual Pre-Training Scaling Law for Large Language Models (NeurIPS 2024) \[[Paper](https://openreview.net/forum?id=JzKFN5fWOk)] \[[arXiv](https://arxiv.org/abs/2406.01375)]
   * Alibaba Group & University of Waterloo & Manchester & QMUL & HKUST & M-A-P
   * Predicts general and downstream performance as a function of domain/general mixture ratio, model size, and dataset size.
   * Extends the law to cross-domain settings, reducing the search cost for target-domain mixture ratios.
@@ -92,7 +92,7 @@
   * UdeM & Mila & Concordia & UChicago & Capital One
   * Studies dense and MoE transformers under CPT to test whether routing worsens forgetting or load imbalance.
   * Finds MoE routers remain robust under distribution shift and can retain sample-efficiency benefits during CPT.
-* Investigating Continual Pretraining in Large Language Models: Insights and Implications (TMLR 2025) \[[Paper](https://openreview.net/forum?id=JzKFN5fWOk)] \[[arXiv](https://arxiv.org/abs/2402.17400)]
+* Investigating Continual Pretraining in Large Language Models: Insights and Implications (TMLR 2025) \[[Paper](https://openreview.net/forum?id=aKjJoEVKgO)] \[[arXiv](https://arxiv.org/abs/2402.17400)]
   * University of Tubingen & Cohere for AI
   * Studies continual domain-adaptive pretraining across domain sequences and model scales.
   * Finds domain semantic similarity, training order, and model size affect specialization, forward transfer, backward transfer, and forgetting.
