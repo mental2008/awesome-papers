@@ -118,6 +118,11 @@ I am actively maintaining this list.
   * FDU & Tencent & UChicago
   * Axis: **Production reliability infrastructure**
   * Silent irregular iterations can cost more training time than fail-stop failures; Holmes localizes them in real time using abnormal communication-operator detection, communication-operator graphs, and cross-iteration analysis.
+* Just-In-Time Checkpointing: Low Cost Error Recovery from Deep Learning Training Failures ([EuroSys 2024](../../reading-notes/conference/eurosys-2024/)) \[[Personal Notes](../../reading-notes/conference/eurosys-2024/jit-checkpointing.md)] \[[Paper](https://dl.acm.org/doi/10.1145/3627703.3650085)] \[[Homepage](https://www.microsoft.com/en-us/research/publication/just-in-time-checkpointing-low-cost-error-recovery-from-deep-learning-training-failures/)]
+  * MSR India
+  * Axis: **Recovery mechanisms**
+  * Creates recovery state only when a failure occurs, avoiding periodic checkpoint-frequency tuning and steady-state checkpoint overhead.
+  * Recovers by replaying a single minibatch iteration across GPUs, reducing failure recovery from minutes to seconds per GPU with nearly zero steady-state overhead.
 * MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs ([NSDI 2024](../../reading-notes/conference/nsdi-2024.md)) \[[Paper](https://www.usenix.org/conference/nsdi24/presentation/jiang-ziheng)] \[[Slides](https://www.usenix.org/system/files/nsdi24_slides-jiang_ziheng.pdf)] \[[Code](https://github.com/volcengine/veScale)]
   * ByteDance & PKU
   * Axis: **Production reliability infrastructure**

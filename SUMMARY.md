@@ -92,6 +92,7 @@
     * [SpotServe: Serving generative large language models on preemptible instances](reading-notes/conference/asplos-2024/spotserve.md)
   * [EuroSys 2024](reading-notes/conference/eurosys-2024/README.md)
     * [Orion: Interference-aware, fine-grained GPU sharing for ML applications](reading-notes/conference/eurosys-2024/orion-interference-aware-fine-grained-gpu-sharing-for-ml-applications.md)
+    * [Just-In-Time Checkpointing: Low Cost Error Recovery from Deep Learning Training Failures](reading-notes/conference/eurosys-2024/jit-checkpointing.md)
   * [NSDI 2024](reading-notes/conference/nsdi-2024.md)
   * [NeurIPS 2023](reading-notes/conference/neurips-2023.md)
   * [SC 2023](reading-notes/conference/sc-2023/README.md)
