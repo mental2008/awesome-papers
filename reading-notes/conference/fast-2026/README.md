@@ -15,7 +15,7 @@ Paper list: [https://www.usenix.org/conference/fast26/technical-sessions](https:
 ### AI for Systems
 
 * Generative File Systems
-  * Sharpen the Spec, Cut the Code: A Case for Generative File System with SYSSPEC \[[Paper](https://www.usenix.org/conference/fast26/presentation/liu-qingyuan)] \[[PDF](https://www.usenix.org/system/files/fast26-liu-qingyuan.pdf)] \[[arXiv](https://arxiv.org/abs/2512.13047)] \[[Code](https://github.com/SJTU-IPADS/specfs)] \[[Homepage](https://llmnativeos.github.io/specfs/)] \[[Slides](https://www.usenix.org/system/files/fast26_slides_liu-qingyuan.pdf)] \[[Video](https://www.youtube.com/watch?v=aMxAPuYhAkk)]
+  * Sharpen the Spec, Cut the Code: A Case for Generative File System with SYSSPEC \[[Personal Notes](sysspec.md)] \[[Paper](https://www.usenix.org/conference/fast26/presentation/liu-qingyuan)] \[[PDF](https://www.usenix.org/system/files/fast26-liu-qingyuan.pdf)] \[[arXiv](https://arxiv.org/abs/2512.13047)] \[[Code](https://github.com/SJTU-IPADS/specfs)] \[[Homepage](https://llmnativeos.github.io/specfs/)] \[[Slides](https://www.usenix.org/system/files/fast26_slides_liu-qingyuan.pdf)] \[[Video](https://www.youtube.com/watch?v=aMxAPuYhAkk)]
     * SJTU
     * **Best Paper**; **Distinguished Artifact Award**
     * Introduce generative file systems, where LLMs generate and evolve a file system from specifications instead of ambiguous natural-language prompts.
