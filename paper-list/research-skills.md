@@ -5,6 +5,7 @@
 * [How to Have a Bad Career in Research/Academia](https://people.eecs.berkeley.edu/~pattrsn/talks/BadCareer.pdf), by David A. Patterson
 * [You and Your Research](https://blog.samaltman.com/you-and-your-research), by Richard Hamming
 * [Principles of Effective Research](https://michaelnielsen.org/blog/principles-of-effective-research/), by Michael A. Nielsen
+* [Research as a Stochastic Decision Process](https://cs.stanford.edu/~jsteinhardt/ResearchasaStochasticDecisionProcess.html), by Jacob Steinhardt
 * [An Opinionated Guide to ML Research](http://joschu.net/blog/opinionated-guide-ml-research.html), by John Schulman
 * [Practicing AI research](https://www.jasonwei.net/blog/practicing-ai-research), by Jason Wei
 
