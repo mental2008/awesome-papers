@@ -19,6 +19,7 @@
   * [Deep Learning Framework](paper-list/systems-for-ml/deep-learning-framework.md)
   * [Cloud-Edge Collaboration](paper-list/systems-for-ml/cloud-edge-collaboration.md)
 * [ML for Systems](paper-list/ml-for-systems/README.md)
+  * [Agentic System Generation](paper-list/ml-for-systems/agentic-system-generation.md)
   * [Kernel Generation](paper-list/ml-for-systems/kernel-generation.md)
 * [Artificial Intelligence (AI)](paper-list/artificial-intelligence/README.md)
   * [Continual Pre-training](paper-list/artificial-intelligence/cpt.md)

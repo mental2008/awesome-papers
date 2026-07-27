@@ -36,10 +36,30 @@
 
 ### Video Generation
 
+* Quant VideoGen: Auto-Regressive Long Video Generation via 2-Bit KV-Cache Quantization ([ICML 2026](../../reading-notes/conference/icml-2026.md)) \[[arXiv](https://arxiv.org/abs/2602.02958)] \[[Code](https://github.com/svg-project/Quant-VideoGen)]
+  * UC Berkeley & MIT & NVIDIA & Amazon & UT Austin
+  * Introduces **QVG**, a training-free 2-bit KV-cache quantization framework for auto-regressive video diffusion models.
+  * Combines Semantic-Aware Smoothing with Progressive Residual Quantization to reduce KV-cache memory by up to 7.0x with less than 4% end-to-end latency overhead.
+* StreamDiffusionV2: A Streaming System for Dynamic and Interactive Video Generation ([MLSys 2026](../../reading-notes/conference/mlsys-2026.md)) \[[Paper](https://openreview.net/forum?id=p9WALNBvc6)] \[[arXiv](https://arxiv.org/abs/2511.07399)] \[[Code](https://github.com/chenfengxu714/StreamDiffusionV2)] \[[Homepage](https://streamdiffusionv2.github.io/)]
+  * UT Austin & UC Berkeley & Nunchaku AI & Stanford & First Intelligence & MIT & Shizuku AI
+  * Introduces a training-free streaming pipeline that brings video diffusion models to interactive live generation under time-to-first-frame and per-frame latency SLOs.
+  * Combines SLO-aware batching and block scheduling, a rolling KV cache, motion-aware noise control, and multi-GPU pipeline orchestration.
+* Sparse VideoGen2: Accelerate Video Generation with Sparse Attention via Semantic-Aware Permutation (NeurIPS 2025) \[[arXiv](https://arxiv.org/abs/2505.18875)] \[[Code](https://github.com/svg-project/Sparse-VideoGen)]
+  * UC Berkeley & MIT & NVIDIA & Stanford
+  * Introduces **SVG2**, a training-free sparse-attention framework that clusters and reorders video tokens by semantic similarity.
+  * Uses semantic-aware permutation, dynamic top-p budget control, and customized kernels to improve the quality-efficiency trade-off without padding scattered critical tokens.
 * Fast Video Generation with Sliding Tile Attention ([ICML 2025](../../reading-notes/conference/icml-2025.md)) \[[Paper](https://proceedings.mlr.press/v267/zhang25m.html)] \[[OpenReview](https://openreview.net/forum?id=U74MOXPEJd)] \[[arXiv](https://arxiv.org/abs/2502.04507)] \[[Code](https://github.com/hao-ai-lab/FastVideo)]
   * UCSD & UMich & THU & UC Berkeley & MBZUAI
   * Introduces **STA**, a tile-wise local spatiotemporal attention mechanism for video DiTs that exploits localized attention score structure.
   * Uses a hardware-aware sliding-window design and kernel optimizations to speed up video diffusion attention and end-to-end HunyuanVideo generation.
+* Sparse VideoGen: Accelerating Video Diffusion Transformers with Spatial-Temporal Sparsity ([ICML 2025](../../reading-notes/conference/icml-2025.md)) \[[Paper](https://proceedings.mlr.press/v267/xi25c.html)] \[[arXiv](https://arxiv.org/abs/2502.01776)] \[[Code](https://github.com/svg-project/Sparse-VideoGen)]
+  * UC Berkeley & MIT & NVIDIA & THU
+  * Introduces **SVG**, a training-free framework that dynamically classifies video DiT attention heads by spatial or temporal sparse patterns.
+  * Combines online attention profiling with hardware-aware tensor layouts and customized kernels to accelerate video generation while preserving quality.
+* Looking Backward: Streaming Video-to-Video Translation with Feature Banks (ICLR 2025) \[[arXiv](https://arxiv.org/abs/2405.15757)] \[[Code](https://github.com/Jeff-LiangF/streamv2v)] \[[Homepage](https://jeff-liangf.github.io/projects/streamv2v/)]
+  * UT Austin & UC Berkeley
+  * Introduces **StreamV2V**, a real-time streaming video-to-video translation system that supports unbounded input streams without diffusion-model fine-tuning.
+  * Maintains a compact feature bank of past frames and extends self-attention and feature fusion to preserve temporal consistency at 20 FPS on one A100 GPU.
 * FlexCache: Flexible Approximate Cache System for Video Diffusion (arXiv:2501.04012) \[[arXiv](https://arxiv.org/abs/2501.04012)]
   * UWaterloo
   * Cache for text-to-video diffusion models.
