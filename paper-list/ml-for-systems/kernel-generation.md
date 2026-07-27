@@ -19,6 +19,11 @@ Papers on using LLMs or agents for kernel generation, tensor program generation,
 * Optimizing PyTorch Inference with LLM-Based Multi-Agent Systems ([MLSys 2026](../../reading-notes/conference/mlsys-2026.md)) \[[Paper](https://openreview.net/forum?id=MJxhiX3sSd)]
   * LBNL
   * Study LLM-based multi-agent systems for GPU kernel optimization and compare their dynamics against existing compilers and manual development.
+* ARGUS: Agentic GPU Optimization Guided by Data-Flow Invariants (arXiv:2604.18616) \[[arXiv](https://arxiv.org/abs/2604.18616)]
+  * CausalFlow Inc. & HKUST & THU & Stanford & UCAS & UC Riverside
+  * Present **ARGUS**, an agentic GPU kernel optimization framework that uses compile-time data-flow invariants to turn global kernel constraints into dense, structured feedback.
+  * Provide a tile-based Pythonic DSL with propagated tags and tag assertions, verifying invariants through abstract interpretation and SMT solving while returning concrete counterexamples for targeted fixes.
+  * On AMD MI300X GPUs, generated GEMM, flash-attention, and MoE kernels reach 99-104% of state-of-the-art hand-optimized assembly throughput; ARGUS also solves 100% of KernelBench Level 1 and 90% of Level 2 tasks.
 * Improving Efficiency of GPU Kernel Optimization Agents using a Domain-Specific Language and Speed-of-Light Guidance (arXiv:2603.29010) \[[arXiv](https://arxiv.org/abs/2603.29010)]
   * NVIDIA
   * Introduce two efficiency principles for LLM-based GPU kernel optimization agents: a compact domain-specific language and Speed-of-Light (SOL) guidance.
