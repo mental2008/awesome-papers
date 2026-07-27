@@ -142,6 +142,14 @@ I am actively maintaining this list.
 
 ## LLM Inference
 
+### Full-Pipeline Optimization
+
+* Full-Pipeline Inference Optimization for MiMo-V2.5 Series: Pushing Hybrid SWA Efficiency to the Limit (arXiv:2607.13095) \[[arXiv](https://arxiv.org/abs/2607.13095)]
+  * MiMo Team, Xiaomi
+  * Presents a production inference system for the MiMo-V2.5 family that jointly supports Hybrid Sliding Window Attention (SWA), sparse MoE, and multimodal encoders.
+  * Refactors KV-cache management with separate full-attention and SWA pools, layerwise prefetch, SWA-aware prefix-cache trees, and placement policies that preserve strict $$O(W)$$ SWA storage, backed by the RDMA-optimized **GCache** distributed cache.
+  * Combines KV-cache-affinity routing with three-tier **Length Bucketing** (0–64K / 64K–256K / 256K–1M) to reduce load imbalance and mixed-length prefill interference, while accelerating multimodal inputs through GPU image preprocessing, parallel video decoding, and cache sharing.
+
 ### Heterogeneous Deployment
 
 * Coral: Cost-Efficient Multi-LLM Serving over Heterogeneous Cloud GPUs (arXiv:2605.04357) \[[arXiv](https://arxiv.org/abs/2605.04357)]
@@ -393,6 +401,7 @@ I am actively maintaining this list.
 
 * LLM: Large Language Model
 * LoRA: Low-Rank Adaptation
+* MoE: Mixture-of-Experts
 * RL: Reinforcement Learning
 * RLHF: Reinforcement Learning from Human Feedback
 * SDC: Silent Data Corruption
