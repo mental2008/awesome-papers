@@ -6,8 +6,6 @@
 * [You and Your Research](https://blog.samaltman.com/you-and-your-research), by Richard Hamming
 * [Principles of Effective Research](https://michaelnielsen.org/blog/principles-of-effective-research/), by Michael A. Nielsen
 * [Research as a Stochastic Decision Process](https://cs.stanford.edu/~jsteinhardt/ResearchasaStochasticDecisionProcess.html), by Jacob Steinhardt
-* [An Opinionated Guide to ML Research](http://joschu.net/blog/opinionated-guide-ml-research.html), by John Schulman
-* [Practicing AI research](https://www.jasonwei.net/blog/practicing-ai-research), by Jason Wei
 
 ## Before you start your Ph.D.
 
@@ -24,6 +22,7 @@
 ## Performance Evaluation
 
 * [Always Measure One Level Deeper](https://cacm.acm.org/research/always-measure-one-level-deeper/), by John Ousterhout
+* [Performance Hints](https://abseil.io/fast/hints.html), by Jeff Dean and Sanjay Ghemawat
 
 ## Writing a Paper
 
@@ -47,9 +46,16 @@
 
 ***
 
+## Distributed Systems
+
+* [Software Engineering Advice from Building Large-Scale Distributed Systems](https://static.googleusercontent.com/media/research.google.com/en/us/people/jeff/stanford-295-talk.pdf), by Jeff Dean
+* [Designs, Lessons and Advice from Building Large Distributed Systems](https://www.cs.cornell.edu/projects/ladis2009/talks/dean-keynote-ladis2009.pdf), by Jeff Dean
+
 ## AI Research
 
 * [The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html), by Richard S. Sutton
+* [An Opinionated Guide to ML Research](http://joschu.net/blog/opinionated-guide-ml-research.html), by John Schulman
+* [Practicing AI research](https://www.jasonwei.net/blog/practicing-ai-research), by Jason Wei
 
 ***
 
