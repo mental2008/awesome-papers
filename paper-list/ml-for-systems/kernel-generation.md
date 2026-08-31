@@ -50,6 +50,14 @@ Papers on using LLMs or agents for kernel generation, tensor program generation,
   * Combine scalable data synthesis, a skill-augmented CUDA development environment, and stable RL training for verifiable kernel optimization.
   * Outperform `torch.compile` by 100%, 100%, and 92% on the three KernelBench levels.
 
+## Kernel Verification
+
+* ProofWright: Towards Agentic Formal Verification of CUDA (arXiv:2511.12294) \[[arXiv](https://arxiv.org/abs/2511.12294)] \[[Homepage](https://mast.stanford.edu/pubs/proofwright_towards_agentic_formal_verification_of_cuda/)]
+  * Georgia Tech & NVIDIA & Stanford
+  * Introduce **ProofWright**, an agentic formal-verification framework that establishes memory safety, thread safety, and semantic correctness for LLM-generated CUDA kernels.
+  * Combine a VerCors agent that synthesizes safety annotations with a Rocq-based framework that translates PyTorch specifications and proves semantic equivalence.
+  * Verify memory safety and data-race freedom for 74% of KernelBench L1 kernels and semantic equivalence for 14%, with an average overhead of about three minutes per kernel.
+
 ## Compiler Optimization
 
 * Meta Large Language Model Compiler: Foundation Models of Compiler Optimization \[[Paper](https://ai.meta.com/research/publications/meta-large-language-model-compiler-foundation-models-of-compiler-optimization/)]
