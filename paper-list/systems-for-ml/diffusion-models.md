@@ -44,6 +44,10 @@
   * UT Austin & UC Berkeley & Nunchaku AI & Stanford & First Intelligence & MIT & Shizuku AI
   * Introduces a training-free streaming pipeline that brings video diffusion models to interactive live generation under time-to-first-frame and per-frame latency SLOs.
   * Combines SLO-aware batching and block scheduling, a rolling KV cache, motion-aware noise control, and multi-GPU pipeline orchestration.
+* Partition the Support, Reconstruct the Residual: Training-Free Sparse Attention for Video Generation and World Models (arXiv:2608.18484) \[[arXiv](https://arxiv.org/abs/2608.18484)] \[[Code](https://github.com/PardisTaghavi/SparsePR)] \[[Homepage](https://pardistaghavi.github.io/SparsePR-website/)]
+  * Texas A&M University
+  * Introduces **SparsePR**, a training-free block-sparse attention method combining response-coupled partitioning with probe-fitted residual reconstruction across video generation and world models.
+  * Preserves generation quality at 22.0-26.0% executed-pair density while reporting 1.48x-2.61x end-to-end speedups across four models.
 * Sparse VideoGen2: Accelerate Video Generation with Sparse Attention via Semantic-Aware Permutation (NeurIPS 2025) \[[arXiv](https://arxiv.org/abs/2505.18875)] \[[Code](https://github.com/svg-project/Sparse-VideoGen)]
   * UC Berkeley & MIT & NVIDIA & Stanford
   * Introduces **SVG2**, a training-free sparse-attention framework that clusters and reorders video tokens by semantic similarity.
