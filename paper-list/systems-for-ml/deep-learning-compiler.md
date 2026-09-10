@@ -28,6 +28,11 @@ No active maintenance.
 
 ### General Tensor Program Generation
 
+* DITRON: Distributed Multi-level Tiling Compiler for Parallel Tensor Programs ([ICML 2026](../../reading-notes/conference/icml-2026.md)) \[[arXiv](https://arxiv.org/abs/2605.02953)] \[[Code](https://github.com/ByteDance-Seed/Triton-distributed)]
+  * ByteDance Seed & PKU & THU & ZJU & SJTU
+  * Introduce **DITRON**, a distributed tensor compiler with Core-, Device-, and Task-level tiling interfaces that map computation and communication onto the memory hierarchy of GPU clusters.
+  * Reorder tiles through distributed swizzling to overlap computation with communication, and use task dependencies and scheduling to fuse registered Triton kernels into megakernels.
+  * Support NVIDIA and AMD GPUs through hardware-specific SHMEM backends; report 6-30% speedups on isolated kernels and 5-30% gains in end-to-end vLLM inference over expert-tuned CUDA baselines.
 * Cocktailer: Analyzing and Optimizing Dynamic Control Flow in Deep Learning ([OSDI 2023](../../reading-notes/conference/osdi-2023.md)) \[[Paper](https://www.usenix.org/conference/osdi23/presentation/zhang-chen)]
   * THU & MSRA
   * Co-optimize the execution of control flow and data flow.
