@@ -1,9 +1,14 @@
 # Kernel Generation
 
-Papers on using LLMs or agents for kernel generation, tensor program generation, and compiler optimization.
+Papers on using LLMs or agents for kernel generation, kernel verification, tensor program generation, and compiler optimization.
 
 ## Agent-Based Kernel Generation
 
+* Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent (arXiv:2607.14541) \[[arXiv](https://arxiv.org/abs/2607.14541)] \[[Code](https://github.com/alibaba/atrex-kernel-agent)] \[[Benchmark](https://github.com/alibaba/atrex-bench)]
+  * Alibaba
+  * Present **Atrex-Kernel-Agent (AKA)**, a GPU kernel optimization agent that combines iterative measurement and revision with profiler feedback and a layered knowledge base of reference kernels and optimization techniques.
+  * Use optimization dropout to mask stale iteration memories while preserving the accepted kernel and audit trail, allowing a fresh agent context to explore alternative optimization directions.
+  * In controlled case studies, replace PyTorch fallbacks with generated FlyDSL kernels that match or exceed hand-tuned production baselines.
 * KernelEvolve: Scaling Agentic Kernel Coding for Heterogeneous AI Accelerators at Meta (ISCA 2026) \[[Personal Notes](../../reading-notes/conference/isca-2026/kernelevolve.md)] \[[arXiv](https://arxiv.org/abs/2512.23236)] \[[Blog](https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/)]
   * Meta
   * Present **KernelEvolve**, an agentic kernel coding framework that automates kernel generation and optimization from kernel specifications for recommendation workloads across heterogeneous accelerators.
@@ -65,6 +70,16 @@ Papers on using LLMs or agents for kernel generation, tensor program generation,
 
 ## Benchmarks
 
+* CommBench: Can LLMs Write Correct and Efficient GPU Communication Code? (arXiv:2608.04450) \[[arXiv](https://arxiv.org/abs/2608.04450)] \[[Code](https://github.com/uccl-project/CommBench)] \[[Blog](https://uccl-project.github.io/posts/commbench/)]
+  * UC Davis & UC Berkeley & UIUC & CUHK & UCSD & UW-Madison
+  * Present **CommBench**, a benchmark of over 100 expert-curated GPU communication tasks covering point-to-point transfers, collectives, expert parallelism, compute-communication fusion, and utilities.
+  * Automate compilation, execution, and validation on multi-GPU systems with checks against benchmark cheating, jointly measuring correctness and performance across intra-node NVLink and inter-node RDMA.
+  * In the paper's evaluation, GPT-5.5 produces correct code with competitive performance on only 30.7% of tasks, exposing gaps between LLM-generated and expert-written communication code.
+* Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent (arXiv:2607.14541) \[[arXiv](https://arxiv.org/abs/2607.14541)] \[[Benchmark](https://github.com/alibaba/atrex-bench)]
+  * Alibaba
+  * Introduce **Atrex-Bench**, with 30 operators and 440 shapes sampled from production inference traces of GPUs with limited compute capacity and abundant memory.
+  * Score kernels against per-problem roofline ceilings, weighting results by each operator's share of GPU time per serving phase and each application's share of fleet card-hours to reflect production importance.
+  * Evaluate six coding agents: the best unaugmented model reaches only about 10% of the hardware roofline, while PyTorch fallbacks inflate apparent correctness rates.
 * SOL-ExecBench: Speed-of-Light Benchmarking for Real-World GPU Kernels Against Hardware Limits (arXiv:2603.19173) \[[arXiv](https://arxiv.org/abs/2603.19173)] \[[Code](https://github.com/NVIDIA/SOL-ExecBench)] \[[Benchmark](https://research.nvidia.com/benchmarks/sol-execbench)]
   * NVIDIA
   * Present a benchmark of 235 CUDA kernel optimization problems extracted from 124 production and emerging AI models, targeting NVIDIA Blackwell GPUs.
