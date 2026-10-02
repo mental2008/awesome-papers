@@ -4,8 +4,8 @@
 
 |            Conference           |        When        |                       Where                        | Remarks                                          |
 | :-----------------------------: | :----------------: | :------------------------------------------------: | ------------------------------------------------ |
-|    [SOSP 2026](sosp-2026.md)    | Sep 29-Oct 2, 2026 | Clarion Congress Hotel Prague, Prague, Czechia     | Incoming                                         |
-|    [OSDI 2026](osdi-2026/)      |   Jul 13-15, 2026  |                  Seattle, WA, USA                  | 🧐 Incoming                                      |
+|    [SOSP 2026](sosp-2026.md)    | Sep 29-Oct 2, 2026 | Clarion Congress Hotel Prague, Prague, Czechia     | 🧐😎                                             |
+|    [OSDI 2026](osdi-2026/)      |   Jul 13-15, 2026  |                  Seattle, WA, USA                  | 🧐                                               |
 |    [ICML 2026](icml-2026.md)    |   Jul 6-11, 2026   | COEX Convention & Exhibition Center, Seoul, South Korea | 🧐                                          |
 |    [ISCA 2026](isca-2026/)      |  Jun 27-Jul 1, 2026|      Raleigh Convention Center, Raleigh, NC, USA   | Incoming                                         |
 |    [CAIS 2026](cais-2026.md)    |  May 26-29, 2026   |                  San Jose, CA, USA                 | 🧐                                               |

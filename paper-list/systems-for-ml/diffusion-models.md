@@ -4,8 +4,8 @@
 
 ### Image Generation
 
-* DiFlow: A System for Micro-Serving Text-to-Image Diffusion Workflows ([SOSP 2026](../../reading-notes/conference/sosp-2026.md)) \[[arXiv](https://arxiv.org/abs/2604.08123)]
-  * HKUST & Alibaba
+* DiFlow: A System for Micro-Serving Text-to-image Diffusion Workflows ([SOSP 2026](../../reading-notes/conference/sosp-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3830418.3843880)] \[[arXiv](https://arxiv.org/abs/2604.08123)] \[[Code](https://github.com/diflow-project/diflow)]
+  * HKUST & Alibaba & SJTU
   * **Our work!**
   * Decomposes text-to-image diffusion workflows into independently managed model-execution nodes.
   * Enables per-model scaling, cross-workflow model sharing, and adaptive model parallelism for bursty serving workloads.
