@@ -6,7 +6,7 @@ Hi all, thank you for visiting here ;-)
 
 I'm a senior engineer at Alibaba, working on AI infrastructure. Prior to that, I earned my Ph.D. degree from HKUST.
 
-This space hosts my personal notes on academic papers. My interests span systems (e.g., OSDI, SOSP, NSDI, ATC, EuroSys, SoCC, ASPLOS, MLSys, CAIS), machine learning (e.g., ICML, ICLR, NeurIPS), and other funny stuff.
+This space hosts my personal notes on academic papers. My interests span systems (e.g., OSDI, SOSP, NSDI, ATC, EuroSys, SoCC, ASPLOS, MLSys), machine learning (e.g., ICML, ICLR, NeurIPS), and other funny stuff.
 
 All views expressed here are my own.
 
@@ -20,6 +20,7 @@ All views expressed here are my own.
 
 ## Changelogs
 
+* 10/2026: Organize the papers of [SOSP 2026](reading-notes/conference/sosp-2026.md).
 * 07/2026: Organize the paper lists of [On-Policy Distillation](paper-list/artificial-intelligence/opd.md) and [Continual Pre-training](paper-list/artificial-intelligence/cpt.md); organize the papers of [MLSys 2026](reading-notes/conference/mlsys-2026.md) and [OSDI 2026](reading-notes/conference/osdi-2026/); update the paper lists of [Systems for LLMs](paper-list/systems-for-ml/llm.md) and [Systems for Diffusion Models](paper-list/systems-for-ml/diffusion-models.md).
 * 06/2026: Organize the papers of [CAIS 2026](reading-notes/conference/cais-2026.md).
 * 04/2026: Organize the papers of [ASPLOS 2026](reading-notes/conference/asplos-2026.md), [EuroSys 2026](reading-notes/conference/eurosys-2026.md), [NSDI 2026](reading-notes/conference/nsdi-2026.md); create the paper list of [Kernel Generation](paper-list/ml-for-systems/kernel-generation.md).
