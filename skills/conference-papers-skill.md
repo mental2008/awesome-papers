@@ -141,6 +141,8 @@ Default metadata placement:
 * per-conference venue pages should usually omit `When` and `Where` from `## Meta Info`
 * venue pages should keep page-local metadata such as `Homepage`, `Paper list`, `Program`, `Proceedings`, and `Acceptance Rate`
 
+For `Acceptance Rate`, round the percentage to one decimal place and retain the accepted/submitted counts when available.
+
 For proceedings-heavy pages, use the current `reading-notes/conference/asplos-2026.md` style.
 
 ## Grouping Guidance For `## Papers`
@@ -154,8 +156,10 @@ Common high-level groups:
 * `### Distributed Training`
 * `### Model Serving`
 * `### Deep Learning Compilation`
+* `### Accelerator Compilation`
 * `### Resource Management`
 * `### GPU Systems`
+* `### AI Accelerators`
 
 Maintain the subgroup taxonomy in this skill and extend it over time as the repository evolves.
 
@@ -182,13 +186,16 @@ This section is the maintained reference for major directions and their preferre
   * `Fault Tolerance and Rescheduling`
   * `Training Monitoring and Diagnosis`
 * `LLM Inference`
+  * `Accelerator Architectures`
   * `LLM-based Applications`
   * `Workload Characterization`
   * `Retrieval-Augmented Generation (RAG)`
   * `Request Scheduling`
   * `KV Cache Management`
   * `Prefill-Decode (PD) Disaggregation`
+  * `Attention–FFN Disaggregation (AFD)`
   * `Parallelism and Partitioning`
+  * `Mapping and Communication`
   * `Chunked Prefill`
   * `Serverless Inference`
   * `LoRA Serving`
@@ -198,13 +205,21 @@ This section is the maintained reference for major directions and their preferre
   * `Compression`
   * `MoE Inference`
   * `Attention Mechanisms`
+  * `Multimodal Inference`
   * `Offloading`
   * `Heterogeneous Deployment`
   * `Trusted Execution`
+* `Workload Modeling and Characterization`
 * `LLM Alignment`
   * `RLHF Systems`
   * `Post-Training Infrastructure`
   * `Safety and Verification`
+
+Use `Workload Modeling and Characterization` as a sibling of training and inference when a framework models both lifecycles rather than implementing a runtime scheduling policy.
+
+Keep `Attention–FFN Disaggregation (AFD)` distinct from `Prefill-Decode (PD) Disaggregation`: AFD separates attention and feed-forward network (FFN) computation, while PD separates inference phases. Preserve a paper's original terminology (for example, `Attention-FC` in CHIME's title) rather than rewriting bibliographic titles to match the taxonomy.
+
+Reserve `Heterogeneous Deployment` for placement or execution across heterogeneous compute resources. Papers whose main contribution is a memory-centric accelerator architecture belong in `Accelerator Architectures`, even when they combine multiple memory technologies.
 
 ### Diffusion Models
 
@@ -241,12 +256,21 @@ This section is the maintained reference for major directions and their preferre
 * `Serving-Aware Compilation`
 * `Code Generation`
 
+### Accelerator Compilation
+
+* `FPGA Graph Processing`
+
+Use this bucket for accelerator compiler frameworks whose primary workload is not deep learning, such as graph processing over BFS, PageRank, or SSSP. Do not confuse graph algorithms with neural-network computation graphs.
+
 ### Resource Management
 
 * `Serverless Computing`
 * `Scheduling`
 * `GPU Clusters`
 * `GPU Scheduling and Sharing`
+* `Power Management`
+
+Use `Power Management` for CPU clusters, compound CPU/GPU servers, and node- or fleet-level power allocation. Keep GPU-specific device policies in `GPU Systems -> Energy Efficiency`.
 
 ### GPU Systems
 
@@ -254,6 +278,14 @@ This section is the maintained reference for major directions and their preferre
 * `GPU Programming`
 * `GPU Virtualization`
 * `Heterogeneous Accelerators`
+
+### AI Accelerators
+
+* `Industry Systems`
+* `LLM and Generative AI Accelerators`
+* `Runtime and Scheduling`
+
+Use `Runtime and Scheduling` for compiler/ISA/runtime co-design that coordinates accelerator execution units, rather than grouping it by a particular evaluated model family.
 
 Inside an LLM section, prefer the taxonomy already used in `paper-list/systems-for-ml/llm.md`:
 
