@@ -44,6 +44,7 @@
 ## Reading Notes
 
 * [Conference](reading-notes/conference/README.md)
+  * [ATC 2026](reading-notes/conference/atc-2026.md)
   * [SOSP 2026](reading-notes/conference/sosp-2026.md)
   * [OSDI 2026](reading-notes/conference/osdi-2026/README.md)
     * [SDCs in the Wild: Characterizing and Diagnosing SDC-defective GPUs in Production LLM Training](reading-notes/conference/osdi-2026/sdchunter.md)
