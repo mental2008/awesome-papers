@@ -15,6 +15,7 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * Beihang University -> BUAA
 * Carnegie Mellon University -> CMU
 * Chinese Academy of Sciences -> CAS
+* Columbia University -> Columbia
 * George Mason University -> GMU
 * Guangdong University of Technology -> GDUT
 * Harbin Institute of Technology (Shenzhen) -> HIT-SZ
