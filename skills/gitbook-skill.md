@@ -332,6 +332,15 @@ E = mc^2
 $$
 ```
 
+#### Acronyms and Glossaries
+
+* Define technical acronyms at their first substantive use with the full term followed by the acronym in parentheses. For variants whose names do not have a direct expansion, add a brief inline explanation, such as `RASP-L, a learnable subset of the Restricted Access Sequence Processing language`.
+* If an acronym is used only once on a page, or only within one paper entry, keep its explanation in that description instead of adding it to `## Acronyms`.
+* Reserve `## Acronyms` for technical concepts that recur across the page or across multiple paper entries and benefit from a shared glossary. Do not count glossary entries, resource URLs, repeated title/description mentions within one entry, or affiliation abbreviations as evidence that a technical acronym needs a glossary entry.
+* Remove unused and duplicate glossary entries. Sort retained entries alphabetically by acronym, and omit the section if no qualifying entries remain.
+* Keep the full term and acronym together in section titles when the acronym is widely used and helps recognition; a glossary does not require removing acronyms from headings.
+* Use `skills/affiliation-abbreviations.md` for institution-name abbreviations; these do not belong in the technical acronym glossary.
+
 ### Page Frontmatter
 
 GitBook supports YAML frontmatter at the top of markdown files to configure page-specific settings. Frontmatter must be placed at the very beginning of the file, before any content.

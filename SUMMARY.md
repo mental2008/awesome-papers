@@ -26,6 +26,7 @@
   * [On-Policy Distillation](paper-list/artificial-intelligence/opd.md)
   * [Diffusion Models](paper-list/artificial-intelligence/diffusion-models.md)
   * [Language Models](paper-list/artificial-intelligence/language-models.md)
+  * [Looped Transformers](paper-list/artificial-intelligence/looped-transformers.md)
   * [Deep Learning Recommendation Model (DLRM)](paper-list/artificial-intelligence/dlrm.md)
 * [Hardware Virtualization](paper-list/hardware-virtualization/README.md)
   * [GPU Sharing](paper-list/hardware-virtualization/gpu-sharing.md)

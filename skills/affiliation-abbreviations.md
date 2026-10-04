@@ -25,6 +25,7 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * Imperial College London -> ICL
 * Institute of Computing Technology, Chinese Academy of Sciences -> ICT, CAS
 * Institute of Software, Chinese Academy of Sciences -> IS, CAS
+* Lawrence Livermore National Laboratory -> LLNL
 * Mohamed bin Zayed University of Artificial Intelligence -> MBZUAI
 * Microsoft Research -> MSR
 * Microsoft Research India -> MSR India
@@ -42,12 +43,18 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * Southeast University -> SEU
 * Stanford University -> Stanford
 * Sun Yat-sen University -> SYSU
+* Technical University of Munich -> TUM
+* The Ohio State University -> OSU
 * Tianjin University -> TJU
+* Toyota Technological Institute at Chicago -> TTIC
 * Tsinghua University -> THU
+* UC Santa Cruz -> UCSC
+* University of Amsterdam -> Amsterdam
 * University of California, Berkeley -> UC Berkeley
 * University of California, Davis -> UC Davis
 * University of California, Riverside -> UC Riverside
 * University of California, San Diego -> UCSD
+* University of California, Santa Cruz -> UCSC
 * University of Cambridge -> Cambridge
 * University of Chicago -> UChicago
 * University of Chinese Academy of Sciences -> UCAS
@@ -55,12 +62,14 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * University of Illinois Urbana-Champaign -> UIUC
 * University of Massachusetts Amherst -> UMass Amherst
 * University of Manchester -> Manchester
+* University of Maryland, College Park -> UMD
 * University of Michigan -> UMich
 * University of Pennsylvania -> UPenn
 * University of Science and Technology of China -> USTC
 * University of Toronto -> UofT
 * University of Virginia -> UVA
 * University of Washington -> UW
+* University of Wisconsin-Madison -> UW-Madison
 * Xi'an Jiaotong University -> XJTU
 * Zhejiang University -> ZJU
 

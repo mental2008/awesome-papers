@@ -9,4 +9,5 @@
 
 * [Diffusion Models](diffusion-models.md)
 * [Language Models](language-models.md)
+* [Looped Transformers](looped-transformers.md)
 * [Deep Learning Recommendation Models](dlrm.md)
