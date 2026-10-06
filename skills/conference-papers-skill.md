@@ -274,6 +274,7 @@ Use `Power Management` for CPU clusters, compound CPU/GPU servers, and node- or 
 
 ### GPU Systems
 
+* `Checkpointing and Restore`
 * `GPU Communication`
 * `GPU Programming`
 * `GPU Virtualization`

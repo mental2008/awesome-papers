@@ -114,7 +114,7 @@ Homepage: [https://sigops.org/s/conferences/sosp/2025/](https://sigops.org/s/con
     * A power management mechanism → Reduce power consumption based upon in-flight work characteristics.
     * Built in Rust.
 * GPU Checkpointing
-  * PhoenixOS: Concurrent OS-level GPU Checkpoint and Restore with Validated Speculation \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764813)] \[[arXiv](https://arxiv.org/abs/2405.12079)]
+  * PhoenixOS: Concurrent OS-level GPU Checkpoint and Restore with Validated Speculation \[[Paper](https://dl.acm.org/doi/10.1145/3731569.3764813)] \[[arXiv](https://arxiv.org/abs/2405.12079)] \[[Code](https://github.com/SJTU-IPADS/PhoenixOS)] \[[Docs](https://phoenixos.readthedocs.io/)]
     * SJTU IPADS
     * Proactively detect GPU memory reads and writes through a two-step process:
       * Speculate about GPU memory accesses based on the arguments used when launching GPU kernels.

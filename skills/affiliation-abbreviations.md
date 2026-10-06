@@ -39,6 +39,7 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * Pennsylvania State University -> Penn State
 * Rensselaer Polytechnic Institute -> RPI
 * Rice University -> Rice
+* Shanghai Artificial Intelligence Research Institute -> SAIRI
 * Shanghai Jiao Tong University -> SJTU
 * Southeast University -> SEU
 * Stanford University -> Stanford
