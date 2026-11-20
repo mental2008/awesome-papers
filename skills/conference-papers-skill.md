@@ -124,13 +124,10 @@ Typical conference page structure:
 * title
 * `## Meta Info`
 * `Homepage: ...`
-* either:
-  * `Paper list: ...`
-* or, if multiple paper-list-related links exist:
-  * `### Paper List`
-  * `Program: ...`
-  * `Proceedings Volume 1: ...`
-  * `Proceedings Volume 2: ...`
+* optional `### Paper List`, with these links in order when available:
+  * `Accepted Papers: [URL](URL)`
+  * `Program: [URL](URL)`
+  * `Proceedings: [URL](URL)`
 * optional `### Acceptance Rate`
 * `## Papers`
 * optional `## Acronyms`
@@ -139,11 +136,13 @@ Default metadata placement:
 
 * `When` and `Where` belong in `reading-notes/conference/README.md` or the relevant parent conference index
 * per-conference venue pages should usually omit `When` and `Where` from `## Meta Info`
-* venue pages should keep page-local metadata such as `Homepage`, `Paper list`, `Program`, `Proceedings`, and `Acceptance Rate`
+* use the URL itself as the visible link text for each item in `### Paper List`
+* omit unavailable links, and omit `### Paper List` if none of the three are available
+* keep conference-wide artifact evaluation links out of `### Paper List` by default; include relevant artifact links in individual paper entries
 
 For `Acceptance Rate`, round the percentage to one decimal place and retain the accepted/submitted counts when available.
 
-For proceedings-heavy pages, use the current `reading-notes/conference/asplos-2026.md` style.
+When proceedings span multiple volumes, use `Proceedings Volume 1`, `Proceedings Volume 2`, and so on in the proceedings position.
 
 ## Grouping Guidance For `## Papers`
 
@@ -247,6 +246,7 @@ Reserve `Heterogeneous Deployment` for placement or execution across heterogeneo
 * `Multi-Tenant Serving`
 * `Cross-Region and Multi-Cloud Serving`
 * `Edge-Cloud Serving`
+* `On-Device Deployment`
 
 ### Deep Learning Compilation
 
@@ -276,6 +276,7 @@ Use `Power Management` for CPU clusters, compound CPU/GPU servers, and node- or 
 
 * `Checkpointing and Restore`
 * `GPU Communication`
+* `GPU I/O`
 * `GPU Programming`
 * `GPU Virtualization`
 * `Heterogeneous Accelerators`

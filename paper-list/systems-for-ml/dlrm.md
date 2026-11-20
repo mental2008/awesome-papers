@@ -2,6 +2,8 @@
 
 ## DLRM Training
 
+* SOLO: Making Single-Local-Replica Storage Practical for Geo-Distributed Recommendation Model Training ([ATC 2026](../../reading-notes/conference/atc-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3828523.3857035)]
+  * USTC & ByteDance
 * Heterogeneous Acceleration Pipeline for Recommendation System Training ([ISCA 2024](../../reading-notes/conference/isca-2024.md)) \[[arXiv](https://arxiv.org/abs/2204.05436)]
   * UBC & GaTech
   * **Hotline**: a runtime framework.

@@ -4,6 +4,9 @@ System-level GPU checkpoint/restore (C/R) captures GPU memory and execution stat
 
 ## System-Level Checkpoint and Restore
 
+* FLASH: Fault-Led, Attested, Secure Hybrid-Key Checkpoint for Confidential GPU ([ATC 2026](../../reading-notes/conference/atc-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3828523.3857076)] \[[Project](https://septlab.com/papers/flash.html)] \[[Artifact](https://zenodo.org/records/23199897)]
+  * USC & Korea University & NVIDIA & Roblox & UC Riverside
+  * Retains GPU-generated ciphertext in the checkpoint and tracks dirty pages during concurrent copying to keep the final pause short.
 * GPU Checkpoint/Restore Made Fast and Lightweight ([FAST 2026](../../reading-notes/conference/fast-2026/)) \[[Paper](https://www.usenix.org/conference/fast26/presentation/zeng)] \[[Code](https://github.com/thustorage/GCR)]
   * THU
   * **Distinguished Artifact Award**

@@ -15,6 +15,7 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * Beihang University -> BUAA
 * Carnegie Mellon University -> CMU
 * Chinese Academy of Sciences -> CAS
+* City University of Hong Kong -> CityU
 * Columbia University -> Columbia
 * George Mason University -> GMU
 * Guangdong University of Technology -> GDUT
@@ -37,10 +38,13 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * North Carolina State University -> NCSU
 * Peking University -> PKU
 * Pennsylvania State University -> Penn State
+* Renmin University of China -> RUC
 * Rensselaer Polytechnic Institute -> RPI
 * Rice University -> Rice
+* Shandong University -> SDU
 * Shanghai Artificial Intelligence Research Institute -> SAIRI
 * Shanghai Jiao Tong University -> SJTU
+* Shanghai University of Finance and Economics -> SUFE
 * Southeast University -> SEU
 * Stanford University -> Stanford
 * Sun Yat-sen University -> SYSU
@@ -61,11 +65,13 @@ Use it as a lightweight normalization reference when writing or polishing affili
 * University of Chinese Academy of Sciences -> UCAS
 * University of Hong Kong -> HKU
 * University of Illinois Urbana-Champaign -> UIUC
+* University of Macau -> UMacau
 * University of Massachusetts Amherst -> UMass Amherst
 * University of Manchester -> Manchester
 * University of Maryland, College Park -> UMD
 * University of Michigan -> UMich
 * University of Pennsylvania -> UPenn
+* University of Pittsburgh -> Pitt
 * University of Science and Technology of China -> USTC
 * University of Toronto -> UofT
 * University of Virginia -> UVA
