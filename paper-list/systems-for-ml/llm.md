@@ -27,6 +27,14 @@ I am actively maintaining this list.
 * **Fault tolerance**: isolate and recover failures across trainer, rollout, and control-plane roles.
 {% endhint %}
 
+* PrefixFlow: Training-Time KV Caching for Schedule-Level Prefix Reuse in LLM RL Training ([ATC 2026](../../reading-notes/conference/atc-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3828523.3857100)] \[[arXiv](https://arxiv.org/abs/2606.01143)]
+  * HKUST & Tencent & SUFE & HKU
+  * Axis: **Workflow scheduling and resource reallocation**
+  * Reuses a shared rollout prefix across suffix microbatches, executing its forward and backward passes once per group of trajectories.
+* FlexMARL: Graph-Driven Rollout-Training Co-Design for LLM-Based Multi-Agent Reinforcement Learning ([ATC 2026](../../reading-notes/conference/atc-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3828523.3857118)] \[[arXiv](https://arxiv.org/abs/2602.09578)]
+  * JD.com & Huawei & HUST
+  * Axis: **Disaggregated RL systems**; **Workflow scheduling and resource reallocation**
+  * Uses a multi-agent execution graph to run independent rollouts in parallel, overlap rollout and training, and allocate trainers on demand.
 * RollArt: Disaggregated Multi-Task Agentic RL Training at Scale ([OSDI 2026](../../reading-notes/conference/osdi-2026/)) \[[Paper](https://www.usenix.org/conference/osdi26/presentation/gao)]
   * HKUST & Alibaba & Tongyi Lab
   * Axis: **Disaggregated RL systems**
@@ -218,6 +226,11 @@ I am actively maintaining this list.
 
 ### Workload Characterization
 
+* Model-as-a-Service in the Wild: Characterizing Production LLM Inference Clusters at Scale ([ATC 2026](../../reading-notes/conference/atc-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3828523.3857044)] \[[Trace](https://github.com/alibaba/clusterdata/tree/master/cluster-trace-v2026-maas)]
+  * CUHK-SZ & Alibaba & SJTU
+  * **Our work!**
+  * **Best Paper Award**
+  * Releases a six-month trace from more than 100,000 GPUs, covering both online applications and offline batch jobs. Documents memory overprovisioning and imbalances between prefill and decode resources.
 * TraceLab: Characterizing Coding Agent Workloads for LLM Serving (arXiv:2606.30560) \[[arXiv](https://arxiv.org/abs/2606.30560)] \[[Code](https://github.com/uw-syfi/TraceLab)] \[[Homepage](https://tracelab.cs.washington.edu)] \[[Blog](https://syfi.cs.washington.edu/blog/2026-06-25-tracelab/)]
   * UW & Wuhan University of Technology & SJTU
   * Release a coding-agent trace with 4,265 sessions, 357,161 agent steps, and 432,510 tool calls from Claude Code and Codex usage.
@@ -289,6 +302,9 @@ I am actively maintaining this list.
 
 ### Prefill-Decode (PD) Disaggregation
 
+* ELDR: Expert-Locality-Aware Decode Routing for PD-Disaggregated MoE Serving ([ATC 2026](../../reading-notes/conference/atc-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3828523.3857077)] \[[arXiv](https://arxiv.org/abs/2607.00466)] \[[Code](https://github.com/casys-kaist/ELDR)]
+  * KAIST & MSR & Shanghai Xingyunzhili Artificial Intelligence Institute
+  * Uses prefill expert activations to predict decode expert usage, balancing worker load while grouping requests that read the same expert weights.
 * Prefill-as-a-Service: KVCache of Next-Generation Models Could Go Cross-Datacenter (arXiv:2604.15039) \[[arXiv](https://arxiv.org/abs/2604.15039)]
   * Moonshot AI & THU
   * Introduce **PrfaaS**, a cross-datacenter serving architecture that selectively offloads long-context prefills to standalone compute-dense clusters and transfers the resulting KVCache over commodity Ethernet to local PD clusters for decode.
@@ -320,6 +336,9 @@ I am actively maintaining this list.
 
 ### Serverless Inference
 
+* IgniteServe: Accelerating LLM Serving Engine Cold Starts via Fine-Grained Parallelization ([ATC 2026](../../reading-notes/conference/atc-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3828523.3857102)]
+  * HUST & UT Arlington
+  * Schedules engine initialization by task dependency, parallelizes and reuses subgraph compilation, and builds CUDA graphs on demand.
 * HydraServe: Minimizing Cold Start Latency for Serverless LLM Serving in Public Clouds ([NSDI 2026](../../reading-notes/conference/nsdi-2026.md)) \[[Paper](https://www.usenix.org/conference/nsdi26/presentation/lou)] \[[arXiv](https://arxiv.org/abs/2502.15524)] \[[Code](https://github.com/LLMServe/hydraserve)]
   * PKU & Alibaba Cloud
   * Minimizes serverless LLM cold-start latency in public clouds through proactive model distribution, overlapped worker startup, and GPU-network-contention-aware worker placement.
@@ -333,6 +352,9 @@ I am actively maintaining this list.
 
 ### LoRA Serving
 
+* InfiniLoRA: Disaggregated Multi-LoRA Serving for Large Language Models ([ATC 2026](../../reading-notes/conference/atc-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3828523.3857067)] \[[arXiv](https://arxiv.org/abs/2604.07173)]
+  * SJTU & ByteDance & SMU & HKUST-GZ & NUS
+  * Runs adapters on a shared server separate from base-model inference so adapter capacity can scale independently.
 * dLoRA: Dynamically Orchestrating Requests and Adapters for LoRA LLM Serving ([OSDI 2024](../../reading-notes/conference/osdi-2024.md)) \[[Paper](https://www.usenix.org/conference/osdi24/presentation/wu-bingyang)]
   * PKU & Shanghai AI Lab
 * CaraServe: CPU-Assisted and Rank-Aware LoRA Serving for Generative LLM Inference (arXiv:2401.11240) \[[arXiv](https://arxiv.org/abs/2401.11240)]
@@ -344,6 +366,9 @@ I am actively maintaining this list.
 
 ### Position-Independent Caching (PIC)
 
+* HYPIC: Position-Independent Caching for Hybrid-Attention LLM Serving ([ATC 2026](../../reading-notes/conference/atc-2026.md)) \[[Paper](https://dl.acm.org/doi/10.1145/3828523.3857127)] \[[arXiv](https://arxiv.org/abs/2607.01299)]
+  * Xiaohongshu & PKU & SJTU
+  * Composes cached recurrent states across independently processed segments for linear attention, and recomputes boundary tokens for full attention.
 * EPIC: Efficient Position-Independent Context Caching for Serving Large Language Models (ICML 2025) \[[arXiv](https://arxiv.org/abs/2410.15332)]
   * PKU & NJU & Huawei Cloud
   * Key insight: the initial tokens of each chunk separately absorb a disproportionate amount of attention, preventing subsequent tokens from attending to relevant parts.
